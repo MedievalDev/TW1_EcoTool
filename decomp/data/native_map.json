@@ -1,0 +1,5837 @@
+{
+ "752": {
+  "name": "TraceDbg",
+  "hits": 25376,
+  "alt": []
+ },
+ "253": {
+  "name": "Format",
+  "hits": 1055,
+  "alt": []
+ },
+ "750": {
+  "name": "TraceDbg",
+  "hits": 15644,
+  "alt": []
+ },
+ "252": {
+  "name": "Format",
+  "hits": 177,
+  "alt": []
+ },
+ "251": {
+  "name": "Format",
+  "hits": 980,
+  "alt": []
+ },
+ "250": {
+  "name": "Format",
+  "hits": 138,
+  "alt": []
+ },
+ "249": {
+  "name": "Format",
+  "hits": 55,
+  "alt": []
+ },
+ "248": {
+  "name": "Format",
+  "hits": 110,
+  "alt": []
+ },
+ "247": {
+  "name": "Format",
+  "hits": 176,
+  "alt": []
+ },
+ "246": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "245": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "244": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "243": {
+  "name": "Format",
+  "hits": 43,
+  "alt": []
+ },
+ "242": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "241": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "240": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "239": {
+  "name": "Format",
+  "hits": 42,
+  "alt": []
+ },
+ "238": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "237": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "236": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "235": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "234": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "233": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "232": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "231": {
+  "name": "Format",
+  "hits": 73,
+  "alt": []
+ },
+ "230": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "229": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "228": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "227": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "226": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "225": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "224": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "223": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "222": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "221": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "220": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "219": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "218": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "217": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "216": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "215": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "214": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "213": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "212": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "211": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "210": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "209": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "208": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "207": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "206": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "205": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "204": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "203": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "202": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "201": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "200": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "199": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "198": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "197": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "196": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "195": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "194": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "193": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "192": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "191": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "190": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "189": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "188": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "187": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "186": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "185": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "184": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "183": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "182": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "181": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "180": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "179": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "178": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "177": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "176": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "175": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "174": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "173": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "172": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "171": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "170": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "169": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "168": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "167": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "166": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "165": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "164": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "163": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "162": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "161": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "160": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "159": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "158": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "157": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "156": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "155": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "154": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "153": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "152": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "151": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "150": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "149": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "148": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "147": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "146": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "145": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "144": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "143": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "142": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "141": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "140": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "139": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "138": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "137": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "136": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "135": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "134": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "133": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "132": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "131": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "130": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "129": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "128": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "127": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "126": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "125": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "124": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "123": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "122": {
+  "name": "Format",
+  "hits": 45,
+  "alt": []
+ },
+ "121": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "120": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "751": {
+  "name": "TraceDbg",
+  "hits": 5000,
+  "alt": []
+ },
+ "532": {
+  "name": "Format",
+  "hits": 73,
+  "alt": []
+ },
+ "530": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "529": {
+  "name": "Format",
+  "hits": 76,
+  "alt": []
+ },
+ "528": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "526": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "525": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "524": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "523": {
+  "name": "Format",
+  "hits": 44,
+  "alt": []
+ },
+ "522": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "521": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "520": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "518": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "517": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "516": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "515": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "514": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "513": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "512": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "511": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "510": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "509": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "508": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "507": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "506": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "505": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "504": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "502": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "501": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "500": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "499": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "498": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "497": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "496": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "495": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "494": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "493": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "492": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "491": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "490": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "489": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "488": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "487": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "486": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "485": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "484": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "483": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "482": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "481": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "480": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "479": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "478": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "477": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "476": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "475": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "474": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "473": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "472": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "470": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "469": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "468": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "467": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "466": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "465": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "464": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "463": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "462": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "461": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "460": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "459": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "458": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "457": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "456": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "455": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "454": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "453": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "452": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "451": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "450": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "449": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "448": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "447": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "446": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "445": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "444": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "443": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "442": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "441": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "440": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "439": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "438": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "437": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "436": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "435": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "434": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "433": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "432": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "431": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "430": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "429": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "428": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "427": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "426": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "425": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "424": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "423": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "422": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "421": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "420": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "419": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "418": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "417": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "416": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "415": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "414": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "413": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "412": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "411": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "410": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "409": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "408": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "406": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "404": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "402": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "400": {
+  "name": "Format",
+  "hits": 40,
+  "alt": []
+ },
+ "13": {
+  "name": "RemoveAll",
+  "hits": 116,
+  "alt": []
+ },
+ "111": {
+  "name": "GetLength",
+  "hits": 316,
+  "alt": []
+ },
+ "109": {
+  "name": "GetAt",
+  "hits": 200,
+  "alt": []
+ },
+ "96": {
+  "name": "Mid",
+  "hits": 68,
+  "alt": []
+ },
+ "690": {
+  "name": "sscanf",
+  "hits": 167,
+  "alt": []
+ },
+ "11": {
+  "name": "Add",
+  "hits": 871,
+  "alt": []
+ },
+ "36": {
+  "name": "RemoveAll",
+  "hits": 73,
+  "alt": []
+ },
+ "34": {
+  "name": "Add",
+  "hits": 377,
+  "alt": []
+ },
+ "734": {
+  "name": "GetCampaign",
+  "hits": 2799,
+  "alt": []
+ },
+ "850": {
+  "name": "IsNetworkGame",
+  "hits": 112,
+  "alt": []
+ },
+ "1251": {
+  "name": "GetUnitLevel",
+  "hits": 141,
+  "alt": []
+ },
+ "748": {
+  "name": "Rand",
+  "hits": 3776,
+  "alt": []
+ },
+ "680": {
+  "name": "GetChar",
+  "hits": 149,
+  "alt": []
+ },
+ "107": {
+  "name": "Append",
+  "hits": 63,
+  "alt": []
+ },
+ "1475": {
+  "name": "GetHeroPlayerNum",
+  "hits": 895,
+  "alt": []
+ },
+ "802": {
+  "name": "GetPlayerInterface",
+  "hits": 784,
+  "alt": []
+ },
+ "1066": {
+  "name": "SetConsoleText",
+  "hits": 150,
+  "alt": []
+ },
+ "38": {
+  "name": "GetSize",
+  "hits": 233,
+  "alt": []
+ },
+ "104": {
+  "name": "EqualNoCase",
+  "hits": 1560,
+  "alt": []
+ },
+ "29": {
+  "name": "RemoveAt",
+  "hits": 50,
+  "alt": []
+ },
+ "254": {
+  "name": "Translate",
+  "hits": 463,
+  "alt": []
+ },
+ "257": {
+  "name": "Copy",
+  "hits": 275,
+  "alt": []
+ },
+ "255": {
+  "name": "Append",
+  "hits": 365,
+  "alt": []
+ },
+ "1065": {
+  "name": "SetConsoleText",
+  "hits": 88,
+  "alt": []
+ },
+ "1506": {
+  "name": "SetAttribute",
+  "hits": 696,
+  "alt": []
+ },
+ "1499": {
+  "name": "GetAttribute",
+  "hits": 667,
+  "alt": []
+ },
+ "1162": {
+  "name": "IsInArmedMode",
+  "hits": 110,
+  "alt": []
+ },
+ "1423": {
+  "name": "GetNPCNameNum",
+  "hits": 33,
+  "alt": []
+ },
+ "1587": {
+  "name": "AddInventory",
+  "hits": 175,
+  "alt": []
+ },
+ "1254": {
+  "name": "GetUnitValues",
+  "hits": 895,
+  "alt": []
+ },
+ "2029": {
+  "name": "GetSkill",
+  "hits": 114,
+  "alt": []
+ },
+ "1418": {
+  "name": "GetHeroInitSkillPoints",
+  "hits": 28,
+  "alt": []
+ },
+ "763": {
+  "name": "CommandMessage",
+  "hits": 276,
+  "alt": []
+ },
+ "827": {
+  "name": "GetDayTime",
+  "hits": 51,
+  "alt": []
+ },
+ "667": {
+  "name": "FormatTrl",
+  "hits": 567,
+  "alt": []
+ },
+ "1067": {
+  "name": "SetConsoleText",
+  "hits": 152,
+  "alt": []
+ },
+ "1421": {
+  "name": "GetMoney",
+  "hits": 103,
+  "alt": []
+ },
+ "1420": {
+  "name": "SetMoney",
+  "hits": 62,
+  "alt": []
+ },
+ "2049": {
+  "name": "GetExperiencePoints",
+  "hits": 34,
+  "alt": []
+ },
+ "2048": {
+  "name": "SetExperiencePoints",
+  "hits": 34,
+  "alt": []
+ },
+ "1204": {
+  "name": "UpdateChangedUnitValues",
+  "hits": 148,
+  "alt": []
+ },
+ "2045": {
+  "name": "GetSkillPoints",
+  "hits": 42,
+  "alt": []
+ },
+ "2044": {
+  "name": "SetSkillPoints",
+  "hits": 44,
+  "alt": []
+ },
+ "1069": {
+  "name": "SetConsoleText",
+  "hits": 34,
+  "alt": []
+ },
+ "1383": {
+  "name": "DistanceTo",
+  "hits": 43,
+  "alt": []
+ },
+ "848": {
+  "name": "GetPlayerHeroUnit",
+  "hits": 753,
+  "alt": []
+ },
+ "1389": {
+  "name": "GetLocationY",
+  "hits": 326,
+  "alt": []
+ },
+ "1390": {
+  "name": "GetLocationX",
+  "hits": 326,
+  "alt": []
+ },
+ "1326": {
+  "name": "GetMission",
+  "hits": 454,
+  "alt": []
+ },
+ "940": {
+  "name": "GetMarker",
+  "hits": 443,
+  "alt": []
+ },
+ "841": {
+  "name": "GetMission",
+  "hits": 426,
+  "alt": []
+ },
+ "918": {
+  "name": "CreateObject",
+  "hits": 330,
+  "alt": []
+ },
+ "773": {
+  "name": "CommandMessage",
+  "hits": 192,
+  "alt": []
+ },
+ "849": {
+  "name": "IsNetworkChannelGame",
+  "hits": 39,
+  "alt": []
+ },
+ "2027": {
+  "name": "GetLockedPassiveSkills",
+  "hits": 100,
+  "alt": []
+ },
+ "2026": {
+  "name": "SetLockedPassiveSkills",
+  "hits": 99,
+  "alt": []
+ },
+ "2025": {
+  "name": "GetLockedActiveSkills",
+  "hits": 100,
+  "alt": []
+ },
+ "2024": {
+  "name": "SetLockedActiveSkills",
+  "hits": 99,
+  "alt": []
+ },
+ "803": {
+  "name": "IsPlayer",
+  "hits": 488,
+  "alt": []
+ },
+ "804": {
+  "name": "GetPlayersCnt",
+  "hits": 406,
+  "alt": []
+ },
+ "2051": {
+  "name": "GetLevel",
+  "hits": 71,
+  "alt": []
+ },
+ "1560": {
+  "name": "RemoveObject",
+  "hits": 103,
+  "alt": []
+ },
+ "1750": {
+  "name": "CommandMove",
+  "hits": 63,
+  "alt": []
+ },
+ "2280": {
+  "name": "GetNotTransientPassive",
+  "hits": 54,
+  "alt": []
+ },
+ "1546": {
+  "name": "SetGateOpen",
+  "hits": 66,
+  "alt": []
+ },
+ "692": {
+  "name": "SelectRandomMagicCard",
+  "hits": 33,
+  "alt": []
+ },
+ "744": {
+  "name": "TurnRadiusByAngle",
+  "hits": 57,
+  "alt": []
+ },
+ "919": {
+  "name": "IsGoodPointForUnit",
+  "hits": 45,
+  "alt": []
+ },
+ "957": {
+  "name": "GetThis",
+  "hits": 28,
+  "alt": []
+ },
+ "1128": {
+  "name": "IsInSneakMode",
+  "hits": 27,
+  "alt": []
+ },
+ "1130": {
+  "name": "CallSetSneakMode",
+  "hits": 11,
+  "alt": []
+ },
+ "1364": {
+  "name": "IsHeroUnit",
+  "hits": 192,
+  "alt": []
+ },
+ "1365": {
+  "name": "IsUnit",
+  "hits": 45,
+  "alt": []
+ },
+ "956": {
+  "name": "GetMissionScriptsCnt",
+  "hits": 97,
+  "alt": []
+ },
+ "955": {
+  "name": "GetMissionScript",
+  "hits": 161,
+  "alt": []
+ },
+ "840": {
+  "name": "GetGlobalScriptsCnt",
+  "hits": 159,
+  "alt": []
+ },
+ "839": {
+  "name": "GetGlobalScript",
+  "hits": 186,
+  "alt": []
+ },
+ "1803": {
+  "name": "GetThis",
+  "hits": 19,
+  "alt": []
+ },
+ "1283": {
+  "name": "GetPartiesNums",
+  "hits": 46,
+  "alt": []
+ },
+ "15": {
+  "name": "GetSize",
+  "hits": 721,
+  "alt": []
+ },
+ "10": {
+  "name": "ElementAt",
+  "hits": 24,
+  "alt": []
+ },
+ "1284": {
+  "name": "IsInParty",
+  "hits": 28,
+  "alt": []
+ },
+ "1302": {
+  "name": "IsPreparingToMove",
+  "hits": 6,
+  "alt": []
+ },
+ "1386": {
+  "name": "GetLocation",
+  "hits": 30,
+  "alt": []
+ },
+ "1321": {
+  "name": "CallMoveToPoint",
+  "hits": 19,
+  "alt": []
+ },
+ "1381": {
+  "name": "AngleTo",
+  "hits": 25,
+  "alt": []
+ },
+ "1388": {
+  "name": "GetLocationZ",
+  "hits": 20,
+  "alt": []
+ },
+ "1379": {
+  "name": "AngleTo",
+  "hits": 36,
+  "alt": []
+ },
+ "1322": {
+  "name": "IsNearLevelBorder",
+  "hits": 15,
+  "alt": []
+ },
+ "1305": {
+  "name": "IsMoving",
+  "hits": 130,
+  "alt": []
+ },
+ "1393": {
+  "name": "EndCommand",
+  "hits": 183,
+  "alt": []
+ },
+ "1298": {
+  "name": "IsInJumpingState",
+  "hits": 3,
+  "alt": []
+ },
+ "1299": {
+  "name": "IsMovingOneStep",
+  "hits": 3,
+  "alt": []
+ },
+ "1385": {
+  "name": "GetDirectionAlpha",
+  "hits": 35,
+  "alt": []
+ },
+ "1314": {
+  "name": "CallTurnToAngle",
+  "hits": 27,
+  "alt": []
+ },
+ "1316": {
+  "name": "CallStopCurrentAction",
+  "hits": 67,
+  "alt": []
+ },
+ "1398": {
+  "name": "SetStateDelay",
+  "hits": 103,
+  "alt": []
+ },
+ "1362": {
+  "name": "IsLandMove",
+  "hits": 3,
+  "alt": []
+ },
+ "1306": {
+  "name": "CallFlyableFlyToPoint",
+  "hits": 3,
+  "alt": []
+ },
+ "1307": {
+  "name": "CallFlyableFlyToPoint",
+  "hits": 3,
+  "alt": []
+ },
+ "1309": {
+  "name": "CallFlyableSetHeight",
+  "hits": 3,
+  "alt": []
+ },
+ "1310": {
+  "name": "CallFlyableSetHeight",
+  "hits": 3,
+  "alt": []
+ },
+ "1158": {
+  "name": "SetMoveStepInDirectionAfterCommand",
+  "hits": 30,
+  "alt": []
+ },
+ "1318": {
+  "name": "CallMoveStepInDirection",
+  "hits": 3,
+  "alt": []
+ },
+ "1313": {
+  "name": "CallStartJumping",
+  "hits": 3,
+  "alt": []
+ },
+ "1156": {
+  "name": "IsOnHorse",
+  "hits": 68,
+  "alt": []
+ },
+ "1319": {
+  "name": "CallMoveOneStep",
+  "hits": 16,
+  "alt": []
+ },
+ "1294": {
+  "name": "SetHorseChangeSpeed",
+  "hits": 21,
+  "alt": []
+ },
+ "1317": {
+  "name": "CallMoveHorseInDirection",
+  "hits": 9,
+  "alt": []
+ },
+ "1293": {
+  "name": "GetHorseChangeSpeed",
+  "hits": 3,
+  "alt": []
+ },
+ "1291": {
+  "name": "SetHorseMoveBack",
+  "hits": 6,
+  "alt": []
+ },
+ "1289": {
+  "name": "SetHorseTurnMoving",
+  "hits": 9,
+  "alt": []
+ },
+ "1258": {
+  "name": "IsAlarmModeUnit",
+  "hits": 3,
+  "alt": []
+ },
+ "1330": {
+  "name": "GetGameTick",
+  "hits": 6,
+  "alt": []
+ },
+ "1274": {
+  "name": "SearchUnits",
+  "hits": 3,
+  "alt": []
+ },
+ "1272": {
+  "name": "GetSearchUnitsCount",
+  "hits": 38,
+  "alt": []
+ },
+ "1471": {
+  "name": "GetHouseWithObject",
+  "hits": 49,
+  "alt": []
+ },
+ "1271": {
+  "name": "GetSearchUnit",
+  "hits": 52,
+  "alt": []
+ },
+ "1257": {
+  "name": "SetEventAlarmEnemy",
+  "hits": 3,
+  "alt": []
+ },
+ "1382": {
+  "name": "DistanceTo",
+  "hits": 96,
+  "alt": []
+ },
+ "1502": {
+  "name": "ResetAttribute",
+  "hits": 23,
+  "alt": []
+ },
+ "1433": {
+  "name": "WasObjectOpen",
+  "hits": 28,
+  "alt": []
+ },
+ "770": {
+  "name": "CommandMessageGet",
+  "hits": 30,
+  "alt": []
+ },
+ "771": {
+  "name": "CommandMessageGet",
+  "hits": 38,
+  "alt": []
+ },
+ "1363": {
+  "name": "IsShopUnit",
+  "hits": 99,
+  "alt": []
+ },
+ "1519": {
+  "name": "IsShopEnabled",
+  "hits": 22,
+  "alt": []
+ },
+ "1553": {
+  "name": "IsDialogUnit",
+  "hits": 24,
+  "alt": []
+ },
+ "1554": {
+  "name": "ResetIsDialogUnit",
+  "hits": 22,
+  "alt": []
+ },
+ "1520": {
+  "name": "EnableShop",
+  "hits": 47,
+  "alt": []
+ },
+ "1556": {
+  "name": "SetIsDialogUnit",
+  "hits": 110,
+  "alt": []
+ },
+ "2276": {
+  "name": "IsAnyGoodPointForUnit",
+  "hits": 2,
+  "alt": []
+ },
+ "1187": {
+  "name": "HaveShootWeapon",
+  "hits": 15,
+  "alt": []
+ },
+ "1373": {
+  "name": "IsLive",
+  "hits": 110,
+  "alt": []
+ },
+ "829": {
+  "name": "GetGameTick",
+  "hits": 105,
+  "alt": []
+ },
+ "1275": {
+  "name": "SearchUnits",
+  "hits": 10,
+  "alt": []
+ },
+ "1628": {
+  "name": "CommandUserObject0",
+  "hits": 2,
+  "alt": []
+ },
+ "1281": {
+  "name": "IsEnemy",
+  "hits": 22,
+  "alt": []
+ },
+ "1186": {
+  "name": "HaveUsableWeapon",
+  "hits": 29,
+  "alt": []
+ },
+ "1325": {
+  "name": "IsTheSameMission",
+  "hits": 12,
+  "alt": []
+ },
+ "1121": {
+  "name": "IsInDialogTalk",
+  "hits": 21,
+  "alt": []
+ },
+ "1367": {
+  "name": "CanBeHitAndDamaged",
+  "hits": 4,
+  "alt": []
+ },
+ "1192": {
+  "name": "IsAttacking",
+  "hits": 23,
+  "alt": []
+ },
+ "1169": {
+  "name": "CallSetArmedMode",
+  "hits": 24,
+  "alt": []
+ },
+ "1168": {
+  "name": "CallMoveAndSetToArmedMode",
+  "hits": 6,
+  "alt": []
+ },
+ "1263": {
+  "name": "IsObjectInSightOrHearRange",
+  "hits": 14,
+  "alt": []
+ },
+ "1188": {
+  "name": "HaveDirectFightWeapon",
+  "hits": 20,
+  "alt": []
+ },
+ "1177": {
+  "name": "GetAttackTarget",
+  "hits": 23,
+  "alt": []
+ },
+ "1375": {
+  "name": "GetAngleDiff",
+  "hits": 2,
+  "alt": []
+ },
+ "1180": {
+  "name": "FindFreePointForTargetDirectFight",
+  "hits": 2,
+  "alt": []
+ },
+ "1384": {
+  "name": "DistanceTo",
+  "hits": 143,
+  "alt": []
+ },
+ "2272": {
+  "name": "IsNoRouteTarget",
+  "hits": 4,
+  "alt": []
+ },
+ "1181": {
+  "name": "IsTargetInAttackRange",
+  "hits": 6,
+  "alt": []
+ },
+ "1176": {
+  "name": "OnBeginAttackTarget",
+  "hits": 4,
+  "alt": []
+ },
+ "1296": {
+  "name": "SetAutoRunMode",
+  "hits": 11,
+  "alt": []
+ },
+ "1315": {
+  "name": "StopCurrentActionImmediate",
+  "hits": 13,
+  "alt": []
+ },
+ "1189": {
+  "name": "HaveWeapon",
+  "hits": 2,
+  "alt": []
+ },
+ "1282": {
+  "name": "GetEnemiesParties",
+  "hits": 18,
+  "alt": []
+ },
+ "1278": {
+  "name": "SearchUnits",
+  "hits": 4,
+  "alt": []
+ },
+ "1323": {
+  "name": "IsNearLevelBorder",
+  "hits": 10,
+  "alt": []
+ },
+ "1183": {
+  "name": "GetAttackRange",
+  "hits": 4,
+  "alt": []
+ },
+ "1300": {
+  "name": "GetMoveTarget",
+  "hits": 4,
+  "alt": []
+ },
+ "1387": {
+  "name": "GetLocation",
+  "hits": 62,
+  "alt": []
+ },
+ "743": {
+  "name": "Distance",
+  "hits": 13,
+  "alt": []
+ },
+ "1270": {
+  "name": "ClearSearchUnitsArray",
+  "hits": 19,
+  "alt": []
+ },
+ "1144": {
+  "name": "GetNextAttackSkill",
+  "hits": 8,
+  "alt": []
+ },
+ "1146": {
+  "name": "SetNextAttackSkill",
+  "hits": 18,
+  "alt": []
+ },
+ "1142": {
+  "name": "CanMakeActiveSkill",
+  "hits": 6,
+  "alt": []
+ },
+ "1145": {
+  "name": "SetNextAttackSkill",
+  "hits": 5,
+  "alt": []
+ },
+ "1166": {
+  "name": "IsSettingArmedMode",
+  "hits": 36,
+  "alt": []
+ },
+ "1397": {
+  "name": "GetStateDelay",
+  "hits": 22,
+  "alt": []
+ },
+ "1287": {
+  "name": "SetEventAttackByOtherUnit",
+  "hits": 3,
+  "alt": []
+ },
+ "1374": {
+  "name": "GetTargetDirectionDiff",
+  "hits": 2,
+  "alt": []
+ },
+ "1196": {
+  "name": "CallAttackTarget",
+  "hits": 2,
+  "alt": []
+ },
+ "1124": {
+  "name": "CanStartDirectFightAction",
+  "hits": 2,
+  "alt": []
+ },
+ "1170": {
+  "name": "StepTurnNoAnimToAttackTarget",
+  "hits": 2,
+  "alt": []
+ },
+ "1264": {
+  "name": "IsSummonedUnit",
+  "hits": 5,
+  "alt": []
+ },
+ "2293": {
+  "name": "GetSummonedUnitOwner",
+  "hits": 5,
+  "alt": []
+ },
+ "2292": {
+  "name": "CalcMoveToNearUnitPos",
+  "hits": 3,
+  "alt": []
+ },
+ "1627": {
+  "name": "CommandUserObject1",
+  "hits": 2,
+  "alt": []
+ },
+ "1195": {
+  "name": "CallMakeStrikeAttack",
+  "hits": 4,
+  "alt": []
+ },
+ "1190": {
+  "name": "IsMovingAndStrikeAttack",
+  "hits": 2,
+  "alt": []
+ },
+ "1194": {
+  "name": "CallMakeShootAttackManualPrepare",
+  "hits": 2,
+  "alt": []
+ },
+ "1193": {
+  "name": "CallMakeShootAttackManualFire",
+  "hits": 2,
+  "alt": []
+ },
+ "2290": {
+  "name": "CallMakeShootAttackAutoPrepare",
+  "hits": 2,
+  "alt": []
+ },
+ "2289": {
+  "name": "CallMakeShootAttackAutoFire",
+  "hits": 2,
+  "alt": []
+ },
+ "1157": {
+  "name": "TurnToCamera",
+  "hits": 2,
+  "alt": []
+ },
+ "1165": {
+  "name": "CanSetArmedMode",
+  "hits": 2,
+  "alt": []
+ },
+ "2310": {
+  "name": "IsMovingAndSettingArmedMode",
+  "hits": 2,
+  "alt": []
+ },
+ "1304": {
+  "name": "IsMovingTurning",
+  "hits": 10,
+  "alt": []
+ },
+ "1167": {
+  "name": "CallContinueMovingAndSetToArmedMode",
+  "hits": 4,
+  "alt": []
+ },
+ "1153": {
+  "name": "IsMakingMagic",
+  "hits": 6,
+  "alt": []
+ },
+ "1149": {
+  "name": "IsMagicTargetInRange",
+  "hits": 7,
+  "alt": []
+ },
+ "1255": {
+  "name": "GetUnitParams",
+  "hits": 17,
+  "alt": []
+ },
+ "1991": {
+  "name": "GetAutoCastMagicProbability",
+  "hits": 8,
+  "alt": []
+ },
+ "1224": {
+  "name": "GetMagicCardOnSlotCount",
+  "hits": 17,
+  "alt": []
+ },
+ "1222": {
+  "name": "GetMagicCardParamsOnSlot",
+  "hits": 22,
+  "alt": []
+ },
+ "1899": {
+  "name": "GetMagicFlags",
+  "hits": 2,
+  "alt": []
+ },
+ "1902": {
+  "name": "GetCommandType",
+  "hits": 12,
+  "alt": []
+ },
+ "1151": {
+  "name": "CanMakeMagic",
+  "hits": 4,
+  "alt": []
+ },
+ "1150": {
+  "name": "CanMakeMagic",
+  "hits": 12,
+  "alt": []
+ },
+ "1148": {
+  "name": "GetMagicCastRange",
+  "hits": 2,
+  "alt": []
+ },
+ "1155": {
+  "name": "CallMakeMagic",
+  "hits": 10,
+  "alt": []
+ },
+ "1154": {
+  "name": "CallMakeMagic",
+  "hits": 2,
+  "alt": []
+ },
+ "2321": {
+  "name": "CallPrepareManualTargetMagic",
+  "hits": 2,
+  "alt": []
+ },
+ "1136": {
+  "name": "FindPlaceToSetTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1133": {
+  "name": "CallSetTrapAhead",
+  "hits": 4,
+  "alt": []
+ },
+ "1135": {
+  "name": "IsInGoodPlaceToSetTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1134": {
+  "name": "CallSetTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1132": {
+  "name": "IsSettingTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1129": {
+  "name": "IsSettingSneakMode",
+  "hits": 12,
+  "alt": []
+ },
+ "1126": {
+  "name": "CanMakeSkillStealing",
+  "hits": 6,
+  "alt": []
+ },
+ "1103": {
+  "name": "IsTargetInSkillStealingRange",
+  "hits": 4,
+  "alt": []
+ },
+ "1102": {
+  "name": "CallMakeSkillStealing",
+  "hits": 2,
+  "alt": []
+ },
+ "1101": {
+  "name": "IsMakingSkillStealing",
+  "hits": 2,
+  "alt": []
+ },
+ "1139": {
+  "name": "CanSetTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1137": {
+  "name": "SetCurrTrap",
+  "hits": 2,
+  "alt": []
+ },
+ "1138": {
+  "name": "HaveSetTrapAnim",
+  "hits": 2,
+  "alt": []
+ },
+ "1112": {
+  "name": "GetPlaceToMountOnHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1376": {
+  "name": "GetRelativeAngleTo",
+  "hits": 16,
+  "alt": []
+ },
+ "1091": {
+  "name": "SetHeadAngle",
+  "hits": 4,
+  "alt": []
+ },
+ "1090": {
+  "name": "GetCurrHeadAngle",
+  "hits": 2,
+  "alt": []
+ },
+ "1111": {
+  "name": "IsInGoodPlaceToMountOnHorse",
+  "hits": 6,
+  "alt": []
+ },
+ "1110": {
+  "name": "CallMountOnHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1109": {
+  "name": "IsMountingOnHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1108": {
+  "name": "CallUnmountFromHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1107": {
+  "name": "IsUnmountingFromHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1105": {
+  "name": "CallCallHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1104": {
+  "name": "IsCallingHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1095": {
+  "name": "CallMakeCustomWork",
+  "hits": 6,
+  "alt": []
+ },
+ "1094": {
+  "name": "IsMakingCustomWork",
+  "hits": 15,
+  "alt": []
+ },
+ "1123": {
+  "name": "PrepareBeforeDialogTalk",
+  "hits": 2,
+  "alt": []
+ },
+ "1122": {
+  "name": "FinishAfterDialogTalk",
+  "hits": 2,
+  "alt": []
+ },
+ "1120": {
+  "name": "PrepareBeforeDialogChat",
+  "hits": 2,
+  "alt": []
+ },
+ "1119": {
+  "name": "FinishAfterDialogChat",
+  "hits": 2,
+  "alt": []
+ },
+ "1117": {
+  "name": "StartDialogTalkAnim",
+  "hits": 2,
+  "alt": []
+ },
+ "1116": {
+  "name": "StopDialogTalkAnim",
+  "hits": 2,
+  "alt": []
+ },
+ "1115": {
+  "name": "PauseDialogTalkHeadAnim",
+  "hits": 2,
+  "alt": []
+ },
+ "1113": {
+  "name": "CanMountOnHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1098": {
+  "name": "HaveCustomWorkAnim",
+  "hits": 5,
+  "alt": []
+ },
+ "1097": {
+  "name": "SetCurrCustomWorkParams",
+  "hits": 3,
+  "alt": []
+ },
+ "1372": {
+  "name": "IsStored",
+  "hits": 5,
+  "alt": []
+ },
+ "1118": {
+  "name": "IsInDialogChat",
+  "hits": 25,
+  "alt": []
+ },
+ "1748": {
+  "name": "CommandTurn",
+  "hits": 6,
+  "alt": []
+ },
+ "1723": {
+  "name": "CommandSetArmedMode",
+  "hits": 10,
+  "alt": []
+ },
+ "1693": {
+  "name": "CommandSkillSneak",
+  "hits": 1,
+  "alt": []
+ },
+ "1396": {
+  "name": "SetState",
+  "hits": 3,
+  "alt": []
+ },
+ "1766": {
+  "name": "IsDialogUnitInTalkRange",
+  "hits": 2,
+  "alt": []
+ },
+ "1765": {
+  "name": "StartTalkWithDialogUnit",
+  "hits": 1,
+  "alt": []
+ },
+ "1764": {
+  "name": "IsOpenContainerObjectType",
+  "hits": 2,
+  "alt": []
+ },
+ "1087": {
+  "name": "IsTurningToGateOrContainerObject",
+  "hits": 2,
+  "alt": []
+ },
+ "1089": {
+  "name": "NeedTurnToGateOrContainerObject",
+  "hits": 2,
+  "alt": []
+ },
+ "1088": {
+  "name": "CallTurnToGateOrContainerObject",
+  "hits": 2,
+  "alt": []
+ },
+ "1751": {
+  "name": "CommandStop",
+  "hits": 28,
+  "alt": []
+ },
+ "1763": {
+  "name": "IsContainerObjectInOpenRange",
+  "hits": 2,
+  "alt": []
+ },
+ "1762": {
+  "name": "StartOpenContainerObject",
+  "hits": 2,
+  "alt": []
+ },
+ "1086": {
+  "name": "CanOpenGate",
+  "hits": 2,
+  "alt": []
+ },
+ "1114": {
+  "name": "StartGateClickEvent",
+  "hits": 2,
+  "alt": []
+ },
+ "1802": {
+  "name": "MoveSubObjectToInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1801": {
+  "name": "MoveSubObjectFromSlotToSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "1800": {
+  "name": "MoveMagicFromSlotToInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1799": {
+  "name": "MoveMagicFromSlotToSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "2320": {
+  "name": "UseMagicCardOnSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "1798": {
+  "name": "UseObjectFromInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1797": {
+  "name": "UsePrevWeapon",
+  "hits": 1,
+  "alt": []
+ },
+ "1796": {
+  "name": "UseNextWeapon",
+  "hits": 1,
+  "alt": []
+ },
+ "1795": {
+  "name": "UseRegenerateHPPotion",
+  "hits": 1,
+  "alt": []
+ },
+ "1794": {
+  "name": "UseRegenerateManaPotion",
+  "hits": 1,
+  "alt": []
+ },
+ "1793": {
+  "name": "JoinInventoryObjects",
+  "hits": 1,
+  "alt": []
+ },
+ "1792": {
+  "name": "SetInventoryObjectPos",
+  "hits": 1,
+  "alt": []
+ },
+ "1791": {
+  "name": "AutoArrangeInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1790": {
+  "name": "DropSubObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1788": {
+  "name": "DropInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1789": {
+  "name": "DropMoney",
+  "hits": 1,
+  "alt": []
+ },
+ "1787": {
+  "name": "DropMagicFromSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "1786": {
+  "name": "DropAlchemyItem",
+  "hits": 1,
+  "alt": []
+ },
+ "1785": {
+  "name": "MoveInventoryToAlchemyItem",
+  "hits": 1,
+  "alt": []
+ },
+ "1784": {
+  "name": "MoveAlchemyItemToInventory",
+  "hits": 1,
+  "alt": []
+ },
+ "1783": {
+  "name": "MoveAlchemyItemFromSlotToSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "1782": {
+  "name": "MakeAlchemy",
+  "hits": 1,
+  "alt": []
+ },
+ "1781": {
+  "name": "AddAlchemyResultFormula",
+  "hits": 1,
+  "alt": []
+ },
+ "1780": {
+  "name": "SetAlchemyFormulaName",
+  "hits": 1,
+  "alt": []
+ },
+ "1779": {
+  "name": "DeleteAlchemyFormula",
+  "hits": 1,
+  "alt": []
+ },
+ "1778": {
+  "name": "LoadAlchemyFormula",
+  "hits": 1,
+  "alt": []
+ },
+ "1777": {
+  "name": "UnloadAlchemyFormula",
+  "hits": 1,
+  "alt": []
+ },
+ "1776": {
+  "name": "MoveAlchemyFormulaUp",
+  "hits": 1,
+  "alt": []
+ },
+ "1775": {
+  "name": "MoveAlchemyFormulaDown",
+  "hits": 1,
+  "alt": []
+ },
+ "1772": {
+  "name": "CanPickUpObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1773": {
+  "name": "IsObjectInPickUpRange",
+  "hits": 1,
+  "alt": []
+ },
+ "1774": {
+  "name": "PickUpObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1769": {
+  "name": "CanSwitchObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1770": {
+  "name": "IsObjectInSwitchRange",
+  "hits": 1,
+  "alt": []
+ },
+ "1771": {
+  "name": "SwitchObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1768": {
+  "name": "SetPoint",
+  "hits": 1,
+  "alt": []
+ },
+ "1767": {
+  "name": "SetSkill",
+  "hits": 1,
+  "alt": []
+ },
+ "1761": {
+  "name": "GetObjectFromContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1760": {
+  "name": "GetAllFromContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1759": {
+  "name": "PutObjectToContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1758": {
+  "name": "OpenTeleport",
+  "hits": 1,
+  "alt": []
+ },
+ "1757": {
+  "name": "TeleportToActiveTargetTeleport",
+  "hits": 1,
+  "alt": []
+ },
+ "1756": {
+  "name": "PutObjectToTradeContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1755": {
+  "name": "GetObjectFromTradeContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1754": {
+  "name": "GetAllFromTradeContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1753": {
+  "name": "DecideAboutTrade",
+  "hits": 1,
+  "alt": []
+ },
+ "1752": {
+  "name": "PlayerLeftTrade",
+  "hits": 1,
+  "alt": []
+ },
+ "842": {
+  "name": "GetMissionsCnt",
+  "hits": 73,
+  "alt": []
+ },
+ "97": {
+  "name": "Mid",
+  "hits": 92,
+  "alt": []
+ },
+ "689": {
+  "name": "sscanf",
+  "hits": 42,
+  "alt": []
+ },
+ "764": {
+  "name": "CommandMessageGet",
+  "hits": 25,
+  "alt": []
+ },
+ "1340": {
+  "name": "IsGate",
+  "hits": 31,
+  "alt": []
+ },
+ "1334": {
+  "name": "IsContainer",
+  "hits": 47,
+  "alt": []
+ },
+ "1435": {
+  "name": "GetLockLevel",
+  "hits": 52,
+  "alt": []
+ },
+ "2273": {
+  "name": "IsUnitInsideExternalDoorGate",
+  "hits": 12,
+  "alt": []
+ },
+ "1569": {
+  "name": "GetKeyArtefactsInInventoryCount",
+  "hits": 15,
+  "alt": []
+ },
+ "1567": {
+  "name": "FindKeyArtefactInInventory",
+  "hits": 12,
+  "alt": []
+ },
+ "1580": {
+  "name": "RemoveObjectFromInventory",
+  "hits": 12,
+  "alt": []
+ },
+ "1370": {
+  "name": "GetHP",
+  "hits": 19,
+  "alt": []
+ },
+ "1564": {
+  "name": "SetHP",
+  "hits": 25,
+  "alt": []
+ },
+ "832": {
+  "name": "SetLevelsHorizon",
+  "hits": 4,
+  "alt": []
+ },
+ "2284": {
+  "name": "SetEndOfTheWorldSouthMargin",
+  "hits": 2,
+  "alt": []
+ },
+ "2283": {
+  "name": "SetEndOfTheWorldNorthMargin",
+  "hits": 2,
+  "alt": []
+ },
+ "677": {
+  "name": "__DevExecuteConsole",
+  "hits": 1,
+  "alt": []
+ },
+ "14": {
+  "name": "SetSize",
+  "hits": 15,
+  "alt": []
+ },
+ "855": {
+  "name": "LoadLevelsHeadersCache",
+  "hits": 2,
+  "alt": []
+ },
+ "108": {
+  "name": "Append",
+  "hits": 39,
+  "alt": []
+ },
+ "691": {
+  "name": "CheckFileExist",
+  "hits": 4,
+  "alt": []
+ },
+ "853": {
+  "name": "CreateMission",
+  "hits": 5,
+  "alt": []
+ },
+ "950": {
+  "name": "SetPositionOnCampaignTexture",
+  "hits": 4,
+  "alt": []
+ },
+ "906": {
+  "name": "GetWorldHeight",
+  "hits": 39,
+  "alt": []
+ },
+ "907": {
+  "name": "GetWorldWidth",
+  "hits": 36,
+  "alt": []
+ },
+ "949": {
+  "name": "SetHorizonOffset",
+  "hits": 6,
+  "alt": []
+ },
+ "854": {
+  "name": "CleanupLevelsHeadersCache",
+  "hits": 2,
+  "alt": []
+ },
+ "833": {
+  "name": "LoadRPGComputeScript",
+  "hits": 4,
+  "alt": []
+ },
+ "825": {
+  "name": "SetDayLength",
+  "hits": 4,
+  "alt": []
+ },
+ "2291": {
+  "name": "SetLimitedWorldStepRange",
+  "hits": 3,
+  "alt": []
+ },
+ "737": {
+  "name": "GetSinglePartyArray",
+  "hits": 43,
+  "alt": []
+ },
+ "947": {
+  "name": "LoadLevel",
+  "hits": 7,
+  "alt": []
+ },
+ "916": {
+  "name": "CreateHero",
+  "hits": 4,
+  "alt": []
+ },
+ "826": {
+  "name": "SetDayTime",
+  "hits": 5,
+  "alt": []
+ },
+ "837": {
+  "name": "AddGlobalScript",
+  "hits": 38,
+  "alt": []
+ },
+ "1371": {
+  "name": "GetObjectIDName",
+  "hits": 9,
+  "alt": []
+ },
+ "1482": {
+  "name": "ActivateTeleport",
+  "hits": 8,
+  "alt": []
+ },
+ "1449": {
+  "name": "AddObjectsFromParamsToDeadBody",
+  "hits": 1,
+  "alt": []
+ },
+ "1056": {
+  "name": "SetLowConsoleText",
+  "hits": 1,
+  "alt": []
+ },
+ "1072": {
+  "name": "SetConsoleText",
+  "hits": 4,
+  "alt": []
+ },
+ "687": {
+  "name": "strlen",
+  "hits": 135,
+  "alt": []
+ },
+ "683": {
+  "name": "strnicmp",
+  "hits": 90,
+  "alt": []
+ },
+ "93": {
+  "name": "TrimLeft",
+  "hits": 52,
+  "alt": []
+ },
+ "945": {
+  "name": "IsLevelLoaded",
+  "hits": 76,
+  "alt": []
+ },
+ "946": {
+  "name": "UnloadLevel",
+  "hits": 2,
+  "alt": []
+ },
+ "1600": {
+  "name": "SetImmediatePosition",
+  "hits": 44,
+  "alt": []
+ },
+ "1023": {
+  "name": "PlayDialog",
+  "hits": 1,
+  "alt": []
+ },
+ "1481": {
+  "name": "ActivateTeleport",
+  "hits": 3,
+  "alt": []
+ },
+ "899": {
+  "name": "SearchObjectsInArea",
+  "hits": 6,
+  "alt": []
+ },
+ "898": {
+  "name": "GetSearchUnitsInAreaCount",
+  "hits": 32,
+  "alt": []
+ },
+ "896": {
+  "name": "ClearSearchUnitsInAreaArray",
+  "hits": 26,
+  "alt": []
+ },
+ "1033": {
+  "name": "PlayGameMusic",
+  "hits": 2,
+  "alt": []
+ },
+ "1031": {
+  "name": "StopGameMusic",
+  "hits": 2,
+  "alt": []
+ },
+ "883": {
+  "name": "PlayChatDialog",
+  "hits": 4,
+  "alt": []
+ },
+ "1422": {
+  "name": "SetNotRenderObjectNow",
+  "hits": 6,
+  "alt": []
+ },
+ "936": {
+  "name": "HaveMarker",
+  "hits": 249,
+  "alt": []
+ },
+ "929": {
+  "name": "GetObjectMarker",
+  "hits": 49,
+  "alt": []
+ },
+ "1068": {
+  "name": "SetConsoleText",
+  "hits": 15,
+  "alt": []
+ },
+ "1575": {
+  "name": "IsFreePlaceForObjectInInventory",
+  "hits": 6,
+  "alt": []
+ },
+ "831": {
+  "name": "SetPentagram",
+  "hits": 2,
+  "alt": []
+ },
+ "1001": {
+  "name": "SetDreamlandEntranceState",
+  "hits": 6,
+  "alt": []
+ },
+ "830": {
+  "name": "SetDrawPentagramStrength",
+  "hits": 22,
+  "alt": []
+ },
+ "1073": {
+  "name": "PlayVideoCutscene",
+  "hits": 7,
+  "alt": []
+ },
+ "1286": {
+  "name": "SetPartyNum",
+  "hits": 62,
+  "alt": []
+ },
+ "1026": {
+  "name": "MessageBox",
+  "hits": 7,
+  "alt": []
+ },
+ "798": {
+  "name": "GetScriptUID",
+  "hits": 73,
+  "alt": []
+ },
+ "823": {
+  "name": "SetWind",
+  "hits": 8,
+  "alt": []
+ },
+ "1077": {
+  "name": "PlayCutscene",
+  "hits": 2,
+  "alt": []
+ },
+ "1539": {
+  "name": "SetGateScriptOwnerUID",
+  "hits": 31,
+  "alt": []
+ },
+ "1074": {
+  "name": "FadeOutScreen",
+  "hits": 3,
+  "alt": []
+ },
+ "2306": {
+  "name": "IsLocalHeroXPadControlled",
+  "hits": 7,
+  "alt": []
+ },
+ "1071": {
+  "name": "SetConsoleText",
+  "hits": 5,
+  "alt": []
+ },
+ "905": {
+  "name": "IsUnitInArea",
+  "hits": 11,
+  "alt": []
+ },
+ "847": {
+  "name": "SetPartyEnemy",
+  "hits": 26,
+  "alt": []
+ },
+ "809": {
+  "name": "GetFillChannelLevelsListCommonPlayerAttribute",
+  "hits": 3,
+  "alt": []
+ },
+ "806": {
+  "name": "GetFillChannelLevelsListSelectedHeroFlags",
+  "hits": 6,
+  "alt": []
+ },
+ "57": {
+  "name": "Add",
+  "hits": 8,
+  "alt": []
+ },
+ "678": {
+  "name": "ReadTextFile",
+  "hits": 8,
+  "alt": []
+ },
+ "101": {
+  "name": "Find",
+  "hits": 6,
+  "alt": []
+ },
+ "98": {
+  "name": "Left",
+  "hits": 7,
+  "alt": []
+ },
+ "92": {
+  "name": "TrimRight",
+  "hits": 7,
+  "alt": []
+ },
+ "24": {
+  "name": "InsertInSorted",
+  "hits": 3,
+  "alt": []
+ },
+ "30": {
+  "name": "InsertAt",
+  "hits": 6,
+  "alt": []
+ },
+ "23": {
+  "name": "FindInSorted",
+  "hits": 3,
+  "alt": []
+ },
+ "685": {
+  "name": "stricmp",
+  "hits": 471,
+  "alt": []
+ },
+ "1488": {
+  "name": "GetPlayersCommonAttribute",
+  "hits": 5,
+  "alt": []
+ },
+ "2326": {
+  "name": "SearchFiles",
+  "hits": 3,
+  "alt": []
+ },
+ "954": {
+  "name": "AddMissionScript",
+  "hits": 2,
+  "alt": []
+ },
+ "835": {
+  "name": "FindGlobalScript",
+  "hits": 9,
+  "alt": []
+ },
+ "943": {
+  "name": "GetMissionNum",
+  "hits": 263,
+  "alt": []
+ },
+ "772": {
+  "name": "CommandMessage",
+  "hits": 57,
+  "alt": []
+ },
+ "769": {
+  "name": "CommandMessage",
+  "hits": 2,
+  "alt": []
+ },
+ "815": {
+  "name": "LoadLevelConfiguration",
+  "hits": 19,
+  "alt": []
+ },
+ "948": {
+  "name": "AddNeighbourDistantLandLevel",
+  "hits": 2,
+  "alt": []
+ },
+ "2285": {
+  "name": "SetBlockHeroAttackCommands",
+  "hits": 2,
+  "alt": []
+ },
+ "2031": {
+  "name": "GetBasicSkill",
+  "hits": 26,
+  "alt": []
+ },
+ "1285": {
+  "name": "SetIsInParty",
+  "hits": 3,
+  "alt": []
+ },
+ "1511": {
+  "name": "AddMagicCard",
+  "hits": 49,
+  "alt": []
+ },
+ "1583": {
+  "name": "RemoveObjectFromInventory",
+  "hits": 171,
+  "alt": []
+ },
+ "934": {
+  "name": "FillMarkersNums",
+  "hits": 4,
+  "alt": []
+ },
+ "6": {
+  "name": "RemoveAt",
+  "hits": 112,
+  "alt": []
+ },
+ "2311": {
+  "name": "RemoveKilledUnitsOutsideStepRange",
+  "hits": 2,
+  "alt": []
+ },
+ "767": {
+  "name": "CommandMessage",
+  "hits": 43,
+  "alt": []
+ },
+ "805": {
+  "name": "CreateNewNetworkGame",
+  "hits": 1,
+  "alt": []
+ },
+ "1415": {
+  "name": "GetHeroNetworkRankPoints",
+  "hits": 36,
+  "alt": []
+ },
+ "1414": {
+  "name": "AddHeroNetworkRankPoints",
+  "hits": 27,
+  "alt": []
+ },
+ "961": {
+  "name": "EndGame",
+  "hits": 16,
+  "alt": []
+ },
+ "1410": {
+  "name": "GetHeroNetworkGuildNum",
+  "hits": 52,
+  "alt": []
+ },
+ "0": {
+  "name": "FindInSorted",
+  "hits": 2,
+  "alt": []
+ },
+ "1": {
+  "name": "InsertInSorted",
+  "hits": 2,
+  "alt": []
+ },
+ "1412": {
+  "name": "GetHeroNetworkGuildRankPoints",
+  "hits": 46,
+  "alt": []
+ },
+ "1411": {
+  "name": "AddHeroNetworkGuildRankPoints",
+  "hits": 17,
+  "alt": []
+ },
+ "1409": {
+  "name": "SetHeroNetworkTeamNum",
+  "hits": 25,
+  "alt": []
+ },
+ "688": {
+  "name": "sscanf",
+  "hits": 1,
+  "alt": []
+ },
+ "1413": {
+  "name": "AddHeroNetworkGameModePoints",
+  "hits": 6,
+  "alt": []
+ },
+ "2325": {
+  "name": "SendXBoxHeroNetworkGameModePoints",
+  "hits": 6,
+  "alt": []
+ },
+ "112": {
+  "name": "Copy",
+  "hits": 102,
+  "alt": []
+ },
+ "811": {
+  "name": "SetEngineFarPlanePercent",
+  "hits": 5,
+  "alt": []
+ },
+ "768": {
+  "name": "CommandMessageGet",
+  "hits": 8,
+  "alt": []
+ },
+ "939": {
+  "name": "GetMarker",
+  "hits": 6,
+  "alt": []
+ },
+ "59": {
+  "name": "RemoveAll",
+  "hits": 5,
+  "alt": []
+ },
+ "1081": {
+  "name": "GetPlayerName",
+  "hits": 12,
+  "alt": []
+ },
+ "812": {
+  "name": "SetEndOfTheWorldMargin",
+  "hits": 10,
+  "alt": []
+ },
+ "4": {
+  "name": "Copy",
+  "hits": 38,
+  "alt": []
+ },
+ "1602": {
+  "name": "SetImmediatePosition",
+  "hits": 54,
+  "alt": []
+ },
+ "1369": {
+  "name": "GetMaxHP",
+  "hits": 21,
+  "alt": []
+ },
+ "1561": {
+  "name": "HealPoison",
+  "hits": 10,
+  "alt": []
+ },
+ "1598": {
+  "name": "ResurrectUnit",
+  "hits": 20,
+  "alt": []
+ },
+ "2279": {
+  "name": "GetArtefact",
+  "hits": 5,
+  "alt": []
+ },
+ "1051": {
+  "name": "SetLowConsoleText",
+  "hits": 5,
+  "alt": []
+ },
+ "1049": {
+  "name": "SetLowConsoleText",
+  "hits": 5,
+  "alt": []
+ },
+ "868": {
+  "name": "AddMapSign",
+  "hits": 9,
+  "alt": []
+ },
+ "867": {
+  "name": "RemoveMapSign",
+  "hits": 5,
+  "alt": []
+ },
+ "1403": {
+  "name": "SetUnitMapSignNum",
+  "hits": 10,
+  "alt": []
+ },
+ "801": {
+  "name": "GetLocalPlayerNum",
+  "hits": 190,
+  "alt": []
+ },
+ "105": {
+  "name": "CompareNoCase",
+  "hits": 96,
+  "alt": []
+ },
+ "61": {
+  "name": "GetSize",
+  "hits": 16,
+  "alt": []
+ },
+ "80": {
+  "name": "Add",
+  "hits": 26,
+  "alt": []
+ },
+ "84": {
+  "name": "GetSize",
+  "hits": 58,
+  "alt": []
+ },
+ "1541": {
+  "name": "IsGateClosed",
+  "hits": 12,
+  "alt": []
+ },
+ "1547": {
+  "name": "SetGateOpen",
+  "hits": 31,
+  "alt": []
+ },
+ "1352": {
+  "name": "IsHorseUnit",
+  "hits": 9,
+  "alt": []
+ },
+ "656": {
+  "name": "FormatTrl",
+  "hits": 1,
+  "alt": []
+ },
+ "658": {
+  "name": "FormatTrl",
+  "hits": 2,
+  "alt": []
+ },
+ "666": {
+  "name": "FormatTrl",
+  "hits": 25,
+  "alt": []
+ },
+ "662": {
+  "name": "FormatTrl",
+  "hits": 19,
+  "alt": []
+ },
+ "1252": {
+  "name": "GetMaxMana",
+  "hits": 7,
+  "alt": []
+ },
+ "1562": {
+  "name": "SetMana",
+  "hits": 6,
+  "alt": []
+ },
+ "1198": {
+  "name": "SetFreezeTicks",
+  "hits": 4,
+  "alt": []
+ },
+ "1197": {
+  "name": "SetStopMovingTicks",
+  "hits": 4,
+  "alt": []
+ },
+ "1214": {
+  "name": "GetPotionsCount",
+  "hits": 11,
+  "alt": []
+ },
+ "1213": {
+  "name": "GetPotionValues",
+  "hits": 17,
+  "alt": []
+ },
+ "2221": {
+  "name": "GetPotionFlags",
+  "hits": 6,
+  "alt": []
+ },
+ "1206": {
+  "name": "RemovePotionValues",
+  "hits": 6,
+  "alt": []
+ },
+ "1408": {
+  "name": "GetHeroNetworkTeamNum",
+  "hits": 4,
+  "alt": []
+ },
+ "83": {
+  "name": "SetSize",
+  "hits": 2,
+  "alt": []
+ },
+ "533": {
+  "name": "Format",
+  "hits": 9,
+  "alt": []
+ },
+ "935": {
+  "name": "GetMaxMarkerNum",
+  "hits": 116,
+  "alt": []
+ },
+ "644": {
+  "name": "FormatTrl",
+  "hits": 3,
+  "alt": []
+ },
+ "928": {
+  "name": "AddMarker",
+  "hits": 36,
+  "alt": []
+ },
+ "923": {
+  "name": "RemoveMarker",
+  "hits": 23,
+  "alt": []
+ },
+ "790": {
+  "name": "SetAttribute",
+  "hits": 59,
+  "alt": []
+ },
+ "1558": {
+  "name": "SetRemoveOnUnloadLevel",
+  "hits": 10,
+  "alt": []
+ },
+ "1638": {
+  "name": "CommandUserOneParam0",
+  "hits": 10,
+  "alt": []
+ },
+ "901": {
+  "name": "SearchUnitsInArea",
+  "hits": 26,
+  "alt": []
+ },
+ "897": {
+  "name": "GetSearchUnitInArea",
+  "hits": 32,
+  "alt": []
+ },
+ "1559": {
+  "name": "KillObject",
+  "hits": 19,
+  "alt": []
+ },
+ "783": {
+  "name": "GetAttribute",
+  "hits": 33,
+  "alt": []
+ },
+ "851": {
+  "name": "EventGetDifficultyLevel",
+  "hits": 11,
+  "alt": []
+ },
+ "1259": {
+  "name": "SetAlarmModeUnit",
+  "hits": 13,
+  "alt": []
+ },
+ "2030": {
+  "name": "SetBasicSkill",
+  "hits": 105,
+  "alt": []
+ },
+ "2287": {
+  "name": "RemoveKilledUnits",
+  "hits": 6,
+  "alt": []
+ },
+ "1276": {
+  "name": "SearchUnits",
+  "hits": 18,
+  "alt": []
+ },
+ "663": {
+  "name": "FormatTrl",
+  "hits": 4,
+  "alt": []
+ },
+ "774": {
+  "name": "CommandMessage",
+  "hits": 96,
+  "alt": []
+ },
+ "761": {
+  "name": "CommandMessage",
+  "hits": 14,
+  "alt": []
+ },
+ "1419": {
+  "name": "GetHeroFlags",
+  "hits": 14,
+  "alt": []
+ },
+ "679": {
+  "name": "CheckTranslate",
+  "hits": 50,
+  "alt": []
+ },
+ "711": {
+  "name": "GetMagicCardParams",
+  "hits": 12,
+  "alt": []
+ },
+ "1901": {
+  "name": "GetMagicSchool",
+  "hits": 23,
+  "alt": []
+ },
+ "1497": {
+  "name": "GetAttribute",
+  "hits": 38,
+  "alt": []
+ },
+ "1504": {
+  "name": "SetAttribute",
+  "hits": 87,
+  "alt": []
+ },
+ "878": {
+  "name": "PlayChatDialog",
+  "hits": 4,
+  "alt": []
+ },
+ "1016": {
+  "name": "PlayDialog",
+  "hits": 19,
+  "alt": []
+ },
+ "1585": {
+  "name": "IsObjectInInventory",
+  "hits": 103,
+  "alt": []
+ },
+ "75": {
+  "name": "RemoveAt",
+  "hits": 18,
+  "alt": []
+ },
+ "931": {
+  "name": "FillMarkersInRange",
+  "hits": 8,
+  "alt": []
+ },
+ "1297": {
+  "name": "SetRunMode",
+  "hits": 17,
+  "alt": []
+ },
+ "1500": {
+  "name": "GetAttribute",
+  "hits": 28,
+  "alt": []
+ },
+ "1529": {
+  "name": "AddObjectToShop",
+  "hits": 2,
+  "alt": []
+ },
+ "1516": {
+  "name": "SetShopSellPriceTypePercent",
+  "hits": 2,
+  "alt": []
+ },
+ "1518": {
+  "name": "SetShopBuyPriceTypePercent",
+  "hits": 2,
+  "alt": []
+ },
+ "1507": {
+  "name": "SetAttribute",
+  "hits": 10,
+  "alt": []
+ },
+ "1027": {
+  "name": "OpenHeroDialog",
+  "hits": 3,
+  "alt": []
+ },
+ "2043": {
+  "name": "GetBasicPoint",
+  "hits": 12,
+  "alt": []
+ },
+ "2042": {
+  "name": "SetBasicPoint",
+  "hits": 35,
+  "alt": []
+ },
+ "2047": {
+  "name": "GetParamPoints",
+  "hits": 9,
+  "alt": []
+ },
+ "2046": {
+  "name": "SetParamPoints",
+  "hits": 17,
+  "alt": []
+ },
+ "82": {
+  "name": "RemoveAll",
+  "hits": 2,
+  "alt": []
+ },
+ "1525": {
+  "name": "RemoveAllObjectsFromShop",
+  "hits": 2,
+  "alt": []
+ },
+ "1557": {
+  "name": "IsRemoveOnUnloadLevel",
+  "hits": 2,
+  "alt": []
+ },
+ "1424": {
+  "name": "SetNPCNameNum",
+  "hits": 9,
+  "alt": []
+ },
+ "1544": {
+  "name": "IsGateOpen",
+  "hits": 31,
+  "alt": []
+ },
+ "2275": {
+  "name": "SetGateLockForUnits",
+  "hits": 9,
+  "alt": []
+ },
+ "731": {
+  "name": "IsMagicCard",
+  "hits": 4,
+  "alt": []
+ },
+ "926": {
+  "name": "SetMarker",
+  "hits": 7,
+  "alt": []
+ },
+ "1724": {
+  "name": "CommandMoveAttack",
+  "hits": 9,
+  "alt": []
+ },
+ "1022": {
+  "name": "PlayDialog",
+  "hits": 5,
+  "alt": []
+ },
+ "846": {
+  "name": "SetPartyNeutral",
+  "hits": 11,
+  "alt": []
+ },
+ "1495": {
+  "name": "SetPlayersCommonAttribute",
+  "hits": 42,
+  "alt": []
+ },
+ "1586": {
+  "name": "AddInventory",
+  "hits": 3,
+  "alt": []
+ },
+ "941": {
+  "name": "IsUndergroundLevel",
+  "hits": 18,
+  "alt": []
+ },
+ "894": {
+  "name": "GetUpperConnectedMission",
+  "hits": 5,
+  "alt": []
+ },
+ "977": {
+  "name": "AddCampaignLocation",
+  "hits": 13,
+  "alt": []
+ },
+ "968": {
+  "name": "SetCampaignLocationMinVisibleZoomPercent",
+  "hits": 10,
+  "alt": []
+ },
+ "967": {
+  "name": "SetCampaignLocationMaxVisibleZoomPercent",
+  "hits": 10,
+  "alt": []
+ },
+ "973": {
+  "name": "RemoveCampaignLocation",
+  "hits": 12,
+  "alt": []
+ },
+ "1729": {
+  "name": "CommandAttack",
+  "hits": 9,
+  "alt": []
+ },
+ "1040": {
+  "name": "PlayWave",
+  "hits": 21,
+  "alt": []
+ },
+ "998": {
+  "name": "AddQuest",
+  "hits": 5,
+  "alt": []
+ },
+ "1000": {
+  "name": "SetQuestsDirTitle",
+  "hits": 9,
+  "alt": []
+ },
+ "986": {
+  "name": "SetQuestQuestsMapIconNum",
+  "hits": 25,
+  "alt": []
+ },
+ "985": {
+  "name": "SetQuestMapIconNum",
+  "hits": 25,
+  "alt": []
+ },
+ "988": {
+  "name": "SetQuestTooltipDescription",
+  "hits": 10,
+  "alt": []
+ },
+ "990": {
+  "name": "SetQuestDescription",
+  "hits": 20,
+  "alt": []
+ },
+ "980": {
+  "name": "SetQuestState",
+  "hits": 17,
+  "alt": []
+ },
+ "981": {
+  "name": "SetQuestPosition",
+  "hits": 12,
+  "alt": []
+ },
+ "993": {
+  "name": "RemoveQuest",
+  "hits": 5,
+  "alt": []
+ },
+ "1579": {
+  "name": "GetObjectInInventoryCount",
+  "hits": 5,
+  "alt": []
+ },
+ "845": {
+  "name": "IsPartyEnemy",
+  "hits": 14,
+  "alt": []
+ },
+ "1576": {
+  "name": "GetInventorySize",
+  "hits": 5,
+  "alt": []
+ },
+ "1572": {
+  "name": "GetInventoryObjectID",
+  "hits": 5,
+  "alt": []
+ },
+ "780": {
+  "name": "SetTimer",
+  "hits": 21,
+  "alt": []
+ },
+ "975": {
+  "name": "AddCampaignLocation",
+  "hits": 6,
+  "alt": []
+ },
+ "965": {
+  "name": "SetCampaignLocationPosition",
+  "hits": 3,
+  "alt": []
+ },
+ "393": {
+  "name": "Format",
+  "hits": 3,
+  "alt": []
+ },
+ "996": {
+  "name": "AddQuest",
+  "hits": 2,
+  "alt": []
+ },
+ "987": {
+  "name": "SetQuestTooltipDescription",
+  "hits": 2,
+  "alt": []
+ },
+ "989": {
+  "name": "SetQuestDescription",
+  "hits": 2,
+  "alt": []
+ },
+ "1473": {
+  "name": "IsObjectInHouse",
+  "hits": 16,
+  "alt": []
+ },
+ "1262": {
+  "name": "GetSightRange",
+  "hits": 13,
+  "alt": []
+ },
+ "1460": {
+  "name": "GetObjectCreateString",
+  "hits": 3,
+  "alt": []
+ },
+ "913": {
+  "name": "GetHouseFromPoint",
+  "hits": 4,
+  "alt": []
+ },
+ "2050": {
+  "name": "SetLevel",
+  "hits": 6,
+  "alt": []
+ },
+ "1839": {
+  "name": "GetAddSkill",
+  "hits": 14,
+  "alt": []
+ },
+ "1845": {
+  "name": "GetAddPoint",
+  "hits": 13,
+  "alt": []
+ },
+ "1843": {
+  "name": "GetAddParam",
+  "hits": 13,
+  "alt": []
+ },
+ "1841": {
+  "name": "GetAddProtect",
+  "hits": 12,
+  "alt": []
+ },
+ "1844": {
+  "name": "SetAddPoint",
+  "hits": 2,
+  "alt": []
+ },
+ "1842": {
+  "name": "SetAddParam",
+  "hits": 2,
+  "alt": []
+ },
+ "1838": {
+  "name": "SetAddSkill",
+  "hits": 2,
+  "alt": []
+ },
+ "1840": {
+  "name": "SetAddProtect",
+  "hits": 3,
+  "alt": []
+ },
+ "1858": {
+  "name": "SetMultiplied",
+  "hits": 7,
+  "alt": []
+ },
+ "1865": {
+  "name": "GetLevel",
+  "hits": 12,
+  "alt": []
+ },
+ "1816": {
+  "name": "GetType",
+  "hits": 28,
+  "alt": []
+ },
+ "1859": {
+  "name": "GetMultiplied",
+  "hits": 26,
+  "alt": []
+ },
+ "1815": {
+  "name": "GetSlotNumMask",
+  "hits": 3,
+  "alt": []
+ },
+ "1849": {
+  "name": "GetPhysicalArmour",
+  "hits": 7,
+  "alt": []
+ },
+ "1847": {
+  "name": "GetParry",
+  "hits": 3,
+  "alt": []
+ },
+ "1848": {
+  "name": "SetPhysicalArmour",
+  "hits": 2,
+  "alt": []
+ },
+ "1807": {
+  "name": "GetParry",
+  "hits": 1,
+  "alt": []
+ },
+ "1846": {
+  "name": "SetParry",
+  "hits": 2,
+  "alt": []
+ },
+ "1864": {
+  "name": "SetLevel",
+  "hits": 3,
+  "alt": []
+ },
+ "1862": {
+  "name": "SetClass",
+  "hits": 2,
+  "alt": []
+ },
+ "1860": {
+  "name": "SetPrice",
+  "hits": 4,
+  "alt": []
+ },
+ "1850": {
+  "name": "SetRequiredLevel",
+  "hits": 3,
+  "alt": []
+ },
+ "1854": {
+  "name": "SetMeshNum",
+  "hits": 3,
+  "alt": []
+ },
+ "1880": {
+  "name": "GetMinDamage",
+  "hits": 3,
+  "alt": []
+ },
+ "1837": {
+  "name": "GetWeaponVarMin",
+  "hits": 2,
+  "alt": []
+ },
+ "1879": {
+  "name": "GetMaxDamage",
+  "hits": 2,
+  "alt": []
+ },
+ "1835": {
+  "name": "GetWeaponVarMax",
+  "hits": 2,
+  "alt": []
+ },
+ "1831": {
+  "name": "GetWeaponExtraDamageType",
+  "hits": 13,
+  "alt": []
+ },
+ "1833": {
+  "name": "GetWeaponExtraDamagePercent",
+  "hits": 4,
+  "alt": []
+ },
+ "2193": {
+  "name": "GetDamageTicks",
+  "hits": 2,
+  "alt": []
+ },
+ "2199": {
+  "name": "GetDamage",
+  "hits": 6,
+  "alt": []
+ },
+ "1250": {
+  "name": "GetEquipmentCount",
+  "hits": 2,
+  "alt": []
+ },
+ "1246": {
+  "name": "GetEquipmentValuesOnIndex",
+  "hits": 5,
+  "alt": []
+ },
+ "2041": {
+  "name": "GetPoint",
+  "hits": 17,
+  "alt": []
+ },
+ "1875": {
+  "name": "GetWeaponType",
+  "hits": 19,
+  "alt": []
+ },
+ "1876": {
+  "name": "GetPriceModifier",
+  "hits": 1,
+  "alt": []
+ },
+ "1861": {
+  "name": "GetPrice",
+  "hits": 1,
+  "alt": []
+ },
+ "1828": {
+  "name": "SetForceFieldType",
+  "hits": 6,
+  "alt": []
+ },
+ "1826": {
+  "name": "SetWeaponExtraExplosionType",
+  "hits": 6,
+  "alt": []
+ },
+ "1824": {
+  "name": "SetWeaponTrailNormalColor",
+  "hits": 6,
+  "alt": []
+ },
+ "1822": {
+  "name": "SetWeaponTrailHitColor",
+  "hits": 1,
+  "alt": []
+ },
+ "1836": {
+  "name": "SetWeaponVarMin",
+  "hits": 2,
+  "alt": []
+ },
+ "1834": {
+  "name": "SetWeaponVarMax",
+  "hits": 2,
+  "alt": []
+ },
+ "1855": {
+  "name": "GetMeshNum",
+  "hits": 8,
+  "alt": []
+ },
+ "1830": {
+  "name": "SetWeaponExtraDamageType",
+  "hits": 7,
+  "alt": []
+ },
+ "1832": {
+  "name": "SetWeaponExtraDamagePercent",
+  "hits": 6,
+  "alt": []
+ },
+ "1924": {
+  "name": "GetMinDamage",
+  "hits": 5,
+  "alt": []
+ },
+ "1923": {
+  "name": "GetMaxDamage",
+  "hits": 6,
+  "alt": []
+ },
+ "1981": {
+  "name": "SetDamage",
+  "hits": 4,
+  "alt": []
+ },
+ "1979": {
+  "name": "SetTargetTypeModifier",
+  "hits": 6,
+  "alt": []
+ },
+ "1919": {
+  "name": "GetDamageRangeA",
+  "hits": 5,
+  "alt": []
+ },
+ "1977": {
+  "name": "SetDamageRangeA",
+  "hits": 3,
+  "alt": []
+ },
+ "1827": {
+  "name": "GetWeaponExtraExplosionType",
+  "hits": 2,
+  "alt": []
+ },
+ "1953": {
+  "name": "SetExtraExplosionType",
+  "hits": 2,
+  "alt": []
+ },
+ "1878": {
+  "name": "GetTargetTypeModifier",
+  "hits": 2,
+  "alt": []
+ },
+ "1877": {
+  "name": "GetTargetTypeModifierMulFromHorse",
+  "hits": 1,
+  "alt": []
+ },
+ "1959": {
+  "name": "SetTargetForcefieldType",
+  "hits": 5,
+  "alt": []
+ },
+ "1957": {
+  "name": "SetTargetForcefieldAmount",
+  "hits": 1,
+  "alt": []
+ },
+ "1955": {
+  "name": "SetTargetForcefieldTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "1998": {
+  "name": "GetAvailablePassiveSkillsMask",
+  "hits": 1,
+  "alt": []
+ },
+ "1997": {
+  "name": "GetAvailableActiveSkillsMask",
+  "hits": 1,
+  "alt": []
+ },
+ "1226": {
+  "name": "GetMagicClubParams",
+  "hits": 1,
+  "alt": []
+ },
+ "2021": {
+  "name": "GetCurrHP",
+  "hits": 2,
+  "alt": []
+ },
+ "2037": {
+  "name": "GetParam",
+  "hits": 13,
+  "alt": []
+ },
+ "2019": {
+  "name": "GetCurrMana",
+  "hits": 2,
+  "alt": []
+ },
+ "2219": {
+  "name": "GetAddPoint",
+  "hits": 3,
+  "alt": []
+ },
+ "2040": {
+  "name": "SetPoint",
+  "hits": 2,
+  "alt": []
+ },
+ "2209": {
+  "name": "GetStrengthUpPercent",
+  "hits": 2,
+  "alt": []
+ },
+ "1995": {
+  "name": "GetInitParam",
+  "hits": 5,
+  "alt": []
+ },
+ "2039": {
+  "name": "GetBasicParam",
+  "hits": 2,
+  "alt": []
+ },
+ "2217": {
+  "name": "GetAddParam",
+  "hits": 5,
+  "alt": []
+ },
+ "2036": {
+  "name": "SetParam",
+  "hits": 2,
+  "alt": []
+ },
+ "1994": {
+  "name": "GetInitProtect",
+  "hits": 1,
+  "alt": []
+ },
+ "2035": {
+  "name": "GetBasicProtect",
+  "hits": 2,
+  "alt": []
+ },
+ "2215": {
+  "name": "GetAddProtect",
+  "hits": 5,
+  "alt": []
+ },
+ "2032": {
+  "name": "SetProtect",
+  "hits": 1,
+  "alt": []
+ },
+ "2213": {
+  "name": "GetAddSkill",
+  "hits": 1,
+  "alt": []
+ },
+ "1886": {
+  "name": "GetAddMagicSchoolSkill",
+  "hits": 2,
+  "alt": []
+ },
+ "2028": {
+  "name": "SetSkill",
+  "hits": 6,
+  "alt": []
+ },
+ "2022": {
+  "name": "SetMaxInventoryWeight",
+  "hits": 1,
+  "alt": []
+ },
+ "1990": {
+  "name": "GetStrikeDelayTicks",
+  "hits": 2,
+  "alt": []
+ },
+ "2016": {
+  "name": "SetStrikeDelayTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "2015": {
+  "name": "GetCurrStrikeDelay",
+  "hits": 4,
+  "alt": []
+ },
+ "2017": {
+  "name": "GetStrikeDelayTicks",
+  "hits": 3,
+  "alt": []
+ },
+ "2014": {
+  "name": "SetCurrStrikeDelay",
+  "hits": 3,
+  "alt": []
+ },
+ "2012": {
+  "name": "SetSkillChanceMaxValue",
+  "hits": 1,
+  "alt": []
+ },
+ "2008": {
+  "name": "SetSkillChanceUnloadValue",
+  "hits": 1,
+  "alt": []
+ },
+ "2006": {
+  "name": "SetSkillChanceUnloadTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "2020": {
+  "name": "SetCurrHP",
+  "hits": 2,
+  "alt": []
+ },
+ "2018": {
+  "name": "SetCurrMana",
+  "hits": 2,
+  "alt": []
+ },
+ "2130": {
+  "name": "GetAddPoint",
+  "hits": 6,
+  "alt": []
+ },
+ "2129": {
+  "name": "GetAddParam",
+  "hits": 6,
+  "alt": []
+ },
+ "2038": {
+  "name": "SetBasicParam",
+  "hits": 1,
+  "alt": []
+ },
+ "2128": {
+  "name": "GetAddProtect",
+  "hits": 6,
+  "alt": []
+ },
+ "2034": {
+  "name": "SetBasicProtect",
+  "hits": 1,
+  "alt": []
+ },
+ "2127": {
+  "name": "GetAddSkill",
+  "hits": 1,
+  "alt": []
+ },
+ "1212": {
+  "name": "FindPotionWithFlags",
+  "hits": 6,
+  "alt": []
+ },
+ "1185": {
+  "name": "HaveTwoWeapons",
+  "hits": 1,
+  "alt": []
+ },
+ "1244": {
+  "name": "GetEquipmentOnSlot",
+  "hits": 10,
+  "alt": []
+ },
+ "1172": {
+  "name": "HaveFightActionAnimation",
+  "hits": 10,
+  "alt": []
+ },
+ "1232": {
+  "name": "GetWeaponOnSlot",
+  "hits": 2,
+  "alt": []
+ },
+ "2266": {
+  "name": "GetEmptyMissileValues",
+  "hits": 1,
+  "alt": []
+ },
+ "1143": {
+  "name": "GetNextAttackSkillBySecondHand",
+  "hits": 4,
+  "alt": []
+ },
+ "1175": {
+  "name": "GetCurrentFightAction",
+  "hits": 4,
+  "alt": []
+ },
+ "2011": {
+  "name": "GetSkillChanceValue",
+  "hits": 1,
+  "alt": []
+ },
+ "1989": {
+  "name": "GetBreakStrikeChancePercent",
+  "hits": 1,
+  "alt": []
+ },
+ "1988": {
+  "name": "GetBreakOtherChancePercent",
+  "hits": 1,
+  "alt": []
+ },
+ "1171": {
+  "name": "HaveShootFightActionAnimation",
+  "hits": 2,
+  "alt": []
+ },
+ "1366": {
+  "name": "IsUnitBase",
+  "hits": 7,
+  "alt": []
+ },
+ "1231": {
+  "name": "GetWeaponParamsOnSlot",
+  "hits": 16,
+  "alt": []
+ },
+ "1870": {
+  "name": "GetShootChanceValue",
+  "hits": 5,
+  "alt": []
+ },
+ "1159": {
+  "name": "GetCurrShootChance",
+  "hits": 2,
+  "alt": []
+ },
+ "1971": {
+  "name": "SetMissShoot",
+  "hits": 2,
+  "alt": []
+ },
+ "1969": {
+  "name": "SetDisarmingArrow",
+  "hits": 2,
+  "alt": []
+ },
+ "1967": {
+  "name": "SetPiercingPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "1358": {
+  "name": "IsLandObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1965": {
+  "name": "SetArrowOfDust",
+  "hits": 1,
+  "alt": []
+ },
+ "1354": {
+  "name": "IsKnifeDeathStrikeResistant",
+  "hits": 1,
+  "alt": []
+ },
+ "1295": {
+  "name": "GetHorseMoveSpeed",
+  "hits": 3,
+  "alt": []
+ },
+ "1973": {
+  "name": "SetArmourKnowledge",
+  "hits": 1,
+  "alt": []
+ },
+ "1825": {
+  "name": "GetWeaponTrailNormalColor",
+  "hits": 1,
+  "alt": []
+ },
+ "1951": {
+  "name": "SetHitInfoColor",
+  "hits": 1,
+  "alt": []
+ },
+ "2033": {
+  "name": "GetProtect",
+  "hits": 1,
+  "alt": []
+ },
+ "1993": {
+  "name": "GetPhysicalProtectModifier",
+  "hits": 1,
+  "alt": []
+ },
+ "1808": {
+  "name": "GetPhysicalArmour",
+  "hits": 6,
+  "alt": []
+ },
+ "1982": {
+  "name": "GetDamage",
+  "hits": 4,
+  "alt": []
+ },
+ "1980": {
+  "name": "GetTargetTypeModifier",
+  "hits": 2,
+  "alt": []
+ },
+ "1996": {
+  "name": "GetTargetTypeModifier",
+  "hits": 1,
+  "alt": []
+ },
+ "1405": {
+  "name": "SetDynamicHoldObject",
+  "hits": 5,
+  "alt": []
+ },
+ "1173": {
+  "name": "HaveFightActionAnimation",
+  "hits": 12,
+  "alt": []
+ },
+ "1874": {
+  "name": "GetWeaponFlags",
+  "hits": 1,
+  "alt": []
+ },
+ "1184": {
+  "name": "HaveWeaponPossibleToBrake",
+  "hits": 1,
+  "alt": []
+ },
+ "1813": {
+  "name": "GetEquipmentFlags",
+  "hits": 7,
+  "alt": []
+ },
+ "1242": {
+  "name": "GetEquipmentParamsOnSlot",
+  "hits": 2,
+  "alt": []
+ },
+ "1987": {
+  "name": "GetBlockedActiveSkillsMask",
+  "hits": 1,
+  "alt": []
+ },
+ "1125": {
+  "name": "OnStealingDetected",
+  "hits": 1,
+  "alt": []
+ },
+ "1209": {
+  "name": "AddPotionValues",
+  "hits": 5,
+  "alt": []
+ },
+ "2220": {
+  "name": "SetPotionFlags",
+  "hits": 8,
+  "alt": []
+ },
+ "2222": {
+  "name": "SetPotionTicks",
+  "hits": 32,
+  "alt": []
+ },
+ "2216": {
+  "name": "SetAddParam",
+  "hits": 14,
+  "alt": []
+ },
+ "1290": {
+  "name": "IsHorseMovingBack",
+  "hits": 1,
+  "alt": []
+ },
+ "1292": {
+  "name": "GetHorseRunSpeedPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "1857": {
+  "name": "GetMultiplied2",
+  "hits": 3,
+  "alt": []
+ },
+ "1856": {
+  "name": "SetMultiplied2",
+  "hits": 2,
+  "alt": []
+ },
+ "2063": {
+  "name": "GetSpecialArtefactType",
+  "hits": 8,
+  "alt": []
+ },
+ "2061": {
+  "name": "GetJoinEquipmentType",
+  "hits": 1,
+  "alt": []
+ },
+ "2060": {
+  "name": "GetJoinValueType",
+  "hits": 3,
+  "alt": []
+ },
+ "2059": {
+  "name": "GetJoinAddValue",
+  "hits": 2,
+  "alt": []
+ },
+ "1885": {
+  "name": "GetMaxMana",
+  "hits": 3,
+  "alt": []
+ },
+ "1820": {
+  "name": "SetCurrMana",
+  "hits": 2,
+  "alt": []
+ },
+ "1821": {
+  "name": "GetCurrMana",
+  "hits": 1,
+  "alt": []
+ },
+ "1900": {
+  "name": "GetRequiredMagicSchoolSkill",
+  "hits": 19,
+  "alt": []
+ },
+ "1219": {
+  "name": "GetPowerUpMagicCardOnSlotCount",
+  "hits": 3,
+  "alt": []
+ },
+ "1216": {
+  "name": "GetPowerUpMagicCardParamsOnSlot",
+  "hits": 3,
+  "alt": []
+ },
+ "1896": {
+  "name": "GetPowerUpType",
+  "hits": 3,
+  "alt": []
+ },
+ "1217": {
+  "name": "GetPowerUpMagicCardCountOnSlot",
+  "hits": 3,
+  "alt": []
+ },
+ "1895": {
+  "name": "GetPowerUpValue",
+  "hits": 3,
+  "alt": []
+ },
+ "1903": {
+  "name": "GetMagicType",
+  "hits": 4,
+  "alt": []
+ },
+ "1898": {
+  "name": "GetUsedMana",
+  "hits": 1,
+  "alt": []
+ },
+ "2181": {
+  "name": "GetMagicEnhanceMissileDamageUpPercent",
+  "hits": 4,
+  "alt": []
+ },
+ "2179": {
+  "name": "GetMagicEnhanceManaUseUpPercent",
+  "hits": 2,
+  "alt": []
+ },
+ "1220": {
+  "name": "GetMagicCardIDOnSlot",
+  "hits": 6,
+  "alt": []
+ },
+ "1894": {
+  "name": "GetTargetTypeModifier",
+  "hits": 2,
+  "alt": []
+ },
+ "1893": {
+  "name": "GetTargetTypeModifierMulFromHorse",
+  "hits": 1,
+  "alt": []
+ },
+ "1963": {
+  "name": "SetMakeMagicGenericOnTarget",
+  "hits": 3,
+  "alt": []
+ },
+ "1975": {
+  "name": "SetMissileTicks",
+  "hits": 2,
+  "alt": []
+ },
+ "1961": {
+  "name": "SetLightingStormMaxHitCnt",
+  "hits": 2,
+  "alt": []
+ },
+ "1897": {
+  "name": "GetCastRangeA",
+  "hits": 1,
+  "alt": []
+ },
+ "2175": {
+  "name": "GetMagicEnhanceSummonAddCount",
+  "hits": 3,
+  "alt": []
+ },
+ "2177": {
+  "name": "GetMagicEnhanceSummonAddLevels",
+  "hits": 3,
+  "alt": []
+ },
+ "1892": {
+  "name": "GetSummonTicks",
+  "hits": 4,
+  "alt": []
+ },
+ "1268": {
+  "name": "SetTimedLife",
+  "hits": 1,
+  "alt": []
+ },
+ "2317": {
+  "name": "IsPseudoFlyableUnit",
+  "hits": 1,
+  "alt": []
+ },
+ "2286": {
+  "name": "IsInTheSameParty",
+  "hits": 2,
+  "alt": []
+ },
+ "2309": {
+  "name": "GetLastHorse",
+  "hits": 2,
+  "alt": []
+ },
+ "1211": {
+  "name": "FindPotionWithCustomObjectID",
+  "hits": 21,
+  "alt": []
+ },
+ "2172": {
+  "name": "SetCustomObjectID",
+  "hits": 20,
+  "alt": []
+ },
+ "2210": {
+  "name": "SetHPRegenerationSpeedUpPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2208": {
+  "name": "SetStrengthUpPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2218": {
+  "name": "SetAddPoint",
+  "hits": 3,
+  "alt": []
+ },
+ "2214": {
+  "name": "SetAddProtect",
+  "hits": 11,
+  "alt": []
+ },
+ "2180": {
+  "name": "SetMagicEnhanceMissileDamageUpPercent",
+  "hits": 2,
+  "alt": []
+ },
+ "2178": {
+  "name": "SetMagicEnhanceManaUseUpPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2176": {
+  "name": "SetMagicEnhanceSummonAddLevels",
+  "hits": 1,
+  "alt": []
+ },
+ "2174": {
+  "name": "SetMagicEnhanceSummonAddCount",
+  "hits": 1,
+  "alt": []
+ },
+ "2206": {
+  "name": "SetManaAsHPPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2204": {
+  "name": "SetExtraHP",
+  "hits": 1,
+  "alt": []
+ },
+ "2202": {
+  "name": "SetReflectDamagePercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2200": {
+  "name": "SetReflectDamageArmourPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2198": {
+  "name": "SetDamage",
+  "hits": 5,
+  "alt": []
+ },
+ "2196": {
+  "name": "SetTargetTypeModifier",
+  "hits": 5,
+  "alt": []
+ },
+ "2194": {
+  "name": "SetDamageRangeA",
+  "hits": 5,
+  "alt": []
+ },
+ "2192": {
+  "name": "SetDamageTicks",
+  "hits": 6,
+  "alt": []
+ },
+ "2190": {
+  "name": "SetDamagePartiesType",
+  "hits": 5,
+  "alt": []
+ },
+ "2188": {
+  "name": "SetLeechHP",
+  "hits": 1,
+  "alt": []
+ },
+ "2186": {
+  "name": "SetLeechHPTargetTypeModifiersMask",
+  "hits": 1,
+  "alt": []
+ },
+ "2182": {
+  "name": "SetWeaponsForceFieldType",
+  "hits": 1,
+  "alt": []
+ },
+ "2265": {
+  "name": "GetEmptyPotionValues",
+  "hits": 2,
+  "alt": []
+ },
+ "2223": {
+  "name": "GetPotionTicks",
+  "hits": 3,
+  "alt": []
+ },
+ "1208": {
+  "name": "AddPotionValues",
+  "hits": 1,
+  "alt": []
+ },
+ "1565": {
+  "name": "AddHP",
+  "hits": 2,
+  "alt": []
+ },
+ "2319": {
+  "name": "SetFreezeTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "2318": {
+  "name": "SetStopMovingTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "1404": {
+  "name": "SetStoneWallTicks",
+  "hits": 1,
+  "alt": []
+ },
+ "1147": {
+  "name": "ResurrectUnitByMagic",
+  "hits": 1,
+  "alt": []
+ },
+ "1542": {
+  "name": "IsGateOpenNotClosing",
+  "hits": 1,
+  "alt": []
+ },
+ "1450": {
+  "name": "AddObjectsFromParamsToDeadBody",
+  "hits": 3,
+  "alt": []
+ },
+ "1431": {
+  "name": "GetAlchemyItemCount",
+  "hits": 6,
+  "alt": []
+ },
+ "733": {
+  "name": "IsEquipment",
+  "hits": 3,
+  "alt": []
+ },
+ "720": {
+  "name": "IsAlchemyFormulaArtefact",
+  "hits": 1,
+  "alt": []
+ },
+ "714": {
+  "name": "IsDynamicTeleport",
+  "hits": 2,
+  "alt": []
+ },
+ "719": {
+  "name": "IsTrap",
+  "hits": 4,
+  "alt": []
+ },
+ "722": {
+  "name": "IsCustomArtefact",
+  "hits": 2,
+  "alt": []
+ },
+ "723": {
+  "name": "IsSpecialArtefact",
+  "hits": 7,
+  "alt": []
+ },
+ "721": {
+  "name": "IsPotionArtefact",
+  "hits": 12,
+  "alt": []
+ },
+ "703": {
+  "name": "GetPotionArtefactParams",
+  "hits": 9,
+  "alt": []
+ },
+ "2140": {
+  "name": "GetMaxCountInOneInventoryPos",
+  "hits": 1,
+  "alt": []
+ },
+ "707": {
+  "name": "GetSpecialArtefactParams",
+  "hits": 9,
+  "alt": []
+ },
+ "2133": {
+  "name": "GetPotionTicks",
+  "hits": 5,
+  "alt": []
+ },
+ "2132": {
+  "name": "GetRegenerateHP",
+  "hits": 11,
+  "alt": []
+ },
+ "2131": {
+  "name": "GetRegenerateMana",
+  "hits": 7,
+  "alt": []
+ },
+ "2134": {
+  "name": "GetPotionFlags",
+  "hits": 10,
+  "alt": []
+ },
+ "702": {
+  "name": "CastChangedPotionArtefactParams",
+  "hits": 2,
+  "alt": []
+ },
+ "2153": {
+  "name": "SetAddPoint",
+  "hits": 1,
+  "alt": []
+ },
+ "2152": {
+  "name": "SetAddParam",
+  "hits": 1,
+  "alt": []
+ },
+ "2151": {
+  "name": "SetAddProtect",
+  "hits": 1,
+  "alt": []
+ },
+ "2155": {
+  "name": "SetRegenerateHP",
+  "hits": 1,
+  "alt": []
+ },
+ "2154": {
+  "name": "SetRegenerateMana",
+  "hits": 1,
+  "alt": []
+ },
+ "2157": {
+  "name": "SetPotionFlags",
+  "hits": 1,
+  "alt": []
+ },
+ "2156": {
+  "name": "SetPotionTicks",
+  "hits": 2,
+  "alt": []
+ },
+ "700": {
+  "name": "CastChangedTrapParams",
+  "hits": 2,
+  "alt": []
+ },
+ "1430": {
+  "name": "GetAlchemyItem",
+  "hits": 7,
+  "alt": []
+ },
+ "2139": {
+  "name": "GetPrice",
+  "hits": 1,
+  "alt": []
+ },
+ "2068": {
+  "name": "GetPrice",
+  "hits": 1,
+  "alt": []
+ },
+ "2162": {
+  "name": "SetPrice",
+  "hits": 1,
+  "alt": []
+ },
+ "2255": {
+  "name": "SetPrice",
+  "hits": 1,
+  "alt": []
+ },
+ "1429": {
+  "name": "CreateAlchemyResult",
+  "hits": 3,
+  "alt": []
+ },
+ "1427": {
+  "name": "SetAlchemyResultFormulaName",
+  "hits": 3,
+  "alt": []
+ },
+ "1428": {
+  "name": "SetAlchemyItemResult",
+  "hits": 2,
+  "alt": []
+ },
+ "256": {
+  "name": "IsEmpty",
+  "hits": 2,
+  "alt": []
+ },
+ "696": {
+  "name": "GetQuiverAmmoID",
+  "hits": 2,
+  "alt": []
+ },
+ "697": {
+  "name": "GetMissileParams",
+  "hits": 2,
+  "alt": []
+ },
+ "1812": {
+  "name": "GetInventoryWeight",
+  "hits": 2,
+  "alt": []
+ },
+ "1851": {
+  "name": "GetRequiredLevel",
+  "hits": 2,
+  "alt": []
+ },
+ "1811": {
+  "name": "GetRequiredStrength",
+  "hits": 2,
+  "alt": []
+ },
+ "1810": {
+  "name": "GetRequiredDexterity",
+  "hits": 2,
+  "alt": []
+ },
+ "1809": {
+  "name": "GetRequiredMagic",
+  "hits": 2,
+  "alt": []
+ },
+ "1871": {
+  "name": "GetMaxRangeA",
+  "hits": 1,
+  "alt": []
+ },
+ "701": {
+  "name": "GetTrapParams",
+  "hits": 1,
+  "alt": []
+ },
+ "2242": {
+  "name": "GetInventoryWeight",
+  "hits": 2,
+  "alt": []
+ },
+ "2233": {
+  "name": "GetHoldTicks",
+  "hits": 2,
+  "alt": []
+ },
+ "699": {
+  "name": "GetTrapAmmoMissileParams",
+  "hits": 1,
+  "alt": []
+ },
+ "2234": {
+  "name": "GetDamage",
+  "hits": 2,
+  "alt": []
+ },
+ "1549": {
+  "name": "GetTrapAddDamage",
+  "hits": 1,
+  "alt": []
+ },
+ "2235": {
+  "name": "GetTrapLevel",
+  "hits": 2,
+  "alt": []
+ },
+ "399": {
+  "name": "Format",
+  "hits": 1,
+  "alt": []
+ },
+ "709": {
+  "name": "GetMagicCardMissileParams",
+  "hits": 1,
+  "alt": []
+ },
+ "665": {
+  "name": "FormatTrl",
+  "hits": 31,
+  "alt": []
+ },
+ "2211": {
+  "name": "GetHPRegenerationSpeedUpPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2207": {
+  "name": "GetManaAsHPPercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2205": {
+  "name": "GetExtraHP",
+  "hits": 1,
+  "alt": []
+ },
+ "2203": {
+  "name": "GetReflectDamagePercent",
+  "hits": 1,
+  "alt": []
+ },
+ "2189": {
+  "name": "GetLeechHP",
+  "hits": 1,
+  "alt": []
+ },
+ "1888": {
+  "name": "GetMagicSchool",
+  "hits": 1,
+  "alt": []
+ },
+ "1887": {
+  "name": "GetRequiredMagicSchoolSkill",
+  "hits": 2,
+  "alt": []
+ },
+ "258": {
+  "name": "Copy",
+  "hits": 2,
+  "alt": []
+ },
+ "730": {
+  "name": "IsMagicClub",
+  "hits": 1,
+  "alt": []
+ },
+ "708": {
+  "name": "GetMagicClubParams",
+  "hits": 1,
+  "alt": []
+ },
+ "732": {
+  "name": "IsWeapon",
+  "hits": 1,
+  "alt": []
+ },
+ "713": {
+  "name": "GetEquipmentParams",
+  "hits": 3,
+  "alt": []
+ },
+ "712": {
+  "name": "GetWeaponParams",
+  "hits": 1,
+  "alt": []
+ },
+ "2062": {
+  "name": "GetMoney",
+  "hits": 1,
+  "alt": []
+ },
+ "694": {
+  "name": "GetInventoryWeight",
+  "hits": 6,
+  "alt": []
+ },
+ "531": {
+  "name": "Format",
+  "hits": 8,
+  "alt": []
+ },
+ "653": {
+  "name": "FormatTrl",
+  "hits": 3,
+  "alt": []
+ },
+ "661": {
+  "name": "FormatTrl",
+  "hits": 7,
+  "alt": []
+ },
+ "637": {
+  "name": "FormatTrl",
+  "hits": 1,
+  "alt": []
+ },
+ "1253": {
+  "name": "GetMana",
+  "hits": 3,
+  "alt": []
+ },
+ "403": {
+  "name": "Format",
+  "hits": 1,
+  "alt": []
+ },
+ "1230": {
+  "name": "GetWeaponValuesOnSlot",
+  "hits": 2,
+  "alt": []
+ },
+ "1243": {
+  "name": "GetEquipmentIDOnSlot",
+  "hits": 5,
+  "alt": []
+ },
+ "1241": {
+  "name": "GetEquipmentValuesOnSlot",
+  "hits": 1,
+  "alt": []
+ },
+ "1341": {
+  "name": "IsTrap",
+  "hits": 1,
+  "alt": []
+ },
+ "1347": {
+  "name": "IsArtefact",
+  "hits": 1,
+  "alt": []
+ },
+ "1346": {
+  "name": "IsEquipmentArtefact",
+  "hits": 1,
+  "alt": []
+ },
+ "1589": {
+  "name": "GetArtefactEquipmentValues",
+  "hits": 1,
+  "alt": []
+ },
+ "1588": {
+  "name": "GetArtefactEquipmentIDName",
+  "hits": 1,
+  "alt": []
+ },
+ "1344": {
+  "name": "IsSpecialArtefact",
+  "hits": 1,
+  "alt": []
+ },
+ "1590": {
+  "name": "GetArtefactMoney",
+  "hits": 1,
+  "alt": []
+ },
+ "1338": {
+  "name": "IsTeleport",
+  "hits": 1,
+  "alt": []
+ },
+ "1368": {
+  "name": "GetCurrPoison",
+  "hits": 1,
+  "alt": []
+ },
+ "2316": {
+  "name": "IsCampaignGame",
+  "hits": 2,
+  "alt": []
+ },
+ "2301": {
+  "name": "GetLocalHeroTripWalkLen",
+  "hits": 1,
+  "alt": []
+ },
+ "2299": {
+  "name": "GetLocalHeroTripHorseLen",
+  "hits": 1,
+  "alt": []
+ },
+ "2300": {
+  "name": "GetLocalHeroTripSwimLen",
+  "hits": 1,
+  "alt": []
+ },
+ "2298": {
+  "name": "GetLocalHeroJumpMaxLen",
+  "hits": 1,
+  "alt": []
+ },
+ "2297": {
+  "name": "GetLocalHeroJumpsNum",
+  "hits": 1,
+  "alt": []
+ },
+ "2307": {
+  "name": "GetLocalHeroBackJumpsNum",
+  "hits": 1,
+  "alt": []
+ },
+ "1028": {
+  "name": "ResetGraphicFogOfWar",
+  "hits": 2,
+  "alt": []
+ },
+ "963": {
+  "name": "XBOXGetAchievement",
+  "hits": 1,
+  "alt": []
+ },
+ "964": {
+  "name": "XBOXSetAchievement",
+  "hits": 1,
+  "alt": []
+ },
+ "962": {
+  "name": "XBOXSetRichPresence",
+  "hits": 1,
+  "alt": []
+ },
+ "2281": {
+  "name": "SetEndOfTheWorldWestMargin",
+  "hits": 1,
+  "alt": []
+ },
+ "2304": {
+  "name": "SetCustomCommandsDialogButtonDefSkillPrior",
+  "hits": 4,
+  "alt": []
+ },
+ "2303": {
+  "name": "SetCustomCommandsDialogButtonDefMagic",
+  "hits": 2,
+  "alt": []
+ },
+ "2302": {
+  "name": "SetCustomCommandsDialogButtonDefObject",
+  "hits": 2,
+  "alt": []
+ },
+ "2308": {
+  "name": "SetCustomCommandsDialogSelectedButton",
+  "hits": 1,
+  "alt": []
+ },
+ "828": {
+  "name": "GetGameSec",
+  "hits": 1,
+  "alt": []
+ },
+ "397": {
+  "name": "Format",
+  "hits": 1,
+  "alt": []
+ },
+ "1448": {
+  "name": "AddObjectToDeadBody",
+  "hits": 10,
+  "alt": []
+ },
+ "1447": {
+  "name": "IsObjectInDeadBody",
+  "hits": 2,
+  "alt": []
+ },
+ "1444": {
+  "name": "RemoveObjectFromDeadBody",
+  "hits": 1,
+  "alt": []
+ },
+ "1457": {
+  "name": "AddObjectToContainer",
+  "hits": 2,
+  "alt": []
+ },
+ "1456": {
+  "name": "IsObjectInContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1453": {
+  "name": "RemoveObjectFromContainer",
+  "hits": 1,
+  "alt": []
+ },
+ "1451": {
+  "name": "SetDeadBodyScriptOwnerUID",
+  "hits": 1,
+  "alt": []
+ },
+ "1459": {
+  "name": "SetContainerScriptOwnerUID",
+  "hits": 1,
+  "alt": []
+ },
+ "27": {
+  "name": "Copy",
+  "hits": 2,
+  "alt": []
+ },
+ "26": {
+  "name": "Sort",
+  "hits": 2,
+  "alt": []
+ },
+ "930": {
+  "name": "FillMarkersInRange",
+  "hits": 5,
+  "alt": []
+ },
+ "1637": {
+  "name": "CommandUserOneParam1",
+  "hits": 4,
+  "alt": []
+ },
+ "3": {
+  "name": "Sort",
+  "hits": 2,
+  "alt": []
+ },
+ "1648": {
+  "name": "CommandUserNoParam0",
+  "hits": 2,
+  "alt": []
+ },
+ "742": {
+  "name": "DistanceSqrt",
+  "hits": 2,
+  "alt": []
+ },
+ "1075": {
+  "name": "FadeInScreen",
+  "hits": 2,
+  "alt": []
+ },
+ "861": {
+  "name": "RemoveGlobalScript",
+  "hits": 2,
+  "alt": []
+ },
+ "1245": {
+  "name": "HaveEquipmentOnSlot",
+  "hits": 4,
+  "alt": []
+ },
+ "796": {
+  "name": "SetStateDelay",
+  "hits": 4,
+  "alt": []
+ },
+ "920": {
+  "name": "GetEAXEnvironment",
+  "hits": 6,
+  "alt": []
+ },
+ "932": {
+  "name": "GetMarkersCountInRange",
+  "hits": 1,
+  "alt": []
+ },
+ "110": {
+  "name": "IsEmpty",
+  "hits": 2,
+  "alt": []
+ },
+ "686": {
+  "name": "strcmp",
+  "hits": 1,
+  "alt": []
+ },
+ "106": {
+  "name": "Compare",
+  "hits": 1,
+  "alt": []
+ },
+ "1032": {
+  "name": "IsPlayingGameMusic",
+  "hits": 1,
+  "alt": []
+ },
+ "1030": {
+  "name": "IsPlayMusicEnabled",
+  "hits": 1,
+  "alt": []
+ },
+ "917": {
+  "name": "CreateSoundObject",
+  "hits": 1,
+  "alt": []
+ },
+ "1480": {
+  "name": "IsTeleportActiveSource",
+  "hits": 1,
+  "alt": []
+ },
+ "814": {
+  "name": "IsMorphingDayNightSkyTexture",
+  "hits": 1,
+  "alt": []
+ },
+ "820": {
+  "name": "SetRain",
+  "hits": 2,
+  "alt": []
+ },
+ "813": {
+  "name": "SetSkyBoxColorFadeFromFog",
+  "hits": 2,
+  "alt": []
+ },
+ "816": {
+  "name": "SetSnow",
+  "hits": 3,
+  "alt": []
+ },
+ "818": {
+  "name": "SetRainWav",
+  "hits": 5,
+  "alt": []
+ },
+ "817": {
+  "name": "SetRainWavVolume",
+  "hits": 1,
+  "alt": []
+ },
+ "822": {
+  "name": "SetWindWav",
+  "hits": 1,
+  "alt": []
+ },
+ "1399": {
+  "name": "GetThis",
+  "hits": 69,
+  "alt": []
+ },
+ "1467": {
+  "name": "GetHouseExternalDoor",
+  "hits": 2,
+  "alt": []
+ },
+ "676": {
+  "name": "GetStaticIntArray",
+  "hits": 14,
+  "alt": []
+ },
+ "1093": {
+  "name": "GetMakingCustomWorkAnimNum",
+  "hits": 3,
+  "alt": []
+ },
+ "673": {
+  "name": "GetStaticStringArray",
+  "hits": 15,
+  "alt": []
+ },
+ "1378": {
+  "name": "GetRelativeAngleTo",
+  "hits": 1,
+  "alt": []
+ },
+ "1096": {
+  "name": "SetCurrCustomWorkParams",
+  "hits": 1,
+  "alt": []
+ },
+ "1425": {
+  "name": "GetMeshSlotPosition",
+  "hits": 3,
+  "alt": []
+ },
+ "2270": {
+  "name": "GetTicksSinceLastAttackEnemy",
+  "hits": 2,
+  "alt": []
+ },
+ "1331": {
+  "name": "GetUnitTypeFlags",
+  "hits": 1,
+  "alt": []
+ },
+ "1269": {
+  "name": "SearchOneUnit",
+  "hits": 1,
+  "alt": []
+ },
+ "1333": {
+  "name": "GetHorseRider",
+  "hits": 2,
+  "alt": []
+ },
+ "909": {
+  "name": "RemoveKilledUnits",
+  "hits": 6,
+  "alt": []
+ },
+ "915": {
+  "name": "GetObject",
+  "hits": 19,
+  "alt": []
+ }
+}

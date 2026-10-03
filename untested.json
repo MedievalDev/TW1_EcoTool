@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "tests": [
+    {
+      "id": "exported-script-ingame",
+      "since": "0.1.0",
+      "needs_run": true,
+      "title": {
+        "de": "Ein exportiertes Skript aendern, kompilieren und im Spiel benutzen",
+        "en": "Change an exported script, compile it and use it in the game"
+      },
+      "why": {
+        "de": "Gemessen ist: Jede exportierte Quelle ergibt mit compile_all.bat genau die Bytes des Spiels. Ob eine geaenderte und neu kompilierte .eco als Mod im Spiel wirkt, hat noch niemand mit diesem Tool ausprobiert.",
+        "en": "Measured: every exported source gives exactly the game's bytes with compile_all.bat. Whether a changed and recompiled .eco works as a mod in the game has not been tried with this tool yet."
+      },
+      "steps": {
+        "de": [
+          "Im Tool TwoWorldsContainers.eco waehlen und Exportieren klicken.",
+          "Im Exportordner Scripts\\Campaigns\\Missions\\TwoWorldsContainers.ec oeffnen und in OpenContainerObject eine Zeile mit einem festen Gegenstand ergaenzen, zum Beispiel SafeAddObjectToContainer(uContainerObject,\"LOCKPICK\",__LINE__); direkt nach dem Geldstueck.",
+          "compile_all.bat starten. Neben der Quelle entsteht TwoWorldsContainers.eco.",
+          "Diese .eco unter Scripts\\Campaigns\\Missions\\ in eine Mod packen (zum Beispiel mit dem TW1 WD Packer) und die Mod einschalten.",
+          "Ein neues Spiel beginnen und eine Kiste oeffnen, die du noch nie geoeffnet hast."
+        ],
+        "en": [
+          "Select TwoWorldsContainers.eco in the tool and click Export.",
+          "In the export folder open Scripts\\Campaigns\\Missions\\TwoWorldsContainers.ec and add a line with a fixed item in OpenContainerObject, for example SafeAddObjectToContainer(uContainerObject,\"LOCKPICK\",__LINE__); right after the gold.",
+          "Run compile_all.bat. TwoWorldsContainers.eco appears next to the source.",
+          "Pack this .eco under Scripts\\Campaigns\\Missions\\ into a mod (for example with the TW1 WD Packer) and switch the mod on.",
+          "Start a new game and open a chest you never opened before."
+        ]
+      },
+      "expect": {
+        "de": "Die Kiste enthaelt zusaetzlich einen Dietrich, sonst verhaelt sich das Spiel wie immer.",
+        "en": "The chest holds an extra lockpick, otherwise the game behaves as always."
+      }
+    },
+    {
+      "id": "sdk-update-real",
+      "since": "0.1.0",
+      "needs_run": false,
+      "title": {
+        "de": "Ein echtes SDK 1.2 aktualisieren und rueckgaengig machen",
+        "en": "Update a real SDK 1.2 and undo it"
+      },
+      "why": {
+        "de": "Gemessen an einer Kopie von SDK 1.2: 47 Dateien ersetzt, 23 neu, danach ergeben alle 36 Skripte am Ort die Bytes des Spiels, und Rueckgaengig stellt den alten Ordner byte-gleich wieder her. Am echten SDK eines Nutzers ist es noch nicht gelaufen.",
+        "en": "Measured on a copy of SDK 1.2: 47 files replaced, 23 new, afterwards all 36 scripts give the game's bytes in place, and Undo puts the old folder back byte for byte. It has not run on a user's real SDK yet."
+      },
+      "steps": {
+        "de": [
+          "Den Ordner deines SDK 1.2 (meist C:\\TwoWorldsSDK) vorsichtshalber selbst kopieren.",
+          "Im Tool ein SDK 1.3 hinzufuegen (Werkzeuge > SDK-Ordner hinzufuegen), falls es nicht schon gefunden wurde.",
+          "SDK aktualisieren klicken, das SDK 1.2 waehlen, Zeigen, was sich aendert.",
+          "Sichern und schreiben.",
+          "Mit EarthC.bat aus dem SDK ein Skript kompilieren, zum Beispiel TwoWorldsContainers.ec.",
+          "Werkzeuge > SDK-Aktualisierung rueckgaengig, die Sicherung waehlen."
+        ],
+        "en": [
+          "Copy the folder of your SDK 1.2 (usually C:\\TwoWorldsSDK) yourself, to be safe.",
+          "Add an SDK 1.3 in the tool (Tools > Add SDK folder) unless it was found already.",
+          "Click Update SDK, choose the SDK 1.2, Show what changes.",
+          "Back up and write.",
+          "Compile a script with the SDK's EarthC.bat, for example TwoWorldsContainers.ec.",
+          "Tools > Undo an SDK update, choose the backup."
+        ]
+      },
+      "expect": {
+        "de": "Das Skript kompiliert nach dem Aktualisieren; nach Rueckgaengig ist der Ordner wieder wie deine Kopie.",
+        "en": "The script compiles after the update; after Undo the folder is the same as your copy again."
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# work and test data - never into the repo (SDK sources, game scripts, caches)
+_spike/
+cache/
+backup/
+dist/
+build/
+__pycache__/
+*.pyc
+*.eco
+*.ec-pp
+eco_tool_settings.json
+STATUS.md

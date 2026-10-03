@@ -1,0 +1,1237 @@
+# EarthC native API, read from EarthC.exe (SDK)
+# 1239 script-visible functions with their C++ handler
+# order = registration order in .text
+
+    0  FindInSorted                       CECArrayrUnit::EC_ArrFindInSorted
+    1  InsertInSorted                     CECArrayrUnit::EC_ArrInsertInSorted
+    2  SortWithKeys                       CECArrayrUnit::EC_ArrSortWithKeys
+    3  Sort                               CECArrayrUnit::EC_ArrSort
+    4  RemoveAt                           CECArrayrUnit::EC_ArrRemoveAt   [debug index 0x1d, 0x4b, 0x6]
+    5  InsertAt                           CECArrayrUnit::EC_ArrInsertAt
+    6  SetAtGrow                          CECArrayrUnit::EC_ArrSetAtGrow
+    7  SetAt                              CECArrayrUnit::EC_ArrSetAt
+    8  ElementAt                          CECArrayrUnit::EC_ArrGetAt   [debug index 0xa]
+    9  Add                                CECArrayrUnit::EC_ArrAdd   [debug index 0x22, 0x50, 0xb, 0x39]
+   10  RemoveAll                          CECArrayrUnit::EC_ArrRemoveAll2   [debug index 0x24, 0xd, 0x52]
+   11  SetSize                            CECArrayrUnit::EC_ArrSetSize   [debug index 0xe]
+   12  GetSize                            CECArrayrUnit::EC_ArrGetSize   [debug index 0x26, 0xf, 0x54]
+   13  $SetAt                             CECArrayrUnit::EC_ArrSetAt
+   14  $GetPtrAt                          CECArrayrUnit::EC_ArrGetPtrAt
+   15  $GetAt                             CECArrayrUnit::EC_ArrGetAt
+   16  $ConstructorSize                   CECArrayrUnit::EC_ArrConstructor2
+   17  GetTicksSinceLastAttackEnemy       CUnit::EC_GetTicksSinceLastAttackEnemy
+   18  GetLastAttackEnemyTick             CUnit::EC_GetLastAttackEnemyTick
+   19  IsNoRouteTarget                    CUnitBase::EC_IsNoRouteTarget
+   20  IsUnitInsideExternalDoorGate       CUnitBase::EC_IsUnitInsideExternalDoorGate
+   21  SetGateUnlockParamsForUnits        CUnitBase::EC_SetGateUnlockParamsForUnits
+   22  SetGateLockForUnits                CUnitBase::EC_SetGateLockForUnits
+   23  IsAnyGoodPointForUnit              CWorldScriptObject::EC_IsAnyGoodPointForUnit
+   24  GetDynamicTeleport                 CWorldScriptObject::EC_GetDynamicTeleport
+   25  GetTrap                            CWorldScriptObject::EC_GetTrap
+   26  GetArtefact                        CWorldScriptObject::EC_GetArtefact
+   27  GetNotTransientPassive             CWorldScriptObject::EC_GetNotTransientPassive
+   28  SetEndOfTheWorldWestMargin         CCampaignScriptObject::EC_SetEndOfTheWorldWestMargin
+   29  SetEndOfTheWorldEastMargin         CCampaignScriptObject::EC_SetEndOfTheWorldEastMargin
+   30  SetEndOfTheWorldNorthMargin        CCampaignScriptObject::EC_SetEndOfTheWorldNorthMargin
+   31  SetEndOfTheWorldSouthMargin        CCampaignScriptObject::EC_SetEndOfTheWorldSouthMargin
+   32  SetBlockHeroAttackCommands         CUnitBase::EC_SetBlockHeroAttackCommands
+   33  IsInTheSameParty                   CUnitBase::EC_IsInTheSameParty
+   34  CallMakeShootAttackAutoFire        CUnit::EC_CallMakeShootAttackAutoFire
+   35  CallMakeShootAttackAutoPrepare     CUnit::EC_CallMakeShootAttackAutoPrepare
+   36  SetLimitedWorldStepRange           CCampaignScriptObject::EC_SetLimitedWorldStepRange
+   37  CalcMoveToNearUnitPos              CUnitBase::EC_CalcMoveToNearUnitPos
+   38  GetSummonedUnitOwner               CUnitBase::EC_GetSummonedUnitOwner
+   39  SetSummonedUnitOwner               CUnitBase::EC_SetSummonedUnitOwner
+   40  GetObjectCustomFlags               CStaticEC::EC_GetObjectCustomFlags
+   41  GetObjectMeshFlags                 CStaticEC::EC_GetObjectMeshFlags
+   42  GetLocalHeroJumpsNum               CPlayerInterface::EC_GetLocalHeroJumpsNum
+   43  GetLocalHeroJumpMaxLen             CPlayerInterface::EC_GetLocalHeroJumpMaxLen
+   44  GetLocalHeroTripHorseLen           CPlayerInterface::EC_GetLocalHeroTripHorseLen
+   45  GetLocalHeroTripSwimLen            CPlayerInterface::EC_GetLocalHeroTripSwimLen
+   46  GetLocalHeroTripWalkLen            CPlayerInterface::EC_GetLocalHeroTripWalkLen
+   47  SetCustomCommandsDialogButtonDefObject CPlayerInterface::EC_SetCustomCommandsDialogButtonDefObject
+   48  SetCustomCommandsDialogButtonDefMagic CPlayerInterface::EC_SetCustomCommandsDialogButtonDefMagic
+   49  SetCustomCommandsDialogButtonDefSkillPrior CPlayerInterface::EC_SetCustomCommandsDialogButtonDefSkillPrior
+   50  SetCustomCommandsDialogButtonDefSkill CPlayerInterface::EC_SetCustomCommandsDialogButtonDefSkill
+   51  IsLocalHeroXPadControlled          CPlayerInterface::EC_IsLocalHeroXPadControlled
+   52  GetLocalHeroBackJumpsNum           CPlayerInterface::EC_GetLocalHeroBackJumpsNum
+   53  SetCustomCommandsDialogSelectedButton CPlayerInterface::EC_SetCustomCommandsDialogSelectedButton
+   54  GetLastHorse                       CUnit::EC_GetLastHorse
+   55  IsMovingAndSettingArmedMode        CUnit::EC_IsMovingAndSettingArmedMode
+   56  RemoveKilledUnitsOutsideStepRange  CWorldScriptObject::EC_RemoveKilledUnitsOutsideStepRange4
+   57  IsMainMenuCutscene                 CCampaignScriptObject::EC_IsMainMenuCutscene
+   58  IsCampaignGame                     CCampaignScriptObject::EC_IsCampaignGame
+   59  IsPseudoFlyableUnit                CUnitBase::EC_IsPseudoFlyableUnit
+   60  UseMagicCardOnSlot                 CHero::EC_UseMagicCardOnSlot
+   61  CallPrepareManualTargetMagic       CUnit::EC_CallPrepareManualTargetMagic
+   62  GetCurrMaxShootChance              CUnit::EC_GetCurrMaxShootChance
+   63  IsLevelDisabled                    CWorldScriptObject::EC_IsLevelDisabled
+   64  DisableLevel                       CWorldScriptObject::EC_DisableLevel
+   65  SendXBoxHeroNetworkGameModePoints  CCampaignScriptObject::EC_SendXBoxHeroNetworkGameModePoints
+   66  SearchFiles                        CStaticEC::EC_SearchFiles
+   67  DestroyStaticStringWArray          CStaticEC::EC_DestroyStaticStringWArray
+   68  IsStaticStringWArray               CStaticEC::EC_IsStaticStringWArray
+   69  GetStaticStringWArray              CStaticEC::EC_GetStaticStringWArray
+   70  DestroyStaticStringArray           CStaticEC::EC_DestroyStaticStringArray
+   71  IsStaticStringArray                CStaticEC::EC_IsStaticStringArray
+   72  GetStaticStringArray               CStaticEC::EC_GetStaticStringArray
+   73  DestroyStaticIntArray              CStaticEC::EC_DestroyStaticIntArray
+   74  IsStaticIntArray                   CStaticEC::EC_IsStaticIntArray
+   75  GetStaticIntArray                  CStaticEC::EC_GetStaticIntArray
+   76  __DevExecuteConsole                CStaticEC::EC_DevExecuteConsole
+   77  ReadTextFile                       CStaticEC::EC_ReadTextFile   [debug index 0x2a6]
+   78  CheckTranslate                     CStaticEC::EC_CheckTranslate   [debug index 0x2a7]
+   79  GetChar                            CStaticEC::EC_GetChar   [debug index 0x2a8]
+   80  strrchr                            CStaticEC::EC_strrchr
+   81  strchr                             CStaticEC::EC_strchr
+   82  strnicmp                           CStaticEC::EC_strnicmp
+   83  strncmp                            CStaticEC::EC_strncmp
+   84  stricmp                            CStaticEC::EC_stricmp   [debug index 0x2ad]
+   85  strcmp                             CStaticEC::EC_strcmp
+   86  strlen                             CStaticEC::EC_strlen   [debug index 0x2af]
+   87  sscanf                             CStaticEC::EC_sscanf3   [debug index 0x2b1, 0x2b2]
+   88  CheckFileExist                     CStaticEC::EC_CheckFileExist   [debug index 0x2b6]
+   89  SelectRandomMagicCard              CStaticEC::EC_SelectRandomMagicCard   [debug index 0x2b4]
+   90  FillEquipmentIDNames               CStaticEC::EC_FillEquipmentIDNames
+   91  GetWeaponAmmoID                    CStaticEC::EC_GetWeaponAmmoID
+   92  GetQuiverAmmoID                    CStaticEC::EC_GetQuiverAmmoID
+   93  GetMissileParams                   CStaticEC::EC_GetMissileParams
+   94  GetTrapAmmoMissileParams           CStaticEC::EC_GetTrapAmmoMissileParams
+   95  CastChangedTrapParams              CStaticEC::EC_CastChangedTrapParams
+   96  GetTrapParams                      CStaticEC::EC_GetTrapParams
+   97  CastChangedPotionArtefactParams    CStaticEC::EC_CastChangedPotionArtefactParams
+   98  GetPotionArtefactParams            CStaticEC::EC_GetPotionArtefactParams
+   99  CastChangedCustomArtefactParams    CStaticEC::EC_CastChangedCustomArtefactParams
+  100  GetCustomArtefactParams            CStaticEC::EC_GetCustomArtefactParams
+  101  CastChangedSpecialArtefactParams   CStaticEC::EC_CastChangedSpecialArtefactParams
+  102  GetSpecialArtefactParams           CStaticEC::EC_GetSpecialArtefactParams
+  103  GetMagicCardMissileParams          CStaticEC::EC_GetMagicCardMissileParams
+  104  GetMagicCardMissileParamsCount     CStaticEC::EC_GetMagicCardMissileParamsCount
+  105  GetMagicCardParams                 CStaticEC::EC_GetMagicCardParams
+  106  GetWeaponParams                    CStaticEC::EC_GetWeaponParams
+  107  GetEquipmentParams                 CStaticEC::EC_GetEquipmentParams
+  108  IsMissile                          CStaticEC::EC_IsMissile
+  109  IsStoreable                        CStaticEC::EC_IsStoreable
+  110  IsMagicClub                        CStaticEC::EC_IsMagicClub
+  111  IsMagicCard                        CStaticEC::EC_IsMagicCard
+  112  IsWeapon                           CStaticEC::EC_IsWeapon
+  113  IsEquipment                        CStaticEC::EC_IsEquipment
+  114  GetCampaign                        CStaticEC::EC_GetCampaign   [debug index 0x2de]
+  115  GetObjectName                      CStaticEC::EC_GetObjectName2
+  116  GetSinglePartyArray                CStaticEC::EC_GetSinglePartyArray   [debug index 0x2e1]
+  117  AppendPartiesArray                 CStaticEC::EC_AppendPartiesArray
+  118  IsPointNearLevelBorder             CStaticEC::EC_IsPointNearLevelBorderW
+  119  DistanceSqrt                       CStaticEC::EC_DistanceSqrtW
+  120  Distance                           CStaticEC::EC_DistanceW   [debug index 0x2e7]
+  121  TurnRadiusByAngle                  CStaticEC::EC_TurnRadiusByAngle   [debug index 0x2e8]
+  122  sqrt                               CStaticEC::EC_Sqrt3
+  123  Rand                               CStaticEC::EC_Rand   [debug index 0x2ec]
+  124  TraceDbg                           CStaticEC::EC_PrintUnit   [debug index 0x2f0, 0x2ee, 0x2ef, 0x2f3, 0x2f1]
+  125  $SetDbgFileLine                    CStaticEC::EC_SetDbgFileLine
+  126  $LoopException                     CStaticEC::EC_LoopException
+  127  $SerializeInt                      CStaticEC::EC_SerializeInt
+  128  CommandMessage                     CScriptObject::EC_CommandMessage15   [debug index 0x305, 0x304, 0x306, 0x2ff, 0x2fb, 0x2f9, 0x308]
+  129  CommandMessageGet                  CScriptObject::EC_CommandMessageGet12   [debug index 0x303, 0x302, 0x300]
+  130  CommandDebug                       CScriptObject::EC_CommandDebug
+  131  EventTimer                         CScriptObject::EC_EventTimer
+  132  GetTimerStep                       CScriptObject::EC_GetTimerStep
+  133  GetTimer                           CScriptObject::EC_GetTimer
+  134  SetTimerStep                       CScriptObject::EC_SetTimerStep
+  135  ExecuteState                       CScriptObject::EC_ExecuteState
+  136  GetNextScriptUID                   CScriptObject::EC_GetNextScriptUID
+  137  GetScriptUID                       CScriptObject::EC_GetScriptUID   [debug index 0x31e]
+  138  GetScriptFile                      CScriptObject::EC_GetScriptFile
+  139  GetLocalPlayerNum                  CScriptObject::EC_GetLocalPlayerNum   [debug index 0x321]
+  140  GetPlayerInterface                 CScriptObject::EC_GetPlayerInterface   [debug index 0x322]
+  141  IsPlayer                           CScriptObject::EC_IsPlayer   [debug index 0x323]
+  142  GetPlayersCnt                      CScriptObject::EC_GetPlayersCnt   [debug index 0x324]
+  143  CreateNewNetworkGame               CCampaignScriptObject::EC_CreateNewNetworkGame
+  144  GetFillChannelLevelsListSelectedHeroFlags CCampaignScriptObject::EC_GetFillChannelLevelsListSelectedHeroFlags
+  145  GetFillChannelLevelsListCommonPlayerAttribute CCampaignScriptObject::EC_GetFillChannelLevelsListCommonPlayerAttribute4   [debug index 0x329]
+  146  SetEngineFarPlanePercent           CCampaignScriptObject::EC_SetEngineFarPlanePercent
+  147  SetEndOfTheWorldMargin             CCampaignScriptObject::EC_SetEndOfTheWorldMargin
+  148  SetSkyBoxColorFadeFromFog          CCampaignScriptObject::EC_SetSkyBoxColorFadeFromFog
+  149  IsMorphingDayNightSkyTexture       CCampaignScriptObject::EC_IsMorphingDayNightSkyTexture
+  150  LoadLevelConfiguration             CCampaignScriptObject::EC_LoadLevelConfiguration
+  151  SetSnow                            CCampaignScriptObject::EC_SetSnow
+  152  SetRainWavVolume                   CCampaignScriptObject::EC_SetRainWavVolume
+  153  SetRainWav                         CCampaignScriptObject::EC_SetRainWav
+  154  SetRain                            CCampaignScriptObject::EC_SetRain2
+  155  SetWindWavVolume                   CCampaignScriptObject::EC_SetWindWavVolume
+  156  SetWindWav                         CCampaignScriptObject::EC_SetWindWav
+  157  SetWind                            CCampaignScriptObject::EC_SetWind2
+  158  SetDayLength                       CCampaignScriptObject::EC_SetDayLength   [debug index 0x337]
+  159  SetDayTime                         CCampaignScriptObject::EC_SetDayTime   [debug index 0x338]
+  160  GetDayTime                         CCampaignScriptObject::EC_GetDayTime   [debug index 0x33b]
+  161  GetGameSec                         CCampaignScriptObject::EC_GetGameSec
+  162  SetDrawPentagramStrength           CCampaignScriptObject::EC_SetDrawPentagramStrength   [debug index 0x33e]
+  163  SetPentagram                       CCampaignScriptObject::EC_SetPentagram
+  164  SetLevelsHorizon                   CCampaignScriptObject::EC_SetLevelsHorizon
+  165  LoadRPGComputeScript               CCampaignScriptObject::EC_LoadRPGComputeScript   [debug index 0x33c]
+  166  FindScript                         CCampaignScriptObject::EC_FindScript
+  167  FindGlobalScript                   CCampaignScriptObject::EC_FindGlobalScript
+  168  FindMissionScript                  CCampaignScriptObject::EC_FindMissionScript
+  169  AddGlobalScript                    CCampaignScriptObject::EC_AddGlobalScript2   [debug index 0x340]
+  170  GetGlobalScript                    CCampaignScriptObject::EC_GetGlobalScript   [debug index 0x347]
+  171  GetGlobalScriptsCnt                CCampaignScriptObject::EC_GetGlobalScriptsCnt   [debug index 0x348]
+  172  GetMissionsCnt                     CCampaignScriptObject::EC_GetMissionsCnt   [debug index 0x34a, 0x345]
+  173  GetPartyEnemies                    CCampaignScriptObject::EC_GetPartyEnemies2
+  174  IsPartyEnemy                       CCampaignScriptObject::EC_IsPartyEnemy   [debug index 0x34d]
+  175  SetPartyNeutral                    CCampaignScriptObject::EC_SetPartyNeutral   [debug index 0x34e]
+  176  SetPartyEnemy                      CCampaignScriptObject::EC_SetPartyEnemy   [debug index 0x34f]
+  177  GetPlayerHeroUnit                  CCampaignScriptObject::EC_GetPlayerHeroUnit   [debug index 0x350, 0x34c]
+  178  IsNetworkChannelGame               CCampaignScriptObject::EC_IsNetworkChannelGame
+  179  IsNetworkGame                      CCampaignScriptObject::EC_IsNetworkGame
+  180  EventGetDifficultyLevel            CCampaignScriptObject::EC_EventGetDifficultyLevel
+  181  CreateMission                      CCampaignScriptObject::EC_CreateMission
+  182  CleanupLevelsHeadersCache          CCampaignScriptObject::EC_CleanupLevelsHeadersCache
+  183  LoadLevelsHeadersCache             CCampaignScriptObject::EC_LoadLevelsHeadersCache
+  184  RemoveGlobalScript                 CGlobalScriptObject::EC_RemoveGlobalScript
+  185  EndGame                            CPlayerInterface::EC_EndGame   [debug index 0x3c1]
+  186  XBOXSetRichPresence                CPlayerInterface::EC_XBOXSetRichPresence
+  187  XBOXGetAchievement                 CPlayerInterface::EC_XBOXGetAchievement
+  188  XBOXSetAchievement                 CPlayerInterface::EC_XBOXSetAchievement
+  189  SetCampaignLocationPosition        CPlayerInterface::EC_SetCampaignLocationPosition2   [debug index 0x3c5]
+  190  SetCampaignLocationMaxVisibleZoomPercent CPlayerInterface::EC_SetCampaignLocationMaxVisibleZoomPercent   [debug index 0x3c7]
+  191  SetCampaignLocationMinVisibleZoomPercent CPlayerInterface::EC_SetCampaignLocationMinVisibleZoomPercent   [debug index 0x3c8]
+  192  SetCampaignLocationMapIconNum      CPlayerInterface::EC_SetCampaignLocationMapIconNum
+  193  SetCampaignLocationQuestsMapIconNum CPlayerInterface::EC_SetCampaignLocationQuestsMapIconNum
+  194  SetCampaignLocationTooltipDescription CPlayerInterface::EC_SetCampaignLocationTooltipDescriptionW
+  195  RemoveCampaignLocation             CPlayerInterface::EC_RemoveCampaignLocation   [debug index 0x3cd]
+  196  AddCampaignLocation                CPlayerInterface::EC_AddCampaignLocationW2   [debug index 0x3d1, 0x3cf]
+  197  SetBlinkQuestButton                CPlayerInterface::EC_SetBlinkQuestButton
+  198  GetQuestState                      CPlayerInterface::EC_GetQuestState
+  199  SetQuestState                      CPlayerInterface::EC_SetQuestState   [debug index 0x3d4]
+  200  SetQuestPosition                   CPlayerInterface::EC_SetQuestPosition2   [debug index 0x3d5]
+  201  SetQuestMaxVisibleZoomPercent      CPlayerInterface::EC_SetQuestMaxVisibleZoomPercent
+  202  SetQuestMinVisibleZoomPercent      CPlayerInterface::EC_SetQuestMinVisibleZoomPercent
+  203  SetQuestMapIconNum                 CPlayerInterface::EC_SetQuestMapIconNum   [debug index 0x3d9]
+  204  SetQuestQuestsMapIconNum           CPlayerInterface::EC_SetQuestQuestsMapIconNum   [debug index 0x3da]
+  205  SetQuestTooltipDescription         CPlayerInterface::EC_SetQuestTooltipDescriptionW   [debug index 0x3dc, 0x3db]
+  206  SetQuestDescription                CPlayerInterface::EC_SetQuestDescriptionW   [debug index 0x3de, 0x3dd]
+  207  SetQuestTitle                      CPlayerInterface::EC_SetQuestTitleW
+  208  RemoveQuest                        CPlayerInterface::EC_RemoveQuest   [debug index 0x3e1]
+  209  AddQuest                           CPlayerInterface::EC_AddQuestW3   [debug index 0x3e6, 0x3e4]
+  210  SetQuestsDirTitle                  CPlayerInterface::EC_SetQuestsDirTitleW   [debug index 0x3e8]
+  211  SetDreamlandEntranceState          CPlayerInterface::EC_SetDreamlandEntranceState
+  212  GetCameraPos                       CPlayerInterface::EC_GetCameraPos
+  213  StopLookAt                         CPlayerInterface::EC_StopLookAt
+  214  DelayedLookAt                      CPlayerInterface::EC_DelayedLookAt
+  215  LookAt                             CPlayerInterface::EC_LookAt
+  216  IsPlayingDialog                    CPlayerInterface::EC_IsPlayingDialog
+  217  PlayDialog                         CPlayerInterface::EC_PlayDialog5b   [debug index 0x3f8, 0x3fe]
+  218  MessageBox                         CPlayerInterface::EC_MessageBoxW   [debug index 0x402]
+  219  OpenHeroDialog                     CPlayerInterface::EC_OpenHeroDialog   [debug index 0x403]
+  220  ResetGraphicFogOfWar               CPlayerInterface::EC_ResetGraphicFogOfWar
+  221  SetForcedSoundEAXEnvironment       CPlayerInterface::EC_SetForcedSoundEAXEnvironment
+  222  IsPlayMusicEnabled                 CPlayerInterface::EC_IsPlayMusicEnabled
+  223  StopGameMusic                      CPlayerInterface::EC_StopGameMusic
+  224  IsPlayingGameMusic                 CPlayerInterface::EC_IsPlayingGameMusic
+  225  PlayGameMusic                      CPlayerInterface::EC_PlayGameMusic
+  226  RemoveDelayedWaves                 CPlayerInterface::EC_RemoveDelayedWaves
+  227  PlayWave                           CPlayerInterface::EC_PlayWave2   [debug index 0x410]
+  228  ShowInterface                      CPlayerInterface::EC_ShowInterface2
+  229  EnableInterface                    CPlayerInterface::EC_EnableInterface
+  230  PrintConsoleText                   CPlayerInterface::EC_PrintConsoleTextW
+  231  SetLowConsoleText                  CPlayerInterface::EC_SetLowConsoleText4W
+  232  SetConsole2Text                    CPlayerInterface::EC_SetConsole2Text4W
+  233  SetConsoleText                     CPlayerInterface::EC_SetConsoleText4W   [debug index 0x42a, 0x429, 0x42b, 0x42d, 0x42c]
+  234  PlayVideoCutscene                  CPlayerInterface::EC_PlayVideoCutscene   [debug index 0x431]
+  235  FadeOutScreen                      CPlayerInterface::EC_FadeOutScreen
+  236  FadeInScreen                       CPlayerInterface::EC_FadeInScreen
+  237  GetPlayCutsceneFadeInDelay         CPlayerInterface::EC_GetPlayCutsceneFadeInDelay
+  238  PlayCutscene                       CPlayerInterface::EC_PlayCutscene
+  239  ShowMissionFailedLoadDialog        CPlayerInterface::EC_ShowMissionFailedLoadDialog
+  240  SetInterfaceOptions                CPlayerInterface::EC_SetInterfaceOptions
+  241  GetPlayerGuildName                 CPlayerInterface::EC_GetPlayerGuildName
+  242  GetPlayerName                      CPlayerInterface::EC_GetPlayerName   [debug index 0x439]
+  243  GetPlayerNum                       CPlayerInterface::EC_GetPlayerNum
+  244  RemoveMapSign                      CWorldScriptObject::EC_RemoveMapSign2
+  245  AddMapSign                         CWorldScriptObject::EC_AddMapSign
+  246  PlayPositionWave                   CWorldScriptObject::EC_PlayPositionWave4
+  247  PlayChatDialog                     CWorldScriptObject::EC_PlayChatDialog5a   [debug index 0x36e, 0x373]
+  248  GetRightDownConnectedMission       CWorldScriptObject::EC_GetRightDownConnectedMission
+  249  GetLeftDownConnectedMission        CWorldScriptObject::EC_GetLeftDownConnectedMission
+  250  GetRightUpConnectedMission         CWorldScriptObject::EC_GetRightUpConnectedMission
+  251  GetLeftUpConnectedMission          CWorldScriptObject::EC_GetLeftUpConnectedMission
+  252  GetDownConnectedMission            CWorldScriptObject::EC_GetDownConnectedMission
+  253  GetUpConnectedMission              CWorldScriptObject::EC_GetUpConnectedMission
+  254  GetRightConnectedMission           CWorldScriptObject::EC_GetRightConnectedMission
+  255  GetLeftConnectedMission            CWorldScriptObject::EC_GetLeftConnectedMission
+  256  GetLowerConnectedMission           CWorldScriptObject::EC_GetLowerConnectedMission
+  257  GetUpperConnectedMission           CWorldScriptObject::EC_GetUpperConnectedMission   [debug index 0x37e]
+  258  ReplaceObjectsInArea               CWorldScriptObject::EC_ReplaceObjectsInArea
+  259  ClearSearchUnitsInAreaArray        CWorldScriptObject::EC_ClearSearchUnitsInAreaArray
+  260  GetSearchUnitInArea                CWorldScriptObject::EC_GetSearchUnitInArea   [debug index 0x381]
+  261  GetSearchUnitsInAreaCount          CWorldScriptObject::EC_GetSearchUnitsInAreaCount   [debug index 0x382]
+  262  SearchObjectsInArea                CWorldScriptObject::EC_SearchObjectsInArea
+  263  SearchUnitsInArea                  CWorldScriptObject::EC_SearchUnitsInArea2   [debug index 0x385]
+  264  CountUnitsInArea                   CWorldScriptObject::EC_CountUnitsInArea2
+  265  IsUnitInArea                       CWorldScriptObject::EC_IsUnitInArea2   [debug index 0x389]
+  266  RemoveKilledUnits                  CWorldScriptObject::EC_RemoveKilledUnits2
+  267  GetExternalDoorForHouseFromPoint   CWorldScriptObject::EC_GetExternalDoorForHouseFromPoint
+  268  FindNearestGate                    CWorldScriptObject::EC_FindNearestGate
+  269  GetHouseFromPoint                  CWorldScriptObject::EC_GetHouseFromPoint2
+  270  GetUnit                            CWorldScriptObject::EC_GetUnit2
+  271  CreateHero                         CWorldScriptObject::EC_CreateHero   [debug index 0x38a]
+  272  CreateSoundObject                  CWorldScriptObject::EC_CreateSoundObject
+  273  CreateObject                       CWorldScriptObject::EC_CreateObject   [debug index 0x396, 0x38d]
+  274  IsGoodPointForUnit                 CWorldScriptObject::EC_IsGoodPointForUnit   [debug index 0x397]
+  275  GetEAXEnvironment                  CWorldScriptObject::EC_GetEAXEnvironment
+  276  GetLevelInfoText                   CWorldScriptObject::EC_GetLevelInfoText
+  277  RemoveMarker                       CWorldScriptObject::EC_RemoveMarker   [debug index 0x39b]
+  278  SetMarker                          CWorldScriptObject::EC_SetMarker4   [debug index 0x39e]
+  279  AddMarker                          CWorldScriptObject::EC_AddMarker   [debug index 0x3a0]
+  280  GetObjectMarker                    CWorldScriptObject::EC_GetObjectMarker   [debug index 0x3a1]
+  281  FillMarkersInRange                 CWorldScriptObject::EC_FillMarkersInRange2
+  282  GetMarkersCountInRange             CWorldScriptObject::EC_GetMarkersCountInRange
+  283  GetMarkersCount                    CWorldScriptObject::EC_GetMarkersCount
+  284  FillMarkersNums                    CWorldScriptObject::EC_FillMarkersNums
+  285  GetMaxMarkerNum                    CWorldScriptObject::EC_GetMaxMarkerNum   [debug index 0x3a7]
+  286  HaveMarker                         CWorldScriptObject::EC_HaveMarker   [debug index 0x3a8]
+  287  GetMarker                          CWorldScriptObject::EC_GetMarker4   [debug index 0x3ac, 0x3a3, 0x3a2]
+  288  IsUndergroundLevel                 CWorldScriptObject::EC_IsUndergroundLevel   [debug index 0x3ad]
+  289  GetMissionNum                      CWorldScriptObject::EC_GetMissionNum   [debug index 0x3af]
+  290  WasLevelLoaded                     CWorldScriptObject::EC_WasLevelLoaded
+  291  IsLevelLoaded                      CWorldScriptObject::EC_IsLevelLoaded   [debug index 0x3b1]
+  292  UnloadLevel                        CWorldScriptObject::EC_UnloadLevel
+  293  LoadLevel                          CWorldScriptObject::EC_LoadLevel   [debug index 0x3a9]
+  294  AddNeighbourDistantLandLevel       CWorldScriptObject::EC_AddNeighbourDistantLandLevel
+  295  SetHorizonOffset                   CWorldScriptObject::EC_SetHorizonOffset   [debug index 0x3aa]
+  296  SetPositionOnCampaignTexture       CWorldScriptObject::EC_SetPositionOnCampaignTexture   [debug index 0x3ab]
+  297  IsScriptRemoved                    CWorldScriptObject::EC_IsScriptRemoved
+  298  RemoveMissionScript                CWorldScriptObject::EC_RemoveMissionScript
+  299  AddMissionScript                   CWorldScriptObject::EC_AddMissionScript2
+  300  GetMissionScript                   CWorldScriptObject::EC_GetMissionScript   [debug index 0x3bb]
+  301  GetMissionScriptsCnt               CWorldScriptObject::EC_GetMissionScriptsCnt   [debug index 0x3bc]
+  302  CanOpenGate                        CUnit::EC_CanOpenGate
+  303  IsTurningToGateOrContainerObject   CUnit::EC_IsTurningToGateOrContainerObject
+  304  CallTurnToGateOrContainerObject    CUnit::EC_CallTurnToGateOrContainerObject
+  305  NeedTurnToGateOrContainerObject    CUnit::EC_NeedTurnToGateOrContainerObject
+  306  GetCurrHeadAngle                   CUnit::EC_GetCurrHeadAngle
+  307  SetHeadAngle                       CUnit::EC_SetHeadAngle
+  308  SetHeadCustomIdleAnim              CUnit::EC_SetHeadCustomIdleAnim
+  309  GetMakingCustomWorkAnimNum         CUnit::EC_GetMakingCustomWorkAnimNum
+  310  IsMakingCustomWork                 CUnit::EC_IsMakingCustomWork   [debug index 0x446]
+  311  CallMakeCustomWork                 CUnit::EC_CallMakeCustomWork
+  312  SetCurrCustomWorkParams            CUnit::EC_SetCurrCustomWorkParams2
+  313  HaveCustomWorkAnim                 CUnit::EC_HaveCustomWorkAnim
+  314  StealEquipmentFromObject           CUnit::EC_StealEquipmentFromObject
+  315  HavePlaceToStealEquipment          CUnit::EC_HavePlaceToStealEquipment
+  316  IsMakingSkillStealing              CUnit::EC_IsMakingSkillStealing
+  317  CallMakeSkillStealing              CUnit::EC_CallMakeSkillStealing
+  318  IsTargetInSkillStealingRange       CUnit::EC_IsTargetInSkillStealingRange
+  319  IsCallingHorse                     CUnit::EC_IsCallingHorse
+  320  CallCallHorse                      CUnit::EC_CallCallHorse
+  321  IsInGoodPlaceToUnmountFromHorse    CUnit::EC_IsInGoodPlaceToUnmountFromHorse
+  322  IsUnmountingFromHorse              CUnit::EC_IsUnmountingFromHorse
+  323  CallUnmountFromHorse               CUnit::EC_CallUnmountFromHorse
+  324  IsMountingOnHorse                  CUnit::EC_IsMountingOnHorse
+  325  CallMountOnHorse                   CUnit::EC_CallMountOnHorse
+  326  IsInGoodPlaceToMountOnHorse        CUnit::EC_IsInGoodPlaceToMountOnHorse
+  327  GetPlaceToMountOnHorse             CUnit::EC_GetPlaceToMountOnHorse
+  328  CanMountOnHorse                    CUnit::EC_CanMountOnHorse
+  329  StartGateClickEvent                CUnit::EC_StartGateClickEvent
+  330  PauseDialogTalkHeadAnim            CUnit::EC_PauseDialogTalkHeadAnim
+  331  StopDialogTalkAnim                 CUnit::EC_StopDialogTalkAnim
+  332  StartDialogTalkAnim                CUnit::EC_StartDialogTalkAnim
+  333  IsInDialogChat                     CUnit::EC_IsInDialogChat   [debug index 0x45e]
+  334  FinishAfterDialogChat              CUnit::EC_FinishAfterDialogChat
+  335  PrepareBeforeDialogChat            CUnit::EC_PrepareBeforeDialogChat
+  336  IsInDialogTalk                     CUnit::EC_IsInDialogTalk   [debug index 0x461]
+  337  FinishAfterDialogTalk              CUnit::EC_FinishAfterDialogTalk
+  338  PrepareBeforeDialogTalk            CUnit::EC_PrepareBeforeDialogTalk
+  339  CanStartDirectFightAction          CUnit::EC_CanStartDirectFightAction
+  340  OnStealingDetected                 CUnit::EC_OnStealingDetected
+  341  CanMakeSkillStealing               CUnit::EC_CanMakeSkillStealing
+  342  CanMakeSkillKnifeDeathStrike       CUnit::EC_CanMakeSkillKnifeDeathStrike
+  343  IsInSneakMode                      CUnit::EC_IsInSneakMode
+  344  IsSettingSneakMode                 CUnit::EC_IsSettingSneakMode
+  345  CallSetSneakMode                   CUnit::EC_CallSetSneakMode
+  346  CanSetSneakMode                    CUnit::EC_CanSetSneakMode
+  347  IsSettingTrap                      CUnit::EC_IsSettingTrap
+  348  CallSetTrapAhead                   CUnit::EC_CallSetTrapAhead
+  349  CallSetTrap                        CUnit::EC_CallSetTrap
+  350  IsInGoodPlaceToSetTrap             CUnit::EC_IsInGoodPlaceToSetTrap
+  351  FindPlaceToSetTrap                 CUnit::EC_FindPlaceToSetTrap
+  352  SetCurrTrap                        CUnit::EC_SetCurrTrap
+  353  HaveSetTrapAnim                    CUnit::EC_HaveSetTrapAnim
+  354  CanSetTrap                         CUnit::EC_CanSetTrap
+  355  IsInBerserkMode                    CUnit::EC_IsInBerserkMode
+  356  SetBerserkTicks                    CUnit::EC_SetBerserkTicks
+  357  CanMakeActiveSkill                 CUnit::EC_CanMakeActiveSkill
+  358  GetNextAttackSkillBySecondHand     CUnit::EC_GetNextAttackSkillBySecondHand
+  359  GetNextAttackSkill                 CUnit::EC_GetNextAttackSkill
+  360  SetNextAttackSkill                 CUnit::EC_SetNextAttackSkill2
+  361  ResurrectUnitByMagic               CUnit::EC_ResurrectUnitByMagic
+  362  GetMagicCastRange                  CUnit::EC_GetMagicCastRange
+  363  IsMagicTargetInRange               CUnit::EC_IsMagicTargetInRange
+  364  CanMakeMagic                       CUnit::EC_CanMakeMagic2
+  365  CanUseMagicCard                    CUnit::EC_CanUseMagicCard
+  366  IsMakingMagic                      CUnit::EC_IsMakingMagic
+  367  CallMakeMagic                      CUnit::EC_CallMakeMagic2
+  368  IsOnHorse                          CUnit::EC_IsOnHorse
+  369  TurnToCamera                       CUnit::EC_TurnToCamera
+  370  SetMoveStepInDirectionAfterCommand CUnit::EC_SetMoveStepInDirectionAfterCommand
+  371  GetCurrShootChance                 CUnit::EC_GetCurrShootChance
+  372  IsInArmedModeWithUsableWeapon      CUnit::EC_IsInArmedModeWithUsableWeapon
+  373  IsInArmedModeWithWeapon            CUnit::EC_IsInArmedModeWithWeapon
+  374  IsInArmedMode                      CUnit::EC_IsInArmedMode   [debug index 0x48a]
+  375  IsSettingToUnarmedMode             CUnit::EC_IsSettingToUnarmedMode
+  376  IsSettingToArmedMode               CUnit::EC_IsSettingToArmedMode
+  377  CanSetArmedMode                    CUnit::EC_CanSetArmedMode
+  378  IsSettingArmedMode                 CUnit::EC_IsSettingArmedMode   [debug index 0x48e]
+  379  CallContinueMovingAndSetToArmedMode CUnit::EC_CallContinueMovingAndSetToArmedMode
+  380  CallMoveAndSetToArmedMode          CUnit::EC_CallMoveAndSetToArmedMode
+  381  CallSetArmedMode                   CUnit::EC_CallSetArmedMode
+  382  StepTurnNoAnimToAttackTarget       CUnit::EC_StepTurnNoAnimToAttackTarget
+  383  HaveShootFightActionAnimation      CUnit::EC_HaveShootFightActionAnimation
+  384  HaveFightActionAnimation           CUnit::EC_HaveFightActionAnimation2
+  385  GetPreviousFightAction             CUnit::EC_GetPreviousFightAction
+  386  GetCurrentFightAction              CUnit::EC_GetCurrentFightAction
+  387  OnBeginAttackTarget                CUnit::EC_OnBeginAttackTarget
+  388  GetAttackTarget                    CUnit::EC_GetAttackTarget   [debug index 0x499]
+  389  SetAttackTarget                    CUnit::EC_SetAttackTarget
+  390  FindFreePointForTargetStealing     CUnit::EC_FindFreePointForTargetStealing
+  391  FindFreePointForTargetDirectFight  CUnit::EC_FindFreePointForTargetDirectFight
+  392  IsTargetInAttackRange              CUnit::EC_IsTargetInAttackRange
+  393  GetAttackMinRange                  CUnit::EC_GetAttackMinRange
+  394  GetAttackRange                     CUnit::EC_GetAttackRange
+  395  HaveWeaponPossibleToBrake          CUnit::EC_HaveWeaponPossibleToBrake
+  396  HaveTwoWeapons                     CUnit::EC_HaveTwoWeapons
+  397  HaveUsableWeapon                   CUnit::EC_HaveUsableWeapon   [debug index 0x4a2]
+  398  HaveShootWeapon                    CUnit::EC_HaveShootWeapon
+  399  HaveDirectFightWeapon              CUnit::EC_HaveDirectFightWeapon
+  400  HaveWeapon                         CUnit::EC_HaveWeapon
+  401  IsMovingAndStrikeAttack            CUnit::EC_IsMovingAndStrikeAttack
+  402  IsAttackingInFightAction           CUnit::EC_IsAttackingInFightAction
+  403  IsAttacking                        CUnit::EC_IsAttacking   [debug index 0x4a8]
+  404  CallMakeShootAttackManualFire      CUnit::EC_CallMakeShootAttackManualFire
+  405  CallMakeShootAttackManualPrepare   CUnit::EC_CallMakeShootAttackManualPrepare
+  406  CallMakeStrikeAttack               CUnit::EC_CallMakeStrikeAttack
+  407  CallAttackTarget                   CUnit::EC_CallAttackTarget
+  408  SetStopMovingTicks                 CUnit::EC_SetStopMovingTicks
+  409  SetFreezeTicks                     CUnit::EC_SetFreezeTicks
+  410  GetStopMovingTicks                 CUnit::EC_GetStopMovingTicks
+  411  GetFreezeTicks                     CUnit::EC_GetFreezeTicks
+  412  IsFrozenOrStoppedMoving            CUnit::EC_IsFrozenOrStoppedMoving
+  413  IsStoppedMoving                    CUnit::EC_IsStoppedMoving
+  414  IsFrozen                           CUnit::EC_IsFrozen
+  415  UpdateChangedUnitValues            CUnit::EC_UpdateChangedUnitValues   [debug index 0x4b4]
+  416  HaveAvailableSkill                 CUnit::EC_HaveAvailableSkill
+  417  RemovePotionValues                 CUnit::EC_RemovePotionValues
+  418  AddPotionValues                    CUnit::EC_AddPotionValues4
+  419  FindPotionWithCustomObjectID       CUnit::EC_FindPotionWithCustomObjectID
+  420  FindPotionWithFlags                CUnit::EC_FindPotionWithFlags
+  421  GetPotionValues                    CUnit::EC_GetPotionValues
+  422  GetPotionsCount                    CUnit::EC_GetPotionsCount
+  423  GetPowerUpMagicCardValuesOnSlot    CUnit::EC_GetPowerUpMagicCardValuesOnSlot
+  424  GetPowerUpMagicCardParamsOnSlot    CUnit::EC_GetPowerUpMagicCardParamsOnSlot
+  425  GetPowerUpMagicCardCountOnSlot     CUnit::EC_GetPowerUpMagicCardCountOnSlot
+  426  GetPowerUpMagicCardOnSlot          CUnit::EC_GetPowerUpMagicCardOnSlot
+  427  GetPowerUpMagicCardOnSlotCount     CUnit::EC_GetPowerUpMagicCardOnSlotCount
+  428  GetMagicCardIDOnSlot               CUnit::EC_GetMagicCardIDOnSlot
+  429  GetMagicCardValuesOnSlot           CUnit::EC_GetMagicCardValuesOnSlot
+  430  GetMagicCardParamsOnSlot           CUnit::EC_GetMagicCardParamsOnSlot
+  431  GetMagicCardOnSlot                 CUnit::EC_GetMagicCardOnSlot
+  432  GetMagicCardOnSlotCount            CUnit::EC_GetMagicCardOnSlotCount
+  433  GetMagicClubValues                 CUnit::EC_GetMagicClubValues
+  434  GetMagicClubParams                 CUnit::EC_GetMagicClubParams
+  435  GetMagicClub                       CUnit::EC_GetMagicClub
+  436  HaveMagicClub                      CUnit::EC_HaveMagicClub
+  437  GetWeaponMissileParamsOnSlot       CUnit::EC_GetWeaponMissileParamsOnSlot
+  438  GetWeaponValuesOnSlot              CUnit::EC_GetWeaponValuesOnSlot
+  439  GetWeaponParamsOnSlot              CUnit::EC_GetWeaponParamsOnSlot
+  440  GetWeaponOnSlot                    CUnit::EC_GetWeaponOnSlot2
+  441  HaveWeaponOnSlot                   CUnit::EC_HaveWeaponOnSlot
+  442  GetWeaponMissileParamsOnIndex      CUnit::EC_GetWeaponMissileParamsOnIndex
+  443  GetWeaponValuesOnIndex             CUnit::EC_GetWeaponValuesOnIndex
+  444  GetWeaponParamsOnIndex             CUnit::EC_GetWeaponParamsOnIndex
+  445  GetWeaponOnIndex                   CUnit::EC_GetWeaponOnIndex2
+  446  GetWeaponCount                     CUnit::EC_GetWeaponCount
+  447  GetEquipmentValuesOnSlot           CUnit::EC_GetEquipmentValuesOnSlot
+  448  GetEquipmentParamsOnSlot           CUnit::EC_GetEquipmentParamsOnSlot
+  449  GetEquipmentIDOnSlot               CUnit::EC_GetEquipmentIDOnSlot
+  450  GetEquipmentOnSlot                 CUnit::EC_GetEquipmentOnSlot
+  451  HaveEquipmentOnSlot                CUnit::EC_HaveEquipmentOnSlot
+  452  GetEquipmentValuesOnIndex          CUnit::EC_GetEquipmentValuesOnIndex
+  453  GetEquipmentParamsOnIndex          CUnit::EC_GetEquipmentParamsOnIndex
+  454  GetEquipmentIDOnIndex              CUnit::EC_GetEquipmentIDOnIndex
+  455  GetEquipmentOnIndex                CUnit::EC_GetEquipmentOnIndex
+  456  GetEquipmentCount                  CUnit::EC_GetEquipmentCount
+  457  GetUnitLevel                       CUnit::EC_GetUnitLevel   [debug index 0x4e3]
+  458  GetMana                            CUnit::EC_GetMana
+  459  GetUnitValues                      CUnit::EC_GetUnitValues   [debug index 0x4e6, 0x4d3]
+  460  GetUnitParams                      CUnit::EC_GetUnitParams
+  461  SetHitForcefield                   CUnitBase::EC_SetHitForcefield
+  462  SetEventAlarmEnemy                 CUnitBase::EC_SetEventAlarmEnemy
+  463  IsAlarmModeUnit                    CUnitBase::EC_IsAlarmModeUnit
+  464  SetAlarmModeUnit                   CUnitBase::EC_SetAlarmModeUnit   [debug index 0x4eb]
+  465  GetEarRange                        CUnitBase::EC_GetEarRange
+  466  GetSightAngle                      CUnitBase::EC_GetSightAngle
+  467  GetSightRange                      CUnitBase::EC_GetSightRange   [debug index 0x4ee]
+  468  IsObjectInSightOrHearRange         CUnitBase::EC_IsObjectInSightOrHearRange
+  469  IsSummonedUnit                     CUnitBase::EC_IsSummonedUnit
+  470  SetIsSummonedUnit                  CUnitBase::EC_SetIsSummonedUnit
+  471  IsKillingAnim                      CUnitBase::EC_IsKillingAnim
+  472  GetTimedLifeTicks                  CUnitBase::EC_GetTimedLifeTicks
+  473  SetTimedLife                       CUnitBase::EC_SetTimedLife
+  474  SearchOneUnit                      CUnitBase::EC_SearchOneUnit
+  475  ClearSearchUnitsArray              CUnitBase::EC_ClearSearchUnitsArray
+  476  GetSearchUnit                      CUnitBase::EC_GetSearchUnit   [debug index 0x4f7]
+  477  GetSearchUnitsCount                CUnitBase::EC_GetSearchUnitsCount   [debug index 0x4f8]
+  478  SearchUnits                        CUnitBase::EC_SearchUnits4a   [debug index 0x4fc, 0x4fb]
+  479  IsEnemy                            CUnitBase::EC_IsEnemy
+  480  GetEnemiesParties                  CUnitBase::EC_GetEnemiesParties   [debug index 0x502]
+  481  GetPartiesNums                     CUnitBase::EC_GetPartiesNums   [debug index 0x503]
+  482  IsInParty                          CUnitBase::EC_IsInParty   [debug index 0x504]
+  483  SetIsInParty                       CUnitBase::EC_SetIsInParty   [debug index 0x505]
+  484  SetPartyNum                        CUnitBase::EC_SetPartyNum   [debug index 0x506]
+  485  SetEventAttackByOtherUnit          CUnitBase::EC_SetEventAttackByOtherUnit
+  486  SetCustomIdleAnim                  CUnitBase::EC_SetCustomIdleAnim
+  487  SetHorseTurnMoving                 CUnitBase::EC_SetHorseTurnMoving
+  488  IsHorseMovingBack                  CUnitBase::EC_IsHorseMovingBack
+  489  SetHorseMoveBack                   CUnitBase::EC_SetHorseMoveBack
+  490  GetHorseRunSpeedPercent            CUnitBase::EC_GetHorseRunSpeedPercent
+  491  GetHorseChangeSpeed                CUnitBase::EC_GetHorseChangeSpeed
+  492  SetHorseChangeSpeed                CUnitBase::EC_SetHorseChangeSpeed
+  493  GetHorseMoveSpeed                  CUnitBase::EC_GetHorseMoveSpeed
+  494  SetAutoRunMode                     CUnitBase::EC_SetAutoRunMode
+  495  SetRunMode                         CUnitBase::EC_SetRunMode   [debug index 0x511]
+  496  IsInJumpingState                   CUnitBase::EC_IsInJumpingState
+  497  IsMovingOneStep                    CUnitBase::EC_IsMovingOneStep
+  498  GetMoveTarget                      CUnitBase::EC_GetMoveTarget
+  499  IsFlyableLanding                   CUnitBase::EC_IsFlyableLanding
+  500  IsPreparingToMove                  CUnitBase::EC_IsPreparingToMove
+  501  IsTrueMovingOrTurning              CUnitBase::EC_IsTrueMovingOrTurning
+  502  IsMovingTurning                    CUnitBase::EC_IsMovingTurning
+  503  IsMoving                           CUnitBase::EC_IsMoving   [debug index 0x519]
+  504  CallFlyableFlyToPoint              CUnitBase::EC_CallFlyableFlyToPoint2
+  505  CallFlyableRaise                   CUnitBase::EC_CallFlyableRaise
+  506  CallFlyableSetHeight               CUnitBase::EC_CallFlyableSetHeight2
+  507  CallFlyableLand                    CUnitBase::EC_CallFlyableLand2
+  508  CallStartJumping                   CUnitBase::EC_CallStartJumping
+  509  CallTurnToAngle                    CUnitBase::EC_CallTurnToAngle
+  510  StopCurrentActionImmediate         CUnitBase::EC_StopCurrentActionImmediate
+  511  CallStopCurrentAction              CUnitBase::EC_CallStopCurrentAction
+  512  CallMoveHorseInDirection           CUnitBase::EC_CallMoveHorseInDirection
+  513  CallMoveStepInDirection            CUnitBase::EC_CallMoveStepInDirection
+  514  CallMoveOneStep                    CUnitBase::EC_CallMoveOneStep
+  515  CallMoveToPoint                    CUnitBase::EC_CallMoveToPoint2
+  516  IsNearLevelBorder                  CUnitBase::EC_IsNearLevelBorder2
+  517  IsTheSameMission                   CUnitBase::EC_IsTheSameMissionW
+  518  GetMission                         CUnitBase::EC_GetMission   [debug index 0x52e, 0x349, 0x344, 0x51e]
+  519  GetWorldHeight                     CUnitBase::EC_GetWorldHeight   [debug index 0x380]
+  520  GetWorldWidth                      CUnitBase::EC_GetWorldWidth
+  521  GetWorldTick                       CUnitBase::EC_GetWorldTick
+  522  GetGameTick                        CUnitBase::EC_GetGameTick   [debug index 0x33d]
+  523  GetUnitTypeFlags                   CUnitBase::EC_GetUnitTypeFlags
+  524  GetHorse                           CUnitBase::EC_GetHorse
+  525  GetHorseRider                      CUnitBase::EC_GetHorseRider
+  526  IsContainer                        CUnitBase::EC_IsContainer   [debug index 0x536, 0x51f]
+  527  IsDynamicTeleport                  CUnitBase::EC_IsDynamicTeleport
+  528  IsStaticTeleport                   CUnitBase::EC_IsStaticTeleport
+  529  IsConnectionTeleport               CUnitBase::EC_IsConnectionTeleport
+  530  IsTeleport                         CUnitBase::EC_IsTeleport
+  531  IsHouse                            CUnitBase::EC_IsHouse
+  532  IsGate                             CUnitBase::EC_IsGate   [debug index 0x53c, 0x525]
+  533  IsTrap                             CUnitBase::EC_IsTrap
+  534  IsAlchemyFormulaArtefact           CUnitBase::EC_IsAlchemyFormulaArtefact
+  535  IsCustomArtefact                   CUnitBase::EC_IsCustomArtefact
+  536  IsSpecialArtefact                  CUnitBase::EC_IsSpecialArtefact
+  537  IsPotionArtefact                   CUnitBase::EC_IsPotionArtefact
+  538  IsEquipmentArtefact                CUnitBase::EC_IsEquipmentArtefact
+  539  IsArtefact                         CUnitBase::EC_IsArtefact
+  540  IsRollingStone                     CUnitBase::EC_IsRollingStone
+  541  IsPassive                          CUnitBase::EC_IsPassive
+  542  IsSimplePassive                    CUnitBase::EC_IsSimplePassive
+  543  IsRideableHorseUnit                CUnitBase::EC_IsRideableHorseUnit
+  544  IsHorseUnit                        CUnitBase::EC_IsHorseUnit
+  545  IsKnifeDeathStrikeResistant        CUnitBase::EC_IsKnifeDeathStrikeResistant
+  546  IsImmobileUnitOrCantMoveInCurrentState CUnitBase::EC_IsImmobileUnitOrCantMoveInCurrentState
+  547  IsFlyableOnLand                    CUnitBase::EC_IsFlyableOnLand
+  548  IsTypeFlyableWithLandMode          CUnitBase::EC_IsTypeFlyableWithLandMode
+  549  IsLandObject                       CUnitBase::EC_IsLandObject
+  550  IsAirObject                        CUnitBase::EC_IsAirObject
+  551  IsImmobileUnit                     CUnitBase::EC_IsImmobileUnit
+  552  IsFlyableMove                      CUnitBase::EC_IsFlyableMove
+  553  IsLandMove                         CUnitBase::EC_IsLandMove
+  554  IsShopUnit                         CUnitBase::EC_IsShopUnit   [debug index 0x553]
+  555  IsHeroUnit                         CUnitBase::EC_IsHeroUnit   [debug index 0x554, 0x53d]
+  556  IsUnit                             CUnitBase::EC_IsUnit   [debug index 0x555]
+  557  IsUnitBase                         CUnitBase::EC_IsUnitBase
+  558  CanBeHitAndDamaged                 CUnitBase::EC_CanBeHitAndDamaged
+  559  GetCurrPoison                      CUnitBase::EC_GetCurrPoison
+  560  GetHP                              CUnitBase::EC_GetHP
+  561  GetObjectIDName                    CUnitBase::EC_GetObjectIDName   [debug index 0x544]
+  562  IsStored                           CUnitBase::EC_IsStored
+  563  IsLive                             CUnitBase::EC_IsLive   [debug index 0x55d]
+  564  GetTargetDirectionDiff             CUnitBase::EC_GetTargetDirectionDiff
+  565  GetAngleDiff                       CUnitBase::EC_GetAngleDiff
+  566  GetRelativeAngleTo                 CUnitBase::EC_GetRelativeAngleTo2   [debug index 0x560]
+  567  AngleTo                            CUnitBase::EC_AngleTo2   [debug index 0x565, 0x563]
+  568  DistanceTo                         CUnitBase::EC_DistanceTo2   [debug index 0x567, 0x568, 0x566, 0x558]
+  569  GetDirectionAlpha                  CUnitBase::EC_GetDirectionAlpha
+  570  GetLocation                        CUnitBase::EC_GetLocation2
+  571  GetLocationZ                       CUnitBase::EC_GetLocationZ
+  572  GetLocationY                       CUnitBase::EC_GetLocationY   [debug index 0x56d]
+  573  GetLocationX                       CUnitBase::EC_GetLocationX   [debug index 0x56e, 0x55e]
+  574  GetLandHeight                      CUnitBase::EC_GetLandHeight
+  575  ChangedCommandState                CUnitBase::EC_ChangedCommandState
+  576  EndCommand                         CUnitBase::EC_EndCommand
+  577  SetTimer                           CUnitBase::EC_SetTimer   [debug index 0x30c]
+  578  SetState                           CUnitBase::EC_SetState2
+  579  GetStateDelay                      CUnitBase::EC_GetStateDelay
+  580  SetStateDelay                      CUnitBase::EC_SetStateDelay
+  581  SetUnitMapSignNum                  CUnitBase::EC_SetUnitMapSignNum
+  582  SetStoneWallTicks                  CUnitBase::EC_SetStoneWallTicks
+  583  SetDynamicHoldObject               CUnitBase::EC_SetDynamicHoldObject
+  584  PlayHeroTalk                       CUnitBase::EC_PlayHeroTalk
+  585  SetHeroNetworkColor                CUnitBase::EC_SetHeroNetworkColor
+  586  GetHeroNetworkTeamNum              CUnitBase::EC_GetHeroNetworkTeamNum
+  587  SetHeroNetworkTeamNum              CUnitBase::EC_SetHeroNetworkTeamNum
+  588  GetHeroNetworkGuildNum             CUnitBase::EC_GetHeroNetworkGuildNum
+  589  AddHeroNetworkGuildRankPoints      CUnitBase::EC_AddHeroNetworkGuildRankPoints
+  590  GetHeroNetworkGuildRankPoints      CUnitBase::EC_GetHeroNetworkGuildRankPoints
+  591  AddHeroNetworkGameModePoints       CUnitBase::EC_AddHeroNetworkGameModePoints
+  592  AddHeroNetworkRankPoints           CUnitBase::EC_AddHeroNetworkRankPoints   [debug index 0x56b]
+  593  GetHeroNetworkRankPoints           CUnitBase::EC_GetHeroNetworkRankPoints   [debug index 0x56c]
+  594  IsHeroTypePVP                      CUnitBase::EC_IsHeroTypePVP
+  595  IsHeroTypeRPG                      CUnitBase::EC_IsHeroTypeRPG
+  596  GetHeroInitSkillPoints             CUnitBase::EC_GetHeroInitSkillPoints
+  597  GetHeroFlags                       CUnitBase::EC_GetHeroFlags   [debug index 0x58b]
+  598  SetNotRenderObjectNow              CUnitBase::EC_SetNotRenderObjectNow
+  599  GetNPCNameNum                      CUnitBase::EC_GetNPCNameNum   [debug index 0x58f]
+  600  SetNPCNameNum                      CUnitBase::EC_SetNPCNameNum   [debug index 0x590]
+  601  GetMeshSlotPosition                CUnitBase::EC_GetMeshSlotPosition
+  602  HaveMeshSlot                       CUnitBase::EC_HaveMeshSlot
+  603  SetAlchemyResultFormulaName        CUnitBase::EC_SetAlchemyResultFormulaName
+  604  SetAlchemyItemResult               CUnitBase::EC_SetAlchemyItemResult
+  605  CreateAlchemyResult                CUnitBase::EC_CreateAlchemyResult
+  606  GetAlchemyItem                     CUnitBase::EC_GetAlchemyItem
+  607  GetAlchemyItemCount                CUnitBase::EC_GetAlchemyItemCount
+  608  WasObjectOpen                      CUnitBase::EC_WasObjectOpen2   [debug index 0x599]
+  609  RemoveAllObjectsFromUnitContainer  CUnitBase::EC_RemoveAllObjectsFromUnitContainer
+  610  RemoveObjectFromUnitContainer      CUnitBase::EC_RemoveObjectFromUnitContainer
+  611  GetObjectsInUnitContainerCount     CUnitBase::EC_GetObjectsInUnitContainerCount
+  612  GetObjectInUnitContainerCount      CUnitBase::EC_GetObjectInUnitContainerCount
+  613  IsObjectInUnitContainer            CUnitBase::EC_IsObjectInUnitContainer
+  614  AddObjectToUnitContainer           CUnitBase::EC_AddObjectToUnitContainer
+  615  SetUnitContainerScriptOwnerUID     CUnitBase::EC_SetUnitContainerScriptOwnerUID
+  616  RemoveAllObjectsFromDeadBody       CUnitBase::EC_RemoveAllObjectsFromDeadBody
+  617  RemoveObjectFromDeadBody           CUnitBase::EC_RemoveObjectFromDeadBody
+  618  GetObjectsInDeadBodyCount          CUnitBase::EC_GetObjectsInDeadBodyCount
+  619  GetObjectInDeadBodyCount           CUnitBase::EC_GetObjectInDeadBodyCount
+  620  IsObjectInDeadBody                 CUnitBase::EC_IsObjectInDeadBody
+  621  AddObjectToDeadBody                CUnitBase::EC_AddObjectToDeadBody
+  622  AddObjectsFromParamsToDeadBody     CUnitBase::EC_AddObjectsFromParamsToDeadBody2
+  623  SetDeadBodyScriptOwnerUID          CUnitBase::EC_SetDeadBodyScriptOwnerUID
+  624  RemoveAllObjectsFromContainer      CUnitBase::EC_RemoveAllObjectsFromContainer
+  625  RemoveObjectFromContainer          CUnitBase::EC_RemoveObjectFromContainer
+  626  GetObjectsInContainerCount         CUnitBase::EC_GetObjectsInContainerCount
+  627  GetObjectInContainerCount          CUnitBase::EC_GetObjectInContainerCount
+  628  IsObjectInContainer                CUnitBase::EC_IsObjectInContainer
+  629  AddObjectToContainer               CUnitBase::EC_AddObjectToContainer
+  630  GetContainerScriptOwnerUID         CUnitBase::EC_GetContainerScriptOwnerUID
+  631  SetContainerScriptOwnerUID         CUnitBase::EC_SetContainerScriptOwnerUID
+  632  GetObjectCreateString              CUnitBase::EC_GetObjectCreateString   [debug index 0x5b4]
+  633  IsTurnParticlePassive              CUnitBase::EC_IsTurnParticlePassive
+  634  TurnParticlePassive                CUnitBase::EC_TurnParticlePassive
+  635  GetObjectMarkerNum                 CUnitBase::EC_GetObjectMarkerNum
+  636  GetCustomFlags                     CUnitBase::EC_GetCustomFlags
+  637  GetHouseInternalDoor               CUnitBase::EC_GetHouseInternalDoor
+  638  GetHouseInternalDoorsCount         CUnitBase::EC_GetHouseInternalDoorsCount
+  639  GetHouseExternalDoor               CUnitBase::EC_GetHouseExternalDoor
+  640  GetHouseExternalDoorsCount         CUnitBase::EC_GetHouseExternalDoorsCount
+  641  GetMainHouse                       CUnitBase::EC_GetMainHouse2
+  642  GetHouseWithObject                 CUnitBase::EC_GetHouseWithObject   [debug index 0x5bf]
+  643  IsObjectInHouse                    CUnitBase::EC_IsObjectInHouse2   [debug index 0x5c1]
+  644  MountOnHorse                       CUnitBase::EC_MountOnHorse
+  645  GetHeroPlayerNum                   CUnitBase::EC_GetHeroPlayerNum   [debug index 0x5c3, 0x5a7]
+  646  LoadScript                         CUnitBase::EC_LoadScript
+  647  IsTeleportEnabled                  CUnitBase::EC_IsTeleportEnabled
+  648  EnableTeleport                     CUnitBase::EC_EnableTeleport
+  649  IsTeleportActiveTarget             CUnitBase::EC_IsTeleportActiveTarget
+  650  IsTeleportActiveSource             CUnitBase::EC_IsTeleportActiveSource
+  651  ActivateTeleport                   CUnitBase::EC_ActivateTeleport2   [debug index 0x5a2]
+  652  HaveConnectionTeleportDestination  CUnitBase::EC_HaveConnectionTeleportDestination
+  653  SetConnectionTeleportDestination   CUnitBase::EC_SetConnectionTeleportDestination2
+  654  GetPlayersCommonAttribute          CUnitBase::EC_GetPlayersCommonAttribute4   [debug index 0x5d0, 0x5a8]
+  655  ResetPlayersCommonAttributes       CUnitBase::EC_ResetPlayersCommonAttributes
+  656  ResetPlayersCommonAttribute        CUnitBase::EC_ResetPlayersCommonAttribute2
+  657  SetPlayersCommonAttribute          CUnitBase::EC_SetPlayersCommonAttribute4   [debug index 0x5d7]
+  658  GetAttribute                       CUnitBase::EC_GetAttribute4   [debug index 0x5db, 0x5d9, 0x30f, 0x5dc]
+  659  ResetAttributes                    CUnitBase::EC_ResetAttributes
+  660  ResetAttribute                     CUnitBase::EC_ResetAttribute2   [debug index 0x5de]
+  661  SetAttribute                       CUnitBase::EC_SetAttribute4   [debug index 0x5e2, 0x5e0, 0x316, 0x5e3, 0x5c6]
+  662  RemoveMagicCards                   CUnitBase::EC_RemoveMagicCards2
+  663  AddMagicCard                       CUnitBase::EC_AddMagicCard2   [debug index 0x5e7]
+  664  GetCustomObjectParticleNum         CUnitBase::EC_GetCustomObjectParticleNum
+  665  SetCustomObjectParticleNum         CUnitBase::EC_SetCustomObjectParticleNum
+  666  SetShopScriptOwnerUID              CUnitBase::EC_SetShopScriptOwnerUID
+  667  GetShopSellPriceTypePercent        CUnitBase::EC_GetShopSellPriceTypePercent
+  668  SetShopSellPriceTypePercent        CUnitBase::EC_SetShopSellPriceTypePercent   [debug index 0x5ec]
+  669  GetShopBuyPriceTypePercent         CUnitBase::EC_GetShopBuyPriceTypePercent
+  670  SetShopBuyPriceTypePercent         CUnitBase::EC_SetShopBuyPriceTypePercent   [debug index 0x5ee]
+  671  IsShopEnabled                      CUnitBase::EC_IsShopEnabled   [debug index 0x5ef]
+  672  EnableShop                         CUnitBase::EC_EnableShop   [debug index 0x5f0]
+  673  GetShopEquipmentValues             CUnitBase::EC_GetShopEquipmentValues
+  674  GetShopObjectID                    CUnitBase::EC_GetShopObjectID
+  675  GetObjectsInShopCount              CUnitBase::EC_GetObjectsInShopCount
+  676  GetObjectInShopCount               CUnitBase::EC_GetObjectInShopCount
+  677  RemoveAllObjectsFromShop           CUnitBase::EC_RemoveAllObjectsFromShop   [debug index 0x5f5]
+  678  RemoveObjectFromShop               CUnitBase::EC_RemoveObjectFromShop2
+  679  IsObjectInShop                     CUnitBase::EC_IsObjectInShop
+  680  AddObjectToShop                    CUnitBase::EC_AddObjectToShop   [debug index 0x5f9]
+  681  StartRollingStone                  CUnitBase::EC_StartRollingStone
+  682  SetInterfaceFlagSetMagic           CUnitBase::EC_SetInterfaceFlagSetMagic
+  683  SetInterfaceFlagSetInventory       CUnitBase::EC_SetInterfaceFlagSetInventory
+  684  SetInterfaceFlagSetExperiencePoints CUnitBase::EC_SetInterfaceFlagSetExperiencePoints
+  685  SetAnimFrame                       CUnitBase::EC_SetAnimFrame
+  686  StopLoopedAnim                     CUnitBase::EC_StopLoopedAnim
+  687  StartLoopedAnim                    CUnitBase::EC_StartLoopedAnim
+  688  PlayAnim                           CUnitBase::EC_PlayAnim
+  689  GetGateScriptOwnerUID              CUnitBase::EC_GetGateScriptOwnerUID
+  690  SetGateScriptOwnerUID              CUnitBase::EC_SetGateScriptOwnerUID   [debug index 0x603]
+  691  IsGateClosing                      CUnitBase::EC_IsGateClosing
+  692  IsGateClosed                       CUnitBase::EC_IsGateClosed   [debug index 0x605]
+  693  IsGateOpenNotClosing               CUnitBase::EC_IsGateOpenNotClosing
+  694  IsGateOpening                      CUnitBase::EC_IsGateOpening
+  695  IsGateOpen                         CUnitBase::EC_IsGateOpen   [debug index 0x608]
+  696  SetGateOpen                        CUnitBase::EC_SetGateOpen3   [debug index 0x60a, 0x60b]
+  697  GetTrapAddTicks                    CUnitBase::EC_GetTrapAddTicks
+  698  GetTrapAddDamage                   CUnitBase::EC_GetTrapAddDamage
+  699  InitTrap                           CUnitBase::EC_InitTrap2
+  700  GetDialogUnitStartDialogRangeA     CUnitBase::EC_GetDialogUnitStartDialogRangeA
+  701  IsDialogUnit                       CUnitBase::EC_IsDialogUnit   [debug index 0x611]
+  702  ResetIsDialogUnit                  CUnitBase::EC_ResetIsDialogUnit   [debug index 0x612]
+  703  SetIsDialogUnit                    CUnitBase::EC_SetIsDialogUnit2   [debug index 0x614]
+  704  IsRemoveOnUnloadLevel              CUnitBase::EC_IsRemoveOnUnloadLevel   [debug index 0x615]
+  705  SetRemoveOnUnloadLevel             CUnitBase::EC_SetRemoveOnUnloadLevel   [debug index 0x616]
+  706  KillObject                         CUnitBase::EC_KillObject   [debug index 0x617]
+  707  RemoveObject                       CUnitBase::EC_RemoveObject   [debug index 0x618]
+  708  HealPoison                         CUnitBase::EC_HealPoison   [debug index 0x5fd]
+  709  SetMana                            CUnitBase::EC_SetMana
+  710  AddMana                            CUnitBase::EC_AddMana
+  711  SetHP                              CUnitBase::EC_SetHP   [debug index 0x600]
+  712  AddHP                              CUnitBase::EC_AddHP
+  713  FindKeyArtefactInInventory         CUnitBase::EC_FindKeyArtefactInInventory2   [debug index 0x61f, 0x5f7]
+  714  GetKeyArtefactsInInventoryCount    CUnitBase::EC_GetKeyArtefactsInInventoryCount2   [debug index 0x621]
+  715  GetInventoryEquipmentValues        CUnitBase::EC_GetInventoryEquipmentValues
+  716  GetInventoryObjectCount            CUnitBase::EC_GetInventoryObjectCount
+  717  GetInventoryObjectID               CUnitBase::EC_GetInventoryObjectID   [debug index 0x624]
+  718  FindItemNumberInSubObjectSlot      CUnitBase::EC_FindItemNumberInSubObjectSlot
+  719  FindItemNumberInInventory          CUnitBase::EC_FindItemNumberInInventory
+  720  IsFreePlaceForObjectInInventory    CUnitBase::EC_IsFreePlaceForObjectInInventory   [debug index 0x627]
+  721  GetInventorySize                   CUnitBase::EC_GetInventorySize   [debug index 0x628]
+  722  CountAllObjectsInInventory         CUnitBase::EC_CountAllObjectsInInventory
+  723  GetObjectInInventoryCount          CUnitBase::EC_GetObjectInInventoryCount2   [debug index 0x62b]
+  724  RemoveObjectFromInventory          CUnitBase::EC_RemoveObjectFromInventory4   [debug index 0x62f, 0x62c]
+  725  IsObjectInInventory                CUnitBase::EC_IsObjectInInventory2   [debug index 0x631]
+  726  AddInventory                       CUnitBase::EC_AddInventory2   [debug index 0x633]
+  727  GetArtefactEquipmentIDName         CUnitBase::EC_GetArtefactEquipmentIDName
+  728  GetArtefactEquipmentValues         CUnitBase::EC_GetArtefactEquipmentValues
+  729  GetArtefactMoney                   CUnitBase::EC_GetArtefactMoney
+  730  SetArtefactMoney                   CUnitBase::EC_SetArtefactMoney
+  731  GetArtefactRange                   CUnitBase::EC_GetArtefactRange
+  732  SetArtefactRange                   CUnitBase::EC_SetArtefactRange
+  733  GetArtefactScriptOwnerUID          CUnitBase::EC_GetArtefactScriptOwnerUID
+  734  SetArtefactScriptOwnerUID          CUnitBase::EC_SetArtefactScriptOwnerUID
+  735  GetArtefactScriptNum               CUnitBase::EC_GetArtefactScriptNum
+  736  SetArtefactScriptNum               CUnitBase::EC_SetArtefactScriptNum
+  737  ResurrectUnit                      CUnitBase::EC_ResurrectUnit   [debug index 0x63e]
+  738  SetImmediatePosition               CUnitBase::EC_SetImmediatePosition4   [debug index 0x642, 0x640, 0x625]
+  739  CommandRepeatExecution             CUnit::EC_CommandRepeatExecution
+  740  CommandEndQuickRecord              CUnit::EC_CommandEndQuickRecord
+  741  CommandBeginQuickRecord            CUnit::EC_CommandBeginQuickRecord
+  742  CommandExecuteRecord               CUnit::EC_CommandExecuteRecord
+  743  CommandEndRecord                   CUnit::EC_CommandEndRecord
+  744  CommandBeginRecord                 CUnit::EC_CommandBeginRecord
+  745  CommandUserPoint9                  CUnit::EC_CommandUserPoint9
+  746  CommandUserPoint8                  CUnit::EC_CommandUserPoint8
+  747  CommandUserPoint7                  CUnit::EC_CommandUserPoint7
+  748  CommandUserPoint6                  CUnit::EC_CommandUserPoint6
+  749  CommandUserPoint5                  CUnit::EC_CommandUserPoint5
+  750  CommandUserPoint4                  CUnit::EC_CommandUserPoint4
+  751  CommandUserPoint3                  CUnit::EC_CommandUserPoint3
+  752  CommandUserPoint2                  CUnit::EC_CommandUserPoint2
+  753  CommandUserPoint1                  CUnit::EC_CommandUserPoint1
+  754  CommandUserPoint0                  CUnit::EC_CommandUserPoint0
+  755  CommandUserObject9                 CUnit::EC_CommandUserObject9
+  756  CommandUserObject8                 CUnit::EC_CommandUserObject8
+  757  CommandUserObject7                 CUnit::EC_CommandUserObject7
+  758  CommandUserObject6                 CUnit::EC_CommandUserObject6
+  759  CommandUserObject5                 CUnit::EC_CommandUserObject5
+  760  CommandUserObject4                 CUnit::EC_CommandUserObject4
+  761  CommandUserObject3                 CUnit::EC_CommandUserObject3
+  762  CommandUserObject2                 CUnit::EC_CommandUserObject2
+  763  CommandUserObject1                 CUnit::EC_CommandUserObject1
+  764  CommandUserObject0                 CUnit::EC_CommandUserObject0
+  765  CommandUserOneParam9               CUnit::EC_CommandUserOneParam9
+  766  CommandUserOneParam8               CUnit::EC_CommandUserOneParam8
+  767  CommandUserOneParam7               CUnit::EC_CommandUserOneParam7
+  768  CommandUserOneParam6               CUnit::EC_CommandUserOneParam6
+  769  CommandUserOneParam5               CUnit::EC_CommandUserOneParam5
+  770  CommandUserOneParam4               CUnit::EC_CommandUserOneParam4
+  771  CommandUserOneParam3               CUnit::EC_CommandUserOneParam3
+  772  CommandUserOneParam2               CUnit::EC_CommandUserOneParam2
+  773  CommandUserOneParam1               CUnit::EC_CommandUserOneParam1
+  774  CommandUserOneParam0               CUnit::EC_CommandUserOneParam0
+  775  CommandUserNoParam9                CUnit::EC_CommandUserNoParam9
+  776  CommandUserNoParam8                CUnit::EC_CommandUserNoParam8
+  777  CommandUserNoParam7                CUnit::EC_CommandUserNoParam7
+  778  CommandUserNoParam6                CUnit::EC_CommandUserNoParam6
+  779  CommandUserNoParam5                CUnit::EC_CommandUserNoParam5
+  780  CommandUserNoParam4                CUnit::EC_CommandUserNoParam4
+  781  CommandUserNoParam3                CUnit::EC_CommandUserNoParam3
+  782  CommandUserNoParam2                CUnit::EC_CommandUserNoParam2
+  783  CommandUserNoParam1                CUnit::EC_CommandUserNoParam1
+  784  CommandUserNoParam0                CUnit::EC_CommandUserNoParam0
+  785  CommandSetSkill                    CUnit::EC_CommandSetSkill
+  786  CommandSetPoint                    CUnit::EC_CommandSetPoint
+  787  CommandTeleportToActiveTargetTeleport CUnit::EC_CommandTeleportToActiveTargetTeleport
+  788  CommandOpenTeleport                CUnit::EC_CommandOpenTeleport
+  789  CommandPutObjectToContainer        CUnit::EC_CommandPutObjectToContainer
+  790  CommandGetAllFromContainer         CUnit::EC_CommandGetAllFromContainer
+  791  CommandGetObjectFromContainer      CUnit::EC_CommandGetObjectFromContainer
+  792  CommandOpenContainerObject         CUnit::EC_CommandOpenContainerObject
+  793  CommandTalkWithDialogUnit          CUnit::EC_CommandTalkWithDialogUnit
+  794  CommandSwitchObject                CUnit::EC_CommandSwitchObject
+  795  CommandUnablePickUpObject          CUnit::EC_CommandUnablePickUpObject
+  796  CommandPickUpObject                CUnit::EC_CommandPickUpObject
+  797  CommandDropMagicFromSlot           CUnit::EC_CommandDropMagicFromSlot
+  798  CommandDropInventory               CUnit::EC_CommandDropInventory
+  799  CommandDropMoney                   CUnit::EC_CommandDropMoney
+  800  CommandDropSubObject               CUnit::EC_CommandDropSubObject
+  801  CommandAutoArrangeInventory        CUnit::EC_CommandAutoArrangeInventory
+  802  CommandMoveAlchemyFormulaDown      CUnit::EC_CommandMoveAlchemyFormulaDown
+  803  CommandMoveAlchemyFormulaUp        CUnit::EC_CommandMoveAlchemyFormulaUp
+  804  CommandUnloadAlchemyFormula        CUnit::EC_CommandUnloadAlchemyFormula
+  805  CommandLoadAlchemyFormula          CUnit::EC_CommandLoadAlchemyFormula
+  806  CommandDeleteAlchemyFormula        CUnit::EC_CommandDeleteAlchemyFormula
+  807  CommandSetAlchemyFormulaName       CUnit::EC_CommandSetAlchemyFormulaName
+  808  CommandAddAlchemyResultFormula     CUnit::EC_CommandAddAlchemyResultFormula
+  809  CommandMoveMagicFromSlotToSlot     CUnit::EC_CommandMoveMagicFromSlotToSlot
+  810  CommandMoveMagicFromSlotToInventory CUnit::EC_CommandMoveMagicFromSlotToInventory
+  811  CommandMoveSubObjectFromSlotToSlot CUnit::EC_CommandMoveSubObjectFromSlotToSlot
+  812  CommandMoveSubObjectToInventory    CUnit::EC_CommandMoveSubObjectToInventory
+  813  CommandSetInventoryObjectPos       CUnit::EC_CommandSetInventoryObjectPos
+  814  CommandJoinInventoryObjects        CUnit::EC_CommandJoinInventoryObjects
+  815  CommandUseRegenerateManaPotion     CUnit::EC_CommandUseRegenerateManaPotion
+  816  CommandUseRegenerateHPPotion       CUnit::EC_CommandUseRegenerateHPPotion
+  817  CommandUseNextWeapon               CUnit::EC_CommandUseNextWeapon
+  818  CommandUsePrevWeapon               CUnit::EC_CommandUsePrevWeapon
+  819  CommandUseObjectFromInventory      CUnit::EC_CommandUseObjectFromInventory
+  820  eCommandSkillPullShieldSecondHand  CUnit::EC_eCommandSkillPullShieldSecondHand
+  821  eCommandSkillStunSecondHand        CUnit::EC_eCommandSkillStunSecondHand
+  822  CommandSkillSetTrap                CUnit::EC_CommandSkillSetTrap
+  823  CommandSkillStealing               CUnit::EC_CommandSkillStealing
+  824  CommandSkillSneak                  CUnit::EC_CommandSkillSneak
+  825  CommandSkillArrowOfDust            CUnit::EC_CommandSkillArrowOfDust
+  826  CommandSkillPiercing               CUnit::EC_CommandSkillPiercing
+  827  CommandSkillMultiArrows            CUnit::EC_CommandSkillMultiArrows
+  828  CommandSkillDisarmingArrow         CUnit::EC_CommandSkillDisarmingArrow
+  829  CommandSkillShieldTrick            CUnit::EC_CommandSkillShieldTrick
+  830  CommandSkillBurn                   CUnit::EC_CommandSkillBurn
+  831  CommandSkillDeadlyPiruet           CUnit::EC_CommandSkillDeadlyPiruet
+  832  CommandSkillKnifeDeathStrike       CUnit::EC_CommandSkillKnifeDeathStrike
+  833  CommandSkillPullShield             CUnit::EC_CommandSkillPullShield
+  834  CommandSkillDismountFromHorse      CUnit::EC_CommandSkillDismountFromHorse
+  835  CommandSkillSwordBrake             CUnit::EC_CommandSkillSwordBrake
+  836  CommandSkillStun                   CUnit::EC_CommandSkillStun
+  837  CommandSkillDirtyTrick             CUnit::EC_CommandSkillDirtyTrick
+  838  CommandSkillDefensiveFight         CUnit::EC_CommandSkillDefensiveFight
+  839  CommandSkillBerserk                CUnit::EC_CommandSkillBerserk
+  840  CommandMagicCardObject             CUnit::EC_CommandMagicCardObject
+  841  CommandMagicCardDirect             CUnit::EC_CommandMagicCardDirect
+  842  CommandMakeCustomWork              CUnit::EC_CommandMakeCustomWork
+  843  CommandClickEventOnGate            CUnit::EC_CommandClickEventOnGate
+  844  CommandPauseDialogTalkHeadAnim     CUnit::EC_CommandPauseDialogTalkHeadAnim
+  845  CommandStopDialogTalkAnim          CUnit::EC_CommandStopDialogTalkAnim
+  846  CommandStartDialogTalkAnim         CUnit::EC_CommandStartDialogTalkAnim
+  847  CommandFinishAfterDialogChat       CUnit::EC_CommandFinishAfterDialogChat
+  848  CommandPrepareBeforeDialogChat     CUnit::EC_CommandPrepareBeforeDialogChat
+  849  CommandFinishAfterDialogTalk       CUnit::EC_CommandFinishAfterDialogTalk
+  850  CommandPrepareBeforeDialogTalk     CUnit::EC_CommandPrepareBeforeDialogTalk
+  851  CommandCallHorse                   CUnit::EC_CommandCallHorse
+  852  CommandUnmountFromHorse            CUnit::EC_CommandUnmountFromHorse
+  853  CommandMountOnHorse                CUnit::EC_CommandMountOnHorse
+  854  CommandSetArmedMode                CUnit::EC_CommandSetArmedMode   [debug index 0x6bb]
+  855  CommandMoveAttack                  CUnit::EC_CommandMoveAttack   [debug index 0x6bc]
+  856  CommandTurnToCamera                CUnit::EC_CommandTurnToCamera
+  857  CommandShootAttackManualFire       CUnit::EC_CommandShootAttackManualFire
+  858  eCommandShootAttackManualPrepare   CUnit::EC_eCommandShootAttackManualPrepare
+  859  CommandStrikeAttack                CUnit::EC_CommandStrikeAttack
+  860  CommandAttack                      CUnit::EC_CommandAttack   [debug index 0x6c1]
+  861  CommandMoveHorseStopTurn           CUnit::EC_CommandMoveHorseStopTurn
+  862  CommandMoveHorseTurnRight          CUnit::EC_CommandMoveHorseTurnRight
+  863  CommandMoveHorseTurnLeft           CUnit::EC_CommandMoveHorseTurnLeft
+  864  CommandMoveHorseQuickStop          CUnit::EC_CommandMoveHorseQuickStop
+  865  CommandMoveHorseStopMoveBack       CUnit::EC_CommandMoveHorseStopMoveBack
+  866  CommandMoveHorseMoveBack           CUnit::EC_CommandMoveHorseMoveBack
+  867  CommandMoveHorseStopSlowDown       CUnit::EC_CommandMoveHorseStopSlowDown
+  868  CommandMoveHorseSlowDown           CUnit::EC_CommandMoveHorseSlowDown
+  869  CommandMoveHorseStopSpeedUp        CUnit::EC_CommandMoveHorseStopSpeedUp
+  870  CommandMoveHorseSpeedUp            CUnit::EC_CommandMoveHorseSpeedUp
+  871  CommandStartJump                   CUnit::EC_CommandStartJump
+  872  CommandStopMovingStep              CUnit::EC_CommandStopMovingStep
+  873  CommandMoveStepInDirection         CUnit::EC_CommandMoveStepInDirection
+  874  CommandMoveOneStepRight            CUnit::EC_CommandMoveOneStepRight
+  875  CommandMoveOneStepLeft             CUnit::EC_CommandMoveOneStepLeft
+  876  CommandMoveOneStepBack             CUnit::EC_CommandMoveOneStepBack
+  877  CommandMoveOneStepForward          CUnit::EC_CommandMoveOneStepForward
+  878  CommandUpdateHeroPos               CUnit::EC_CommandUpdateHeroPos
+  879  CommandTurn                        CUnit::EC_CommandTurn   [debug index 0x6d4]
+  880  CommandMoveXYZA                    CUnit::EC_CommandMoveXYZA
+  881  CommandMove                        CUnit::EC_CommandMove   [debug index 0x6d6]
+  882  CommandStop                        CUnit::EC_CommandStop   [debug index 0x6d7]
+  883  PlayerLeftTrade                    CHero::EC_PlayerLeftTrade
+  884  DecideAboutTrade                   CHero::EC_DecideAboutTrade
+  885  GetAllFromTradeContainer           CHero::EC_GetAllFromTradeContainer
+  886  GetObjectFromTradeContainer        CHero::EC_GetObjectFromTradeContainer
+  887  PutObjectToTradeContainer          CHero::EC_PutObjectToTradeContainer
+  888  TeleportToActiveTargetTeleport     CHero::EC_TeleportToActiveTargetTeleport
+  889  OpenTeleport                       CHero::EC_OpenTeleport
+  890  PutObjectToContainer               CHero::EC_PutObjectToContainer
+  891  GetAllFromContainer                CHero::EC_GetAllFromContainer
+  892  GetObjectFromContainer             CHero::EC_GetObjectFromContainer
+  893  StartOpenContainerObject           CHero::EC_StartOpenContainerObject
+  894  IsContainerObjectInOpenRange       CHero::EC_IsContainerObjectInOpenRange
+  895  IsOpenContainerObjectType          CHero::EC_IsOpenContainerObjectType
+  896  StartTalkWithDialogUnit            CHero::EC_StartTalkWithDialogUnit
+  897  IsDialogUnitInTalkRange            CHero::EC_IsDialogUnitInTalkRange
+  898  CanSwitchObject                    CHero::EC_CanSwitchObject
+  899  IsObjectInSwitchRange              CHero::EC_IsObjectInSwitchRange
+  900  SwitchObject                       CHero::EC_SwitchObject
+  901  CanPickUpObject                    CHero::EC_CanPickUpObject
+  902  IsObjectInPickUpRange              CHero::EC_IsObjectInPickUpRange
+  903  PickUpObject                       CHero::EC_PickUpObject
+  904  MoveAlchemyFormulaDown             CHero::EC_MoveAlchemyFormulaDown
+  905  MoveAlchemyFormulaUp               CHero::EC_MoveAlchemyFormulaUp
+  906  UnloadAlchemyFormula               CHero::EC_UnloadAlchemyFormula
+  907  LoadAlchemyFormula                 CHero::EC_LoadAlchemyFormula
+  908  DeleteAlchemyFormula               CHero::EC_DeleteAlchemyFormula
+  909  SetAlchemyFormulaName              CHero::EC_SetAlchemyFormulaName
+  910  AddAlchemyResultFormula            CHero::EC_AddAlchemyResultFormula
+  911  MakeAlchemy                        CHero::EC_MakeAlchemy
+  912  MoveAlchemyItemFromSlotToSlot      CHero::EC_MoveAlchemyItemFromSlotToSlot
+  913  MoveAlchemyItemToInventory         CHero::EC_MoveAlchemyItemToInventory
+  914  MoveInventoryToAlchemyItem         CHero::EC_MoveInventoryToAlchemyItem
+  915  DropAlchemyItem                    CHero::EC_DropAlchemyItem
+  916  DropMagicFromSlot                  CHero::EC_DropMagicFromSlot
+  917  DropInventory                      CHero::EC_DropInventory
+  918  DropMoney                          CHero::EC_DropMoney
+  919  DropSubObject                      CHero::EC_DropSubObject
+  920  AutoArrangeInventory               CHero::EC_AutoArrangeInventory
+  921  SetInventoryObjectPos              CHero::EC_SetInventoryObjectPos
+  922  JoinInventoryObjects               CHero::EC_JoinInventoryObjects
+  923  UseRegenerateManaPotion            CHero::EC_UseRegenerateManaPotion
+  924  UseRegenerateHPPotion              CHero::EC_UseRegenerateHPPotion
+  925  UseNextWeapon                      CHero::EC_UseNextWeapon
+  926  UsePrevWeapon                      CHero::EC_UsePrevWeapon
+  927  UseObjectFromInventory             CHero::EC_UseObjectFromInventory
+  928  MoveMagicFromSlotToSlot            CHero::EC_MoveMagicFromSlotToSlot
+  929  MoveMagicFromSlotToInventory       CHero::EC_MoveMagicFromSlotToInventory
+  930  MoveSubObjectFromSlotToSlot        CHero::EC_MoveSubObjectFromSlotToSlot
+  931  MoveSubObjectToInventory           CHero::EC_MoveSubObjectToInventory
+  932  GetThis                            CHero::EC_GetThis   [debug index 0x3bd]
+  933  GetRequiredMagic                   CEquipmentData::EC_GetRequiredMagic
+  934  GetRequiredDexterity               CEquipmentData::EC_GetRequiredDexterity
+  935  GetRequiredStrength                CEquipmentData::EC_GetRequiredStrength
+  936  GetEquipmentFlags                  CEquipmentData::EC_GetEquipmentFlags
+  937  GetSlotNumMask                     CEquipmentData::EC_GetSlotNumMask
+  938  GetType                            CEquipmentData::EC_GetType
+  939  SetWeaponTrailHitColor             CEquipmentValues::EC_SetWeaponTrailHitColor
+  940  GetWeaponTrailHitColor             CEquipmentValues::EC_GetWeaponTrailHitColor
+  941  SetWeaponTrailNormalColor          CEquipmentValues::EC_SetWeaponTrailNormalColor
+  942  GetWeaponTrailNormalColor          CEquipmentValues::EC_GetWeaponTrailNormalColor
+  943  SetWeaponExtraExplosionType        CEquipmentValues::EC_SetWeaponExtraExplosionType
+  944  GetWeaponExtraExplosionType        CEquipmentValues::EC_GetWeaponExtraExplosionType
+  945  SetForceFieldType                  CEquipmentValues::EC_SetForceFieldType
+  946  GetForceFieldType                  CEquipmentValues::EC_GetForceFieldType
+  947  SetWeaponExtraDamageType           CEquipmentValues::EC_SetWeaponExtraDamageType
+  948  GetWeaponExtraDamageType           CEquipmentValues::EC_GetWeaponExtraDamageType
+  949  SetWeaponExtraDamagePercent        CEquipmentValues::EC_SetWeaponExtraDamagePercent
+  950  GetWeaponExtraDamagePercent        CEquipmentValues::EC_GetWeaponExtraDamagePercent
+  951  SetWeaponVarMax                    CEquipmentValues::EC_SetWeaponVarMax
+  952  GetWeaponVarMax                    CEquipmentValues::EC_GetWeaponVarMax
+  953  SetWeaponVarMin                    CEquipmentValues::EC_SetWeaponVarMin
+  954  GetWeaponVarMin                    CEquipmentValues::EC_GetWeaponVarMin
+  955  SetParry                           CEquipmentValues::EC_SetParry
+  956  GetParry                           CEquipmentValues::EC_GetParry
+  957  SetPhysicalArmour                  CEquipmentValues::EC_SetPhysicalArmour
+  958  GetPhysicalArmour                  CEquipmentValues::EC_GetPhysicalArmour
+  959  SetRequiredLevel                   CEquipmentValues::EC_SetRequiredLevel
+  960  GetRequiredLevel                   CEquipmentValues::EC_GetRequiredLevel
+  961  SetMeshNum                         CEquipmentValues::EC_SetMeshNum
+  962  GetMeshNum                         CEquipmentValues::EC_GetMeshNum
+  963  SetMultiplied2                     CEquipmentValues::EC_SetMultiplied2
+  964  GetMultiplied2                     CEquipmentValues::EC_GetMultiplied2
+  965  SetMultiplied                      CEquipmentValues::EC_SetMultiplied
+  966  GetMultiplied                      CEquipmentValues::EC_GetMultiplied
+  967  SetClass                           CEquipmentValues::EC_SetClass
+  968  GetClass                           CEquipmentValues::EC_GetClass
+  969  GetShootChanceValue                CWeaponData::EC_GetShootChanceValue
+  970  GetMaxRangeA                       CWeaponData::EC_GetMaxRangeA
+  971  GetMinRangeA                       CWeaponData::EC_GetMinRangeA
+  972  GetFightRangeA                     CWeaponData::EC_GetFightRangeA
+  973  GetWeaponFlags                     CWeaponData::EC_GetWeaponFlags
+  974  GetWeaponType                      CWeaponData::EC_GetWeaponType
+  975  GetPriceModifier                   CWeaponData::EC_GetPriceModifier
+  976  GetManaFullRegenerationTicks       CMagicClubData::EC_GetManaFullRegenerationTicks
+  977  GetMaxMana                         CMagicClubData::EC_GetMaxMana
+  978  GetAddMagicSchoolSkill             CMagicClubData::EC_GetAddMagicSchoolSkill
+  979  GetSummonTicks                     CMagicCardData::EC_GetSummonTicks
+  980  GetTargetTypeModifierMulFromHorse  CMagicCardData::EC_GetTargetTypeModifierMulFromHorse
+  981  GetPowerUpValue                    CMagicCardData::EC_GetPowerUpValue
+  982  GetPowerUpType                     CMagicCardData::EC_GetPowerUpType
+  983  GetCastRangeA                      CMagicCardData::EC_GetCastRangeA
+  984  GetUsedMana                        CMagicCardData::EC_GetUsedMana
+  985  GetMagicFlags                      CMagicCardData::EC_GetMagicFlags
+  986  GetRequiredMagicSchoolSkill        CMagicCardData::EC_GetRequiredMagicSchoolSkill
+  987  GetMagicSchool                     CMagicCardData::EC_GetMagicSchool
+  988  GetCommandType                     CMagicCardData::EC_GetCommandType
+  989  GetMagicType                       CMagicCardData::EC_GetMagicType
+  990  GetRagDollForcePercent             CMissileParams::EC_GetRagDollForcePercent
+  991  GetRangeHitSpeedA                  CMissileParams::EC_GetRangeHitSpeedA
+  992  GetMissileHitTicks                 CMissileParams::EC_GetMissileHitTicks
+  993  GetSpeed                           CMissileParams::EC_GetSpeed
+  994  GetFireRingSizeA                   CMissileParams::EC_GetFireRingSizeA
+  995  GetDamageAngle                     CMissileParams::EC_GetDamageAngle
+  996  GetQuiverMissileMask               CMissileParams::EC_GetQuiverMissileMask
+  997  GetMissileFlags                    CMissileParams::EC_GetMissileFlags
+  998  GetMissileType                     CMissileParams::EC_GetMissileType
+  999  GetMaxDamage                       CMissileParams::EC_GetMaxDamage
+ 1000  GetMinDamage                       CMissileParams::EC_GetMinDamage
+ 1001  SetRagDollForcePercent             CMissileParams::EC_SetRagDollForcePercent
+ 1002  SetRangeHitSpeedA                  CMissileParams::EC_SetRangeHitSpeedA
+ 1003  SetMissileHitTicks                 CMissileParams::EC_SetMissileHitTicks
+ 1004  SetSpeed                           CMissileParams::EC_SetSpeed
+ 1005  SetFireRingSizeA                   CMissileParams::EC_SetFireRingSizeA
+ 1006  SetDamageAngle                     CMissileParams::EC_SetDamageAngle
+ 1007  SetQuiverMissileMask               CMissileParams::EC_SetQuiverMissileMask
+ 1008  SetMissileFlags                    CMissileParams::EC_SetMissileFlags
+ 1009  SetMissileType                     CMissileParams::EC_SetMissileType
+ 1010  SetMaxDamage                       CMissileParams::EC_SetMaxDamage
+ 1011  SetMinDamage                       CMissileParams::EC_SetMinDamage
+ 1012  SetHitInfoColor                    CMissileValues::EC_SetHitInfoColor
+ 1013  GetHitInfoColor                    CMissileValues::EC_GetHitInfoColor
+ 1014  SetExtraExplosionType              CMissileValues::EC_SetExtraExplosionType
+ 1015  GetExtraExplosionType              CMissileValues::EC_GetExtraExplosionType
+ 1016  SetTargetForcefieldTicks           CMissileValues::EC_SetTargetForcefieldTicks
+ 1017  GetTargetForcefieldTicks           CMissileValues::EC_GetTargetForcefieldTicks
+ 1018  SetTargetForcefieldAmount          CMissileValues::EC_SetTargetForcefieldAmount
+ 1019  GetTargetForcefieldAmount          CMissileValues::EC_GetTargetForcefieldAmount
+ 1020  SetTargetForcefieldType            CMissileValues::EC_SetTargetForcefieldType
+ 1021  GetTargetForcefieldType            CMissileValues::EC_GetTargetForcefieldType
+ 1022  SetLightingStormMaxHitCnt          CMissileValues::EC_SetLightingStormMaxHitCnt
+ 1023  GetLightingStormMaxHitCnt          CMissileValues::EC_GetLightingStormMaxHitCnt
+ 1024  SetMakeMagicGenericOnTarget        CMissileValues::EC_SetMakeMagicGenericOnTarget
+ 1025  GetMakeMagicGenericOnTarget        CMissileValues::EC_GetMakeMagicGenericOnTarget
+ 1026  SetArrowOfDust                     CMissileValues::EC_SetArrowOfDust
+ 1027  GetArrowOfDust                     CMissileValues::EC_GetArrowOfDust
+ 1028  SetPiercingPercent                 CMissileValues::EC_SetPiercingPercent
+ 1029  GetPiercingPercent                 CMissileValues::EC_GetPiercingPercent
+ 1030  SetDisarmingArrow                  CMissileValues::EC_SetDisarmingArrow
+ 1031  GetDisarmingArrow                  CMissileValues::EC_GetDisarmingArrow
+ 1032  SetMissShoot                       CMissileValues::EC_SetMissShoot
+ 1033  GetMissShoot                       CMissileValues::EC_GetMissShoot
+ 1034  SetArmourKnowledge                 CMissileValues::EC_SetArmourKnowledge
+ 1035  GetArmourKnowledge                 CMissileValues::EC_GetArmourKnowledge
+ 1036  SetMissileTicks                    CMissileValues::EC_SetMissileTicks
+ 1037  GetMissileTicks                    CMissileValues::EC_GetMissileTicks
+ 1038  GetBlockedActiveSkillsMask         CUnitData::EC_GetBlockedActiveSkillsMask
+ 1039  GetBreakOtherChancePercent         CUnitData::EC_GetBreakOtherChancePercent
+ 1040  GetBreakStrikeChancePercent        CUnitData::EC_GetBreakStrikeChancePercent
+ 1041  GetAutoCastMagicProbability        CUnitData::EC_GetAutoCastMagicProbability
+ 1042  GetMakeMagicDelayTicks             CUnitData::EC_GetMakeMagicDelayTicks
+ 1043  GetPhysicalProtectModifier         CUnitData::EC_GetPhysicalProtectModifier
+ 1044  GetInitProtect                     CUnitData::EC_GetInitProtect
+ 1045  GetInitParam                       CUnitData::EC_GetInitParam
+ 1046  GetAvailableActiveSkillsMask       CUnitData::EC_GetAvailableActiveSkillsMask
+ 1047  GetAvailablePassiveSkillsMask      CUnitData::EC_GetAvailablePassiveSkillsMask
+ 1048  GetUnitEquipmentMask               CUnitData::EC_GetUnitEquipmentMask
+ 1049  GetMaxHP                           CUnitData::EC_GetMaxHP   [debug index 0x549]
+ 1050  SetSkillChanceUnloadTick           CUnitValues::EC_SetSkillChanceUnloadTick
+ 1051  GetSkillChanceUnloadTick           CUnitValues::EC_GetSkillChanceUnloadTick
+ 1052  SetSkillChanceUnloadTicks          CUnitValues::EC_SetSkillChanceUnloadTicks
+ 1053  GetSkillChanceUnloadTicks          CUnitValues::EC_GetSkillChanceUnloadTicks
+ 1054  SetSkillChanceUnloadValue          CUnitValues::EC_SetSkillChanceUnloadValue
+ 1055  GetSkillChanceUnloadValue          CUnitValues::EC_GetSkillChanceUnloadValue
+ 1056  SetSkillChanceValue                CUnitValues::EC_SetSkillChanceValue
+ 1057  GetSkillChanceValue                CUnitValues::EC_GetSkillChanceValue
+ 1058  SetSkillChanceMaxValue             CUnitValues::EC_SetSkillChanceMaxValue
+ 1059  GetSkillChanceMaxValue             CUnitValues::EC_GetSkillChanceMaxValue
+ 1060  SetCurrStrikeDelay                 CUnitValues::EC_SetCurrStrikeDelay
+ 1061  GetCurrStrikeDelay                 CUnitValues::EC_GetCurrStrikeDelay
+ 1062  SetStrikeDelayTicks                CUnitValues::EC_SetStrikeDelayTicks
+ 1063  GetStrikeDelayTicks                CUnitValues::EC_GetStrikeDelayTicks
+ 1064  SetCurrMana                        CUnitValues::EC_SetCurrMana
+ 1065  GetCurrMana                        CUnitValues::EC_GetCurrMana
+ 1066  SetCurrHP                          CUnitValues::EC_SetCurrHP
+ 1067  GetCurrHP                          CUnitValues::EC_GetCurrHP
+ 1068  SetMaxInventoryWeight              CUnitValues::EC_SetMaxInventoryWeight
+ 1069  GetMaxInventoryWeight              CUnitValues::EC_GetMaxInventoryWeight
+ 1070  SetLockedActiveSkills              CUnitValues::EC_SetLockedActiveSkills   [debug index 0x7e8]
+ 1071  GetLockedActiveSkills              CUnitValues::EC_GetLockedActiveSkills   [debug index 0x7e9]
+ 1072  SetLockedPassiveSkills             CUnitValues::EC_SetLockedPassiveSkills   [debug index 0x7ea]
+ 1073  GetLockedPassiveSkills             CUnitValues::EC_GetLockedPassiveSkills   [debug index 0x7eb]
+ 1074  SetSkill                           CUnitValues::EC_SetSkill
+ 1075  GetSkill                           CUnitValues::EC_GetSkill   [debug index 0x7ed, 0x7a7]
+ 1076  SetBasicSkill                      CUnitValues::EC_SetBasicSkill   [debug index 0x7ee]
+ 1077  GetBasicSkill                      CUnitValues::EC_GetBasicSkill   [debug index 0x7ef]
+ 1078  SetProtect                         CUnitValues::EC_SetProtect
+ 1079  GetProtect                         CUnitValues::EC_GetProtect
+ 1080  SetBasicProtect                    CUnitValues::EC_SetBasicProtect
+ 1081  GetBasicProtect                    CUnitValues::EC_GetBasicProtect
+ 1082  SetParam                           CUnitValues::EC_SetParam
+ 1083  GetParam                           CUnitValues::EC_GetParam
+ 1084  SetBasicParam                      CUnitValues::EC_SetBasicParam
+ 1085  GetBasicParam                      CUnitValues::EC_GetBasicParam
+ 1086  SetPoint                           CUnitValues::EC_SetPoint
+ 1087  GetPoint                           CUnitValues::EC_GetPoint
+ 1088  SetBasicPoint                      CUnitValues::EC_SetBasicPoint   [debug index 0x7fa]
+ 1089  GetBasicPoint                      CUnitValues::EC_GetBasicPoint   [debug index 0x7fb]
+ 1090  SetSkillPoints                     CUnitValues::EC_SetSkillPoints   [debug index 0x7fc]
+ 1091  GetSkillPoints                     CUnitValues::EC_GetSkillPoints   [debug index 0x7fd]
+ 1092  SetParamPoints                     CUnitValues::EC_SetParamPoints   [debug index 0x7fe]
+ 1093  GetParamPoints                     CUnitValues::EC_GetParamPoints   [debug index 0x7ff]
+ 1094  SetExperiencePoints                CUnitValues::EC_SetExperiencePoints   [debug index 0x800]
+ 1095  GetExperiencePoints                CUnitValues::EC_GetExperiencePoints   [debug index 0x801]
+ 1096  SetLevel                           CUnitValues::EC_SetLevel   [debug index 0x802]
+ 1097  GetLevel                           CUnitValues::EC_GetLevel   [debug index 0x803]
+ 1098  GetLockFlags                       CSpecialArtefactParams::EC_GetLockFlags
+ 1099  GetLockLevel                       CSpecialArtefactParams::EC_GetLockLevel   [debug index 0x59b, 0x573]
+ 1100  GetJoinEffectNum                   CSpecialArtefactParams::EC_GetJoinEffectNum
+ 1101  GetJoinAddValue                    CSpecialArtefactParams::EC_GetJoinAddValue
+ 1102  GetJoinValueType                   CSpecialArtefactParams::EC_GetJoinValueType
+ 1103  GetJoinEquipmentType               CSpecialArtefactParams::EC_GetJoinEquipmentType
+ 1104  GetMoney                           CSpecialArtefactParams::EC_GetMoney   [debug index 0x58d]
+ 1105  GetSpecialArtefactType             CSpecialArtefactParams::EC_GetSpecialArtefactType
+ 1106  SetLockFlags                       CSpecialArtefactParams::EC_SetLockFlags
+ 1107  SetLockLevel                       CSpecialArtefactParams::EC_SetLockLevel
+ 1108  SetJoinEffectNum                   CSpecialArtefactParams::EC_SetJoinEffectNum
+ 1109  SetJoinAddValue                    CSpecialArtefactParams::EC_SetJoinAddValue
+ 1110  SetJoinValueType                   CSpecialArtefactParams::EC_SetJoinValueType
+ 1111  SetJoinEquipmentType               CSpecialArtefactParams::EC_SetJoinEquipmentType
+ 1112  SetMoney                           CSpecialArtefactParams::EC_SetMoney   [debug index 0x58c]
+ 1113  SetSpecialArtefactType             CSpecialArtefactParams::EC_SetSpecialArtefactType
+ 1114  GetEndTimedEffectID                CPotionArtefactParams::EC_GetEndTimedEffectID
+ 1115  GetTimedEffectID                   CPotionArtefactParams::EC_GetTimedEffectID
+ 1116  GetUseEffectID                     CPotionArtefactParams::EC_GetUseEffectID
+ 1117  GetRegenerateMana                  CPotionArtefactParams::EC_GetRegenerateMana
+ 1118  GetRegenerateHP                    CPotionArtefactParams::EC_GetRegenerateHP
+ 1119  SetEndTimedEffectID                CPotionArtefactParams::EC_SetEndTimedEffectID
+ 1120  SetTimedEffectID                   CPotionArtefactParams::EC_SetTimedEffectID
+ 1121  SetUseEffectID                     CPotionArtefactParams::EC_SetUseEffectID
+ 1122  SetRegenerateMana                  CPotionArtefactParams::EC_SetRegenerateMana
+ 1123  SetRegenerateHP                    CPotionArtefactParams::EC_SetRegenerateHP
+ 1124  SetPickupEffectID                  CPotionArtefactParams::EC_SetPickupEffectID
+ 1125  SetCustomObjectID                  CPotionValues::EC_SetCustomObjectID
+ 1126  GetCustomObjectID                  CPotionValues::EC_GetCustomObjectID
+ 1127  SetMagicEnhanceSummonAddCount      CPotionValues::EC_SetMagicEnhanceSummonAddCount
+ 1128  GetMagicEnhanceSummonAddCount      CPotionValues::EC_GetMagicEnhanceSummonAddCount
+ 1129  SetMagicEnhanceSummonAddLevels     CPotionValues::EC_SetMagicEnhanceSummonAddLevels
+ 1130  GetMagicEnhanceSummonAddLevels     CPotionValues::EC_GetMagicEnhanceSummonAddLevels
+ 1131  SetMagicEnhanceManaUseUpPercent    CPotionValues::EC_SetMagicEnhanceManaUseUpPercent
+ 1132  GetMagicEnhanceManaUseUpPercent    CPotionValues::EC_GetMagicEnhanceManaUseUpPercent
+ 1133  SetMagicEnhanceMissileDamageUpPercent CPotionValues::EC_SetMagicEnhanceMissileDamageUpPercent
+ 1134  GetMagicEnhanceMissileDamageUpPercent CPotionValues::EC_GetMagicEnhanceMissileDamageUpPercent
+ 1135  SetWeaponsForceFieldType           CPotionValues::EC_SetWeaponsForceFieldType
+ 1136  GetWeaponsForceFieldType           CPotionValues::EC_GetWeaponsForceFieldType
+ 1137  SetTrapTicks                       CPotionValues::EC_SetTrapTicks
+ 1138  GetTrapTicks                       CPotionValues::EC_GetTrapTicks
+ 1139  SetLeechHPTargetTypeModifiersMask  CPotionValues::EC_SetLeechHPTargetTypeModifiersMask
+ 1140  GetLeechHPTargetTypeModifiersMask  CPotionValues::EC_GetLeechHPTargetTypeModifiersMask
+ 1141  SetLeechHP                         CPotionValues::EC_SetLeechHP
+ 1142  GetLeechHP                         CPotionValues::EC_GetLeechHP
+ 1143  SetDamagePartiesType               CPotionValues::EC_SetDamagePartiesType
+ 1144  GetDamagePartiesType               CPotionValues::EC_GetDamagePartiesType
+ 1145  SetDamageTicks                     CPotionValues::EC_SetDamageTicks
+ 1146  GetDamageTicks                     CPotionValues::EC_GetDamageTicks
+ 1147  SetDamageRangeA                    CPotionValues::EC_SetDamageRangeA
+ 1148  GetDamageRangeA                    CPotionValues::EC_GetDamageRangeA
+ 1149  SetTargetTypeModifier              CPotionValues::EC_SetTargetTypeModifier
+ 1150  GetTargetTypeModifier              CPotionValues::EC_GetTargetTypeModifier
+ 1151  SetReflectDamageArmourPercent      CPotionValues::EC_SetReflectDamageArmourPercent
+ 1152  GetReflectDamageArmourPercent      CPotionValues::EC_GetReflectDamageArmourPercent
+ 1153  SetReflectDamagePercent            CPotionValues::EC_SetReflectDamagePercent
+ 1154  GetReflectDamagePercent            CPotionValues::EC_GetReflectDamagePercent
+ 1155  SetExtraHP                         CPotionValues::EC_SetExtraHP
+ 1156  GetExtraHP                         CPotionValues::EC_GetExtraHP
+ 1157  SetManaAsHPPercent                 CPotionValues::EC_SetManaAsHPPercent
+ 1158  GetManaAsHPPercent                 CPotionValues::EC_GetManaAsHPPercent
+ 1159  SetStrengthUpPercent               CPotionValues::EC_SetStrengthUpPercent
+ 1160  GetStrengthUpPercent               CPotionValues::EC_GetStrengthUpPercent
+ 1161  SetHPRegenerationSpeedUpPercent    CPotionValues::EC_SetHPRegenerationSpeedUpPercent
+ 1162  GetHPRegenerationSpeedUpPercent    CPotionValues::EC_GetHPRegenerationSpeedUpPercent
+ 1163  SetAddSkill                        CPotionValues::EC_SetAddSkill
+ 1164  GetAddSkill                        CPotionValues::EC_GetAddSkill
+ 1165  SetAddProtect                      CPotionValues::EC_SetAddProtect
+ 1166  GetAddProtect                      CPotionValues::EC_GetAddProtect
+ 1167  SetAddParam                        CPotionValues::EC_SetAddParam
+ 1168  GetAddParam                        CPotionValues::EC_GetAddParam
+ 1169  SetAddPoint                        CPotionValues::EC_SetAddPoint
+ 1170  GetAddPoint                        CPotionValues::EC_GetAddPoint
+ 1171  SetPotionFlags                     CPotionValues::EC_SetPotionFlags
+ 1172  GetPotionFlags                     CPotionValues::EC_GetPotionFlags
+ 1173  SetPotionTicks                     CPotionValues::EC_SetPotionTicks
+ 1174  GetPotionTicks                     CPotionValues::EC_GetPotionTicks
+ 1175  GetCustomParam2                    CTrapParams::EC_GetCustomParam2
+ 1176  GetCustomParam1                    CTrapParams::EC_GetCustomParam1
+ 1177  GetPickupEffectID                  CTrapParams::EC_GetPickupEffectID
+ 1178  GetMissileID                       CTrapParams::EC_GetMissileID
+ 1179  GetHoldTicks                       CTrapParams::EC_GetHoldTicks
+ 1180  GetDamage                          CTrapParams::EC_GetDamage
+ 1181  GetTrapLevel                       CTrapParams::EC_GetTrapLevel
+ 1182  GetTypeFlags                       CTrapParams::EC_GetTypeFlags
+ 1183  GetMeshColor                       CTrapParams::EC_GetMeshColor
+ 1184  GetPrice                           CTrapParams::EC_GetPrice
+ 1185  GetMaxCountInOneInventoryPos       CTrapParams::EC_GetMaxCountInOneInventoryPos
+ 1186  GetInventorySizeY                  CTrapParams::EC_GetInventorySizeY
+ 1187  GetInventorySizeX                  CTrapParams::EC_GetInventorySizeX
+ 1188  GetInventoryWeight                 CTrapParams::EC_GetInventoryWeight
+ 1189  SetCustomParam2                    CTrapParams::EC_SetCustomParam2
+ 1190  SetCustomParam1                    CTrapParams::EC_SetCustomParam1
+ 1191  SetMissileID                       CTrapParams::EC_SetMissileID
+ 1192  SetHoldTicks                       CTrapParams::EC_SetHoldTicks
+ 1193  SetDamage                          CTrapParams::EC_SetDamage
+ 1194  SetTrapLevel                       CTrapParams::EC_SetTrapLevel
+ 1195  SetTypeFlags                       CTrapParams::EC_SetTypeFlags
+ 1196  SetMeshColor                       CTrapParams::EC_SetMeshColor
+ 1197  SetPrice                           CTrapParams::EC_SetPrice
+ 1198  SetMaxCountInOneInventoryPos       CTrapParams::EC_SetMaxCountInOneInventoryPos
+ 1199  SetInventorySizeY                  CTrapParams::EC_SetInventorySizeY
+ 1200  SetInventorySizeX                  CTrapParams::EC_SetInventorySizeX
+ 1201  SetInventoryWeight                 CTrapParams::EC_SetInventoryWeight
+ 1202  GetEmptyPotionValues               CStaticEC::EC_GetEmptyPotionValues
+ 1203  GetEmptyMissileValues              CStaticEC::EC_GetEmptyMissileValues
+ 1204  $AddRef                            CStaticEC::EC_AddRefEmpty
+ 1205  $Release                           CStaticEC::EC_ReleaseEmpty
+ 1206  eForceHigherBoxes                  CECString::EC_Formatint
+ 1207  TrimRight                          CECStringW::EC_FormatTrlint
+ 1208  TrimLeft                           CECString::EC_TrimRight   [debug index 0x5d]
+ 1209  ReplaceNoCase                      CECString::EC_TrimLeft
+ 1210  Replace                            CECString::EC_ReplaceNoCase
+ 1211  Mid                                CECString::EC_Replace   [debug index 0x61]
+ 1212  Left                               CECString::EC_Mid
+ 1213  Right                              CECString::EC_Left
+ 1214  Find                               CECString::EC_Right
+ 1215  ReverseFind                        CECString::EC_Find
+ 1216  EqualNoCase                        CECString::EC_ReverseFind   [debug index 0x68]
+ 1217  CompareNoCase                      CECString::EC_EqualNoCase   [debug index 0x69]
+ 1218  Compare                            CECString::EC_CompareNoCase
+ 1219  Append                             CECString::EC_Compare   [debug index 0x6b, 0xff, 0x6c]
+ 1220  GetAt                              CECString::EC_Append   [debug index 0x6d]
+ 1221  IsEmpty                            CECString::EC_GetAt
+ 1222  GetLength                          CECString::EC_IsEmpty   [debug index 0x6f]
+ 1223  Copy                               CECString::EC_GetLength   [debug index 0x101, 0x70, 0x4]
+ 1224  $CastBufferRelease                 CECString::EC_Copy
+ 1225  $CastBufferAddRef                  CECString::EC_CastBufferRelease
+ 1226  $CopyString                        CECString::EC_CastBufferAddRef
+ 1227  $CastString                        CECString::EC_CopyString
+ 1228  $Serialize                         CECString::EC_CastString
+ 1229  $Destructor                        CECString::EC_Serialize
+ 1230  $Constructor                       CECString::EC_StringDestructor
+ 1231  Format                             CECString::EC_StringConstructor   [debug index 0xfd, 0xfc, 0xfb, 0xfa, 0xf9, 0xf8, 0xf7, 0xf6, 0xf5, 0xf4, 0xf3, 0xf2, 0xf1, 0xf0, 0xef, 0xee, 0xed, 0xec, 0xeb, 0xea, 0xe9, 0xe8, 0xe7, 0xe6, 0xe5, 0xe4, 0xe3, 0xe2, 0xe1, 0xe0, 0xdf, 0xde, 0xdd, 0xdc, 0xdb, 0xda, 0xd9, 0xd8, 0xd7, 0xd6, 0xd5, 0xd4, 0xd3, 0xd2, 0xd1, 0xd0, 0xcf, 0xce, 0xcd, 0xcc, 0xcb, 0xca, 0xc9, 0xc8, 0xc7, 0xc6, 0xc5, 0xc4, 0xc3, 0xc2, 0xc1, 0xc0, 0xbf, 0xbe, 0xbd, 0xbc, 0xbb, 0xba, 0xb9, 0xb8, 0xb7, 0xb6, 0xb5, 0xb4, 0xb3, 0xb2, 0xb1, 0xb0, 0xaf, 0xae, 0xad, 0xac, 0xab, 0xaa, 0xa9, 0xa8, 0xa7, 0xa6, 0xa5, 0xa4, 0xa3, 0xa2, 0xa1, 0xa0, 0x9f, 0x9e, 0x9d, 0x9c, 0x9b, 0x9a, 0x99, 0x98, 0x97, 0x96, 0x95, 0x94, 0x93, 0x92, 0x91, 0x90, 0x8f, 0x8e, 0x8d, 0x8c, 0x8b, 0x8a, 0x89, 0x88, 0x87, 0x86, 0x85, 0x84, 0x83, 0x82, 0x81, 0x80, 0x7f, 0x7e, 0x7d, 0x7c, 0x7b, 0x7a, 0x79, 0x78, 0x214, 0x212, 0x211, 0x210, 0x20e, 0x20d, 0x20c, 0x20b, 0x20a, 0x209, 0x208, 0x206, 0x205, 0x204, 0x203, 0x202, 0x201, 0x200, 0x1ff, 0x1fe, 0x1fd, 0x1fc, 0x1fb, 0x1fa, 0x1f9, 0x1f8, 0x1f6, 0x1f5, 0x1f4, 0x1f3, 0x1f2, 0x1f1, 0x1f0, 0x1ef, 0x1ee, 0x1ed, 0x1ec, 0x1eb, 0x1ea, 0x1e9, 0x1e8, 0x1e7, 0x1e6, 0x1e5, 0x1e4, 0x1e3, 0x1e2, 0x1e1, 0x1e0, 0x1df, 0x1de, 0x1dd, 0x1dc, 0x1db, 0x1da, 0x1d9, 0x1d8, 0x1d6, 0x1d5, 0x1d4, 0x1d3, 0x1d2, 0x1d1, 0x1d0, 0x1cf, 0x1ce, 0x1cd, 0x1cc, 0x1cb, 0x1ca, 0x1c9, 0x1c8, 0x1c7, 0x1c6, 0x1c5, 0x1c4, 0x1c3, 0x1c2, 0x1c1, 0x1c0, 0x1bf, 0x1be, 0x1bd, 0x1bc, 0x1bb, 0x1ba, 0x1b9, 0x1b8, 0x1b7, 0x1b6, 0x1b5, 0x1b4, 0x1b3, 0x1b2, 0x1b1, 0x1b0, 0x1af, 0x1ae, 0x1ad, 0x1ac, 0x1ab, 0x1aa, 0x1a9, 0x1a8, 0x1a7, 0x1a6, 0x1a5, 0x1a4, 0x1a3, 0x1a2, 0x1a1, 0x1a0, 0x19f, 0x19e, 0x19d, 0x19c, 0x19b, 0x19a, 0x199, 0x198, 0x196, 0x194, 0x192, 0x190, 0x189]
+ 1232  FormatTrl                          CECStringW::EC_FormatAint   [debug index 0x29b]
