@@ -45,12 +45,17 @@ STATUS_INFO = {
                'source with all its include files; it compiles again to the same file.'),
     'rebuilt': ('Rebuilt', 'No SDK has a source for this script (or only another version), but the decompiler '
                 'rebuilt one from the compiled script that compiles to exactly the game\'s bytes - checked.'),
+    'v10': ('Rebuilt (v1.0)', 'A debug build of the 2007 compiler, no SDK source. The decompiler rebuilt it; compiled '
+            'with SDK 1.3 it is the same program as the game\'s, routine by routine - engine function numbers '
+            'translated, source paths and line numbers aside. Checked.'),
     'differs': ('Changed', 'There is a source with the same name, but it compiles to other bytes: the game or a mod '
                 'uses another version, and the decompiler could not rebuild it exactly yet.'),
     'none': ('No source', 'No SDK has a source for this script and the decompiler could not rebuild it exactly '
-             '(the v1.0 debug builds, for example). You see the decompiler output.'),
+             '(the v1.0 debug builds CityCampaign and MissionTeamHunt call functions SDK 1.3 no longer has). You '
+             'see the rebuilt source with what differs, or the decompiler output.'),
 }
-STATUS_COLOR = {'source': theme.STATUS_SOURCE, 'rebuilt': theme.STATUS_REBUILT, 'differs': theme.STATUS_DIFFERS,
+STATUS_COLOR = {'source': theme.STATUS_SOURCE, 'rebuilt': theme.STATUS_REBUILT, 'v10': theme.STATUS_REBUILT,
+                'differs': theme.STATUS_DIFFERS,
                 'none': theme.STATUS_NONE}
 
 
@@ -397,6 +402,8 @@ class App:
             note.append('rebuild=' + ('ok' if typeinfer.tables().get('arg') and entries.load() and slot_table.load()
                                       and native_sigs.load() and native_sigs.load_tree()
                                       and native_sigs.load_lifecycle() else 'notables'))
+            import v10, dbgcompare  # noqa: E401,F401  (the v1.0 debug builds)
+            note.append('v10=' + ('ok' if v10.load('Cities')[0] and v10.load('MissionTeamHunt')[0] else 'nomap'))
         except Exception as e:
             note.append(f'decomp=failed:{type(e).__name__}')
         https = 'ok'
@@ -407,6 +414,18 @@ class App:
         except ImportError as e:
             https = f'missing:{e.name}'
         game = ecocore.find_game_dir(self.cfg.get('game_dir'))
+        if game and os.environ.get('ECOTOOL_SELFTEST_V10'):
+            # the rebuild of the game's v1.0 debug builds, run inside the built exe:
+            # Cities=equivalent:2/2 CityCampaign=differs:287/290 MissionTeamHunt=differs:343/344
+            try:
+                sdk = next((s for s in ecocore.find_sdks(self.cfg.get('sdk_dirs', [])) if s.version == '1.3'), None)
+                scripts, _p = ecocore.read_game(game, with_mods=False)
+                for s in sorted(scripts.values(), key=lambda s: s.stem):
+                    if s.debug and s.stem in ('Cities', 'CityCampaign', 'MissionTeamHunt'):
+                        r = ecocore.reconstruct(s, sdk.tools if sdk else None)
+                        note.append(f'{s.stem}={r["status"]}:' + '/'.join(map(str, r.get('routines') or ())))
+            except Exception as e:
+                note.append(f'v10run=failed:{type(e).__name__}:{e}')
         try:
             with open(self.selftest, 'w', encoding='utf-8') as f:
                 f.write(f'version={VERSION} {" ".join(note)} game={"yes" if game else "no"} '
@@ -727,7 +746,7 @@ class App:
                 ecocore.classify(scripts, index)
                 # scripts without a source: decompile, compile, compare (cached per body)
                 tools = ecocore.tree_tools(scripts.values(), index)
-                todo = [s for s in scripts.values() if not s.match and not s.debug]
+                todo = [s for s in scripts.values() if not s.match]
                 for i, s in enumerate(todo):
                     if cancelled():
                         raise ecocore.Cancelled()
@@ -748,7 +767,7 @@ class App:
             self.fill_tree()
             n = len(self.scripts)
             src = sum(1 for s in self.scripts.values() if s.match)
-            reb = sum(1 for s in self.scripts.values() if ecocore.status_of(s) == 'rebuilt')
+            reb = sum(1 for s in self.scripts.values() if ecocore.status_of(s) in ('rebuilt', 'v10'))
             self.status(tr('{n} scripts read, {src} with a matching source, {reb} rebuilt by the decompiler.').format(
                 n=n, src=src, reb=reb), ok=bool(n))
             if self.problems:
@@ -881,9 +900,15 @@ class App:
             highlight(self.text, ecocore.read_source(self.index, s.match['root'], s.match['rel']).decode('latin-1'))
             for rel in ecocore.closure(s.match):
                 self.inc.insert('', 'end', text=rel, values=(root['label'],))
-        elif st == 'rebuilt' or (s.rebuild and s.rebuild.get('status') in ('differs', 'compile') and s.rebuild.get('text')):
+        elif st in ('rebuilt', 'v10') or (s.rebuild and s.rebuild.get('status') in ('differs', 'compile')
+                                          and s.rebuild.get('text')):
             r = s.rebuild
-            if st == 'rebuilt':
+            if st == 'v10':
+                self.src_head.configure(text=tr('{name}: v1.0 debug build, no SDK source. Rebuilt by the decompiler; '
+                                                'compiled with SDK 1.3 it is the same program as the game\'s ({msg}). '
+                                                'Export writes it to Decompiled.').format(
+                    name=s.name, msg=r.get('msg', '')[:160]), foreground=theme.STATUS_REBUILT)
+            elif st == 'rebuilt':
                 self.src_head.configure(text=tr('{name}: no SDK source. Rebuilt by the decompiler from the compiled script; '
                                                 'compiles to exactly the game\'s bytes (checked). Export writes it to '
                                                 'Scripts\\_TW1_Rebuilt.').format(name=s.name),

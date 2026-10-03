@@ -107,5 +107,69 @@ class RoundTrips(unittest.TestCase):
         self.assertEqual(self._left_out({'RPGCompute'}, ['RPGCompute']), {'RPGCompute': 'identical'})
 
 
+V10 = os.path.join(ECO, 'Scripts_wd', 'Scripts', 'Network')
+RT_SRC = os.path.join(os.path.dirname(REF), 'src')
+
+
+def v10_round_trip(name):
+    """the game's v1.0 debug build: emit, compile with SDK 1.3 in debug mode, compare routine by routine"""
+    import emit_ec
+    import dbgcompare
+    import v10
+    orig = os.path.join(V10, name + '.eco')
+    work = tempfile.mkdtemp(prefix='ecotool_v10_')
+    try:
+        src = os.path.join(work, name + '.ec')
+        with open(src, 'w', encoding='latin-1', errors='replace') as f:
+            f.write(emit_ec.emit(orig))
+        body, msg = C.compile_file(SDK13.tools, src, debug=True)
+        if body is None:
+            return 'compile: ' + msg.strip().splitlines()[-1][-120:]
+        return dbgcompare.compare(os.path.join(work, name + '.eco'), orig, native_map=v10.load(name)[0],
+                                  mask_lines=True)
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+
+
+@unittest.skipUnless(os.path.isdir(REF) and os.path.isdir(RT_SRC) and SDK13,
+                     'needs the EcoAnalysis round-trip sources and refs and SDK 1.3')
+class DebugCompare(unittest.TestCase):
+    def test_sdk_debug_build_same(self):
+        """the yardstick of the v1.0 path: an SDK source compiled in debug mode in another folder is the same
+        as the round-trip debug ref - every routine, engine call and data item (the 36 measured on 2026-10-03)"""
+        import dbgcompare
+        work = tempfile.mkdtemp(prefix='ecotool_dbg_')
+        try:
+            shutil.copytree(RT_SRC, os.path.join(work, 'src'))
+            src = os.path.join(work, 'src', 'Campaigns', 'Missions', 'TwoWorldsWeather.ec')
+            body, msg = C.compile_file(SDK13.tools, src, debug=True)
+            self.assertIsNotNone(body, msg)
+            r = dbgcompare.compare(src[:-3] + '.eco', os.path.join(REF, 'TwoWorldsWeather.eco'))
+            self.assertEqual((r['same'], r['differ'], r['imports'], r['data']), (r['routines'], [], [], None))
+        finally:
+            shutil.rmtree(work, ignore_errors=True)
+
+
+@unittest.skipUnless(os.path.isfile(os.path.join(V10, 'Cities.eco')) and SDK13, 'needs the game\'s v1.0 builds and SDK 1.3')
+class V10Builds(unittest.TestCase):
+    """measured 2026-10-03: Cities the same program; CityCampaign and MissionTeamHunt the same except the
+    routines that call functions or declare commands SDK 1.3 no longer has"""
+
+    def test_cities_equivalent(self):
+        r = v10_round_trip('Cities')
+        self.assertEqual((r['same'], r['routines'], r['imports'], r['data']), (2, 2, [], None))
+
+    def test_citycampaign(self):
+        r = v10_round_trip('CityCampaign')
+        self.assertEqual((r['same'], r['routines']), (287, 290))
+        self.assertEqual(sorted(n for n, _w in r['differ']),
+                         ['FillNetworkMissionsList', 'Initialize', 'IsNetworkMissionAvailable'])
+
+    def test_missionteamhunt(self):
+        r = v10_round_trip('MissionTeamHunt')
+        self.assertEqual((r['same'], r['routines'], r['data']), (343, 344, None))
+        self.assertEqual([n for n, _w in r['differ']], ['RespawnItems'])
+
+
 if __name__ == '__main__':
     unittest.main()

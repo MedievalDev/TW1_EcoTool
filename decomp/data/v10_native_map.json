@@ -1,0 +1,1931 @@
+{
+"groups": [
+{
+"scripts": [
+"cities",
+"citycampaign"
+],
+"map": {
+"11": 11,
+"19": 19,
+"20": 20,
+"22": 22,
+"34": 34,
+"57": 57,
+"104": 104,
+"108": 108,
+"113": 113,
+"114": 114,
+"115": 115,
+"116": 116,
+"117": 117,
+"118": 118,
+"119": 119,
+"120": 120,
+"121": 121,
+"122": 122,
+"123": 123,
+"124": 124,
+"125": 125,
+"126": 126,
+"127": 127,
+"128": 128,
+"129": 129,
+"130": 130,
+"131": 131,
+"132": 132,
+"133": 133,
+"134": 134,
+"135": 135,
+"136": 136,
+"137": 137,
+"138": 138,
+"139": 139,
+"140": 140,
+"141": 141,
+"142": 142,
+"143": 143,
+"144": 144,
+"145": 145,
+"146": 146,
+"147": 147,
+"148": 148,
+"149": 149,
+"150": 150,
+"151": 151,
+"152": 152,
+"153": 153,
+"154": 154,
+"155": 155,
+"156": 156,
+"157": 157,
+"158": 158,
+"159": 159,
+"160": 160,
+"161": 161,
+"162": 162,
+"163": 163,
+"164": 164,
+"165": 165,
+"166": 166,
+"167": 167,
+"168": 168,
+"169": 169,
+"170": 170,
+"171": 171,
+"172": 172,
+"173": 173,
+"174": 174,
+"175": 175,
+"176": 176,
+"177": 177,
+"178": 178,
+"179": 179,
+"180": 180,
+"181": 181,
+"182": 182,
+"183": 183,
+"184": 184,
+"185": 185,
+"186": 186,
+"187": 187,
+"188": 188,
+"189": 189,
+"190": 190,
+"191": 191,
+"192": 192,
+"193": 193,
+"194": 194,
+"195": 195,
+"196": 196,
+"197": 197,
+"198": 198,
+"199": 199,
+"200": 200,
+"201": 201,
+"202": 202,
+"203": 203,
+"204": 204,
+"205": 205,
+"206": 206,
+"207": 207,
+"208": 208,
+"209": 209,
+"210": 210,
+"211": 211,
+"212": 212,
+"213": 213,
+"214": 214,
+"215": 215,
+"216": 216,
+"217": 217,
+"218": 218,
+"219": 219,
+"220": 220,
+"221": 221,
+"222": 222,
+"223": 223,
+"224": 224,
+"225": 225,
+"226": 226,
+"227": 227,
+"228": 228,
+"229": 229,
+"230": 230,
+"231": 231,
+"232": 232,
+"233": 233,
+"234": 234,
+"235": 235,
+"236": 236,
+"237": 237,
+"238": 238,
+"239": 239,
+"240": 240,
+"241": 241,
+"242": 242,
+"243": 243,
+"244": 244,
+"245": 245,
+"246": 246,
+"247": 247,
+"248": 248,
+"249": 249,
+"250": 250,
+"251": 251,
+"252": 252,
+"253": 253,
+"254": 254,
+"255": 255,
+"257": 257,
+"259": 259,
+"260": 260,
+"262": 262,
+"264": 264,
+"265": 265,
+"694": 691,
+"737": 734,
+"751": 748,
+"753": 750,
+"755": 752,
+"759": 756,
+"760": 757,
+"761": 758,
+"776": 773,
+"809": 809,
+"823": 825,
+"824": 826,
+"828": 833,
+"832": 838,
+"836": 841,
+"837": 842,
+"843": 848,
+"844": 848,
+"848": 853,
+"857": 864,
+"858": 865,
+"896": 906,
+"897": 907,
+"906": 916,
+"937": 947,
+"938": 949,
+"939": 950,
+"948": 959,
+"949": 960,
+"1235": 1254,
+"1311": 1334,
+"1317": 1340,
+"1341": 1364,
+"1348": 1371,
+"1378": 1401,
+"1379": 1402,
+"1395": 1435,
+"1442": 1482,
+"1448": 1488,
+"1527": 1567,
+"1529": 1569,
+"1539": 1580,
+"1959": 2029
+},
+"how": {
+"11": "roundtrip",
+"19": "neighbours",
+"20": "neighbours",
+"22": "neighbours",
+"34": "roundtrip",
+"57": "roundtrip",
+"104": "named",
+"108": "measured",
+"113": "measured",
+"114": "measured",
+"115": "measured",
+"116": "measured",
+"117": "neighbours",
+"118": "measured",
+"119": "measured",
+"120": "measured",
+"121": "measured",
+"122": "measured",
+"123": "measured",
+"124": "measured",
+"125": "measured",
+"126": "measured",
+"127": "measured",
+"128": "measured",
+"129": "measured",
+"130": "measured",
+"131": "measured",
+"132": "measured",
+"133": "measured",
+"134": "measured",
+"135": "measured",
+"136": "measured",
+"137": "measured",
+"138": "measured",
+"139": "measured",
+"140": "measured",
+"141": "measured",
+"142": "measured",
+"143": "measured",
+"144": "measured",
+"145": "measured",
+"146": "measured",
+"147": "measured",
+"148": "measured",
+"149": "measured",
+"150": "measured",
+"151": "measured",
+"152": "measured",
+"153": "measured",
+"154": "measured",
+"155": "measured",
+"156": "measured",
+"157": "measured",
+"158": "measured",
+"159": "measured",
+"160": "measured",
+"161": "measured",
+"162": "measured",
+"163": "measured",
+"164": "measured",
+"165": "measured",
+"166": "measured",
+"167": "measured",
+"168": "measured",
+"169": "measured",
+"170": "measured",
+"171": "measured",
+"172": "measured",
+"173": "measured",
+"174": "measured",
+"175": "measured",
+"176": "measured",
+"177": "measured",
+"178": "measured",
+"179": "measured",
+"180": "measured",
+"181": "measured",
+"182": "measured",
+"183": "measured",
+"184": "measured",
+"185": "measured",
+"186": "measured",
+"187": "measured",
+"188": "measured",
+"189": "measured",
+"190": "measured",
+"191": "measured",
+"192": "measured",
+"193": "measured",
+"194": "measured",
+"195": "measured",
+"196": "measured",
+"197": "measured",
+"198": "measured",
+"199": "measured",
+"200": "measured",
+"201": "measured",
+"202": "measured",
+"203": "measured",
+"204": "measured",
+"205": "measured",
+"206": "measured",
+"207": "measured",
+"208": "measured",
+"209": "measured",
+"210": "measured",
+"211": "measured",
+"212": "measured",
+"213": "measured",
+"214": "measured",
+"215": "measured",
+"216": "measured",
+"217": "measured",
+"218": "measured",
+"219": "measured",
+"220": "measured",
+"221": "measured",
+"222": "measured",
+"223": "measured",
+"224": "measured",
+"225": "measured",
+"226": "measured",
+"227": "measured",
+"228": "measured",
+"229": "measured",
+"230": "measured",
+"231": "measured",
+"232": "measured",
+"233": "measured",
+"234": "measured",
+"235": "measured",
+"236": "measured",
+"237": "measured",
+"238": "measured",
+"239": "measured",
+"240": "measured",
+"241": "measured",
+"242": "measured",
+"243": "measured",
+"244": "measured",
+"245": "measured",
+"246": "measured",
+"247": "measured",
+"248": "measured",
+"249": "measured",
+"250": "measured",
+"251": "measured",
+"252": "measured",
+"253": "measured",
+"254": "roundtrip",
+"255": "roundtrip",
+"257": "roundtrip",
+"259": "measured",
+"260": "measured",
+"262": "roundtrip",
+"264": "roundtrip",
+"265": "roundtrip",
+"694": "roundtrip",
+"737": "roundtrip",
+"751": "roundtrip",
+"753": "measured",
+"755": "measured",
+"759": "measured",
+"760": "roundtrip",
+"761": "neighbours",
+"776": "roundtrip",
+"809": "roundtrip",
+"823": "named",
+"824": "named",
+"828": "named",
+"832": "named",
+"836": "roundtrip",
+"837": "roundtrip",
+"843": "guess",
+"844": "named",
+"848": "roundtrip",
+"857": "neighbours",
+"858": "neighbours",
+"896": "named",
+"897": "named",
+"906": "named",
+"937": "roundtrip",
+"938": "roundtrip",
+"939": "roundtrip",
+"948": "neighbours",
+"949": "neighbours",
+"1235": "roundtrip",
+"1311": "roundtrip",
+"1317": "roundtrip",
+"1341": "roundtrip",
+"1348": "measured",
+"1378": "neighbours",
+"1379": "neighbours",
+"1395": "roundtrip",
+"1442": "measured",
+"1448": "named",
+"1527": "roundtrip",
+"1529": "roundtrip",
+"1539": "roundtrip",
+"1959": "roundtrip"
+},
+"names": {
+"11": [
+"Add"
+],
+"34": [
+"Add"
+],
+"57": [
+"Add"
+],
+"104": [
+"EqualNoCase"
+],
+"108": [
+"Append"
+],
+"120": [
+"Format"
+],
+"121": [
+"Format"
+],
+"122": [
+"Format"
+],
+"123": [
+"Format"
+],
+"124": [
+"Format"
+],
+"125": [
+"Format"
+],
+"126": [
+"Format"
+],
+"127": [
+"Format"
+],
+"128": [
+"Format"
+],
+"129": [
+"Format"
+],
+"130": [
+"Format"
+],
+"131": [
+"Format"
+],
+"132": [
+"Format"
+],
+"133": [
+"Format"
+],
+"134": [
+"Format"
+],
+"135": [
+"Format"
+],
+"136": [
+"Format"
+],
+"137": [
+"Format"
+],
+"138": [
+"Format"
+],
+"139": [
+"Format"
+],
+"140": [
+"Format"
+],
+"141": [
+"Format"
+],
+"142": [
+"Format"
+],
+"143": [
+"Format"
+],
+"144": [
+"Format"
+],
+"145": [
+"Format"
+],
+"146": [
+"Format"
+],
+"147": [
+"Format"
+],
+"148": [
+"Format"
+],
+"149": [
+"Format"
+],
+"150": [
+"Format"
+],
+"151": [
+"Format"
+],
+"152": [
+"Format"
+],
+"153": [
+"Format"
+],
+"154": [
+"Format"
+],
+"155": [
+"Format"
+],
+"156": [
+"Format"
+],
+"157": [
+"Format"
+],
+"158": [
+"Format"
+],
+"159": [
+"Format"
+],
+"160": [
+"Format"
+],
+"161": [
+"Format"
+],
+"162": [
+"Format"
+],
+"163": [
+"Format"
+],
+"164": [
+"Format"
+],
+"165": [
+"Format"
+],
+"166": [
+"Format"
+],
+"167": [
+"Format"
+],
+"168": [
+"Format"
+],
+"169": [
+"Format"
+],
+"170": [
+"Format"
+],
+"171": [
+"Format"
+],
+"172": [
+"Format"
+],
+"173": [
+"Format"
+],
+"174": [
+"Format"
+],
+"175": [
+"Format"
+],
+"176": [
+"Format"
+],
+"177": [
+"Format"
+],
+"178": [
+"Format"
+],
+"179": [
+"Format"
+],
+"180": [
+"Format"
+],
+"181": [
+"Format"
+],
+"182": [
+"Format"
+],
+"183": [
+"Format"
+],
+"184": [
+"Format"
+],
+"185": [
+"Format"
+],
+"186": [
+"Format"
+],
+"187": [
+"Format"
+],
+"188": [
+"Format"
+],
+"189": [
+"Format"
+],
+"190": [
+"Format"
+],
+"191": [
+"Format"
+],
+"192": [
+"Format"
+],
+"193": [
+"Format"
+],
+"194": [
+"Format"
+],
+"195": [
+"Format"
+],
+"196": [
+"Format"
+],
+"197": [
+"Format"
+],
+"198": [
+"Format"
+],
+"199": [
+"Format"
+],
+"200": [
+"Format"
+],
+"201": [
+"Format"
+],
+"202": [
+"Format"
+],
+"203": [
+"Format"
+],
+"204": [
+"Format"
+],
+"205": [
+"Format"
+],
+"206": [
+"Format"
+],
+"207": [
+"Format"
+],
+"208": [
+"Format"
+],
+"209": [
+"Format"
+],
+"210": [
+"Format"
+],
+"211": [
+"Format"
+],
+"212": [
+"Format"
+],
+"213": [
+"Format"
+],
+"214": [
+"Format"
+],
+"215": [
+"Format"
+],
+"216": [
+"Format"
+],
+"217": [
+"Format"
+],
+"218": [
+"Format"
+],
+"219": [
+"Format"
+],
+"220": [
+"Format"
+],
+"221": [
+"Format"
+],
+"222": [
+"Format"
+],
+"223": [
+"Format"
+],
+"224": [
+"Format"
+],
+"225": [
+"Format"
+],
+"226": [
+"Format"
+],
+"227": [
+"Format"
+],
+"228": [
+"Format"
+],
+"229": [
+"Format"
+],
+"230": [
+"Format"
+],
+"231": [
+"Format"
+],
+"232": [
+"Format"
+],
+"233": [
+"Format"
+],
+"234": [
+"Format"
+],
+"235": [
+"Format"
+],
+"236": [
+"Format"
+],
+"237": [
+"Format"
+],
+"238": [
+"Format"
+],
+"239": [
+"Format"
+],
+"240": [
+"Format"
+],
+"241": [
+"Format"
+],
+"242": [
+"Format"
+],
+"243": [
+"Format"
+],
+"244": [
+"Format"
+],
+"245": [
+"Format"
+],
+"246": [
+"Format"
+],
+"247": [
+"Format"
+],
+"248": [
+"Format"
+],
+"249": [
+"Format"
+],
+"250": [
+"Format"
+],
+"251": [
+"Format"
+],
+"252": [
+"Format"
+],
+"253": [
+"Format"
+],
+"254": [
+"Translate"
+],
+"255": [
+"Append"
+],
+"257": [
+"Copy"
+],
+"694": [
+"CheckFileExist"
+],
+"737": [
+"GetCampaign"
+],
+"751": [
+"Rand"
+],
+"753": [
+"TraceDbg"
+],
+"755": [
+"TraceDbg"
+],
+"776": [
+"CommandMessage"
+],
+"809": [
+"GetFillChannelLevelsListCommonPlayerAttribute"
+],
+"823": [
+"SetDayLength"
+],
+"824": [
+"SetDayTime"
+],
+"828": [
+"LoadRPGComputeScript"
+],
+"832": [
+"AddGlobalScript"
+],
+"836": [
+"GetMission"
+],
+"837": [
+"GetMissionsCnt"
+],
+"843": [
+"SetPlayerHeroUnit"
+],
+"844": [
+"GetPlayerHeroUnit"
+],
+"848": [
+"CreateMission"
+],
+"896": [
+"GetWorldHeight"
+],
+"897": [
+"GetWorldWidth"
+],
+"906": [
+"CreateHero"
+],
+"937": [
+"LoadLevel"
+],
+"938": [
+"SetHorizonOffset"
+],
+"939": [
+"SetPositionOnCampaignTexture"
+],
+"1235": [
+"GetUnitValues"
+],
+"1311": [
+"IsContainer"
+],
+"1317": [
+"IsGate"
+],
+"1341": [
+"IsHeroUnit"
+],
+"1348": [
+"GetObjectIDName"
+],
+"1395": [
+"GetLockLevel"
+],
+"1442": [
+"ActivateTeleport"
+],
+"1448": [
+"GetPlayersCommonAttribute"
+],
+"1527": [
+"FindKeyArtefactInInventory"
+],
+"1529": [
+"GetKeyArtefactsInInventoryCount"
+],
+"1539": [
+"RemoveObjectFromInventory"
+],
+"1959": [
+"GetSkill"
+]
+}
+},
+{
+"scripts": [
+"missionteamhunt"
+],
+"map": {
+"4": 4,
+"6": 6,
+"11": 11,
+"13": 13,
+"15": 15,
+"16": 16,
+"18": 18,
+"19": 19,
+"20": 20,
+"22": 22,
+"34": 34,
+"38": 38,
+"41": 41,
+"42": 42,
+"43": 43,
+"45": 45,
+"80": 80,
+"88": 88,
+"89": 89,
+"91": 91,
+"93": 93,
+"97": 97,
+"105": 105,
+"109": 109,
+"113": 113,
+"114": 114,
+"115": 115,
+"116": 116,
+"118": 118,
+"119": 119,
+"120": 120,
+"121": 121,
+"122": 122,
+"123": 123,
+"124": 124,
+"125": 125,
+"126": 126,
+"127": 127,
+"128": 128,
+"129": 129,
+"130": 130,
+"131": 131,
+"132": 132,
+"133": 133,
+"134": 134,
+"135": 135,
+"136": 136,
+"137": 137,
+"138": 138,
+"139": 139,
+"140": 140,
+"141": 141,
+"142": 142,
+"143": 143,
+"144": 144,
+"145": 145,
+"146": 146,
+"147": 147,
+"148": 148,
+"149": 149,
+"150": 150,
+"151": 151,
+"152": 152,
+"153": 153,
+"154": 154,
+"155": 155,
+"156": 156,
+"157": 157,
+"158": 158,
+"159": 159,
+"160": 160,
+"161": 161,
+"162": 162,
+"163": 163,
+"164": 164,
+"165": 165,
+"166": 166,
+"167": 167,
+"168": 168,
+"169": 169,
+"170": 170,
+"171": 171,
+"172": 172,
+"173": 173,
+"174": 174,
+"175": 175,
+"176": 176,
+"177": 177,
+"178": 178,
+"179": 179,
+"180": 180,
+"181": 181,
+"182": 182,
+"183": 183,
+"184": 184,
+"185": 185,
+"186": 186,
+"187": 187,
+"188": 188,
+"189": 189,
+"190": 190,
+"191": 191,
+"192": 192,
+"193": 193,
+"194": 194,
+"195": 195,
+"196": 196,
+"197": 197,
+"198": 198,
+"199": 199,
+"200": 200,
+"201": 201,
+"202": 202,
+"203": 203,
+"204": 204,
+"205": 205,
+"206": 206,
+"207": 207,
+"208": 208,
+"209": 209,
+"210": 210,
+"211": 211,
+"212": 212,
+"213": 213,
+"214": 214,
+"215": 215,
+"216": 216,
+"217": 217,
+"218": 218,
+"219": 219,
+"220": 220,
+"221": 221,
+"222": 222,
+"223": 223,
+"224": 224,
+"225": 225,
+"226": 226,
+"227": 227,
+"228": 228,
+"229": 229,
+"230": 230,
+"231": 231,
+"232": 232,
+"233": 233,
+"234": 234,
+"235": 235,
+"236": 236,
+"237": 237,
+"238": 238,
+"239": 239,
+"240": 240,
+"241": 241,
+"242": 242,
+"243": 243,
+"244": 244,
+"245": 245,
+"246": 246,
+"247": 247,
+"248": 248,
+"249": 249,
+"250": 250,
+"251": 251,
+"252": 252,
+"253": 253,
+"259": 259,
+"260": 260,
+"687": 687,
+"689": 689,
+"690": 690,
+"734": 734,
+"743": 743,
+"748": 748,
+"750": 750,
+"752": 752,
+"756": 756,
+"757": 757,
+"758": 758,
+"773": 773,
+"801": 801,
+"802": 802,
+"803": 803,
+"804": 804,
+"836": 841,
+"837": 842,
+"842": 847,
+"844": 848,
+"906": 915,
+"909": 918,
+"930": 939,
+"931": 940,
+"948": 958,
+"949": 959,
+"950": 960,
+"1065": 1068,
+"1272": 1286,
+"1310": 1326,
+"1348": 1364,
+"1353": 1369,
+"1368": 1384,
+"1373": 1389,
+"1374": 1390,
+"1385": 1401,
+"1386": 1402,
+"1387": 1414,
+"1388": 1415,
+"1447": 1475,
+"1471": 1499,
+"1478": 1506,
+"1533": 1561,
+"1536": 1564,
+"1569": 1598,
+"1573": 1602
+},
+"how": {
+"4": "measured",
+"6": "measured",
+"11": "measured",
+"13": "roundtrip",
+"15": "measured",
+"16": "roundtrip",
+"18": "measured",
+"19": "neighbours",
+"20": "measured",
+"22": "measured",
+"34": "roundtrip",
+"38": "named",
+"41": "neighbours",
+"42": "neighbours",
+"43": "neighbours",
+"45": "neighbours",
+"80": "roundtrip",
+"88": "neighbours",
+"89": "neighbours",
+"91": "neighbours",
+"93": "roundtrip",
+"97": "roundtrip",
+"105": "roundtrip",
+"109": "roundtrip",
+"113": "roundtrip",
+"114": "roundtrip",
+"115": "roundtrip",
+"116": "measured",
+"118": "measured",
+"119": "measured",
+"120": "measured",
+"121": "measured",
+"122": "measured",
+"123": "measured",
+"124": "measured",
+"125": "measured",
+"126": "measured",
+"127": "measured",
+"128": "measured",
+"129": "measured",
+"130": "measured",
+"131": "measured",
+"132": "measured",
+"133": "measured",
+"134": "measured",
+"135": "measured",
+"136": "measured",
+"137": "measured",
+"138": "measured",
+"139": "measured",
+"140": "measured",
+"141": "measured",
+"142": "measured",
+"143": "measured",
+"144": "measured",
+"145": "measured",
+"146": "measured",
+"147": "measured",
+"148": "measured",
+"149": "measured",
+"150": "measured",
+"151": "measured",
+"152": "measured",
+"153": "measured",
+"154": "measured",
+"155": "measured",
+"156": "measured",
+"157": "measured",
+"158": "measured",
+"159": "measured",
+"160": "measured",
+"161": "measured",
+"162": "measured",
+"163": "measured",
+"164": "measured",
+"165": "measured",
+"166": "measured",
+"167": "measured",
+"168": "measured",
+"169": "measured",
+"170": "measured",
+"171": "measured",
+"172": "measured",
+"173": "measured",
+"174": "measured",
+"175": "measured",
+"176": "measured",
+"177": "measured",
+"178": "measured",
+"179": "measured",
+"180": "measured",
+"181": "measured",
+"182": "measured",
+"183": "measured",
+"184": "measured",
+"185": "measured",
+"186": "measured",
+"187": "measured",
+"188": "measured",
+"189": "measured",
+"190": "measured",
+"191": "measured",
+"192": "measured",
+"193": "measured",
+"194": "measured",
+"195": "measured",
+"196": "measured",
+"197": "measured",
+"198": "measured",
+"199": "measured",
+"200": "measured",
+"201": "measured",
+"202": "measured",
+"203": "measured",
+"204": "measured",
+"205": "measured",
+"206": "measured",
+"207": "measured",
+"208": "measured",
+"209": "measured",
+"210": "measured",
+"211": "measured",
+"212": "measured",
+"213": "measured",
+"214": "measured",
+"215": "measured",
+"216": "measured",
+"217": "measured",
+"218": "measured",
+"219": "measured",
+"220": "measured",
+"221": "measured",
+"222": "measured",
+"223": "measured",
+"224": "measured",
+"225": "measured",
+"226": "measured",
+"227": "measured",
+"228": "measured",
+"229": "measured",
+"230": "measured",
+"231": "measured",
+"232": "measured",
+"233": "measured",
+"234": "measured",
+"235": "measured",
+"236": "measured",
+"237": "measured",
+"238": "measured",
+"239": "measured",
+"240": "measured",
+"241": "measured",
+"242": "measured",
+"243": "measured",
+"244": "measured",
+"245": "measured",
+"246": "measured",
+"247": "measured",
+"248": "measured",
+"249": "measured",
+"250": "measured",
+"251": "measured",
+"252": "measured",
+"253": "measured",
+"259": "roundtrip",
+"260": "roundtrip",
+"687": "roundtrip",
+"689": "roundtrip",
+"690": "roundtrip",
+"734": "measured",
+"743": "roundtrip",
+"748": "measured",
+"750": "measured",
+"752": "measured",
+"756": "measured",
+"757": "measured",
+"758": "neighbours",
+"773": "roundtrip",
+"801": "roundtrip",
+"802": "roundtrip",
+"803": "measured",
+"804": "roundtrip",
+"836": "measured",
+"837": "roundtrip",
+"842": "roundtrip",
+"844": "measured",
+"906": "named",
+"909": "measured",
+"930": "measured",
+"931": "measured",
+"948": "neighbours",
+"949": "roundtrip",
+"950": "roundtrip",
+"1065": "roundtrip",
+"1272": "roundtrip",
+"1310": "roundtrip",
+"1348": "roundtrip",
+"1353": "roundtrip",
+"1368": "roundtrip",
+"1373": "measured",
+"1374": "measured",
+"1385": "measured",
+"1386": "measured",
+"1387": "roundtrip",
+"1388": "roundtrip",
+"1447": "roundtrip",
+"1471": "roundtrip",
+"1478": "roundtrip",
+"1533": "roundtrip",
+"1536": "roundtrip",
+"1569": "roundtrip",
+"1573": "measured"
+},
+"names": {
+"4": [
+"Copy"
+],
+"6": [
+"RemoveAt"
+],
+"11": [
+"Add"
+],
+"13": [
+"RemoveAll"
+],
+"15": [
+"GetSize"
+],
+"34": [
+"Add"
+],
+"38": [
+"GetSize"
+],
+"80": [
+"Add"
+],
+"93": [
+"TrimLeft"
+],
+"97": [
+"Mid"
+],
+"105": [
+"CompareNoCase"
+],
+"109": [
+"GetAt"
+],
+"120": [
+"Format"
+],
+"121": [
+"Format"
+],
+"122": [
+"Format"
+],
+"123": [
+"Format"
+],
+"124": [
+"Format"
+],
+"125": [
+"Format"
+],
+"126": [
+"Format"
+],
+"127": [
+"Format"
+],
+"128": [
+"Format"
+],
+"129": [
+"Format"
+],
+"130": [
+"Format"
+],
+"131": [
+"Format"
+],
+"132": [
+"Format"
+],
+"133": [
+"Format"
+],
+"134": [
+"Format"
+],
+"135": [
+"Format"
+],
+"136": [
+"Format"
+],
+"137": [
+"Format"
+],
+"138": [
+"Format"
+],
+"139": [
+"Format"
+],
+"140": [
+"Format"
+],
+"141": [
+"Format"
+],
+"142": [
+"Format"
+],
+"143": [
+"Format"
+],
+"144": [
+"Format"
+],
+"145": [
+"Format"
+],
+"146": [
+"Format"
+],
+"147": [
+"Format"
+],
+"148": [
+"Format"
+],
+"149": [
+"Format"
+],
+"150": [
+"Format"
+],
+"151": [
+"Format"
+],
+"152": [
+"Format"
+],
+"153": [
+"Format"
+],
+"154": [
+"Format"
+],
+"155": [
+"Format"
+],
+"156": [
+"Format"
+],
+"157": [
+"Format"
+],
+"158": [
+"Format"
+],
+"159": [
+"Format"
+],
+"160": [
+"Format"
+],
+"161": [
+"Format"
+],
+"162": [
+"Format"
+],
+"163": [
+"Format"
+],
+"164": [
+"Format"
+],
+"165": [
+"Format"
+],
+"166": [
+"Format"
+],
+"167": [
+"Format"
+],
+"168": [
+"Format"
+],
+"169": [
+"Format"
+],
+"170": [
+"Format"
+],
+"171": [
+"Format"
+],
+"172": [
+"Format"
+],
+"173": [
+"Format"
+],
+"174": [
+"Format"
+],
+"175": [
+"Format"
+],
+"176": [
+"Format"
+],
+"177": [
+"Format"
+],
+"178": [
+"Format"
+],
+"179": [
+"Format"
+],
+"180": [
+"Format"
+],
+"181": [
+"Format"
+],
+"182": [
+"Format"
+],
+"183": [
+"Format"
+],
+"184": [
+"Format"
+],
+"185": [
+"Format"
+],
+"186": [
+"Format"
+],
+"187": [
+"Format"
+],
+"188": [
+"Format"
+],
+"189": [
+"Format"
+],
+"190": [
+"Format"
+],
+"191": [
+"Format"
+],
+"192": [
+"Format"
+],
+"193": [
+"Format"
+],
+"194": [
+"Format"
+],
+"195": [
+"Format"
+],
+"196": [
+"Format"
+],
+"197": [
+"Format"
+],
+"198": [
+"Format"
+],
+"199": [
+"Format"
+],
+"200": [
+"Format"
+],
+"201": [
+"Format"
+],
+"202": [
+"Format"
+],
+"203": [
+"Format"
+],
+"204": [
+"Format"
+],
+"205": [
+"Format"
+],
+"206": [
+"Format"
+],
+"207": [
+"Format"
+],
+"208": [
+"Format"
+],
+"209": [
+"Format"
+],
+"210": [
+"Format"
+],
+"211": [
+"Format"
+],
+"212": [
+"Format"
+],
+"213": [
+"Format"
+],
+"214": [
+"Format"
+],
+"215": [
+"Format"
+],
+"216": [
+"Format"
+],
+"217": [
+"Format"
+],
+"218": [
+"Format"
+],
+"219": [
+"Format"
+],
+"220": [
+"Format"
+],
+"221": [
+"Format"
+],
+"222": [
+"Format"
+],
+"223": [
+"Format"
+],
+"224": [
+"Format"
+],
+"225": [
+"Format"
+],
+"226": [
+"Format"
+],
+"227": [
+"Format"
+],
+"228": [
+"Format"
+],
+"229": [
+"Format"
+],
+"230": [
+"Format"
+],
+"231": [
+"Format"
+],
+"232": [
+"Format"
+],
+"233": [
+"Format"
+],
+"234": [
+"Format"
+],
+"235": [
+"Format"
+],
+"236": [
+"Format"
+],
+"237": [
+"Format"
+],
+"238": [
+"Format"
+],
+"239": [
+"Format"
+],
+"240": [
+"Format"
+],
+"241": [
+"Format"
+],
+"242": [
+"Format"
+],
+"243": [
+"Format"
+],
+"244": [
+"Format"
+],
+"245": [
+"Format"
+],
+"246": [
+"Format"
+],
+"247": [
+"Format"
+],
+"248": [
+"Format"
+],
+"249": [
+"Format"
+],
+"250": [
+"Format"
+],
+"251": [
+"Format"
+],
+"252": [
+"Format"
+],
+"253": [
+"Format"
+],
+"687": [
+"strlen"
+],
+"689": [
+"sscanf"
+],
+"690": [
+"sscanf"
+],
+"734": [
+"GetCampaign"
+],
+"743": [
+"Distance"
+],
+"748": [
+"Rand"
+],
+"750": [
+"TraceDbg"
+],
+"752": [
+"TraceDbg"
+],
+"773": [
+"CommandMessage"
+],
+"801": [
+"GetLocalPlayerNum"
+],
+"802": [
+"GetPlayerInterface"
+],
+"803": [
+"IsPlayer"
+],
+"804": [
+"GetPlayersCnt"
+],
+"836": [
+"GetMission"
+],
+"837": [
+"GetMissionsCnt"
+],
+"842": [
+"SetPartyEnemy"
+],
+"844": [
+"GetPlayerHeroUnit"
+],
+"906": [
+"GetObject"
+],
+"909": [
+"CreateObject"
+],
+"930": [
+"GetMarker"
+],
+"931": [
+"GetMarker"
+],
+"1065": [
+"SetConsoleText"
+],
+"1272": [
+"SetPartyNum"
+],
+"1310": [
+"GetMission"
+],
+"1348": [
+"IsHeroUnit"
+],
+"1353": [
+"GetMaxHP"
+],
+"1368": [
+"DistanceTo"
+],
+"1373": [
+"GetLocationY"
+],
+"1374": [
+"GetLocationX"
+],
+"1387": [
+"AddHeroNetworkRankPoints"
+],
+"1388": [
+"GetHeroNetworkRankPoints"
+],
+"1447": [
+"GetHeroPlayerNum"
+],
+"1471": [
+"GetAttribute"
+],
+"1478": [
+"SetAttribute"
+],
+"1533": [
+"HealPoison"
+],
+"1536": [
+"SetHP"
+],
+"1569": [
+"ResurrectUnit"
+],
+"1573": [
+"SetImmediatePosition"
+]
+}
+}
+]
+}

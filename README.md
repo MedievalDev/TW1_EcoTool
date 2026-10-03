@@ -49,13 +49,28 @@ every other file.
 | SDK 1.3 `Scripts` | 30 (the whole single player) |
 | SDK 1.3 `Scripts\_Scripts_old_1.5_` (= SDK 1.2) | 5 (multiplayer missions, shipped in the older state) |
 | no source anywhere, rebuilt by the decompiler | 4 (MissionTeamCollecting, TestDialogsMission, TestPMMission, TestPMMission2) |
-| no source, v1.0 debug builds (older compiler) | 3 (Cities, CityCampaign, MissionTeamHunt: decompiler view only) |
+| no source, v1.0 debug build, rebuilt to the same program | 1 (Cities: 2 of 2 routines) |
+| no source, v1.0 debug builds, rebuilt but not complete | 2 (CityCampaign 287 of 290, MissionTeamHunt 343 of 344 routines) |
+
+The v1.0 debug builds come from the 2007 compiler, which numbers the engine functions differently. The tool
+reads them with their own debug info and translates the numbers to SDK 1.3. Cities and CityCampaign share one
+old numbering, MissionTeamHunt has another. Of the 200 / 212 numbers they use, 148 / 161 are measured on library
+routines that are the same program in an SDK 1.3 debug build, 30 / 39 come from the round trip (the index the
+1.3 compiler picks for the same call), the rest from the name or the neighbours; one is a guess
+(SetPlayerHeroUnit, which SDK 1.3 lacks anyway). The rebuilt source is compiled with SDK 1.3 as a debug build
+and compared routine by routine: code, engine calls, data and the declared states, commands and events, with
+source paths and line numbers aside. Three deliberately changed Cities sources (a number, a string, two lines
+swapped) are each reported as different.
+What stays different is the 2007 interface SDK 1.3 no longer has: `SetPlayerHeroUnit` and the commands
+`FillNetworkMissionsList` (four parameters then, eight now) and `IsNetworkMissionAvailable` in CityCampaign,
+`GetObject` in MissionTeamHunt. Those places are kept as `not in SDK 1.3` comments so the source compiles.
 
 The SDK sources are **not** part of this tool; it reads them from your SDK.
 
 ## Not tested yet
 
 - A rebuilt script, changed and recompiled, used as a mod in the game.
+- A rebuilt v1.0 script (Cities) recompiled with SDK 1.3 and used in multiplayer.
 - A changed and recompiled script used as a mod in the game (see Help > Test what is untested).
 
 ## Build

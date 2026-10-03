@@ -760,10 +760,16 @@ def emit(path, dbg_path=None, namerec=None):
     """EarthC source of the .eco at `path`. `namerec` ({'name', 'num'}) stands in for the
     header record when the file is a bare body: inside a .wd the script name and class id
     live in the archive's directory entry, not in the body."""
-    f, b = ecodbg.parse_file(path)
+    import v10
+    f, b = v10.parse(path)
     if namerec:
         f['namerec'] = {**f.get('namerec', {}), **namerec}
-    dbg = ecodbg.parse_file(dbg_path)[1] if dbg_path else None
+    # A debug build on its own (the game's v1.0 network scripts have no release build): it is its own
+    # debug partner, every routine named by its own records.
+    self_dbg = bool(b) and not dbg_path
+    if self_dbg:
+        dbg_path = path
+    dbg = b if self_dbg else (ecodbg.parse_file(dbg_path)[1] if dbg_path else None)
     code = bytes(f['code'])
     routines = b['routines'] if b else disasm.scan_routines(code)
     tag = classify(f, routines)
@@ -776,7 +782,7 @@ def emit(path, dbg_path=None, namerec=None):
     states, commands, events = [], [], []
     for r in routines:
         kind = (('state', r['a']) if b and r.get('kind') == 6 else
-                None if b and r.get('kind') in (4, 5, 7) else
+                None if b and (r.get('kind') == 7 or (r.get('kind') in (4, 5) and not self_dbg)) else
                 tag.get(r['start']))
         if not kind:
             continue
@@ -800,6 +806,7 @@ def emit(path, dbg_path=None, namerec=None):
     L.append('')
     import lifter
     lf = lifter.Lifter(path)
+    lf.mark_nops = self_dbg
     if not dbg_path and not b:
         # Release build and nothing else: every global gets a synthesised record, so
         # the declaration and the lifted body agree on its name (`g0`, `g1`, ...).
@@ -835,7 +842,10 @@ def emit(path, dbg_path=None, namerec=None):
     entry_params = {}
     if dbg_path:
         import emit_body, struct
-        _f, _rs, matched, _c = match_routines.match(str(path), str(dbg_path))
+        if self_dbg:
+            matched = {r['start']: r for r in routines}
+        else:
+            _f, _rs, matched, _c = match_routines.match(str(path), str(dbg_path))
         sigs = {d['name']: d['params'] for d in matched.values()}
         dbg_lf = lifter.Lifter(dbg_path)
         # Wire the debug symbols into the release lifter. Without this the lift runs
@@ -947,6 +957,16 @@ def emit(path, dbg_path=None, namerec=None):
                 lines = [_strip_return(l)
                          if _RET_EXPR.match(l) else l
                          for l in lines]
+        if (self_dbg and not ret and getattr(dbg_lf, 'ret_type_at', {}).get(d['start']) is None
+                and getattr(dbg_lf, 'ret_kind_at', {}).get(d['start']) is None
+                and d['name'] not in dbg_lf.ret_type and d['name'] not in dbg_lf.ret_kind):
+            # A routine nothing in the file calls has no record of its return type (v1.0 CityCampaign's
+            # library ABS, MIN, CAST_ANGLE). In a debug build a returned value ends in a jump to the
+            # epilogue right before it; a void routine just runs into it (SWAP).
+            # A string comes back through the compiler's copy into the return slot, not through eax
+            # (MissionTeamHunt's GetCreateString: `return "SHOPUNIT_1(25)#...";` in every branch).
+            ret = ('string' if any(re.match(r'\s*return "', l) for l in lines) else
+                   synth_ret(lines, dbg_lf) if _tail_jump(lf.code, r) else 'void')
         ret = ret or (getattr(dbg_lf, 'ret_type_at', {}).get(d['start'])
                       or ECTYPE.get(getattr(dbg_lf, 'ret_kind_at', {}).get(d['start']))
                       or dbg_lf.ret_type.get(d['name'])
@@ -955,7 +975,9 @@ def emit(path, dbg_path=None, namerec=None):
             # no value returned anywhere in the lifted body: void, whatever eax held at
             # the end (a void routine leaves its last call's result there)
             ret = 'void'
-        if ret == 'void' and not dbg_path:
+        if ret == 'void' and (not dbg_path or self_dbg):
+            # (a v1.0 build too: its overloads' return kinds come only from the callers' records, and
+            # MissionTeamHunt's `void _TraceText(int)` lifted as `return TraceDbg(p1);`)
             # A void routine leaves its last call's value in eax, so the lift wrote
             # `return f(x);`. In tail position that is just the call; anywhere else it
             # is also an early exit: `f(x); return;`
@@ -963,6 +985,18 @@ def emit(path, dbg_path=None, namerec=None):
             out_ = []
             for i_, l_ in enumerate(lines):
                 if _RET_EXPR.match(l_):
+                    if self_dbg and '(' not in _strip_return(l_):
+                        # only what eax happened to hold (SWAP's `nTmp;` after `nVar2 = nTmp;`):
+                        # no statement at all
+                        if i_ not in tails:
+                            out_.append(l_[:len(l_) - len(l_.lstrip())] + 'return;')
+                        continue
+                    if self_dbg and out_ and out_[-1].strip() == _strip_return(l_).strip():
+                        # the statement and the `ret` both saw the same call (CityCampaign's
+                        # `TraceDbg(strText); return TraceDbg(strText);`): it is one call
+                        if i_ not in tails:
+                            out_.append(l_[:len(l_) - len(l_.lstrip())] + 'return;')
+                        continue
                     out_.append(_strip_return(l_))
                     if i_ not in tails:
                         out_.append(l_[:len(l_) - len(l_.lstrip())] + 'return;')
@@ -997,6 +1031,12 @@ def emit(path, dbg_path=None, namerec=None):
         if d is None:
             return [f'    // {kw} {idx}: no signature available, skipped']
         sig = ', '.join(param_decl(p) for p in d['params'])
+        if f.get('v10') and not v10.has_slot(nr.get('num', 0), kw, d['name'], d['params']):
+            # a v1.0 command SDK 1.3 no longer has (or has with other parameters): it cannot be declared,
+            # so its code stays as a function the engine never calls
+            return ([f'    // v1.0 {kw}, SDK 1.3 has no {kw} {d["name"]}({sig}) for this class',
+                     f'    function int {d["name"]}({sig})', '    {'] +
+                    [f'        {line}' for line in command_body(lf, r, d, byidx, synth_names)] + ['    }', ''])
         # `button <enumvar>` is part of the declaration and it is what makes the
         # compiler write the enum's captions into the data segment (button_enums)
         btn = ''
@@ -1059,11 +1099,61 @@ def emit(path, dbg_path=None, namerec=None):
         L.append('')
         L += bodies
     L.append('}')
+    if self_dbg:
+        L = _nop_for(L)
+    if f.get('v10'):
+        L, _n = v10.comment_out_missing(L, f)
     return '\n'.join(L) + '\n'
 
 
 _RET_EXPR = re.compile(r'^\s*return (.+);$')
 _CALL_HEAD = re.compile(r'^([A-Za-z_]\w*)\(')
+
+
+_FOR_ANY = re.compile(r'^(\s*)for \(; (.+);\) \{$')
+
+
+def _nop_for(lines):
+    """A debug build marks where a loop's `continue` lands with a `nop` (lifter.NOP_MARK): in
+    `for (n = 0; n < 2; n++) {...}` it sits between the body and the increment, in a loop without an
+    increment at the end of the body. So the simple statements behind the mark are the header's increment
+    (v1.0 CityCampaign's InitializeLevels: `[nMissionNum++] nop [nLayer++] jmp`); then every mark goes."""
+    import lifter
+    out = list(lines)
+    i = 0
+    while i < len(out):
+        mo = _FOR_ANY.match(out[i])
+        if mo:
+            ind, cond = mo.group(1), mo.group(2)
+            body = ind + '    '
+            end = next((j for j in range(i + 1, len(out)) if out[j] == f'{ind}}}'), None)
+            if end is not None:
+                marks = [j for j in range(i + 1, end) if out[j] == body + lifter.NOP_MARK]
+                tail = out[marks[-1] + 1:end] if marks else []
+                if tail and all(t.startswith(body) and not t.startswith(body + ' ') and t.endswith(';')
+                                and '{' not in t and '}' not in t and not t.strip().startswith('return')
+                                for t in tail):
+                    inc = ', '.join(t.strip()[:-1] for t in tail)
+                    out[i] = f'{ind}for (; {cond}; {inc}) {{'
+                    del out[marks[-1]:end]
+        i += 1
+    return [l for l in out if l.strip() != lifter.NOP_MARK]
+
+
+def _tail_jump(code, r):
+    """True if a debug build's routine ends in a jump to the epilogue right behind it: its last statement
+    returned a value (SDK 1.3 compiles `return n;` at the end of a function to `mov eax, n; jmp end` in debug
+    mode, probe_tailjmp.py)"""
+    import capstone
+    cs = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
+    ins = list(cs.disasm(code[r['start']:r['end'] + 1], r['start']))
+    k = len(ins) - 1
+    while k >= 0 and (ins[k].mnemonic in ('ret', 'pop') or
+                      (ins[k].mnemonic == 'mov' and ins[k].op_str == 'esp, ebp')):
+        k -= 1
+    if k < 0 or ins[k].mnemonic != 'jmp' or not ins[k].op_str.startswith('0x'):
+        return False
+    return int(ins[k].op_str, 16) == ins[k].address + ins[k].size
 
 
 def _strip_return(line):

@@ -539,6 +539,8 @@ def status_of(s):
         return 'source'
     if s.rebuild and s.rebuild.get('status') == 'identical':
         return 'rebuilt'
+    if s.rebuild and s.rebuild.get('status') == 'equivalent':
+        return 'v10'               # a v1.0 debug build rebuilt to the same program, routine by routine
     if s.related:
         return 'differs'
     return 'none'
@@ -689,12 +691,11 @@ def decomp_fingerprint():
 def reconstruct(s, tools, cache_dir=None):
     """Decompile a script that has no source into EarthC source, compile it and compare with the game.
 
-    Works on release builds without any debug info (decomp.emit_ec with typeinfer). Returns
-    {'status': 'identical' | 'differs' | 'compile' | 'failed' | 'unchecked' | 'debug', 'text', 'msg', 'size'}:
-    'identical' means the text compiles to exactly the game's bytes - checked here, every time it is
-    computed (and cached per body, decompiler and compiler)."""
-    if s.debug:
-        return {'status': 'debug', 'text': '', 'msg': 'debug build (v1.0): not rebuilt', 'size': None}
+    Works on release builds without any debug info (decomp.emit_ec with typeinfer), and on the v1.0 debug
+    builds (_reconstruct_debug). Returns {'status': 'identical' | 'equivalent' | 'differs' | 'compile' |
+    'failed' | 'unchecked', 'text', 'msg', 'size'}: 'identical' means the text compiles to exactly the game's
+    bytes, 'equivalent' (v1.0 debug builds) that it compiles to the same program routine by routine - checked
+    here, every time it is computed (and cached per body, decompiler and compiler)."""
     cid = ''
     if tools and os.path.isfile(os.path.join(tools, 'EarthC.exe')):
         with open(os.path.join(tools, 'EarthC.exe'), 'rb') as f:
@@ -716,38 +717,92 @@ def reconstruct(s, tools, cache_dir=None):
     work = tempfile.mkdtemp(prefix='ecotool_rebuild_')
     out = {'status': 'failed', 'text': '', 'msg': '', 'size': None}
     try:
-        body_path = os.path.join(work, 'body.eco')
+        # named after the script: a v1.0 build's engine function map is kept per script (decomp/v10.py)
+        os.makedirs(os.path.join(work, 'game'))
+        body_path = os.path.join(work, 'game', s.stem + '.eco')
         with open(body_path, 'wb') as f:
             f.write(s.body)
-        try:
-            text = emit_ec.emit(body_path, None, namerec={k: v for k, v in s.meta.items() if k in ('name', 'num')})
-        except Exception as e:
-            out['msg'] = f'{type(e).__name__}: {e}'
-            return out
-        out['text'] = text
-        if not cid:
-            out['status'], out['msg'] = 'unchecked', 'no compiler to check it'
-            return out
-        src = os.path.join(work, s.stem + '.ec')
-        with open(src, 'w', encoding='latin-1', errors='replace') as f:
-            f.write(text)
-        body, msg = compile_file(tools, src)
-        if body is None:
-            out['status'], out['msg'] = 'compile', (msg.strip().splitlines() or [''])[-1][-300:]
+        if s.debug:
+            _reconstruct_debug(s, tools, cid, work, body_path, out)
         else:
-            out['size'] = len(body)
-            out['status'] = 'identical' if sha(body) == s.sha else 'differs'
-            if out['status'] == 'differs':
-                out['msg'] = f'compiles, {len(body) - len(s.body):+d} bytes against the game'
+            _reconstruct_release(s, tools, cid, work, body_path, out)
     finally:
         shutil.rmtree(work, ignore_errors=True)
-    if cache and out['status'] in ('identical', 'differs', 'compile'):
+    if cache and out['status'] in ('identical', 'equivalent', 'differs', 'compile'):
         try:
             with open(cache, 'w', encoding='utf-8') as f:
                 json.dump(out, f)
         except OSError:
             pass
     return out
+
+
+def _reconstruct_release(s, tools, cid, work, body_path, out):
+    """a release build: the text compiled with SDK 1.3 must give exactly the game's bytes"""
+    import emit_ec
+    try:
+        text = emit_ec.emit(body_path, None, namerec={k: v for k, v in s.meta.items() if k in ('name', 'num')})
+    except Exception as e:
+        out['msg'] = f'{type(e).__name__}: {e}'
+        return
+    out['text'] = text
+    if not cid:
+        out['status'], out['msg'] = 'unchecked', 'no compiler to check it'
+        return
+    src = os.path.join(work, s.stem + '.ec')
+    with open(src, 'w', encoding='latin-1', errors='replace') as f:
+        f.write(text)
+    body, msg = compile_file(tools, src)
+    if body is None:
+        out['status'], out['msg'] = 'compile', (msg.strip().splitlines() or [''])[-1][-300:]
+    else:
+        out['size'] = len(body)
+        out['status'] = 'identical' if sha(body) == s.sha else 'differs'
+        if out['status'] == 'differs':
+            out['msg'] = f'compiles, {len(body) - len(s.body):+d} bytes against the game'
+
+
+def _reconstruct_debug(s, tools, cid, work, body_path, out):
+    """A debug build without a release build: the game's v1.0 network scripts (Cities, CityCampaign,
+    MissionTeamHunt), made by an older compiler with other engine function numbers.
+
+    The decompiler reads it with its own debug info (names, types, lines) and the engine functions translated
+    to SDK 1.3 numbering (decomp/v10.py). The text is compiled with SDK 1.3 in debug mode and compared with the
+    game's build routine by routine (decomp/dbgcompare.py): code, engine calls after the translation, data;
+    source paths and line numbers aside, since the text is one file with its own lines. 'equivalent' when
+    every routine, engine call and data item is the same, else 'differs' with the count."""
+    import emit_ec
+    import dbgcompare
+    import v10
+    try:
+        text = emit_ec.emit(body_path, None, namerec={k: v for k, v in s.meta.items() if k in ('name', 'num')})
+    except Exception as e:
+        out['msg'] = f'{type(e).__name__}: {e}'
+        return
+    out['text'] = text
+    if not cid:
+        out['status'], out['msg'] = 'unchecked', 'no compiler to check it'
+        return
+    src = os.path.join(work, s.stem + '.ec')
+    with open(src, 'w', encoding='latin-1', errors='replace') as f:
+        f.write(text)
+    body, msg = compile_file(tools, src, debug=True)
+    if body is None:
+        out['status'], out['msg'] = 'compile', (msg.strip().splitlines() or [''])[-1][-300:]
+        return
+    out['size'] = len(body)
+    f, b = v10.parse(body_path)
+    nmap = v10.load(s.stem)[0] if f.get('v10') else None
+    r = dbgcompare.compare(os.path.splitext(src)[0] + '.eco', body_path, native_map=nmap, mask_lines=True)
+    out['routines'] = [r['same'], r['routines']]
+    out['differ'] = [n for n, _why in r['differ']][:20]
+    full = (r['same'] == r['routines'] and not r['differ'] and not r['imports'] and r['data'] is None
+            and r['entries'] is None)
+    out['status'] = 'equivalent' if full else 'differs'
+    out['msg'] = (f'debug build of an older compiler: {r["same"]} of {r["routines"]} routines the same as the '
+                  f'game\'s' + (f' (differ: {", ".join(out["differ"][:6])})' if out['differ'] else '') +
+                  ('' if r['data'] is None else ', data differs') +
+                  ('' if r['entries'] is None else f', {r["entries"]}'))
 
 
 def rebuilt_rel(s):
@@ -792,7 +847,7 @@ def export(scripts, index, out_dir, progress=None, cancel=None, verify=True):
                                      'sha': s.sha, 'verified': None, 'error': ''})
             continue
         r = s.rebuild
-        if r is None and not s.debug:
+        if r is None:
             if progress:
                 progress(s.name, 0, 1)
             r = s.rebuild = reconstruct(s, tools)
@@ -806,14 +861,25 @@ def export(scripts, index, out_dir, progress=None, cancel=None, verify=True):
             report['rebuilt'].append({'key': s.key, 'name': s.name, 'path': dest, 'sha': s.sha,
                                       'verified': None, 'error': ''})
             continue
-        if r and r['status'] == 'differs':
+        if r and r['status'] in ('differs', 'equivalent'):
+            # the v1.0 debug builds too: they compile with SDK 1.3, but to its engine numbering and as a
+            # release build, so they stay out of compile_all.bat and its byte check
             p = os.path.join(out_dir, 'Decompiled', s.stem + '.ec')
             os.makedirs(os.path.dirname(p), exist_ok=True)
+            if r['status'] == 'equivalent':
+                head = (f'// {s.name}: v1.0 debug build, no SDK source. Rebuilt source; compiled with SDK 1.3 it '
+                        f'is the same program as the game\'s ({r["msg"]}; engine function numbers translated to '
+                        f'SDK 1.3, source paths and line numbers aside).')
+            elif s.debug:
+                head = (f'// {s.name}: v1.0 debug build, no SDK source. Rebuilt source that COMPILES with SDK 1.3 '
+                        f'({r["msg"]}). Lines marked "not in SDK 1.3" call functions SDK 1.3 no longer has.')
+            else:
+                head = (f'// {s.name}: no SDK source. Rebuilt source that COMPILES, but not to the game\'s bytes '
+                        f'({r["msg"]}).')
             with open(p, 'w', encoding='latin-1', errors='replace') as f:
-                f.write(f'// {s.name}: no SDK source. Rebuilt source that COMPILES, but not to the game\'s bytes '
-                        f'({r["msg"]}).' + chr(10) + r['text'])
+                f.write(head + chr(10) + r['text'])
             report['decompiled'].append({'key': s.key, 'name': s.name, 'path': os.path.relpath(p, out_dir),
-                                         'kind': 'compiles'})
+                                         'kind': 'equivalent' if r['status'] == 'equivalent' else 'compiles'})
             continue
         try:
             text = decompiled_text(s.body, s.name)

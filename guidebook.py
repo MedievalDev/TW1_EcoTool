@@ -37,7 +37,8 @@ MEASURED = (
     ('SDK 1.3 Scripts', 30, 'single player: campaign, quests, chests, towns, enemies, weather, hero, RPGCompute, units'),
     ('SDK 1.3 _Scripts_old_1.5_ (= SDK 1.2)', 5, 'HorseRacing, TeamAssault, TeamDeathmatch, TeamMonsterHunt, TeamRustling'),
     ('rebuilt', 4, 'MissionTeamCollecting, TestDialogsMission, TestPMMission, TestPMMission2'),
-    ('-', 3, 'Cities, CityCampaign, MissionTeamHunt (v1.0 debug builds)'),
+    ('rebuilt (v1.0)', 1, 'Cities (v1.0 debug build, 2 of 2 routines the same)'),
+    ('-', 2, 'CityCampaign 287 of 290, MissionTeamHunt 343 of 344 routines the same (v1.0 debug builds)'),
 )
 
 
@@ -322,10 +323,27 @@ Wie allgemein das ist, zeigt die Gegenprobe an den 36 SDK-Skripten (nur die
 36/36 (das zaehlt nicht als Beweis, die Tabellen kennen die Skripte schon).
 Ohne den eigenen Debug-Build 36/36, ohne die ganze Skriptfamilie 36/36.
 
-Wo der Nachbau nicht exakt gelingt, zeigt das Tool lesbare
-Decompiler-Ausgabe. Das betrifft die drei v1.0-Debug-Builds (Cities,
-CityCampaign, MissionTeamHunt): Sie stammen von einem aelteren Compiler
-mit anderer Nummerierung der Engine-Funktionen.
+Die drei v1.0-Debug-Builds (Cities, CityCampaign, MissionTeamHunt) stammen
+von einem aelteren Compiler, der die Engine-Funktionen anders nummeriert.
+Das Tool liest sie mit ihren eigenen Debug-Infos (Namen, Typen, Zeilen),
+rechnet die Nummern auf SDK 1.3 um, kompiliert die nachgebaute Quelle mit
+SDK 1.3 als Debug-Build und vergleicht Routine fuer Routine: Code,
+Engine-Aufrufe, Daten. Quellpfade und Zeilennummern zaehlen nicht mit, weil
+die Quelle eine einzige Datei mit eigenen Zeilen ist. Gemessen am
+03.10.2026:
+
+- Cities: 2 von 2 Routinen gleich, Status **Nachgebaut (v1.0)**.
+- CityCampaign: 287 von 290. Initialize ruft SetPlayerHeroUnit auf, das
+  SDK 1.3 nicht mehr hat. Die Befehle FillNetworkMissionsList (in 1.0 mit
+  vier, in 1.3 mit acht Parametern) und IsNetworkMissionAvailable (in 1.3
+  entfallen) lassen sich nicht mehr als Befehl deklarieren.
+- MissionTeamHunt: 343 von 344. RespawnItems ruft GetObject auf, das SDK
+  1.3 nicht mehr hat.
+
+Solche Stellen stehen als Kommentar `not in SDK 1.3` in der Quelle, damit
+sie kompiliert. Der Export schreibt die drei nach `Decompiled`, nicht in
+`compile_all.bat`: Mit SDK 1.3 ergeben sie dessen Nummerierung, nicht die
+Bytes der Spieldatei.
 
 Woher das Tool die Typen kennt: die Befehls- und Event-Plaetze aus dem
 SDK-Compiler selbst (EarthC.exe, 614 Plaetze; Klassen- und Array-Typen aus
@@ -362,10 +380,26 @@ alone, no source): with type and slot tables from all 36 debug builds 36/36
 (no proof, the tables already know those scripts); without the script's own
 debug build 36/36; without its whole family 36/36.
 
-Where an exact rebuild does not work the tool shows readable decompiler
-output. That applies to the three v1.0 debug builds (Cities, CityCampaign,
-MissionTeamHunt): they come from an older compiler that numbers the engine
-functions differently.
+The three v1.0 debug builds (Cities, CityCampaign, MissionTeamHunt) come
+from an older compiler that numbers the engine functions differently. The
+tool reads them with their own debug info (names, types, lines), translates
+the numbers to SDK 1.3, compiles the rebuilt source with SDK 1.3 as a debug
+build and compares routine by routine: code, engine calls, data. Source
+paths and line numbers do not count, since the source is one file with its
+own lines. Measured on 2026-10-03:
+
+- Cities: 2 of 2 routines the same, status **Rebuilt (v1.0)**.
+- CityCampaign: 287 of 290. Initialize calls SetPlayerHeroUnit, which SDK
+  1.3 no longer has. The commands FillNetworkMissionsList (four parameters
+  in 1.0, eight in 1.3) and IsNetworkMissionAvailable (gone in 1.3) can no
+  longer be declared as commands.
+- MissionTeamHunt: 343 of 344. RespawnItems calls GetObject, which SDK 1.3
+  no longer has.
+
+Such places stay in the source as a `not in SDK 1.3` comment so that it
+compiles. Export writes the three to `Decompiled`, not into
+`compile_all.bat`: with SDK 1.3 they give its numbering, not the bytes of
+the game file.
 
 Where the tool gets the types from: the command and event slots from the SDK
 compiler itself (EarthC.exe, 614 slots; class and array types from its own
@@ -387,8 +421,12 @@ def ch_reference():
                         .replace('enemies', 'Gegner').replace('weather', 'Wetter').replace('hero', 'Held')
                         .replace('units', 'Einheiten'), what) if src != '-' else what)
             for src, n, what in MEASURED]
-    rows[-2] = (_l('vom Decompiler nachgebaut', 'rebuilt by the decompiler'), rows[-2][1], rows[-2][2])
-    rows[-1] = (_l('keine Quelle', 'no source'), rows[-1][1], rows[-1][2])
+    rows[-3] = (_l('vom Decompiler nachgebaut', 'rebuilt by the decompiler'), rows[-3][1], rows[-3][2])
+    rows[-2] = (_l('nachgebaut (v1.0)', 'rebuilt (v1.0)'), rows[-2][1],
+                _l('Cities (v1.0-Debug-Build, 2 von 2 Routinen gleich)', MEASURED[-2][2]))
+    rows[-1] = (_l('keine Quelle', 'no source'), rows[-1][1],
+                _l('CityCampaign 287 von 290, MissionTeamHunt 343 von 344 Routinen gleich (v1.0-Debug-Builds)',
+                   MEASURED[-1][2]))
     return _l('''# Referenz: das Spiel 1.7 und die SDKs
 
 Two Worlds Epic Edition (TwoWorlds.exe 1.7.0.0) hat 42 verschiedene
@@ -404,6 +442,9 @@ from which SDK:
 ''') + _table([_l('Quelle', 'Source'), _l('Skripte', 'Scripts'), _l('welche', 'which')], rows) + '\n\n' + _source(
         _l('Messung 03.10.2026 mit SDK 1.2 (C:\\TwoWorldsSDK) und SDK 1.3, STATUS.md',
            'measured 2026-10-03 with SDK 1.2 (C:\\TwoWorldsSDK) and SDK 1.3, STATUS.md')) + _l('''
+Bei den v1.0-Debug-Builds heisst gleich nicht byte-gleich, sondern dasselbe
+Programm Routine fuer Routine (Kapitel Nachbauen und Decompiler-Ansicht).
+
 Die Mehrspieler-Missionen liefert das Spiel im aelteren Stand aus; mit den
 neueren Quellen aus SDK 1.3 ergeben sie andere Bytes.
 
@@ -415,6 +456,9 @@ alle 36 Skripte mit Quelle byte-gleich, auch die alten Mehrspieler-Missionen.
 Das Tool prueft deshalb jeden Export mit dem Compiler, den auch
 `compile_all.bat` benutzt.
 ''', '''
+For the v1.0 debug builds the same means the same program routine by
+routine, not the same bytes (chapter Rebuilding and the decompiler view).
+
 The game ships the multiplayer missions in the older state; with SDK 1.3's
 newer sources they give other bytes.
 

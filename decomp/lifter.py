@@ -15,6 +15,7 @@ import eco, ecodbg, disasm, nativemap, arity4
 CS = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
 CS.detail = True
 HOOK = disasm.DBG_HOOK
+NOP_MARK = '//@nop'
 TYPE = disasm.TYPE
 CMP_OP = {'je': '==', 'jne': '!=', 'jge': '>=', 'jl': '<', 'jle': '<=', 'jg': '>'}
 NEG = {'==': '!=', '!=': '==', '>=': '<', '<': '>=', '<=': '>', '>': '<='}
@@ -206,7 +207,8 @@ class Lifter:
         return sorted(at), at
 
     def __init__(self, path):
-        self.f, self.b = ecodbg.parse_file(path)
+        import v10
+        self.f, self.b = v10.parse(path)          # a v1.0 build in SDK 1.3 numbering
         self.path = pathlib.Path(path)
         self.code = bytes(self.f['code'])
         self.data = bytes(self.f['data_seg'])
@@ -216,6 +218,7 @@ class Lifter:
         self.ari = arity4.load()
         self.internal = load_internal()
         self.imports = dict(self.f['imports'])
+        self.site_names = self.f.get('site_names', {})
         self.cptr = set(self.f['code_ptrs'])
         self.routines = self.b['routines'] if self.b else disasm.scan_routines(self.code)
         self.by_start = {r['start']: r for r in self.routines}
@@ -947,7 +950,10 @@ class Lifter:
                     callee = None
                     if rel == 0:
                         idx = self.imports.get(a + 1)
-                        name = self.native_name(idx) if idx is not None else 'native_?'
+                        # a v1.0 build names each call itself (v10.translate): the name stays right even
+                        # where the 1.3 index is only a guess, and the 1.3 compiler picks the overload
+                        name = (self.site_names.get(a + 1) or
+                                (self.native_name(idx) if idx is not None else 'native_?'))
                         n = self.ari.get(idx)
                         if n is None:
                             n = self.learned.get(idx)
@@ -1103,6 +1109,11 @@ class Lifter:
                 else:
                     exit_ = ('ret', v)
                     v.used = True             # so flush does not print it twice
+            elif m == 'nop' and getattr(self, 'mark_nops', False):
+                # a debug build puts a `nop` where a loop's `continue` lands: in `for (...; c; i++)`
+                # between the body and the increment. emit_ec moves what follows it into the header.
+                flush()
+                st.append(('raw2', NOP_MARK, a))
             elif m in ('cdq', 'nop'):
                 pass
             else:

@@ -101,6 +101,39 @@
         "de": "Der Text erscheint, sonst verhaelt sich alles wie vorher.",
         "en": "The text shows up, otherwise everything behaves as before."
       }
+    },
+    {
+      "id": "v10-script-ingame",
+      "since": "0.3.0",
+      "needs_run": true,
+      "title": {
+        "de": "Ein nachgebautes v1.0-Skript (Cities) im Mehrspieler ausprobieren",
+        "en": "Try a rebuilt v1.0 script (Cities) in multiplayer"
+      },
+      "why": {
+        "de": "Gemessen ist: Cities.ec ergibt mit SDK 1.3 dasselbe Programm wie die Spieldatei, Routine fuer Routine, aber in der Nummerierung von SDK 1.3. Ob das Spiel die neu kompilierte Datei genauso benutzt, hat noch niemand ausprobiert. Cities ist ein Mehrspieler-Skript (Liste der Staedte-Kanaele); ob das Spiel diese Liste ueberhaupt zeigt, ist nicht bekannt.",
+        "en": "Measured: Cities.ec gives the same program as the game file with SDK 1.3, routine by routine, but in SDK 1.3's numbering. Whether the game uses the recompiled file the same way has not been tried. Cities is a multiplayer script (list of the city channels); whether the game shows that list at all is not known."
+      },
+      "steps": {
+        "de": [
+          "Im Tool Cities.eco waehlen (Status Nachgebaut (v1.0)) und Exportieren klicken.",
+          "Decompiled\\Cities.ec nach Scripts\\Network\\Cities.ec im Exportordner kopieren.",
+          "In compile_all.bat einen der pushd/cpp/EarthC/del/popd-Bloecke kopieren, Ordner und Dateiname auf Scripts\\Network und Cities aendern und starten.",
+          "Die entstandene Cities.eco unter Scripts\\Network\\ in eine Mod packen und einschalten.",
+          "Das Mehrspieler-Menue oeffnen und nach der Staedte- oder Kanal-Liste suchen."
+        ],
+        "en": [
+          "Select Cities.eco in the tool (status Rebuilt (v1.0)) and click Export.",
+          "Copy Decompiled\\Cities.ec to Scripts\\Network\\Cities.ec in the export folder.",
+          "In compile_all.bat copy one of the pushd/cpp/EarthC/del/popd blocks, change folder and file name to Scripts\\Network and Cities, and run it.",
+          "Pack the resulting Cities.eco under Scripts\\Network\\ into a mod and switch it on.",
+          "Open the multiplayer menu and look for the city or channel list."
+        ]
+      },
+      "expect": {
+        "de": "Mit und ohne Mod sieht die Liste gleich aus (NetCityTest01 ...), oder das Spiel zeigt sie in beiden Faellen nicht.",
+        "en": "The list looks the same with and without the mod (NetCityTest01 ...), or the game shows it in neither case."
+      }
     }
   ]
 }

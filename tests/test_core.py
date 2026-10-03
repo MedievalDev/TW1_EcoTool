@@ -121,6 +121,20 @@ class GameAndSdk(unittest.TestCase):
                 got[s.name] = C.reconstruct(s, tools)['status']
         self.assertEqual(got, {n: 'identical' for n in REBUILT})
 
+    def test_rebuild_v10_debug_builds(self):
+        """Measured 03.10.2026: the game's three v1.0 debug builds, rebuilt from the WD bytes as the tool does it
+        (own debug info, engine functions translated, compiled with SDK 1.3 in debug mode, compared routine by
+        routine). Cities is the same program; the other two differ only where SDK 1.3 lacks a function or a
+        command of the 2007 interface."""
+        tools = C.tree_tools(self.scripts.values(), self.index)
+        got = {}
+        for s in self.scripts.values():
+            if not s.match and s.debug:
+                r = C.reconstruct(s, tools)
+                got[s.stem] = (r['status'], tuple(r.get('routines') or ()))
+        self.assertEqual(got, {'Cities': ('equivalent', (2, 2)), 'CityCampaign': ('differs', (287, 290)),
+                               'MissionTeamHunt': ('differs', (343, 344))})
+
     def test_decompiler_view(self):
         s = next(s for s in self.scripts.values() if s.stem == 'TestPMMission')
         text = C.decompiled_text(s.body)

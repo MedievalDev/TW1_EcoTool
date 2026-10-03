@@ -241,8 +241,13 @@ DE = {
     'There is a source with the same name, but it compiles to other bytes: the game or a mod uses another version, and the decompiler could not rebuild it exactly yet.':
         'Es gibt eine gleichnamige Quelle, aber sie ergibt andere Bytes: Das Spiel oder eine Mod nutzt eine andere Fassung, und der Decompiler konnte sie noch nicht exakt nachbauen.',
     'No source': 'Keine Quelle',
-    'No SDK has a source for this script and the decompiler could not rebuild it exactly (the v1.0 debug builds, for example). You see the decompiler output.':
-        'Kein SDK hat eine Quelle fuer dieses Skript und der Decompiler konnte es nicht exakt nachbauen (zum Beispiel die v1.0-Debug-Builds). Du siehst die Decompiler-Ausgabe.',
+    'No SDK has a source for this script and the decompiler could not rebuild it exactly (the v1.0 debug builds CityCampaign and MissionTeamHunt call functions SDK 1.3 no longer has). You see the rebuilt source with what differs, or the decompiler output.':
+        'Kein SDK hat eine Quelle fuer dieses Skript und der Decompiler konnte es nicht exakt nachbauen (die v1.0-Debug-Builds CityCampaign und MissionTeamHunt rufen Funktionen auf, die SDK 1.3 nicht mehr hat). Du siehst die nachgebaute Quelle mit dem, was abweicht, oder die Decompiler-Ausgabe.',
+    'Rebuilt (v1.0)': 'Nachgebaut (v1.0)',
+    'A debug build of the 2007 compiler, no SDK source. The decompiler rebuilt it; compiled with SDK 1.3 it is the same program as the game\'s, routine by routine - engine function numbers translated, source paths and line numbers aside. Checked.':
+        'Ein Debug-Build des Compilers von 2007, ohne SDK-Quelle. Der Decompiler hat es nachgebaut; mit SDK 1.3 kompiliert ist es dasselbe Programm wie im Spiel, Routine fuer Routine - Nummern der Engine-Funktionen umgerechnet, Quellpfade und Zeilennummern ausgenommen. Geprueft.',
+    '{name}: v1.0 debug build, no SDK source. Rebuilt by the decompiler; compiled with SDK 1.3 it is the same program as the game\'s ({msg}). Export writes it to Decompiled.':
+        '{name}: v1.0-Debug-Build, keine SDK-Quelle. Vom Decompiler nachgebaut; mit SDK 1.3 kompiliert ist es dasselbe Programm wie im Spiel ({msg}). Der Export schreibt es nach Decompiled.',
     'Welcome': 'Willkommen',
     'TW1 EcoTool shows the scripts of Two Worlds as source code. Where a source of your SDK compiles to exactly the game\'s bytes, you get that source; everything else is shown as readable decompiler output.':
         'TW1 EcoTool zeigt die Skripte von Two Worlds als Quelltext. Wo eine Quelle deines SDK genau die Bytes des Spiels ergibt, bekommst du diese Quelle; alles andere erscheint als lesbare Decompiler-Ausgabe.',
