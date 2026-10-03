@@ -67,6 +67,18 @@ Das Fenster:
 - **Rechts:** Quelltext, Include-Dateien, Details des gewaehlten Skripts.
 - **Unten:** Statuszeile mit Fortschritt.
 
+Dateien draufziehen (aufs Fenster oder auf die Exe):
+
+- **Eine `.eco`:** Daneben entsteht `Name.ec`. Hat dein SDK eine Quelle, die
+  genau diese Bytes ergibt, ist es diese Quelle. Sonst baut der Decompiler
+  eine nach und prueft sie; geht das nicht, ist es lesbare
+  Decompiler-Ausgabe. Die erste Zeile der Datei sagt, was es ist. Gibt es
+  `Name.ec` schon, heisst die neue `Name_decompiled.ec`.
+- **Eine `.ec`:** Daneben entsteht `Name.eco`, kompiliert mit dem Compiler
+  aus SDK 1.3 als Release-Build (wie die Skripte des Spiels und
+  `compile_all.bat`). Include-Dateien sucht er vom Ordner der `.ec` aus.
+  Eine vorhandene `Name.eco` wird vorher als `Name.eco.bak` gesichert.
+
 Tasten:
 
 ''', '''# Getting started
@@ -85,6 +97,18 @@ The window:
 - **Left:** every script with status, source and archive. Filter and search.
 - **Right:** source code, include files and details of the selected script.
 - **Bottom:** status line with progress.
+
+Dropping files (on the window or on the exe):
+
+- **A `.eco`:** `Name.ec` appears next to it. If your SDK has a source that
+  gives exactly these bytes, it is that source. Otherwise the decompiler
+  rebuilds one and checks it; where that does not work it is readable
+  decompiler output. The file's first line says which. If `Name.ec` exists,
+  the new one is `Name_decompiled.ec`.
+- **A `.ec`:** `Name.eco` appears next to it, compiled with SDK 1.3's
+  compiler as a release build (like the game's scripts and
+  `compile_all.bat`). Include files are looked up from the `.ec`'s folder.
+  An existing `Name.eco` is kept as `Name.eco.bak` first.
 
 Keys:
 

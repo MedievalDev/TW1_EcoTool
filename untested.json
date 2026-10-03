@@ -134,6 +134,37 @@
         "de": "Mit und ohne Mod sieht die Liste gleich aus (NetCityTest01 ...), oder das Spiel zeigt sie in beiden Faellen nicht.",
         "en": "The list looks the same with and without the mod (NetCityTest01 ...), or the game shows it in neither case."
       }
+    },
+    {
+      "id": "drop-files",
+      "since": "0.4.0",
+      "needs_run": false,
+      "title": {
+        "de": "Eine .eco und eine .ec aus dem Explorer aufs Tool ziehen",
+        "en": "Drag a .eco and a .ec from Explorer onto the tool"
+      },
+      "why": {
+        "de": "Gemessen ist der Weg dahinter (Dekompilieren und Kompilieren neben der Datei, Sicherung der alten .eco). Das Ziehen aus dem Explorer aufs Fenster und auf das Exe-Symbol hat noch niemand von Hand ausprobiert.",
+        "en": "Measured is the path behind it (decompiling and compiling next to the file, keeping the old .eco). Dragging from Explorer onto the window and onto the exe icon has not been tried by hand yet."
+      },
+      "steps": {
+        "de": [
+          "Mit dem WD Packer eine .eco aus einer .wd des Spiels entpacken, zum Beispiel TestPMMission.eco.",
+          "Diese .eco aus dem Explorer auf das Fenster des Tools ziehen.",
+          "Die entstandene TestPMMission.ec auf das Fenster ziehen.",
+          "Die .eco noch einmal ziehen, diesmal auf das Symbol von TW1_EcoTool.exe (das Tool ist dabei geschlossen)."
+        ],
+        "en": [
+          "Unpack a .eco from one of the game's .wd with the WD Packer, for example TestPMMission.eco.",
+          "Drag this .eco from Explorer onto the tool's window.",
+          "Drag the resulting TestPMMission.ec onto the window.",
+          "Drag the .eco once more, this time onto the TW1_EcoTool.exe icon (with the tool closed)."
+        ]
+      },
+      "expect": {
+        "de": "Nach Schritt 2 liegt TestPMMission.ec neben der .eco und ist rechts zu sehen. Nach Schritt 3 gibt es eine neue TestPMMission.eco und die alte als TestPMMission.eco.bak. Nach Schritt 4 startet das Tool und legt TestPMMission_decompiled.ec an.",
+        "en": "After step 2 TestPMMission.ec lies next to the .eco and shows on the right. After step 3 there is a new TestPMMission.eco and the old one as TestPMMission.eco.bak. After step 4 the tool starts and writes TestPMMission_decompiled.ec."
+      }
     }
   ]
 }

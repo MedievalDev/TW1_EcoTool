@@ -922,6 +922,92 @@ def _write_compile_bat(out_dir, mains, tools):
         f.write((chr(13) + chr(10)).join(lines) + chr(13) + chr(10))
 
 
+# ------------------------------------------------------------------ Drop --
+
+def drop_tools(sdks):
+    """The compiler for a dropped file: SDK 1.3's (SDK 1.2's is too old for the game's scripts), else any."""
+    ok = [s for s in sdks if s.compiler_ok]
+    best = next((s for s in ok if s.version == '1.3'), ok[0] if ok else None)
+    return best.tools if best else None
+
+
+def free_path(path, suffix):
+    """`path` if nothing is there yet, else Name<suffix>.ext, Name<suffix>_2.ext, ... - never an existing file"""
+    if not os.path.exists(path):
+        return path
+    base, ext = os.path.splitext(path)
+    for k in range(1, 1000):
+        p = f'{base}{suffix}{"" if k == 1 else f"_{k}"}{ext}'
+        if not os.path.exists(p):
+            return p
+    raise OSError(f'no free name next to {path}')
+
+
+def loose_script(path):
+    """a .eco file on disk as a Script (name and class id from its own header record, if it has one)"""
+    with open(path, 'rb') as f:
+        raw = f.read()
+    s = Script('file:' + path, os.path.basename(path), os.path.basename(path), eco_body(raw), [], loose_meta(raw))
+    s.from_mod = True
+    return s
+
+
+def decompile_dropped(path, tools, index=None):
+    """A .eco dropped on the tool: the best source there is, written next to it as Name.ec (Name_decompiled.ec
+    when Name.ec exists). Best first: an SDK source that compiles to exactly these bytes; the decompiler's
+    rebuild (checked against the bytes, or routine by routine for a v1.0 debug build); readable decompiler
+    output. -> (written path, kind, message) with kind 'source' | 'identical' | 'equivalent' | 'differs' |
+    'readable'."""
+    s = loose_script(path)
+    nl = chr(10)
+    out = free_path(os.path.splitext(path)[0] + '.ec', '_decompiled')
+    if index:
+        classify({s.key: s}, index)
+    if s.match:
+        rel, root = s.match['rel'], s.match['root']
+        text = read_source(index, root, rel).decode('latin-1')
+        head = (f'// {s.name}: source {rel} from {index["roots"][root]["label"]}; compiles to exactly these bytes. '
+                f'Its include files are in the same SDK.')
+        kind, msg = 'source', f'SDK source {rel}'
+    else:
+        r = reconstruct(s, tools)
+        kind, msg = r['status'], r.get('msg', '')
+        if r['status'] == 'identical':
+            head = f'// {s.name}: rebuilt by TW1 EcoTool; compiles to exactly these bytes (checked).'
+        elif r['status'] == 'equivalent':
+            head = f'// {s.name}: v1.0 debug build, rebuilt by TW1 EcoTool; with SDK 1.3 the same program ({msg}).'
+        elif r['status'] == 'differs' and r.get('text'):
+            head = f'// {s.name}: rebuilt by TW1 EcoTool; COMPILES, but not exactly to these bytes ({msg}).'
+        else:
+            kind = 'readable'
+            r = {'text': decompiled_text(s.body, s.name)}
+            head = f'// {s.name}: readable decompiler output, NOT a compilable script ({msg or "no rebuild"}).'
+        text = r['text']
+    with open(out, 'w', encoding='latin-1', errors='replace') as f:
+        f.write(head + nl + text)
+    return out, kind, msg
+
+
+def compile_dropped(path, tools):
+    """A .ec dropped on the tool: compiled with the SDK compiler as a release build (like the game's scripts
+    and compile_all.bat) to Name.eco next to it; an existing Name.eco is kept as Name.eco.bak first.
+    Includes are found from the file's own folder, as when the SDK compiles it.
+    -> (written .eco or None, message, backup path or None)"""
+    if not tools:
+        return None, 'no SDK compiler found', None
+    out = os.path.splitext(path)[0] + '.eco'
+    backup = None
+    if os.path.exists(out):
+        backup = free_path(out + '.bak', '')
+        shutil.copy2(out, backup)
+    body, msg = compile_file(tools, path)
+    if body is None:
+        if backup and not os.path.exists(out):
+            shutil.copy2(backup, out)          # a failed compile leaves the old .eco where it was
+        return None, (msg.strip().splitlines() or [''])[-1][-300:], backup
+    return out, f'{len(body)} bytes', backup
+
+
 # ------------------------------------------------------------ SDK update --
 
 COMPILER = 'EarthC.exe'

@@ -42,6 +42,11 @@ backs up every replaced file, and can undo the update. SDK 1.2's compiler (`Tool
 the game's scripts ("Cannot find suitable function"), so the update replaces it with SDK 1.3's, backed up like
 every other file.
 
+**Drop a file** on the window or on the exe: a `.eco` gets `Name.ec` next to it (the SDK source that gives these
+bytes, else the checked rebuild, else readable decompiler output; the first line says which, and an existing
+`Name.ec` is never overwritten). A `.ec` gets `Name.eco` next to it, compiled with SDK 1.3's compiler as a release
+build; an existing `Name.eco` is kept as `Name.eco.bak` first.
+
 ## What is measured (Two Worlds Epic Edition 1.7, 2026-10-03)
 
 | Source | Scripts that compile to the game's bytes |

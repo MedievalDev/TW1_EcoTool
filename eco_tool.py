@@ -291,6 +291,8 @@ class App:
         self.cfg = Config()
         self._carry = carry or {}
         self.selftest = os.environ.get('ECOTOOL_SELFTEST')
+        self._drops = []                   # dropped files waiting for the worker
+        self._drop_ok = False
         _LANG = self.cfg.get('lang') or ('de' if system_is_german() else 'en')
         self.root = tk.Tk()
         self.root.withdraw()
@@ -378,10 +380,19 @@ class App:
         self._started = True
         updater.cleanup_old()
         self.root.protocol('WM_DELETE_WINDOW', self._close)
+        try:
+            import dropfiles
+            self._drop_ok = dropfiles.enable(self.root, self.on_drop) > 0
+        except Exception:
+            self._drop_ok = False
         if self.selftest:
             self._run_selftest()
             return
         self.reload(first=True)
+        # a file dropped on the exe's icon arrives as an argument; it waits until the game is read
+        args = [a for a in sys.argv[1:] if os.path.isfile(a)]
+        if args:
+            self.on_drop(args)
         if not self._carry.get('geometry'):
             if self.cfg.get('update_check', True):
                 self.root.after(1500, self.check_updates)
@@ -413,6 +424,7 @@ class App:
             import urllib.request  # noqa: F401
         except ImportError as e:
             https = f'missing:{e.name}'
+        note.append(f'drop={self._drop_ok}')
         game = ecocore.find_game_dir(self.cfg.get('game_dir'))
         if game and os.environ.get('ECOTOOL_SELFTEST_V10'):
             # the rebuild of the game's v1.0 debug builds, run inside the built exe:
@@ -473,6 +485,10 @@ class App:
         self.lbl_sdk.bind('<Button-1>', lambda e: self.add_sdk())
         help_mark(info, tr('Click the game or SDK text to choose another folder. Chapter "Game, mods and SDKs".'),
                   'read', self)
+        help_mark(info, tr('Drop files on the window or on the exe. Chapter "Getting started".'), 'start', self,
+                  side='right')
+        ttk.Label(info, text=tr('Drop a .eco here to decompile it, a .ec to compile it.'),
+                  style='Muted.TLabel').pack(side='right')
 
         self.paned = ttk.PanedWindow(self.root, orient='horizontal')
         self.paned.pack(fill='both', expand=True, padx=10, pady=(4, 8))
@@ -1146,6 +1162,77 @@ class App:
             lnk.pack(anchor='w', padx=(12, 0))
             lnk.bind('<Button-1>', lambda e, u=url: webbrowser.open(u))
         ttk.Button(f, text=tr('Close'), command=win.destroy).pack(anchor='e', pady=(12, 0))
+
+    # ---- drag & drop ----
+    def on_drop(self, paths):
+        """A dropped .eco is decompiled next to it, a dropped .ec compiled next to it (release build)."""
+        todo = [os.path.normpath(p) for p in paths
+                if os.path.isfile(p) and os.path.splitext(p)[1].lower() in ('.eco', '.ec')]
+        if not todo:
+            self.status(tr('Only .eco files (decompile) and .ec files (compile) can be dropped here.'), error=True)
+            return
+        self._drops.extend(todo)
+        try:
+            self.root.lift()
+        except tk.TclError:
+            pass
+        self._next_drop()
+
+    def _next_drop(self):
+        if not self._drops:
+            return
+        if self.busy:                      # reading the game first, or an export: after that
+            self.root.after(500, self._next_drop)
+            return
+        paths, self._drops = self._drops, []
+        index = self.index
+        tools = ecocore.drop_tools(ecocore.find_sdks(self.cfg.get('sdk_dirs', [])))
+
+        def work(progress, cancelled):
+            out = []
+            for i, p in enumerate(paths):
+                if cancelled():
+                    raise ecocore.Cancelled()
+                progress(os.path.basename(p), i, len(paths))
+                try:
+                    if p.lower().endswith('.eco'):
+                        res, kind, msg = ecocore.decompile_dropped(p, tools, index)
+                    else:
+                        res, msg, backup = ecocore.compile_dropped(p, tools)
+                        kind = 'compiled' if res else 'failed'
+                        if backup:
+                            msg += ', ' + tr('old file kept as {name}').format(name=os.path.basename(backup))
+                except Exception as e:
+                    res, kind, msg = None, 'failed', f'{type(e).__name__}: {e}'
+                out.append((p, res, kind, msg))
+            return out
+
+        def done(res, err):
+            if err:
+                if err != 'cancelled':
+                    self.status(tr('Working on the dropped files failed:') + f' {type(err).__name__}: {err}', error=True)
+                return
+            words = {'source': tr('SDK source, compiles to exactly these bytes'),
+                     'identical': tr('rebuilt, compiles to exactly these bytes'),
+                     'equivalent': tr('rebuilt, with SDK 1.3 the same program (v1.0 debug build)'),
+                     'differs': tr('rebuilt, compiles, but not exactly to these bytes'),
+                     'readable': tr('readable decompiler output, not compilable'),
+                     'compiled': tr('compiled (release build)'), 'failed': tr('failed')}
+            lines = [f'{os.path.basename(p)} -> {os.path.basename(r) if r else "-"}: {words.get(k, k)}'
+                     + (f' ({m})' if m and k in ('failed', 'compiled', 'differs') else '') for p, r, k, m in res]
+            bad = [x for x in res if x[2] == 'failed']
+            self.status((lines[0] if len(lines) == 1 else tr('{n} dropped files done, {bad} failed.').format(
+                n=len(lines), bad=len(bad))), error=bool(bad), ok=not bad)
+            self.fb.log.add('drop: ' + '; '.join(lines))
+            shown = next((x for x in reversed(res) if x[1] and x[1].lower().endswith('.ec')), None)
+            if shown:
+                with open(shown[1], encoding='latin-1') as f:
+                    highlight(self.text, f.read())
+                self.src_head.configure(text=tr('Written: {path}').format(path=shown[1]),
+                                        foreground=theme.OK if shown[2] != 'readable' else theme.STATUS_NONE)
+            if len(lines) > 1 or bad:
+                messagebox.showinfo(tr('Dropped files'), NL.join(lines), parent=self.root)
+        self.run_task(tr('Working on the dropped files ...'), work, done)
 
     def run(self):
         self._bind_keys()

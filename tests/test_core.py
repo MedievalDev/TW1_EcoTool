@@ -135,6 +135,36 @@ class GameAndSdk(unittest.TestCase):
         self.assertEqual(got, {'Cities': ('equivalent', (2, 2)), 'CityCampaign': ('differs', (287, 290)),
                                'MissionTeamHunt': ('differs', (343, 344))})
 
+    def test_drop_round_trip(self):
+        """Drag & drop: a .ec dropped is compiled next to it (release build), the .eco dropped is decompiled
+        next to it - with TestPMMission (no SDK source) the circle closes on the game's own bytes."""
+        tools = C.drop_tools(C.find_sdks([SDK13]))
+        s = next(s for s in self.scripts.values() if s.stem == 'TestPMMission')
+        r = C.reconstruct(s, tools)
+        work = tempfile.mkdtemp(prefix='ecotool_drop_')
+        try:
+            src = os.path.join(work, 'TestPMMission.ec')
+            with open(src, 'w', encoding='latin-1') as f:
+                f.write(r['text'])
+            eco, msg, backup = C.compile_dropped(src, tools)
+            self.assertEqual((eco, backup), (os.path.join(work, 'TestPMMission.eco'), None), msg)
+            with open(eco, 'rb') as f:
+                self.assertEqual(C.sha(C.eco_body(f.read())), s.sha)
+            out, kind, _m = C.decompile_dropped(eco, tools, self.index)
+            self.assertEqual((os.path.basename(out), kind), ('TestPMMission_decompiled.ec', 'identical'))
+            eco2, _m, backup = C.compile_dropped(src, tools)
+            self.assertEqual(os.path.basename(backup), 'TestPMMission.eco.bak')
+            self.assertTrue(os.path.isfile(eco2))
+            # a script with an SDK source gives that source
+            g = next(s for s in self.scripts.values() if s.match)
+            p = os.path.join(work, g.name)
+            with open(p, 'wb') as f:
+                f.write(g.body)
+            out, kind, _m = C.decompile_dropped(p, tools, self.index)
+            self.assertEqual(kind, 'source')
+        finally:
+            shutil.rmtree(work, ignore_errors=True)
+
     def test_decompiler_view(self):
         s = next(s for s in self.scripts.values() if s.stem == 'TestPMMission')
         text = C.decompiled_text(s.body)

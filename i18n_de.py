@@ -248,6 +248,25 @@ DE = {
         'Ein Debug-Build des Compilers von 2007, ohne SDK-Quelle. Der Decompiler hat es nachgebaut; mit SDK 1.3 kompiliert ist es dasselbe Programm wie im Spiel, Routine fuer Routine - Nummern der Engine-Funktionen umgerechnet, Quellpfade und Zeilennummern ausgenommen. Geprueft.',
     '{name}: v1.0 debug build, no SDK source. Rebuilt by the decompiler; compiled with SDK 1.3 it is the same program as the game\'s ({msg}). Export writes it to Decompiled.':
         '{name}: v1.0-Debug-Build, keine SDK-Quelle. Vom Decompiler nachgebaut; mit SDK 1.3 kompiliert ist es dasselbe Programm wie im Spiel ({msg}). Der Export schreibt es nach Decompiled.',
+    'Drop files on the window or on the exe. Chapter "Getting started".':
+        'Dateien aufs Fenster oder auf die Exe ziehen. Kapitel "Einstieg".',
+    'Drop a .eco here to decompile it, a .ec to compile it.':
+        'Eine .eco hierher ziehen zum Dekompilieren, eine .ec zum Kompilieren.',
+    'Only .eco files (decompile) and .ec files (compile) can be dropped here.':
+        'Hierher lassen sich nur .eco-Dateien (dekompilieren) und .ec-Dateien (kompilieren) ziehen.',
+    'old file kept as {name}': 'alte Datei als {name} behalten',
+    'Working on the dropped files failed:': 'Die gezogenen Dateien zu verarbeiten ist fehlgeschlagen:',
+    'SDK source, compiles to exactly these bytes': 'SDK-Quelle, ergibt genau diese Bytes',
+    'rebuilt, compiles to exactly these bytes': 'nachgebaut, ergibt genau diese Bytes',
+    'rebuilt, with SDK 1.3 the same program (v1.0 debug build)':
+        'nachgebaut, mit SDK 1.3 dasselbe Programm (v1.0-Debug-Build)',
+    'rebuilt, compiles, but not exactly to these bytes': 'nachgebaut, kompiliert, aber nicht genau zu diesen Bytes',
+    'readable decompiler output, not compilable': 'lesbare Decompiler-Ausgabe, nicht kompilierbar',
+    'compiled (release build)': 'kompiliert (Release-Build)',
+    '{n} dropped files done, {bad} failed.': '{n} gezogene Dateien fertig, {bad} fehlgeschlagen.',
+    'Written: {path}': 'Geschrieben: {path}',
+    'Dropped files': 'Gezogene Dateien',
+    'Working on the dropped files ...': 'Verarbeite die gezogenen Dateien ...',
     'Welcome': 'Willkommen',
     'TW1 EcoTool shows the scripts of Two Worlds as source code. Where a source of your SDK compiles to exactly the game\'s bytes, you get that source; everything else is shown as readable decompiler output.':
         'TW1 EcoTool zeigt die Skripte von Two Worlds als Quelltext. Wo eine Quelle deines SDK genau die Bytes des Spiels ergibt, bekommst du diese Quelle; alles andere erscheint als lesbare Decompiler-Ausgabe.',
