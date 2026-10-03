@@ -46,6 +46,27 @@ def eco_body(raw):
     return head
 
 
+def loose_meta(raw):
+    """script name / class id of a loose .eco: its first zlib stream is the header record
+    (3 magic bytes, flags, then a pascal name for bit 3, the class id for bit 4, the GUID for bit 5)"""
+    if raw[:4] == b'ECO' + bytes(1):
+        return {}
+    try:
+        head = zlib.decompressobj().decompress(raw)
+    except zlib.error:
+        return {}
+    meta, flags, o = {}, head[3], 4
+    if flags & 0x08:
+        meta['name'] = head[o + 1:o + 1 + head[o]].decode('latin-1')
+        o += 1 + head[o]
+    if flags & 0x10:
+        meta['num'] = struct.unpack_from('<I', head, o)[0]
+        o += 4
+    if flags & 0x20:
+        meta['guid'] = head[o:o + 16].hex()
+    return meta
+
+
 def eco_is_debug(body):
     """True when the body carries the debug blob (HasDebug word after the code segment)."""
     try:
@@ -79,6 +100,7 @@ class Archive:
         self.path = path
         self.label = label or os.path.basename(path)
         self.entries = {}
+        self.meta = {}             # script name, class id, GUID: they live here, not in the body
         with open(path, 'rb') as f:
             f.seek(-4, 2)
             size = f.tell() + 4
@@ -95,13 +117,18 @@ class Archive:
             off += nlen
             flags, foff, clen, rlen = struct.unpack_from('<BIII', table, off)
             off += 13
+            meta = {}
             if flags & 0x08:
+                meta['name'] = table[off + 1:off + 1 + table[off]].decode('latin-1')
                 off += 1 + table[off]
             if flags & 0x10:
+                meta['num'] = struct.unpack_from('<I', table, off)[0]
                 off += 4
             if flags & 0x20:
+                meta['guid'] = table[off:off + 16].hex()
                 off += 16
             self.entries[name.lower()] = (name, flags, foff, clen, rlen)
+            self.meta[name.lower()] = meta
 
     def read(self, key):
         name, flags, foff, clen, rlen = self.entries[key.lower()]
@@ -194,7 +221,7 @@ def active_mods():
 class Script:
     """One .eco as the game sees it: the winning copy plus the copies it hides."""
 
-    def __init__(self, key, name, layer, body, older):
+    def __init__(self, key, name, layer, body, older, meta=None):
         self.key = key                     # inner path, lower case: scripts\campaigns\twoworldscampaign.eco
         self.name = name                   # file name as stored: TwoWorldsCampaign.eco
         self.layer = layer                 # label of the winning archive
@@ -205,6 +232,8 @@ class Script:
         self.match = None                  # index entry (dict) when a source compiles to these bytes
         self.related = []                  # index entries with the same file name that do not match
         self.from_mod = False
+        self.meta = meta or {}             # {'name': script name, 'num': class id, 'guid'} from the archive
+        self.rebuild = None                # reconstruct() result for a script without a source
 
     @property
     def stem(self):
@@ -257,7 +286,7 @@ def read_game(game_dir, with_mods=True, extra_files=()):
         except Exception as e:
             problems.append(f'{a.label} {k}: {e}')
             continue
-        s = Script(k, os.path.basename(stored), a.label, body, older)
+        s = Script(k, os.path.basename(stored), a.label, body, older, a.meta.get(k))
         s.from_mod = is_mod
         scripts[k] = s
     for p in extra_files:
@@ -267,12 +296,14 @@ def read_game(game_dir, with_mods=True, extra_files=()):
                 for k, (stored, *_r) in a.entries.items():
                     if k.endswith('.eco'):
                         s = Script('file:' + p + '|' + k, os.path.basename(stored), os.path.basename(p),
-                                   eco_body(a.read(k)), [])
+                                   eco_body(a.read(k)), [], a.meta.get(k))
                         s.from_mod = True
                         scripts[s.key] = s
             else:
                 with open(p, 'rb') as f:
-                    s = Script('file:' + p, os.path.basename(p), os.path.basename(p), eco_body(f.read()), [])
+                    raw = f.read()
+                s = Script('file:' + p, os.path.basename(p), os.path.basename(p), eco_body(raw), [],
+                           loose_meta(raw))
                 s.from_mod = True
                 scripts[s.key] = s
         except Exception as e:
@@ -502,9 +533,12 @@ def classify(scripts, index):
 
 
 def status_of(s):
-    """'source' (a source compiles to exactly these bytes), 'differs' (same-named source, other bytes), 'none'."""
+    """'source' (a source compiles to exactly these bytes), 'rebuilt' (no source, but the decompiler's
+    source compiles to exactly these bytes), 'differs' (same-named source, other bytes), 'none'."""
     if s.match:
         return 'source'
+    if s.rebuild and s.rebuild.get('status') == 'identical':
+        return 'rebuilt'
     if s.related:
         return 'differs'
     return 'none'
@@ -630,6 +664,108 @@ def decompiled_text(body, name=None):
         _rm(tmp.name)
 
 
+# ------------------------------------------------------------- Rebuild --
+
+REBUILT_DIR = '_TW1_Rebuilt'
+_decomp_fp = None
+
+
+def decomp_fingerprint():
+    """hash of the decompiler's code and tables: a cached rebuild is only valid for the same decompiler"""
+    global _decomp_fp
+    if _decomp_fp is None:
+        import decomp
+        h = hashlib.sha256()
+        for dp, ds, fs in os.walk(decomp.HERE):
+            ds[:] = sorted(d for d in ds if d != '__pycache__')
+            for f in sorted(fs):
+                if f.endswith(('.py', '.json', '.txt')):
+                    with open(os.path.join(dp, f), 'rb') as fh:
+                        h.update(f.encode() + fh.read())
+        _decomp_fp = h.hexdigest()[:16]
+    return _decomp_fp
+
+
+def reconstruct(s, tools, cache_dir=None):
+    """Decompile a script that has no source into EarthC source, compile it and compare with the game.
+
+    Works on release builds without any debug info (decomp.emit_ec with typeinfer). Returns
+    {'status': 'identical' | 'differs' | 'compile' | 'failed' | 'unchecked' | 'debug', 'text', 'msg', 'size'}:
+    'identical' means the text compiles to exactly the game's bytes - checked here, every time it is
+    computed (and cached per body, decompiler and compiler)."""
+    if s.debug:
+        return {'status': 'debug', 'text': '', 'msg': 'debug build (v1.0): not rebuilt', 'size': None}
+    cid = ''
+    if tools and os.path.isfile(os.path.join(tools, 'EarthC.exe')):
+        with open(os.path.join(tools, 'EarthC.exe'), 'rb') as f:
+            cid = sha(f.read())[:16]
+    cache = None
+    if cache_dir:
+        # the class id from the archive changes the generated code (which natives are in scope), so it is
+        # part of the key: the same body opened bare (class 0) must not hand its result to the WD copy
+        meta = sha(json.dumps({k: s.meta.get(k) for k in ('name', 'num')}, sort_keys=True).encode())[:8]
+        cache = os.path.join(cache_dir, f'rebuild_{s.sha[:24]}_{meta}_{decomp_fingerprint()}_{cid or "none"}.json')
+        if os.path.isfile(cache):
+            try:
+                with open(cache, encoding='utf-8') as f:
+                    return json.load(f)
+            except Exception:
+                pass
+    import decomp  # noqa: F401
+    import emit_ec
+    work = tempfile.mkdtemp(prefix='ecotool_rebuild_')
+    out = {'status': 'failed', 'text': '', 'msg': '', 'size': None}
+    try:
+        body_path = os.path.join(work, 'body.eco')
+        with open(body_path, 'wb') as f:
+            f.write(s.body)
+        try:
+            text = emit_ec.emit(body_path, None, namerec={k: v for k, v in s.meta.items() if k in ('name', 'num')})
+        except Exception as e:
+            out['msg'] = f'{type(e).__name__}: {e}'
+            return out
+        out['text'] = text
+        if not cid:
+            out['status'], out['msg'] = 'unchecked', 'no compiler to check it'
+            return out
+        src = os.path.join(work, s.stem + '.ec')
+        with open(src, 'w', encoding='latin-1', errors='replace') as f:
+            f.write(text)
+        body, msg = compile_file(tools, src)
+        if body is None:
+            out['status'], out['msg'] = 'compile', (msg.strip().splitlines() or [''])[-1][-300:]
+        else:
+            out['size'] = len(body)
+            out['status'] = 'identical' if sha(body) == s.sha else 'differs'
+            if out['status'] == 'differs':
+                out['msg'] = f'compiles, {len(body) - len(s.body):+d} bytes against the game'
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+    if cache and out['status'] in ('identical', 'differs', 'compile'):
+        try:
+            with open(cache, 'w', encoding='utf-8') as f:
+                json.dump(out, f)
+        except OSError:
+            pass
+    return out
+
+
+def rebuilt_rel(s):
+    r"""where a rebuilt script goes: Scripts\_TW1_Rebuilt\<its path under Scripts>.ec"""
+    k = s.key.split('|')[-1] if s.key.startswith('file:') else s.key
+    k = k.replace('/', SEP)
+    if k.lower().startswith('scripts' + SEP):
+        k = k[len('scripts' + SEP):]
+    if k.startswith('file:'):
+        k = os.path.basename(k)
+    return REBUILT_DIR + SEP + os.path.splitext(k)[0] + '.ec'
+
+
+def _rebuilt_head(s, r):
+    return (f'// {s.name}: no SDK source exists. Rebuilt from the compiled script by TW1 EcoTool;'
+            f' compiles to exactly the game\'s bytes (checked when exported).' + chr(10))
+
+
 def export(scripts, index, out_dir, progress=None, cancel=None, verify=True):
     """Sources of ``scripts`` into out_dir\\Scripts (layout()), the rest as decompiler text into out_dir\\Decompiled.
 
@@ -648,11 +784,36 @@ def export(scripts, index, out_dir, progress=None, cancel=None, verify=True):
         with open(p, 'wb') as f:
             f.write(read_source(index, root, rel))
     tools = tree_tools(scripts, index)
-    report = {'out': out_dir, 'source': [], 'decompiled': [], 'failed': [], 'clashes': clashes, 'compiler': tools}
+    report = {'out': out_dir, 'source': [], 'rebuilt': [], 'decompiled': [], 'failed': [], 'clashes': clashes,
+              'compiler': tools}
     for s in scripts:
         if s.key in mains:
             report['source'].append({'key': s.key, 'name': s.name, 'path': mains[s.key], 'root': s.match['root'],
                                      'sha': s.sha, 'verified': None, 'error': ''})
+            continue
+        r = s.rebuild
+        if r is None and not s.debug:
+            if progress:
+                progress(s.name, 0, 1)
+            r = s.rebuild = reconstruct(s, tools)
+        if r and r['status'] == 'identical':
+            dest = rebuilt_rel(s)
+            p = os.path.join(tree, dest)
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            with open(p, 'w', encoding='latin-1', errors='replace') as f:
+                f.write(_rebuilt_head(s, r) + r['text'])
+            mains[s.key] = dest
+            report['rebuilt'].append({'key': s.key, 'name': s.name, 'path': dest, 'sha': s.sha,
+                                      'verified': None, 'error': ''})
+            continue
+        if r and r['status'] == 'differs':
+            p = os.path.join(out_dir, 'Decompiled', s.stem + '.ec')
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            with open(p, 'w', encoding='latin-1', errors='replace') as f:
+                f.write(f'// {s.name}: no SDK source. Rebuilt source that COMPILES, but not to the game\'s bytes '
+                        f'({r["msg"]}).' + chr(10) + r['text'])
+            report['decompiled'].append({'key': s.key, 'name': s.name, 'path': os.path.relpath(p, out_dir),
+                                         'kind': 'compiles'})
             continue
         try:
             text = decompiled_text(s.body, s.name)
@@ -668,7 +829,7 @@ def export(scripts, index, out_dir, progress=None, cancel=None, verify=True):
         _write_compile_bat(out_dir, sorted(mains.values()), tools)
     if verify and mains:
         res = check_tree(tree, scripts, mains, tools, progress, cancel)
-        for r in report['source']:
+        for r in report['source'] + report['rebuilt']:
             ok, msg = res.get(r['key'], (False, 'not checked'))
             r['verified'], r['error'] = ok, msg
     with open(os.path.join(out_dir, 'report.json'), 'w', encoding='utf-8') as f:

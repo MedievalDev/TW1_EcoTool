@@ -1,0 +1,8505 @@
+{
+ "0": {
+  "command": {
+   "10": {
+    "name": "MoveOneStepForward",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "11": {
+    "name": "MoveOneStepBack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "113": {
+    "name": "ShootAttackAutoPrepare",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "114": {
+    "name": "ShootAttackAutoFire",
+    "params": []
+   },
+   "116": {
+    "name": "PrepareManualTargetMagic",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "117": {
+    "name": "StopCurrentAction",
+    "params": []
+   },
+   "12": {
+    "name": "MoveOneStepLeft",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "123": {
+    "name": "UserNoParam0",
+    "params": []
+   },
+   "13": {
+    "name": "MoveOneStepRight",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "133": {
+    "name": "UserOneParam0",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bMoveRand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "134": {
+    "name": "UserOneParam1",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "14": {
+    "name": "MoveStepInDirection",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlphaAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "142": {
+    "name": "UserOneParam9",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMode",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "143": {
+    "name": "UserObject0",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "144": {
+    "name": "UserObject1",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "15": {
+    "name": "StopMovingStep",
+    "params": []
+   },
+   "153": {
+    "name": "UserPoint0",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "16": {
+    "name": "StartJump",
+    "params": []
+   },
+   "17": {
+    "name": "MoveHorseSpeedUp",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "18": {
+    "name": "MoveHorseStopSpeedUp",
+    "params": []
+   },
+   "19": {
+    "name": "MoveHorseSlowDown",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "20": {
+    "name": "MoveHorseStopSlowDown",
+    "params": []
+   },
+   "21": {
+    "name": "MoveHorseMoveBack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "22": {
+    "name": "MoveHorseStopMoveBack",
+    "params": []
+   },
+   "23": {
+    "name": "MoveHorseQuickStop",
+    "params": []
+   },
+   "24": {
+    "name": "MoveHorseTurnLeft",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "25": {
+    "name": "MoveHorseTurnRight",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "26": {
+    "name": "MoveHorseStopTurn",
+    "params": []
+   },
+   "27": {
+    "name": "Attack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "28": {
+    "name": "StrikeAttack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "29": {
+    "name": "ShootAttackManualPrepare",
+    "params": []
+   },
+   "3": {
+    "name": "Initialize",
+    "params": []
+   },
+   "30": {
+    "name": "ShootAttackManualFire",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "31": {
+    "name": "TurnToCamera",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBeta",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "32": {
+    "name": "MoveAttack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "33": {
+    "name": "SetArmedMode",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bArmed",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "34": {
+    "name": "MountOnHorse",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHorse",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "35": {
+    "name": "UnmountFromHorse",
+    "params": []
+   },
+   "36": {
+    "name": "CallHorse",
+    "params": []
+   },
+   "37": {
+    "name": "PrepareBeforeDialogTalk",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "38": {
+    "name": "FinishAfterDialogTalk",
+    "params": []
+   },
+   "39": {
+    "name": "PrepareBeforeDialogChat",
+    "params": []
+   },
+   "4": {
+    "name": "Uninitialize",
+    "params": []
+   },
+   "40": {
+    "name": "FinishAfterDialogChat",
+    "params": []
+   },
+   "41": {
+    "name": "StartDialogTalkAnim",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBodyAnim",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nHeadAnim",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "42": {
+    "name": "StopDialogTalkAnim",
+    "params": []
+   },
+   "43": {
+    "name": "PauseDialogTalkHeadAnim",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bPause",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "45": {
+    "name": "MakeCustomWork",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nWorkAnimNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLoopsCnt",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nWorkSubObjectID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "46": {
+    "name": "MagicCardDirect",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "47": {
+    "name": "MagicCardObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nShootAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nShootBeta",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "48": {
+    "name": "SkillBerserk",
+    "params": []
+   },
+   "49": {
+    "name": "SkillDefensiveFight",
+    "params": []
+   },
+   "5": {
+    "name": "Stop",
+    "params": []
+   },
+   "50": {
+    "name": "SkillDirtyTrick",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "51": {
+    "name": "SkillStun",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "52": {
+    "name": "SkillSwordBrake",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "53": {
+    "name": "SkillDismountFromHorse",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "54": {
+    "name": "SkillPullShield",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "55": {
+    "name": "SkillKnifeDeathStrike",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "56": {
+    "name": "SkillDeadlyPiruet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "57": {
+    "name": "SkillBurn",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "58": {
+    "name": "SkillShieldTrick",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "59": {
+    "name": "SkillDisarmingArrow",
+    "params": []
+   },
+   "6": {
+    "name": "Move",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "60": {
+    "name": "SkillMultiArrows",
+    "params": []
+   },
+   "61": {
+    "name": "SkillPiercing",
+    "params": []
+   },
+   "62": {
+    "name": "SkillArrowOfDust",
+    "params": []
+   },
+   "63": {
+    "name": "SkillSneak",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSneak",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "64": {
+    "name": "SkillStealing",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "65": {
+    "name": "SkillSetTrap",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTrapItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTrapID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "66": {
+    "name": "SkillStunSecondHand",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "67": {
+    "name": "SkillPullShieldSecondHand",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "7": {
+    "name": "MoveXYZA",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "8": {
+    "name": "Turn",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlphaAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  },
+  "event": {
+   "1": {
+    "name": "GetCommandState",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCommand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "2": {
+    "name": "OnHit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uByUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "3": {
+    "name": "OnStartKilledObjectAnim",
+    "params": []
+   },
+   "4": {
+    "name": "OnAttackByOtherUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "5": {
+    "name": "OnStartDirectFightActionByEnemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "7": {
+    "name": "OnUnloadLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pMission",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     }
+    ]
+   },
+   "8": {
+    "name": "AlarmEnemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   }
+  }
+ },
+ "1": {
+  "command": {
+   "10": {
+    "name": "MoveOneStepForward",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "100": {
+    "name": "OpenContainerObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainerObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "101": {
+    "name": "GetObjectFromContainer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainer",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosXY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "bToSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "102": {
+    "name": "GetAllFromContainer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainer",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "103": {
+    "name": "PutObjectToContainer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainer",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFromSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFromMagicSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFromSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "104": {
+    "name": "OpenTeleport",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTeleport",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "105": {
+    "name": "TeleportToActiveTargetTeleport",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTargetTeleport",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "106": {
+    "name": "SetPoint",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPointIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bIncrease",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMinPoint",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "107": {
+    "name": "SetSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParamIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bIncrease",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMinParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "108": {
+    "name": "PutObjectToTradeContainer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFromSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFromMagicSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFromSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "109": {
+    "name": "GetObjectFromTradeContainer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosXY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bToSlot",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "11": {
+    "name": "MoveOneStepBack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "110": {
+    "name": "GetAllFromTradeContainer",
+    "params": []
+   },
+   "111": {
+    "name": "DecideAboutTrade",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bAgree",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "112": {
+    "name": "PlayerLeftTrade",
+    "params": []
+   },
+   "113": {
+    "name": "ShootAttackAutoPrepare",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "114": {
+    "name": "ShootAttackAutoFire",
+    "params": []
+   },
+   "115": {
+    "name": "UseMagicCardOnSlot",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCount",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "116": {
+    "name": "PrepareManualTargetMagic",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "117": {
+    "name": "StopCurrentAction",
+    "params": []
+   },
+   "12": {
+    "name": "MoveOneStepLeft",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "123": {
+    "name": "UserNoParam0",
+    "params": []
+   },
+   "13": {
+    "name": "MoveOneStepRight",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "134": {
+    "name": "UserOneParam1",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "14": {
+    "name": "MoveStepInDirection",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlphaAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "142": {
+    "name": "UserOneParam9",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMode",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "143": {
+    "name": "UserObject0",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "144": {
+    "name": "UserObject1",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "15": {
+    "name": "StopMovingStep",
+    "params": []
+   },
+   "16": {
+    "name": "StartJump",
+    "params": []
+   },
+   "17": {
+    "name": "MoveHorseSpeedUp",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "18": {
+    "name": "MoveHorseStopSpeedUp",
+    "params": []
+   },
+   "19": {
+    "name": "MoveHorseSlowDown",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "20": {
+    "name": "MoveHorseStopSlowDown",
+    "params": []
+   },
+   "21": {
+    "name": "MoveHorseMoveBack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "22": {
+    "name": "MoveHorseStopMoveBack",
+    "params": []
+   },
+   "23": {
+    "name": "MoveHorseQuickStop",
+    "params": []
+   },
+   "24": {
+    "name": "MoveHorseTurnLeft",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "25": {
+    "name": "MoveHorseTurnRight",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStrengthPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "26": {
+    "name": "MoveHorseStopTurn",
+    "params": []
+   },
+   "27": {
+    "name": "Attack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "28": {
+    "name": "StrikeAttack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "29": {
+    "name": "ShootAttackManualPrepare",
+    "params": []
+   },
+   "3": {
+    "name": "Initialize",
+    "params": []
+   },
+   "30": {
+    "name": "ShootAttackManualFire",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "31": {
+    "name": "TurnToCamera",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBeta",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "32": {
+    "name": "MoveAttack",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "33": {
+    "name": "SetArmedMode",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bArmed",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "34": {
+    "name": "MountOnHorse",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHorse",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "35": {
+    "name": "UnmountFromHorse",
+    "params": []
+   },
+   "36": {
+    "name": "CallHorse",
+    "params": []
+   },
+   "37": {
+    "name": "PrepareBeforeDialogTalk",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "38": {
+    "name": "FinishAfterDialogTalk",
+    "params": []
+   },
+   "39": {
+    "name": "PrepareBeforeDialogChat",
+    "params": []
+   },
+   "4": {
+    "name": "Uninitialize",
+    "params": []
+   },
+   "40": {
+    "name": "FinishAfterDialogChat",
+    "params": []
+   },
+   "41": {
+    "name": "StartDialogTalkAnim",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBodyAnim",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nHeadAnim",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "42": {
+    "name": "StopDialogTalkAnim",
+    "params": []
+   },
+   "43": {
+    "name": "PauseDialogTalkHeadAnim",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bPause",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "44": {
+    "name": "ClickEventOnGate",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uGate",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "45": {
+    "name": "MakeCustomWork",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nWorkAnimNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLoopsCnt",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nWorkSubObjectID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "46": {
+    "name": "MagicCardDirect",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "47": {
+    "name": "MagicCardObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nShootAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nShootBeta",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "48": {
+    "name": "SkillBerserk",
+    "params": []
+   },
+   "49": {
+    "name": "SkillDefensiveFight",
+    "params": []
+   },
+   "5": {
+    "name": "Stop",
+    "params": []
+   },
+   "50": {
+    "name": "SkillDirtyTrick",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "51": {
+    "name": "SkillStun",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "52": {
+    "name": "SkillSwordBrake",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "53": {
+    "name": "SkillDismountFromHorse",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "54": {
+    "name": "SkillPullShield",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "55": {
+    "name": "SkillKnifeDeathStrike",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "56": {
+    "name": "SkillDeadlyPiruet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "57": {
+    "name": "SkillBurn",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "58": {
+    "name": "SkillShieldTrick",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "59": {
+    "name": "SkillDisarmingArrow",
+    "params": []
+   },
+   "6": {
+    "name": "Move",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "60": {
+    "name": "SkillMultiArrows",
+    "params": []
+   },
+   "61": {
+    "name": "SkillPiercing",
+    "params": []
+   },
+   "62": {
+    "name": "SkillArrowOfDust",
+    "params": []
+   },
+   "63": {
+    "name": "SkillSneak",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSneak",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "64": {
+    "name": "SkillStealing",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "65": {
+    "name": "SkillSetTrap",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTrapItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTrapID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "66": {
+    "name": "SkillStunSecondHand",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "67": {
+    "name": "SkillPullShieldSecondHand",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCameraAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "68": {
+    "name": "UseObjectFromInventory",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSlotParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bShowUseEffect",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "69": {
+    "name": "UsePrevWeapon",
+    "params": []
+   },
+   "7": {
+    "name": "MoveXYZA",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nZ",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlpha",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "70": {
+    "name": "UseNextWeapon",
+    "params": []
+   },
+   "71": {
+    "name": "UseRegenerateHPPotion",
+    "params": []
+   },
+   "72": {
+    "name": "UseRegenerateManaPotion",
+    "params": []
+   },
+   "73": {
+    "name": "JoinInventoryObjects",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "74": {
+    "name": "SetInventoryObjectPos",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "75": {
+    "name": "MoveSubObjectToInventory",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "76": {
+    "name": "MoveSubObjectFromSlotToSlot",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSlotParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "77": {
+    "name": "MoveMagicFromSlotToInventory",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bPowerUp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "78": {
+    "name": "MoveMagicFromSlotToSlot",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToMagicSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bPowerUp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "79": {
+    "name": "MoveInventoryToAlchemyItem",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "8": {
+    "name": "Turn",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAlphaAngle",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "80": {
+    "name": "MoveAlchemyItemToInventory",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPosY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "81": {
+    "name": "MoveAlchemyItemFromSlotToSlot",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nToSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp3",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "82": {
+    "name": "MakeAlchemy",
+    "params": []
+   },
+   "83": {
+    "name": "AddAlchemyResultFormula",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 3,
+      "name": "strFormulaName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "84": {
+    "name": "SetAlchemyFormulaName",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 3,
+      "name": "strFormulaName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "85": {
+    "name": "DeleteAlchemyFormula",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "86": {
+    "name": "LoadAlchemyFormula",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "87": {
+    "name": "UnloadAlchemyFormula",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "88": {
+    "name": "MoveAlchemyFormulaUp",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "89": {
+    "name": "MoveAlchemyFormulaDown",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFormulaNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "90": {
+    "name": "AutoArrangeInventory",
+    "params": []
+   },
+   "91": {
+    "name": "DropSubObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "92": {
+    "name": "DropMoney",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMoney",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "93": {
+    "name": "DropInventory",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "94": {
+    "name": "DropMagicFromSlot",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bPowerUp",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nItemNumber",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "95": {
+    "name": "DropAlchemyItem",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nTmp2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "96": {
+    "name": "PickUpObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uPickupObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "98": {
+    "name": "SwitchObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uSwitchObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "99": {
+    "name": "TalkWithDialogUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uDialogUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   }
+  },
+  "event": {
+   "1": {
+    "name": "GetCommandState",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCommand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "2": {
+    "name": "OnHit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uByUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "3": {
+    "name": "OnStartKilledObjectAnim",
+    "params": []
+   },
+   "4": {
+    "name": "OnAttackByOtherUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "5": {
+    "name": "OnStartDirectFightActionByEnemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "7": {
+    "name": "OnUnloadLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pMission",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     }
+    ]
+   },
+   "8": {
+    "name": "AlarmEnemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   }
+  }
+ },
+ "2": {
+  "command": {
+   "16": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "21": {
+    "name": "CommandDebug",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 2,
+      "name": "strLine",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "5": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "6": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "7": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue3",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  },
+  "event": {
+   "15": {
+    "name": "EndTalkDialog",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nDialogUID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nEndEvent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "16": {
+    "name": "EndChatDialog",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nChatDialogUID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "19": {
+    "name": "ClickGateByUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uByUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uGate",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstHeroOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bClosedLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOpenLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "bBrokenLockpickSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "21": {
+    "name": "RemovedUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uKilled",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "n",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "28": {
+    "name": "RemovedNetworkPlayer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "29": {
+    "name": "OnLoadLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "m",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "n",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  }
+ },
+ "25": {
+  "command": {
+   "10": {
+    "name": "InitUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "unPar",
+      "sub": 0,
+      "tidx": 14,
+      "type": "UnitParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "unVal",
+      "sub": 0,
+      "tidx": 15,
+      "type": "UnitValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "11": {
+    "name": "InitMissile",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "mVal",
+      "sub": 0,
+      "tidx": 13,
+      "type": "MissileValues"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "mPar",
+      "sub": 0,
+      "tidx": 11,
+      "type": "MissileParams"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "wVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "12": {
+    "name": "InitMagicMissile",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "mVal",
+      "sub": 0,
+      "tidx": 13,
+      "type": "MissileValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "mPar",
+      "sub": 0,
+      "tidx": 11,
+      "type": "MissileParams"
+     }
+    ]
+   },
+   "13": {
+    "name": "InitOtherMissile",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "mVal",
+      "sub": 0,
+      "tidx": 13,
+      "type": "MissileValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "mPar",
+      "sub": 0,
+      "tidx": 11,
+      "type": "MissileParams"
+     }
+    ]
+   },
+   "14": {
+    "name": "GetMagicParamObjectNumber",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nObjectCount",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "15": {
+    "name": "GetMagicCastRange",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "16": {
+    "name": "GetMagicManaUse",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "17": {
+    "name": "GetMagicSummonCount",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "18": {
+    "name": "GetMagicMaxSummonCount",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "19": {
+    "name": "GetMagicSummonLevels",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nUnitLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nWeaponLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nShieldLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "nArmourLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "nOtherLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "20": {
+    "name": "FinishMagicSummonedUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pSummonedUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "21": {
+    "name": "InitMagicWeapons",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "wRightVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "wRightPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 0,
+      "name": "wLeftVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 0,
+      "name": "wLeftPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTicks",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "22": {
+    "name": "CanMakeMagic",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "23": {
+    "name": "CanMakeMagicMissileOnTarget",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "24": {
+    "name": "CanMakeMagicGenericOnUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "25": {
+    "name": "GetMagicGenericOnUnitRange",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nRange",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOnCastUnit",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTargetPartiesMask",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "26": {
+    "name": "MakeMagicGenericOnUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "27": {
+    "name": "FinishMakingMagic",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMagicCardSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "28": {
+    "name": "AddPermanentPotion",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ptPar",
+      "sub": 0,
+      "tidx": 20,
+      "type": "PotionArtefactParams"
+     }
+    ]
+   },
+   "29": {
+    "name": "UpdateChangedUnitValues",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "3": {
+    "name": "Initialize",
+    "params": []
+   },
+   "30": {
+    "name": "CanStartDirectFightAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "31": {
+    "name": "GetDirectFightAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bInRange",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "32": {
+    "name": "SelectDirectFightStrikeAnim",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAnimsCnt",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "33": {
+    "name": "GetNextSequenceDirectFightAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCurrAnimSequenceNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nAnimSequencesCnt",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "34": {
+    "name": "GetDirectFightActionOnStartActionByEnemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nEnemyFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bMakeFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "35": {
+    "name": "OnEndDirectFightAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bMadeFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bMoveBack",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "36": {
+    "name": "OnHitSuccess",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nHPDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "bByPoison",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstMissileHit",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "37": {
+    "name": "GetHitFightAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nEnemyFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bByHitPushedMissile",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "nAnimDelay",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "38": {
+    "name": "GetShootAction",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nShootFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nAimingTicks",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nMissileCount",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "nShootChanceValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "nShootChanceIncTicks",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 32,
+      "flags": 1,
+      "kind": 1,
+      "name": "nShootChanceIncValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "39": {
+    "name": "CanUseTwoWeapons",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "4": {
+    "name": "InitEquipment",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ePar",
+      "sub": 0,
+      "tidx": 6,
+      "type": "EquipmentParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nClass",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMeshNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "40": {
+    "name": "GetHPDamageOnTarget",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "mVal",
+      "sub": 0,
+      "tidx": 13,
+      "type": "MissileValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSplashDistancePercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nHPDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nPoisonDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "41": {
+    "name": "GetPoisonHPDamage",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 1,
+      "kind": 1,
+      "name": "nPoison",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nHPDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "42": {
+    "name": "GetExperiencePointsForLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "43": {
+    "name": "OnSetLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nOldLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nNewLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "44": {
+    "name": "CanIncreasePoint",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPointIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "45": {
+    "name": "IncreasePoint",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPointIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bIncrease",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "46": {
+    "name": "CanIncreaseSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "bLockedSkill",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "47": {
+    "name": "IncreaseSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bIncrease",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "48": {
+    "name": "SetNextAttackSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSecondHand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "5": {
+    "name": "InitWeapon",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "wVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nClass",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMeshNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "50": {
+    "name": "MakeActiveSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nFightAction",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "51": {
+    "name": "GetSkillSetTrapValues",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nAddDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nAddTicks",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "52": {
+    "name": "GetSkillSneakValues",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nDecSightRangePercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nDecSightAnglePercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nDecEarRangePercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "53": {
+    "name": "GetSkillDustEffectID",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 2,
+      "name": "strEffectID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "54": {
+    "name": "GetSkillHorseRidingValues",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "bCanRideHorse",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nMaxSpeedPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "bCanUseDirectFightWeapons",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bCanUseShootWeapons",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bCanCastMagic",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "55": {
+    "name": "GetHitCollidedByHorseDamage",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTarget",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nHPDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nPoisonDamage",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "56": {
+    "name": "CanJoinInventoryEquipments",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ePar",
+      "sub": 0,
+      "tidx": 6,
+      "type": "EquipmentParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "eToVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     }
+    ]
+   },
+   "57": {
+    "name": "JoinInventoryEquipments",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ePar",
+      "sub": 0,
+      "tidx": 6,
+      "type": "EquipmentParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "eToVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 0,
+      "name": "eNewVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     }
+    ]
+   },
+   "58": {
+    "name": "CanJoinInventoryWeapons",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "eToVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     }
+    ]
+   },
+   "59": {
+    "name": "JoinInventoryWeapons",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "eToVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 0,
+      "name": "eNewVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     }
+    ]
+   },
+   "6": {
+    "name": "InitBrokenWeapon",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "wBrokenVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wBrokenPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "wNewVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "wNewPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     }
+    ]
+   },
+   "60": {
+    "name": "CanJoinInventoryEquipmentWithSpecialArtefact",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ePar",
+      "sub": 0,
+      "tidx": 6,
+      "type": "EquipmentParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "artPar",
+      "sub": 0,
+      "tidx": 16,
+      "type": "SpecialArtefactParams"
+     }
+    ]
+   },
+   "61": {
+    "name": "JoinInventoryEquipmentWithSpecialArtefact",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "ePar",
+      "sub": 0,
+      "tidx": 6,
+      "type": "EquipmentParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "artPar",
+      "sub": 0,
+      "tidx": 16,
+      "type": "SpecialArtefactParams"
+     }
+    ]
+   },
+   "62": {
+    "name": "CanJoinInventoryWeaponWithSpecialArtefact",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "artPar",
+      "sub": 0,
+      "tidx": 16,
+      "type": "SpecialArtefactParams"
+     }
+    ]
+   },
+   "63": {
+    "name": "JoinInventoryWeaponWithSpecialArtefact",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "wPar",
+      "sub": 0,
+      "tidx": 8,
+      "type": "WeaponParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "artPar",
+      "sub": 0,
+      "tidx": 16,
+      "type": "SpecialArtefactParams"
+     }
+    ]
+   },
+   "64": {
+    "name": "GetHeroShopPricePercents",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pShopUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nBuyPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nSellPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "65": {
+    "name": "DefaultEventOpenContainerObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainerObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstHeroOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bClosedLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOpenLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "bBrokenLockpickSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "66": {
+    "name": "DefaultEventCloseContainerObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uShopUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBuyMoney",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSellMoney",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "67": {
+    "name": "DefaultEventClickGateByUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uGate",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstHeroOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bClosedLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOpenLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "bBrokenLockpickSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "68": {
+    "name": "CanStartOpenLock",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "bPlayAnim",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "7": {
+    "name": "InitMagicClub",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcPar",
+      "sub": 0,
+      "tidx": 9,
+      "type": "MagicClubParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nClass",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMeshNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "70": {
+    "name": "MakeAlchemyResult",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bCalcFormulaArtefact",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "71": {
+    "name": "GetObjectInfoText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSlotNum2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "unVal",
+      "sub": 0,
+      "tidx": 15,
+      "type": "UnitValues"
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 2,
+      "name": "strObjectID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 28,
+      "flags": 0,
+      "kind": 0,
+      "name": "pChangedParams",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": "object"
+     },
+     {
+      "addr": 32,
+      "flags": 0,
+      "kind": 3,
+      "name": "strName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 36,
+      "flags": 0,
+      "kind": 1,
+      "name": "bAlchemyResultInfo",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 40,
+      "flags": 1,
+      "kind": 3,
+      "name": "strText",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "73": {
+    "name": "GetSkillInfoText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 3,
+      "name": "strText",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "74": {
+    "name": "GetInventoryUnitInfoText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 3,
+      "name": "strTitles",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 3,
+      "name": "strValues",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "76": {
+    "name": "GetReputationInfoText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 3,
+      "name": "strText",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "77": {
+    "name": "GetHeroSelectionInfo",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uPointedObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pChangedParams",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": "object"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 3,
+      "name": "strName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bDrawTargetSelection",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTargetHP",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTargetPoison",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 32,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTargetMaxHP",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 36,
+      "flags": 1,
+      "kind": 3,
+      "name": "strText",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "78": {
+    "name": "GetHeroSelectionLockInfo",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uPointedObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "pChangedParams",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": "object"
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nLockIconNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bIsChanceToOpenLock",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "79": {
+    "name": "GetInventoryUnitStatText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nStaticNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "bVisible",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nIconTemplateNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 3,
+      "name": "strValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 3,
+      "name": "strTooltip",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "8": {
+    "name": "InitBrokenMagicClub",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcBrokenVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcBrokenPar",
+      "sub": 0,
+      "tidx": 9,
+      "type": "MagicClubParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcNewVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcNewPar",
+      "sub": 0,
+      "tidx": 9,
+      "type": "MagicClubParams"
+     }
+    ]
+   },
+   "80": {
+    "name": "CanUseInventoryItemInAlchemy",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 2,
+      "name": "strObjectID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "eVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "pChangedParams",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": "object"
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nMaxCount",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "nTotalMaxCount",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "81": {
+    "name": "GetPointInfoText",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPointIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 3,
+      "name": "strLabel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 3,
+      "name": "strTooltip",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "82": {
+    "name": "CanMakeActiveSkill",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSkillIndex",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bSecondHand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 0,
+      "name": "pEnemy",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bShowDisabled",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bAvailable",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "83": {
+    "name": "GetDisplayShootChanceValues",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nVal1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nVal2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nMaxVal",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "84": {
+    "name": "GetRegenerationHPMaxVal",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "85": {
+    "name": "GetRegenerationManaMaxVal",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "9": {
+    "name": "InitMagicCard",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcVal",
+      "sub": 0,
+      "tidx": 7,
+      "type": "EquipmentValues"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "mcPar",
+      "sub": 0,
+      "tidx": 10,
+      "type": "MagicCardParams"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nClass",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMeshNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  }
+ },
+ "3": {
+  "command": {
+   "11": {
+    "name": "MessageGet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 2,
+      "name": "strValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "12": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMsg",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "15": {
+    "name": "MessageGet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 2,
+      "name": "strParam2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nRetVal1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 2,
+      "name": "strRetVal2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "16": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMsg",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "21": {
+    "name": "CommandDebug",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 2,
+      "name": "strLine",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "22": {
+    "name": "InitializeCampaign",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nLevel",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 2,
+      "name": "strInitParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "23": {
+    "name": "FillNetworkChannelLevelsList",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 1,
+      "kind": 2,
+      "name": "strMapTexture",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrChannels",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrScripts",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrScriptParams",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrTooltips",
+      "sub": 3,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrButtonTemplNum",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrMapPosition",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 32,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrAvailable",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "26": {
+    "name": "FillNetworkMissionsList",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrScripts",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrScriptParams",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrNames",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrPointsGame",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrGuildsGame",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrAllowDynConn",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrMinPlayersCnt",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 32,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrAvailable",
+      "sub": 1,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "27": {
+    "name": "FillNetworkMissionModes",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 2,
+      "name": "strScriptParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrModeParams",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 6,
+      "name": "arrModeNames",
+      "sub": 2,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "28": {
+    "name": "BonusCode",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 2,
+      "name": "strBonusCode",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "6": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMsg",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "8": {
+    "name": "MessageGet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  },
+  "event": {
+   "17": {
+    "name": "EndMessageBox",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMessageUID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nResult",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "21": {
+    "name": "RemovedUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "pKilledByObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nNotifyType",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "23": {
+    "name": "UsedDynamicTeleport",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTeleport",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "24": {
+    "name": "RemovedDynamicTeleport",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pTeleport",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "26": {
+    "name": "GetNewNetworkPlayerCreatePos",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nRand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nMissionNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "27": {
+    "name": "CreatedNewNetworkPlayer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMissionNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "28": {
+    "name": "RemovedNetworkPlayer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "33": {
+    "name": "GetDifficultyLevel",
+    "params": []
+   },
+   "35": {
+    "name": "GetSaveGameName",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pCurrMission",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "bOnlyLevelName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 3,
+      "name": "strName",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  }
+ },
+ "4": {
+  "command": {
+   "10": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 2,
+      "name": "strValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "12": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "16": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCommand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 0,
+      "name": "uUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "18": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCommand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam3",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam4",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "21": {
+    "name": "CommandDebug",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 2,
+      "name": "strLine",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "5": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "6": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "7": {
+    "name": "Message",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nValue2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "8": {
+    "name": "MessageGet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nParam",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nRetValue",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "9": {
+    "name": "MessageGet",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nCommand",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 1,
+      "kind": 1,
+      "name": "nValue1",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nValue2",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nValue3",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   }
+  },
+  "event": {
+   "0": {
+    "name": "Timer0",
+    "params": []
+   },
+   "1": {
+    "name": "Timer1",
+    "params": []
+   },
+   "11": {
+    "name": "GetHeroShopPricePercents",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uShopUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 1,
+      "kind": 1,
+      "name": "nBuyPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 1,
+      "kind": 1,
+      "name": "nSellPercent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "12": {
+    "name": "OpenContainerObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uContainerObject",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstHeroOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bClosedLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOpenLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "bBrokenLockpickSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "13": {
+    "name": "CloseContainerObject",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uShopUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nBuyMoney",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nSellMoney",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "14": {
+    "name": "StartTalkWithDialogUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uDialogUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nDialogUID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "15": {
+    "name": "EndTalkDialog",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nDialogUID",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nEndEvent",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "19": {
+    "name": "ClickGateByUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uByUnit",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uGate",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "bFirstHeroOpen",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 20,
+      "flags": 1,
+      "kind": 1,
+      "name": "bClosedLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 24,
+      "flags": 1,
+      "kind": 1,
+      "name": "bOpenLockSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 28,
+      "flags": 1,
+      "kind": 1,
+      "name": "bBrokenLockpickSound",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "2": {
+    "name": "Timer2",
+    "params": []
+   },
+   "21": {
+    "name": "RemovedUnit",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uKilled",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 0,
+      "name": "uAttacker",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "a",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "27": {
+    "name": "CreatedNewNetworkPlayer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "nMissionNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 12,
+      "flags": 0,
+      "kind": 1,
+      "name": "nX",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     },
+     {
+      "addr": 16,
+      "flags": 0,
+      "kind": 1,
+      "name": "nY",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "28": {
+    "name": "RemovedNetworkPlayer",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 1,
+      "name": "nPlayerNum",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "29": {
+    "name": "OnLoadLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "m",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     },
+     {
+      "addr": 8,
+      "flags": 0,
+      "kind": 1,
+      "name": "n",
+      "sub": 0,
+      "tidx": 4294967295,
+      "type": 0
+     }
+    ]
+   },
+   "3": {
+    "name": "Timer3",
+    "params": []
+   },
+   "30": {
+    "name": "OnUnloadLevel",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "pMission",
+      "sub": 0,
+      "tidx": 2,
+      "type": "mission"
+     }
+    ]
+   },
+   "31": {
+    "name": "OnStartedTrading",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "32": {
+    "name": "OnEndedTrading",
+    "params": [
+     {
+      "addr": 4,
+      "flags": 0,
+      "kind": 0,
+      "name": "uHero",
+      "sub": 0,
+      "tidx": 0,
+      "type": "unit"
+     }
+    ]
+   },
+   "4": {
+    "name": "Timer4",
+    "params": []
+   }
+  }
+ }
+}

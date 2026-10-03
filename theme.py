@@ -353,3 +353,4 @@ SYNTAX = {'keyword': GOLD, 'type': '#6ca0e0', 'string': '#7fbf7f', 'number': '#e
 STATUS_SOURCE = OK            # a source compiles to the game's bytes
 STATUS_DIFFERS = '#e0a050'    # same-named source, other bytes (mod or other version)
 STATUS_NONE = '#d4796b'       # no source at all: decompiler only
+STATUS_REBUILT = '#7fb3d5'    # no SDK source, rebuilt by the decompiler to the game's exact bytes

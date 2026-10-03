@@ -165,9 +165,40 @@ def _with_documented(d):
     return d
 
 
+# Natives no debug build ever calls, named by a probe: a minimal script calling the
+# candidate name with the argument types of the unknown call site is compiled with the
+# SDK compiler, and the import table says which index that is. Measured 2026-10-03
+# (TW1_EcoTool _spike/p2/probe):
+#   0x03f9 PlayDialog  pd1.ec: GetPlayerInterface(0).PlayDialog(GetScriptUID(), 0, 113 | 256,
+#          int, string, int, unit, int, unit) -> 0x3f9 (TestDialogsMission's CommandDebug)
+#   0x03aa GetMarker   gm1.ec: m.GetMarker("MARKER", 1, int, int, int, int, string) -> 0x3aa
+#          (TestPMMission's CommandDebug "getm")
+#   0x042e SetConsoleText     ct_*.ec: GetCampaign().GetPlayerInterface(0).<name>(string, 150)
+#   0x0426 SetConsole2Text    (same probe; TW1_Probe mod's TwoWorldsCampaign calls 0x42e)
+#   0x041e SetLowConsoleText
+PROBED = {
+    0x3f9: 'PlayDialog',
+    0x3aa: 'GetMarker',
+    0x42e: 'SetConsoleText',
+    0x426: 'SetConsole2Text',
+    0x41e: 'SetLowConsoleText',
+}
+
+
 def load():
     if CACHE.exists():
-        return {int(k): v for k, v in json.loads(CACHE.read_text()).items()}
+        m = {int(k): v for k, v in json.loads(CACHE.read_text()).items()}
+        for idx, name in PROBED.items():
+            m.setdefault(idx, {'name': name, 'hits': 0, 'alt': [], 'probed': True})
+        # every documented signature compiled once with the SDK compiler (native_sigs): names the indices
+        # no debug build calls - 0x0573 SetState, 0x0625 FindItemNumberInSubObjectSlot, ...
+        try:
+            import native_sigs
+            for idx, s in native_sigs.load().items():
+                m.setdefault(idx, {'name': s['name'], 'hits': 0, 'alt': [], 'doc': True})
+        except Exception:
+            pass
+        return m
     m = build()
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(m, indent=1))

@@ -43,12 +43,15 @@ NL = chr(10)
 STATUS_INFO = {
     'source': ('Source', 'A source of your SDK compiles to exactly the bytes the game uses. Export gives you that '
                'source with all its include files; it compiles again to the same file.'),
+    'rebuilt': ('Rebuilt', 'No SDK has a source for this script (or only another version), but the decompiler '
+                'rebuilt one from the compiled script that compiles to exactly the game\'s bytes - checked.'),
     'differs': ('Changed', 'There is a source with the same name, but it compiles to other bytes: the game or a mod '
-                'uses another version. You see the decompiler output.'),
-    'none': ('No source', 'No SDK has a source for this script. You see the decompiler output - readable, but not '
-             'yet checked to compile.'),
+                'uses another version, and the decompiler could not rebuild it exactly yet.'),
+    'none': ('No source', 'No SDK has a source for this script and the decompiler could not rebuild it exactly '
+             '(the v1.0 debug builds, for example). You see the decompiler output.'),
 }
-STATUS_COLOR = {'source': theme.STATUS_SOURCE, 'differs': theme.STATUS_DIFFERS, 'none': theme.STATUS_NONE}
+STATUS_COLOR = {'source': theme.STATUS_SOURCE, 'rebuilt': theme.STATUS_REBUILT, 'differs': theme.STATUS_DIFFERS,
+                'none': theme.STATUS_NONE}
 
 
 # ------------------------------------------------------------------ language --
@@ -387,8 +390,13 @@ class App:
         try:
             import decomp  # noqa: F401
             import lifter  # noqa: F401
+            import emit_ec, typeinfer, entries  # noqa: F401  (the rebuild path)
             data = os.path.join(os.path.dirname(decomp.__file__), 'data', 'native_api.txt')
             note.append('decomp=' + ('ok' if os.path.isfile(data) else 'nodata'))
+            import slot_table, native_sigs  # noqa: E401
+            note.append('rebuild=' + ('ok' if typeinfer.tables().get('arg') and entries.load() and slot_table.load()
+                                      and native_sigs.load() and native_sigs.load_tree()
+                                      and native_sigs.load_lifecycle() else 'notables'))
         except Exception as e:
             note.append(f'decomp=failed:{type(e).__name__}')
         https = 'ok'
@@ -717,6 +725,17 @@ class App:
             index = ecocore.build_index(sdks, cache_dir(), progress, cancelled) if sdks else None
             if index:
                 ecocore.classify(scripts, index)
+                # scripts without a source: decompile, compile, compare (cached per body)
+                tools = ecocore.tree_tools(scripts.values(), index)
+                todo = [s for s in scripts.values() if not s.match and not s.debug]
+                for i, s in enumerate(todo):
+                    if cancelled():
+                        raise ecocore.Cancelled()
+                    progress(tr('rebuilding {name}').format(name=s.name), i, len(todo))
+                    try:
+                        s.rebuild = ecocore.reconstruct(s, tools, cache_dir())
+                    except Exception as e:
+                        s.rebuild = {'status': 'failed', 'text': '', 'msg': f'{type(e).__name__}: {e}', 'size': None}
             return scripts, problems, index
 
         def done(res, err):
@@ -729,7 +748,9 @@ class App:
             self.fill_tree()
             n = len(self.scripts)
             src = sum(1 for s in self.scripts.values() if s.match)
-            self.status(tr('{n} scripts read, {src} with a matching source.').format(n=n, src=src), ok=bool(n))
+            reb = sum(1 for s in self.scripts.values() if ecocore.status_of(s) == 'rebuilt')
+            self.status(tr('{n} scripts read, {src} with a matching source, {reb} rebuilt by the decompiler.').format(
+                n=n, src=src, reb=reb), ok=bool(n))
             if self.problems:
                 self.status(tr('{n} scripts read; {p} archive(s) could not be read (see Details).').format(
                     n=n, p=len(self.problems)), error=True)
@@ -860,6 +881,17 @@ class App:
             highlight(self.text, ecocore.read_source(self.index, s.match['root'], s.match['rel']).decode('latin-1'))
             for rel in ecocore.closure(s.match):
                 self.inc.insert('', 'end', text=rel, values=(root['label'],))
+        elif st == 'rebuilt' or (s.rebuild and s.rebuild.get('status') in ('differs', 'compile') and s.rebuild.get('text')):
+            r = s.rebuild
+            if st == 'rebuilt':
+                self.src_head.configure(text=tr('{name}: no SDK source. Rebuilt by the decompiler from the compiled script; '
+                                                'compiles to exactly the game\'s bytes (checked). Export writes it to '
+                                                'Scripts\\_TW1_Rebuilt.').format(name=s.name),
+                                        foreground=theme.STATUS_REBUILT)
+            else:
+                self.src_head.configure(text=tr('{name}: rebuilt source, NOT exact yet: {msg}').format(
+                    name=s.name, msg=r.get('msg', '')[:160]), foreground=STATUS_COLOR[st])
+            highlight(self.text, r['text'])
         else:
             if st == 'differs':
                 r = s.related[0]
@@ -906,6 +938,9 @@ class App:
             for label, h in s.older:
                 lines.append(f'   {label:<22} {h[:16]}' + ('   = ' + tr('same') if h == s.sha else ''))
             lines.append('')
+        if s.rebuild:
+            lines.append(tr('Decompiler rebuild: {status}{msg}').format(
+                status=s.rebuild.get('status'), msg=(' - ' + s.rebuild['msg']) if s.rebuild.get('msg') else ''))
         if s.match:
             lines.append(tr('Matching source: {rel} in {path}').format(rel=s.match['rel'],
                                                                        path=self.index['roots'][s.match['root']]['path']))
@@ -1180,11 +1215,15 @@ class ExportWindow:
                 self._say(tr('Export failed: {e}').format(e=err), theme.ERR)
                 return
             ok = sum(1 for r in rep['source'] if r['verified'])
-            bad = [r for r in rep['source'] if verify and not r['verified']]
+            bad = [r for r in rep['source'] + rep.get('rebuilt', []) if verify and not r['verified']]
             lines = [tr('Written to {path}').format(path=out), '',
                      tr('{n} scripts as source (Scripts\\, compile_all.bat).').format(n=len(rep['source']))]
             if verify:
                 lines.append(tr('Checked: {ok} of {n} compile to exactly the game\'s bytes.').format(ok=ok, n=len(rep['source'])))
+            if rep.get('rebuilt'):
+                okr = sum(1 for r in rep['rebuilt'] if r['verified'])
+                lines.append(tr('{n} scripts rebuilt by the decompiler (Scripts\\_TW1_Rebuilt\\); {ok} of them checked to '
+                                'compile to exactly the game\'s bytes.').format(n=len(rep['rebuilt']), ok=okr))
             lines.append(tr('{n} scripts as decompiler text (Decompiled\\).').format(n=len(rep['decompiled'])))
             for r in bad:
                 lines.append(f'  {tr("NOT OK")}: {r["name"]}: {r["error"][:200]}')

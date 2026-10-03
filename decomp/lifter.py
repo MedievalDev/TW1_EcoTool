@@ -65,6 +65,10 @@ def native_classes(name):
 # set to a Counter-dict by nativemap.arg_handles while it learns which argument
 # positions of a native hold object handles; None during normal lifting
 ARGKIND_SINK = None
+# set to a typeinfer.Facts while it collects how values flow (calls, assignments,
+# returns) through a release build; None during normal lifting. The lift itself is
+# unchanged by it.
+TYPE_SINK = None
 # `0x0074(&s, 0)` is how the compiler reads a string variable that is being passed
 # as an argument. Measured with the SDK compiler on roundtrip/mytest4/t_str.ec:
 # `sa.Format("%s", sb)` emits
@@ -771,8 +775,15 @@ class Lifter:
                     if '[' in src:
                         # reading an `int&` parameter is the mirror of writing it:
                         # `mov ecx,[ebp+X] ; mov eax,[ecx]` (PTown, RPGCompute)
-                        nm = self.mem_name(ins, names) or self.deref_name(src, regs)
-                        set_reg(dst, var(nm) if nm else E('raw', src))
+                        nm = self.mem_name(ins, names)
+                        deref = False
+                        if not nm:
+                            nm = self.deref_name(src, regs)
+                            deref = bool(nm)
+                        v_ = var(nm) if nm else E('raw', src)
+                        if deref:
+                            v_.deref = True      # the value behind a reference (typeinfer)
+                        set_reg(dst, v_)
                     elif src.startswith('0x') or src.isdigit():
                         v = int(src, 0)
                         if (a + 1) in self.cptr:
@@ -803,6 +814,13 @@ class Lifter:
                     if nm in getattr(self, 'objnames', ()) or self.is_objelem(nm):
                         val = self.as_null(val)     # `m_uDefender = null;`
                     st.append(('assign', nm or dst, val, a))
+                    if getattr(self, 'release_mode', False):
+                        # the stored value stays in eax; at the routine's end that is
+                        # junk a void routine leaves behind, not a return value
+                        # (`g24 = 300;` came back as `g24 = 300; return 300;`)
+                        val.assigned = True
+                    if TYPE_SINK is not None:
+                        TYPE_SINK.assign(self, nm, val)
             elif m == 'lea':
                 nm = self.mem_name(ins, names)
                 set_reg(dst, E('ref', f'&{nm}' if nm else f'&{src}'))
@@ -984,6 +1002,9 @@ class Lifter:
                             for k_ in self.natargs.get(idx, ()):
                                 if k_ < len(args):
                                     args[k_] = self.as_null(args[k_])
+                        if TYPE_SINK is not None:
+                            TYPE_SINK.call(self, idx if rel == 0 else None,
+                                           None if rel == 0 else tgt, args)
                         if len(take) < n:
                             # The table arity is a corpus-wide majority and can be too
                             # large (CreateMission votes 6, every call site in the SDK
@@ -1027,6 +1048,10 @@ class Lifter:
                             call.obj = (self.natret.get(idx) == 0 if rel == 0 else
                                         self.ret_kind.get(name.lstrip(INTERNAL_MARK))
                                         == 0)
+                            # where the value comes from, for typeinfer
+                            call.nidx = idx if rel == 0 else None
+                            call.callee = None if rel == 0 else tgt
+                            call.argv = args
                             # every call site has a line record with isCall=1 at the
                             # END of the call instruction (22829/22829 verified in
                             # line_anchor.py) — that is the exact source line
@@ -1046,6 +1071,13 @@ class Lifter:
                             # branch when the value is true, je when it is false
                             c = (cond[0] if op == '!=' else
                                  E('un', f'!{cond[0].paren(2)}', 2))
+                            # `if (pMission)` compiles, `if (pMission && …)` does not
+                            # ("Invalid type", measured _spike/p2/probe nl_*.ec and
+                            # TestPMMission's CommandDebug): a handle tested on its own
+                            # is a nested `if`, never one half of a && / || chain
+                            if self.is_obj(cond[0]):
+                                c = E(c.kind, c.text, c.prio, c.args)
+                                c.handle_truth = True
                         elif len(cond) > 3 and cond[3]:
                             c = binop(cond[1], MIRROR[op], cond[0], CMP_PRIO)
                         else:
@@ -1065,7 +1097,8 @@ class Lifter:
                 cond = None
             elif m == 'ret':
                 v = regs['eax']
-                if void or v.kind in ('raw', 'reg'):
+                if void or v.kind in ('raw', 'reg') or getattr(v, 'assigned', False) \
+                        or getattr(self, 'release_mode', False):
                     exit_ = ('ret', None)     # value in eax is not a return value
                 else:
                     exit_ = ('ret', v)
@@ -1195,6 +1228,7 @@ class Lifter:
         """
         import arity4
         names = self.frame(r)
+        self.cur_routine = r
         # `uUnit != 0` does not compile — EarthC spells the null object `null` and
         # rejects the integer (Units/Hero.ec, Campaigns/Missions/Mission_E01.ec …).
         # Kind 0 is the object kind (disasm.TYPE), so the declaration says which
@@ -1280,11 +1314,12 @@ class Lifter:
         # to see the edges the code really has — cfg_exit keeps the originals for it.
         self.cfg_exit = {}
         if not void:                          # void routines return no value
-            self.repair_returns(blocks, order, info, ends, preds, self.cfg_exit)
+            self.repair_returns(blocks, order, info, ends, preds, self.cfg_exit,
+                                jmp_only=getattr(self, 'release_mode', False))
         return order, info, preds, ends
 
     @staticmethod
-    def repair_returns(blocks, order, info, ends, preds, cfg_exit=None):
+    def repair_returns(blocks, order, info, ends, preds, cfg_exit=None, jmp_only=False):
         """Give a shared return block's value back to its predecessors.
 
         `ABS` compiles to `mov eax,[nVal] / cmp / jge / neg eax / L: ret`. The join
@@ -1327,7 +1362,13 @@ class Lifter:
                     continue
                 v = (ends.get(p) or {}).get('eax')
                 if v is not None and v.kind not in ('raw', 'reg') \
-                        and info[p][1][0] in ('fall', 'jmp'):
+                        and not getattr(v, 'assigned', False) \
+                        and info[p][1][0] in (('jmp',) if jmp_only else ('fall', 'jmp')):
+                    # jmp_only (release build, nothing known): `return <expr>;` always
+                    # ends in a `jmp` to the epilogue, even right in front of it
+                    # (measured: an int routine ending in `return f();` has the jmp,
+                    # the void one ending in `f();` falls through), so a value that
+                    # merely falls into the epilogue is what a void routine left in eax
                     if cfg_exit is not None:
                         cfg_exit[p] = info[p][1]
                     # the block already ended, so flush_regs printed this very call as

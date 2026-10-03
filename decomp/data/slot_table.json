@@ -1,0 +1,13844 @@
+{
+"0": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "MoveOneStepForward",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"100": {
+"name": "OpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"101": {
+"name": "GetObjectFromContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"102": {
+"name": "GetAllFromContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"103": {
+"name": "PutObjectToContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"104": {
+"name": "OpenTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"105": {
+"name": "TeleportToActiveTargetTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"106": {
+"name": "SetPoint",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"107": {
+"name": "SetSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"108": {
+"name": "PutObjectToTradeContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"109": {
+"name": "GetObjectFromTradeContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "MoveOneStepBack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"110": {
+"name": "GetAllFromTradeContainer",
+"params": []
+},
+"111": {
+"name": "DecideAboutTrade",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"112": {
+"name": "PlayerLeftTrade",
+"params": []
+},
+"113": {
+"name": "ShootAttackAutoPrepare",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"114": {
+"name": "ShootAttackAutoFire",
+"params": []
+},
+"115": {
+"name": "UseMagicCardOnSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"116": {
+"name": "PrepareManualTargetMagic",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"117": {
+"name": "StopCurrentAction",
+"params": []
+},
+"118": {
+"name": "Reserved5",
+"params": []
+},
+"119": {
+"name": "Reserved6",
+"params": []
+},
+"12": {
+"name": "MoveOneStepLeft",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"120": {
+"name": "Reserved7",
+"params": []
+},
+"121": {
+"name": "Reserved8",
+"params": []
+},
+"122": {
+"name": "Reserved9",
+"params": []
+},
+"123": {
+"name": "UserNoParam0",
+"params": []
+},
+"124": {
+"name": "UserNoParam1",
+"params": []
+},
+"125": {
+"name": "UserNoParam2",
+"params": []
+},
+"126": {
+"name": "UserNoParam3",
+"params": []
+},
+"127": {
+"name": "UserNoParam4",
+"params": []
+},
+"128": {
+"name": "UserNoParam5",
+"params": []
+},
+"129": {
+"name": "UserNoParam6",
+"params": []
+},
+"13": {
+"name": "MoveOneStepRight",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"130": {
+"name": "UserNoParam7",
+"params": []
+},
+"131": {
+"name": "UserNoParam8",
+"params": []
+},
+"132": {
+"name": "UserNoParam9",
+"params": []
+},
+"133": {
+"name": "UserOneParam0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"134": {
+"name": "UserOneParam1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"135": {
+"name": "UserOneParam2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"136": {
+"name": "UserOneParam3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"137": {
+"name": "UserOneParam4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"138": {
+"name": "UserOneParam5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"139": {
+"name": "UserOneParam6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"14": {
+"name": "MoveStepInDirection",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"140": {
+"name": "UserOneParam7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"141": {
+"name": "UserOneParam8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"142": {
+"name": "UserOneParam9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"143": {
+"name": "UserObject0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"144": {
+"name": "UserObject1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"145": {
+"name": "UserObject2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"146": {
+"name": "UserObject3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"147": {
+"name": "UserObject4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"148": {
+"name": "UserObject5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"149": {
+"name": "UserObject6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"15": {
+"name": "StopMovingStep",
+"params": []
+},
+"150": {
+"name": "UserObject7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"151": {
+"name": "UserObject8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"152": {
+"name": "UserObject9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"153": {
+"name": "UserPoint0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"154": {
+"name": "UserPoint1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"155": {
+"name": "UserPoint2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"156": {
+"name": "UserPoint3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"157": {
+"name": "UserPoint4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"158": {
+"name": "UserPoint5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"159": {
+"name": "UserPoint6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "StartJump",
+"params": []
+},
+"160": {
+"name": "UserPoint7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"161": {
+"name": "UserPoint8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"162": {
+"name": "UserPoint9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"163": {
+"name": "CommandXXX",
+"params": []
+},
+"17": {
+"name": "MoveHorseSpeedUp",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "MoveHorseStopSpeedUp",
+"params": []
+},
+"19": {
+"name": "MoveHorseSlowDown",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "MoveHorseStopSlowDown",
+"params": []
+},
+"21": {
+"name": "MoveHorseMoveBack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "MoveHorseStopMoveBack",
+"params": []
+},
+"23": {
+"name": "MoveHorseQuickStop",
+"params": []
+},
+"24": {
+"name": "MoveHorseTurnLeft",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"25": {
+"name": "MoveHorseTurnRight",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "MoveHorseStopTurn",
+"params": []
+},
+"27": {
+"name": "Attack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"28": {
+"name": "StrikeAttack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"29": {
+"name": "ShootAttackManualPrepare",
+"params": []
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"30": {
+"name": "ShootAttackManualFire",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"31": {
+"name": "TurnToCamera",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"32": {
+"name": "MoveAttack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"33": {
+"name": "SetArmedMode",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"34": {
+"name": "MountOnHorse",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"35": {
+"name": "UnmountFromHorse",
+"params": []
+},
+"36": {
+"name": "CallHorse",
+"params": []
+},
+"37": {
+"name": "PrepareBeforeDialogTalk",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"38": {
+"name": "FinishAfterDialogTalk",
+"params": []
+},
+"39": {
+"name": "PrepareBeforeDialogChat",
+"params": []
+},
+"4": {
+"name": "Uninitialize",
+"params": []
+},
+"40": {
+"name": "FinishAfterDialogChat",
+"params": []
+},
+"41": {
+"name": "StartDialogTalkAnim",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"42": {
+"name": "StopDialogTalkAnim",
+"params": []
+},
+"43": {
+"name": "PauseDialogTalkHeadAnim",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"44": {
+"name": "ClickEventOnGate",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"45": {
+"name": "MakeCustomWork",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"46": {
+"name": "MagicCardDirect",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"47": {
+"name": "MagicCardObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"48": {
+"name": "SkillBerserk",
+"params": []
+},
+"49": {
+"name": "SkillDefensiveFight",
+"params": []
+},
+"5": {
+"name": "Stop",
+"params": []
+},
+"50": {
+"name": "SkillDirtyTrick",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"51": {
+"name": "SkillStun",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"52": {
+"name": "SkillSwordBrake",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"53": {
+"name": "SkillDismountFromHorse",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"54": {
+"name": "SkillPullShield",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"55": {
+"name": "SkillKnifeDeathStrike",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"56": {
+"name": "SkillDeadlyPiruet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"57": {
+"name": "SkillBurn",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"58": {
+"name": "SkillShieldTrick",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"59": {
+"name": "SkillDisarmingArrow",
+"params": []
+},
+"6": {
+"name": "Move",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"60": {
+"name": "SkillMultiArrows",
+"params": []
+},
+"61": {
+"name": "SkillPiercing",
+"params": []
+},
+"62": {
+"name": "SkillArrowOfDust",
+"params": []
+},
+"63": {
+"name": "SkillSneak",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"64": {
+"name": "SkillStealing",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"65": {
+"name": "SkillSetTrap",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"66": {
+"name": "SkillStunSecondHand",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"67": {
+"name": "SkillPullShieldSecondHand",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"68": {
+"name": "UseObjectFromInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"69": {
+"name": "UsePrevWeapon",
+"params": []
+},
+"7": {
+"name": "MoveXYZA",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"70": {
+"name": "UseNextWeapon",
+"params": []
+},
+"71": {
+"name": "UseRegenerateHPPotion",
+"params": []
+},
+"72": {
+"name": "UseRegenerateManaPotion",
+"params": []
+},
+"73": {
+"name": "JoinInventoryObjects",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"74": {
+"name": "SetInventoryObjectPos",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"75": {
+"name": "MoveSubObjectToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"76": {
+"name": "MoveSubObjectFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"77": {
+"name": "MoveMagicFromSlotToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"78": {
+"name": "MoveMagicFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"79": {
+"name": "MoveInventoryToAlchemyItem",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "Turn",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"80": {
+"name": "MoveAlchemyItemToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"81": {
+"name": "MoveAlchemyItemFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"82": {
+"name": "MakeAlchemy",
+"params": []
+},
+"83": {
+"name": "AddAlchemyResultFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"84": {
+"name": "SetAlchemyFormulaName",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"85": {
+"name": "DeleteAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"86": {
+"name": "LoadAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"87": {
+"name": "UnloadAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"88": {
+"name": "MoveAlchemyFormulaUp",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"89": {
+"name": "MoveAlchemyFormulaDown",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"9": {
+"name": "HeroPos",
+"params": []
+},
+"90": {
+"name": "AutoArrangeInventory",
+"params": []
+},
+"91": {
+"name": "DropSubObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"92": {
+"name": "DropMoney",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"93": {
+"name": "DropInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"94": {
+"name": "DropMagicFromSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"95": {
+"name": "DropAlchemyItem",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"96": {
+"name": "PickUpObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"97": {
+"name": "UnablePickUpObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"98": {
+"name": "SwitchObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"99": {
+"name": "TalkWithDialogUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+}
+},
+"event": {
+"0": {
+"name": "Timer",
+"params": []
+},
+"1": {
+"name": "GetCommandState",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "OnHit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"3": {
+"name": "OnStartKilledObjectAnim",
+"params": []
+},
+"4": {
+"name": "OnAttackByOtherUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"5": {
+"name": "OnStartDirectFightActionByEnemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"6": {
+"name": "OnLoadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"7": {
+"name": "OnUnloadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"8": {
+"name": "AlarmEnemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+}
+}
+},
+"1": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "MoveOneStepForward",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"100": {
+"name": "OpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"101": {
+"name": "GetObjectFromContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"102": {
+"name": "GetAllFromContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"103": {
+"name": "PutObjectToContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"104": {
+"name": "OpenTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"105": {
+"name": "TeleportToActiveTargetTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"106": {
+"name": "SetPoint",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"107": {
+"name": "SetSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"108": {
+"name": "PutObjectToTradeContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"109": {
+"name": "GetObjectFromTradeContainer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "MoveOneStepBack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"110": {
+"name": "GetAllFromTradeContainer",
+"params": []
+},
+"111": {
+"name": "DecideAboutTrade",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"112": {
+"name": "PlayerLeftTrade",
+"params": []
+},
+"113": {
+"name": "ShootAttackAutoPrepare",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"114": {
+"name": "ShootAttackAutoFire",
+"params": []
+},
+"115": {
+"name": "UseMagicCardOnSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"116": {
+"name": "PrepareManualTargetMagic",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"117": {
+"name": "StopCurrentAction",
+"params": []
+},
+"118": {
+"name": "Reserved5",
+"params": []
+},
+"119": {
+"name": "Reserved6",
+"params": []
+},
+"12": {
+"name": "MoveOneStepLeft",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"120": {
+"name": "Reserved7",
+"params": []
+},
+"121": {
+"name": "Reserved8",
+"params": []
+},
+"122": {
+"name": "Reserved9",
+"params": []
+},
+"123": {
+"name": "UserNoParam0",
+"params": []
+},
+"124": {
+"name": "UserNoParam1",
+"params": []
+},
+"125": {
+"name": "UserNoParam2",
+"params": []
+},
+"126": {
+"name": "UserNoParam3",
+"params": []
+},
+"127": {
+"name": "UserNoParam4",
+"params": []
+},
+"128": {
+"name": "UserNoParam5",
+"params": []
+},
+"129": {
+"name": "UserNoParam6",
+"params": []
+},
+"13": {
+"name": "MoveOneStepRight",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"130": {
+"name": "UserNoParam7",
+"params": []
+},
+"131": {
+"name": "UserNoParam8",
+"params": []
+},
+"132": {
+"name": "UserNoParam9",
+"params": []
+},
+"133": {
+"name": "UserOneParam0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"134": {
+"name": "UserOneParam1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"135": {
+"name": "UserOneParam2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"136": {
+"name": "UserOneParam3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"137": {
+"name": "UserOneParam4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"138": {
+"name": "UserOneParam5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"139": {
+"name": "UserOneParam6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"14": {
+"name": "MoveStepInDirection",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"140": {
+"name": "UserOneParam7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"141": {
+"name": "UserOneParam8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"142": {
+"name": "UserOneParam9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"143": {
+"name": "UserObject0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"144": {
+"name": "UserObject1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"145": {
+"name": "UserObject2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"146": {
+"name": "UserObject3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"147": {
+"name": "UserObject4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"148": {
+"name": "UserObject5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"149": {
+"name": "UserObject6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"15": {
+"name": "StopMovingStep",
+"params": []
+},
+"150": {
+"name": "UserObject7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"151": {
+"name": "UserObject8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"152": {
+"name": "UserObject9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"153": {
+"name": "UserPoint0",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"154": {
+"name": "UserPoint1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"155": {
+"name": "UserPoint2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"156": {
+"name": "UserPoint3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"157": {
+"name": "UserPoint4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"158": {
+"name": "UserPoint5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"159": {
+"name": "UserPoint6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "StartJump",
+"params": []
+},
+"160": {
+"name": "UserPoint7",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"161": {
+"name": "UserPoint8",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"162": {
+"name": "UserPoint9",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"163": {
+"name": "CommandXXX",
+"params": []
+},
+"17": {
+"name": "MoveHorseSpeedUp",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "MoveHorseStopSpeedUp",
+"params": []
+},
+"19": {
+"name": "MoveHorseSlowDown",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "MoveHorseStopSlowDown",
+"params": []
+},
+"21": {
+"name": "MoveHorseMoveBack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "MoveHorseStopMoveBack",
+"params": []
+},
+"23": {
+"name": "MoveHorseQuickStop",
+"params": []
+},
+"24": {
+"name": "MoveHorseTurnLeft",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"25": {
+"name": "MoveHorseTurnRight",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "MoveHorseStopTurn",
+"params": []
+},
+"27": {
+"name": "Attack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"28": {
+"name": "StrikeAttack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"29": {
+"name": "ShootAttackManualPrepare",
+"params": []
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"30": {
+"name": "ShootAttackManualFire",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"31": {
+"name": "TurnToCamera",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"32": {
+"name": "MoveAttack",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"33": {
+"name": "SetArmedMode",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"34": {
+"name": "MountOnHorse",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"35": {
+"name": "UnmountFromHorse",
+"params": []
+},
+"36": {
+"name": "CallHorse",
+"params": []
+},
+"37": {
+"name": "PrepareBeforeDialogTalk",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"38": {
+"name": "FinishAfterDialogTalk",
+"params": []
+},
+"39": {
+"name": "PrepareBeforeDialogChat",
+"params": []
+},
+"4": {
+"name": "Uninitialize",
+"params": []
+},
+"40": {
+"name": "FinishAfterDialogChat",
+"params": []
+},
+"41": {
+"name": "StartDialogTalkAnim",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"42": {
+"name": "StopDialogTalkAnim",
+"params": []
+},
+"43": {
+"name": "PauseDialogTalkHeadAnim",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"44": {
+"name": "ClickEventOnGate",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"45": {
+"name": "MakeCustomWork",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"46": {
+"name": "MagicCardDirect",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"47": {
+"name": "MagicCardObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"48": {
+"name": "SkillBerserk",
+"params": []
+},
+"49": {
+"name": "SkillDefensiveFight",
+"params": []
+},
+"5": {
+"name": "Stop",
+"params": []
+},
+"50": {
+"name": "SkillDirtyTrick",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"51": {
+"name": "SkillStun",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"52": {
+"name": "SkillSwordBrake",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"53": {
+"name": "SkillDismountFromHorse",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"54": {
+"name": "SkillPullShield",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"55": {
+"name": "SkillKnifeDeathStrike",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"56": {
+"name": "SkillDeadlyPiruet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"57": {
+"name": "SkillBurn",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"58": {
+"name": "SkillShieldTrick",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"59": {
+"name": "SkillDisarmingArrow",
+"params": []
+},
+"6": {
+"name": "Move",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"60": {
+"name": "SkillMultiArrows",
+"params": []
+},
+"61": {
+"name": "SkillPiercing",
+"params": []
+},
+"62": {
+"name": "SkillArrowOfDust",
+"params": []
+},
+"63": {
+"name": "SkillSneak",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"64": {
+"name": "SkillStealing",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"65": {
+"name": "SkillSetTrap",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"66": {
+"name": "SkillStunSecondHand",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"67": {
+"name": "SkillPullShieldSecondHand",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"68": {
+"name": "UseObjectFromInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"69": {
+"name": "UsePrevWeapon",
+"params": []
+},
+"7": {
+"name": "MoveXYZA",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"70": {
+"name": "UseNextWeapon",
+"params": []
+},
+"71": {
+"name": "UseRegenerateHPPotion",
+"params": []
+},
+"72": {
+"name": "UseRegenerateManaPotion",
+"params": []
+},
+"73": {
+"name": "JoinInventoryObjects",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"74": {
+"name": "SetInventoryObjectPos",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"75": {
+"name": "MoveSubObjectToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"76": {
+"name": "MoveSubObjectFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"77": {
+"name": "MoveMagicFromSlotToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"78": {
+"name": "MoveMagicFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"79": {
+"name": "MoveInventoryToAlchemyItem",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "Turn",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"80": {
+"name": "MoveAlchemyItemToInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"81": {
+"name": "MoveAlchemyItemFromSlotToSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"82": {
+"name": "MakeAlchemy",
+"params": []
+},
+"83": {
+"name": "AddAlchemyResultFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"84": {
+"name": "SetAlchemyFormulaName",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"85": {
+"name": "DeleteAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"86": {
+"name": "LoadAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"87": {
+"name": "UnloadAlchemyFormula",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"88": {
+"name": "MoveAlchemyFormulaUp",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"89": {
+"name": "MoveAlchemyFormulaDown",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"9": {
+"name": "HeroPos",
+"params": []
+},
+"90": {
+"name": "AutoArrangeInventory",
+"params": []
+},
+"91": {
+"name": "DropSubObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"92": {
+"name": "DropMoney",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"93": {
+"name": "DropInventory",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"94": {
+"name": "DropMagicFromSlot",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"95": {
+"name": "DropAlchemyItem",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"96": {
+"name": "PickUpObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"97": {
+"name": "UnablePickUpObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"98": {
+"name": "SwitchObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"99": {
+"name": "TalkWithDialogUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+}
+},
+"event": {
+"0": {
+"name": "Timer",
+"params": []
+},
+"1": {
+"name": "GetCommandState",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "OnHit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"3": {
+"name": "OnStartKilledObjectAnim",
+"params": []
+},
+"4": {
+"name": "OnAttackByOtherUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"5": {
+"name": "OnStartDirectFightActionByEnemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"6": {
+"name": "OnLoadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"7": {
+"name": "OnUnloadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"8": {
+"name": "AlarmEnemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+}
+}
+},
+"2": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"13": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"14": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 2,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"17": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"18": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "CommandDebug",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "Combo1",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"23": {
+"name": "Combo2",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"24": {
+"name": "Combo3",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"25": {
+"name": "Combo4",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "Combo5",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"27": {
+"name": "Combo6",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"4": {
+"name": "Uninitialize",
+"params": []
+},
+"5": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"6": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"7": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"9": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+}
+},
+"event": {
+"0": {
+"name": "Timer0",
+"params": []
+},
+"1": {
+"name": "Timer1",
+"params": []
+},
+"10": {
+"name": "Artefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "GetHeroShopPricePercents",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "OpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"13": {
+"name": "CloseContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"14": {
+"name": "StartTalkWithDialogUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "EndTalkDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "EndChatDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"17": {
+"name": "EndMessageBox",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "EndCutscene",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "ClickGateByUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "Timer2",
+"params": []
+},
+"20": {
+"name": "AddedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "RemovedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "PassiveDestroyed",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"23": {
+"name": "UsedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"24": {
+"name": "RemovedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"25": {
+"name": "CustomMakeAlchemyResult",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "GetNewNetworkPlayerCreatePos",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"27": {
+"name": "CreatedNewNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"28": {
+"name": "RemovedNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"29": {
+"name": "OnLoadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Timer3",
+"params": []
+},
+"30": {
+"name": "OnUnloadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"31": {
+"name": "OnStartedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"32": {
+"name": "OnEndedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"33": {
+"name": "SpecialLevelFlags",
+"params": []
+},
+"4": {
+"name": "Timer4",
+"params": []
+},
+"5": {
+"name": "Timer5",
+"params": []
+},
+"6": {
+"name": "Timer6",
+"params": []
+},
+"7": {
+"name": "Timer7",
+"params": []
+},
+"8": {
+"name": "Timer8",
+"params": []
+},
+"9": {
+"name": "Timer9",
+"params": []
+}
+}
+},
+"25": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "InitUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "UnitParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "UnitValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "InitMissile",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileValues"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileParams"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 0,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 0,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"12": {
+"name": "InitMagicMissile",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileParams"
+}
+]
+},
+"13": {
+"name": "InitOtherMissile",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileParams"
+}
+]
+},
+"14": {
+"name": "GetMagicParamObjectNumber",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "GetMagicCastRange",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "GetMagicManaUse",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"17": {
+"name": "GetMagicSummonCount",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "GetMagicMaxSummonCount",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "GetMagicSummonLevels",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "FinishMagicSummonedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"21": {
+"name": "InitMagicWeapons",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 0,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 0,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "CanMakeMagic",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"23": {
+"name": "CanMakeMagicMissileOnTarget",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"24": {
+"name": "CanMakeMagicGenericOnUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"25": {
+"name": "GetMagicGenericOnUnitRange",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "MakeMagicGenericOnUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"27": {
+"name": "FinishMakingMagic",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"28": {
+"name": "AddPermanentPotion",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "PotionArtefactParams"
+}
+]
+},
+"29": {
+"name": "UpdateChangedUnitValues",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"30": {
+"name": "CanStartDirectFightAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"31": {
+"name": "GetDirectFightAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"32": {
+"name": "SelectDirectFightStrikeAnim",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"33": {
+"name": "GetNextSequenceDirectFightAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"34": {
+"name": "GetDirectFightActionOnStartActionByEnemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"35": {
+"name": "OnEndDirectFightAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"36": {
+"name": "OnHitSuccess",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"37": {
+"name": "GetHitFightAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"38": {
+"name": "GetShootAction",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 32,
+"flags": 1,
+"kind": 1,
+"name": "p8",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"39": {
+"name": "CanUseTwoWeapons",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"4": {
+"name": "InitEquipment",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"40": {
+"name": "GetHPDamageOnTarget",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MissileValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"41": {
+"name": "GetPoisonHPDamage",
+"params": [
+{
+"addr": 4,
+"flags": 1,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"42": {
+"name": "GetExperiencePointsForLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"43": {
+"name": "OnSetLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"44": {
+"name": "CanIncreasePoint",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"45": {
+"name": "IncreasePoint",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"46": {
+"name": "CanIncreaseSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"47": {
+"name": "IncreaseSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"48": {
+"name": "SetNextAttackSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"49": {
+"name": "CanMakeActiveSkillOld",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"5": {
+"name": "InitWeapon",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"50": {
+"name": "MakeActiveSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"51": {
+"name": "GetSkillSetTrapValues",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"52": {
+"name": "GetSkillSneakValues",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"53": {
+"name": "GetSkillDustEffectID",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"54": {
+"name": "GetSkillHorseRidingValues",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"55": {
+"name": "GetHitCollidedByHorseDamage",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"56": {
+"name": "CanJoinInventoryEquipments",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+}
+]
+},
+"57": {
+"name": "JoinInventoryEquipments",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 0,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+}
+]
+},
+"58": {
+"name": "CanJoinInventoryWeapons",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+}
+]
+},
+"59": {
+"name": "JoinInventoryWeapons",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 0,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+}
+]
+},
+"6": {
+"name": "InitBrokenWeapon",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+}
+]
+},
+"60": {
+"name": "CanJoinInventoryEquipmentWithSpecialArtefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "SpecialArtefactParams"
+}
+]
+},
+"61": {
+"name": "JoinInventoryEquipmentWithSpecialArtefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "SpecialArtefactParams"
+}
+]
+},
+"62": {
+"name": "CanJoinInventoryWeaponWithSpecialArtefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "SpecialArtefactParams"
+}
+]
+},
+"63": {
+"name": "JoinInventoryWeaponWithSpecialArtefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "WeaponParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "SpecialArtefactParams"
+}
+]
+},
+"64": {
+"name": "GetHeroShopPricePercents",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"65": {
+"name": "DefaultEventOpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"66": {
+"name": "DefaultEventCloseContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"67": {
+"name": "DefaultEventClickGateByUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"68": {
+"name": "CanStartOpenLock",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"69": {
+"name": "CanUseInventoryItemInAlchemyOld",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "object"
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"7": {
+"name": "InitMagicClub",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MagicClubParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"70": {
+"name": "MakeAlchemyResult",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"71": {
+"name": "GetObjectInfoText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "UnitValues"
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 2,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 0,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 0,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": "object"
+},
+{
+"addr": 32,
+"flags": 0,
+"kind": 3,
+"name": "p8",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 36,
+"flags": 0,
+"kind": 1,
+"name": "p9",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 40,
+"flags": 0,
+"kind": 3,
+"name": "p10",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"72": {
+"name": "GetPointInfoTextOld",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 3,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"73": {
+"name": "GetSkillInfoText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 3,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"74": {
+"name": "GetInventoryUnitInfoText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 3,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"75": {
+"name": "GetInventoryUnitStatTextOld",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 3,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"76": {
+"name": "GetReputationInfoText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"77": {
+"name": "GetHeroSelectionInfo",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "object"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 3,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 32,
+"flags": 1,
+"kind": 1,
+"name": "p8",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 36,
+"flags": 0,
+"kind": 3,
+"name": "p9",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"78": {
+"name": "GetHeroSelectionLockInfo",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "object"
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"79": {
+"name": "GetInventoryUnitStatText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 3,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 3,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "InitBrokenMagicClub",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MagicClubParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MagicClubParams"
+}
+]
+},
+"80": {
+"name": "CanUseInventoryItemInAlchemy",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "object"
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"81": {
+"name": "GetPointInfoText",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 3,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 3,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"82": {
+"name": "CanMakeActiveSkill",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 0,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"83": {
+"name": "GetDisplayShootChanceValues",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"84": {
+"name": "GetRegenerationHPMaxVal",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"85": {
+"name": "GetRegenerationManaMaxVal",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"9": {
+"name": "InitMagicCard",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "EquipmentValues"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "MagicCardParams"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+}
+}
+},
+"3": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"13": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"14": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 2,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"17": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"18": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "CommandDebug",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "InitializeCampaign",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"23": {
+"name": "FillNetworkChannelLevelsList",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 6,
+"name": "p2",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 6,
+"name": "p3",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 6,
+"name": "p4",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 6,
+"name": "p5",
+"sub": 3,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 6,
+"name": "p6",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 6,
+"name": "p7",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 32,
+"flags": 0,
+"kind": 6,
+"name": "p8",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"24": {
+"name": "FillNetworkXMissionsList_unused",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 6,
+"name": "p2",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 6,
+"name": "p3",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 6,
+"name": "p4",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 6,
+"name": "p5",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 6,
+"name": "p6",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 6,
+"name": "p7",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 32,
+"flags": 0,
+"kind": 6,
+"name": "p8",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 36,
+"flags": 0,
+"kind": 6,
+"name": "p9",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"25": {
+"name": "FillNetworkXMissionModes_unused",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 6,
+"name": "p2",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 6,
+"name": "p3",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 6,
+"name": "p4",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "FillNetworkMissionsList",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 6,
+"name": "p1",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 6,
+"name": "p2",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 6,
+"name": "p3",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 6,
+"name": "p4",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 6,
+"name": "p5",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 6,
+"name": "p6",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 6,
+"name": "p7",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 32,
+"flags": 0,
+"kind": 6,
+"name": "p8",
+"sub": 1,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"27": {
+"name": "FillNetworkMissionModes",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 6,
+"name": "p2",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 6,
+"name": "p3",
+"sub": 2,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"28": {
+"name": "BonusCode",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"4": {
+"name": "Uninitialize",
+"params": []
+},
+"5": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"6": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"7": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"9": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+}
+},
+"event": {
+"0": {
+"name": "Timer0",
+"params": []
+},
+"1": {
+"name": "Timer1",
+"params": []
+},
+"10": {
+"name": "Artefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "GetHeroShopPricePercents",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "OpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"13": {
+"name": "CloseContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"14": {
+"name": "StartTalkWithDialogUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "EndTalkDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "EndChatDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"17": {
+"name": "EndMessageBox",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "EndCutscene",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "ClickGateByUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "Timer2",
+"params": []
+},
+"20": {
+"name": "AddedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "RemovedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "PassiveDestroyed",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"23": {
+"name": "UsedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"24": {
+"name": "RemovedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"25": {
+"name": "CustomMakeAlchemyResult",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "GetNewNetworkPlayerCreatePos",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"27": {
+"name": "CreatedNewNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"28": {
+"name": "RemovedNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"29": {
+"name": "OnLoadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Timer3",
+"params": []
+},
+"30": {
+"name": "OnUnloadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"31": {
+"name": "OnStartedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"32": {
+"name": "OnEndedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"33": {
+"name": "GetDifficultyLevel",
+"params": []
+},
+"34": {
+"name": "GetSaveGameNameOld",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 3,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"35": {
+"name": "GetSaveGameName",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 3,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"4": {
+"name": "Timer4",
+"params": []
+},
+"5": {
+"name": "Timer5",
+"params": []
+},
+"6": {
+"name": "Timer6",
+"params": []
+},
+"7": {
+"name": "Timer7",
+"params": []
+},
+"8": {
+"name": "Timer8",
+"params": []
+},
+"9": {
+"name": "Timer9",
+"params": []
+}
+}
+},
+"4": {
+"command": {
+"0": {
+"name": "$Constructor",
+"params": []
+},
+"1": {
+"name": "$Destructor",
+"params": []
+},
+"10": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 2,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"13": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"14": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 2,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 2,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"17": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 0,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"18": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "$Serialize",
+"params": []
+},
+"20": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 0,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 0,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 0,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "CommandDebug",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 2,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Initialize",
+"params": []
+},
+"4": {
+"name": "Uninitialize",
+"params": []
+},
+"5": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"6": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"7": {
+"name": "Message",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"8": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"9": {
+"name": "MessageGet",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+}
+},
+"event": {
+"0": {
+"name": "Timer0",
+"params": []
+},
+"1": {
+"name": "Timer1",
+"params": []
+},
+"10": {
+"name": "Artefact",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"11": {
+"name": "GetHeroShopPricePercents",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"12": {
+"name": "OpenContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"13": {
+"name": "CloseContainerObject",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"14": {
+"name": "StartTalkWithDialogUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"15": {
+"name": "EndTalkDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"16": {
+"name": "EndChatDialog",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"17": {
+"name": "EndMessageBox",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"18": {
+"name": "EndCutscene",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"19": {
+"name": "ClickGateByUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 24,
+"flags": 1,
+"kind": 1,
+"name": "p6",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 28,
+"flags": 1,
+"kind": 1,
+"name": "p7",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"2": {
+"name": "Timer2",
+"params": []
+},
+"20": {
+"name": "AddedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"21": {
+"name": "RemovedUnit",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"22": {
+"name": "PassiveDestroyed",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 0,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"23": {
+"name": "UsedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"24": {
+"name": "RemovedDynamicTeleport",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"25": {
+"name": "CustomMakeAlchemyResult",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+},
+{
+"addr": 8,
+"flags": 1,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"26": {
+"name": "GetNewNetworkPlayerCreatePos",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 1,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 1,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 20,
+"flags": 1,
+"kind": 1,
+"name": "p5",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"27": {
+"name": "CreatedNewNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 12,
+"flags": 0,
+"kind": 1,
+"name": "p3",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+},
+{
+"addr": 16,
+"flags": 0,
+"kind": 1,
+"name": "p4",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"28": {
+"name": "RemovedNetworkPlayer",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 1,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"29": {
+"name": "OnLoadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+},
+{
+"addr": 8,
+"flags": 0,
+"kind": 1,
+"name": "p2",
+"sub": 0,
+"tidx": 4294967295,
+"type": 0
+}
+]
+},
+"3": {
+"name": "Timer3",
+"params": []
+},
+"30": {
+"name": "OnUnloadLevel",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "mission"
+}
+]
+},
+"31": {
+"name": "OnStartedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"32": {
+"name": "OnEndedTrading",
+"params": [
+{
+"addr": 4,
+"flags": 0,
+"kind": 0,
+"name": "p1",
+"sub": 0,
+"tidx": 4294967295,
+"type": "unit"
+}
+]
+},
+"4": {
+"name": "Timer4",
+"params": []
+},
+"5": {
+"name": "Timer5",
+"params": []
+},
+"6": {
+"name": "Timer6",
+"params": []
+},
+"7": {
+"name": "Timer7",
+"params": []
+},
+"8": {
+"name": "Timer8",
+"params": []
+},
+"9": {
+"name": "Timer9",
+"params": []
+}
+}
+}
+}

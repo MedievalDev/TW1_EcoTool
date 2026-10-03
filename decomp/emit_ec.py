@@ -19,7 +19,7 @@ Syntax learned from the SDK sources:
 Routine kinds work without debug info: a routine whose codeStart equals States[i] /
 Commands[i][0] / Events[i] is that state / command / event.
 """
-import pathlib, sys, struct, re
+import pathlib, sys, struct, re, collections
 import eco, ecodbg, disasm
 
 # Script class id (name record bit 4) -> source keyword. Measured by compiling
@@ -210,6 +210,335 @@ def global_decl_records(f, b, dbg=None):
     return keep
 
 
+class _NoDebug:
+    """stands in for the debug build's Lifter when there is none; typeinfer fills the
+    per-routine return kinds in for a release build"""
+
+    def __init__(self):
+        self.ret_kind, self.ret_type, self.ret_kind_at, self.ret_type_at = {}, {}, {}, {}
+
+
+def _synth_var(name, addr, kind=1, typ=0, sub=0, flags=0):
+    return {'name': name, 'kind': kind, 'sub': sub, 'tidx': 0xFFFFFFFF, 'type': typ,
+            'flags': flags, 'addr': addr}
+
+
+_SLOT = re.compile(r'\[ebp - (0x[0-9a-f]+|\d+)\]')
+_SIMPLE_LOAD = re.compile(r'eax, (dword ptr \[(ebp [+-]|esi)[^\]]*\]|0x[0-9a-f]+|\d+)$')
+_SPILL_NEXT = ('shl eax, cl', 'shr eax, cl', 'sar eax, cl', 'mov ecx, edx')
+_ARITH_READ = ('add eax', 'cmp eax', 'and eax', 'imul dword', 'sub eax', 'or eax', 'xor eax')
+
+
+def temp_slots(lf, r, nslots):
+    """frame offsets of the compiler's spill temporaries ($n) in a release routine.
+
+    The temporaries take the highest slots, behind every declared local, and they
+    live inside one statement: every read of a spill slot is preceded, in the same
+    basic block, by the store that filled it, and the slot is never taken by address.
+    A declared local is read in later statements too (`nMax = a[i];` ... `a[j] >
+    nMax`, which also only ever reads it as the second operand of a `cmp`, so the
+    operand form alone took it for a spill - MissionTeamCollecting sub_5471).
+    Walking down from the top slot while that holds gives the split; named `$n`, the
+    lifter folds them back into the expression (inline_temps) instead of writing
+    `loc4 = loc2;` statements the compiler then has to keep.
+    """
+    insns = lf.decode(r)
+    targets = set()
+    for m, a, s_, ins in insns:
+        if ins is not None and m.startswith('j') and ins.op_str.startswith('0x'):
+            targets.add(int(ins.op_str, 16))
+    reads = collections.defaultdict(list)       # slot -> ok per read
+    arith = collections.Counter()               # reads as the second operand (`add eax,[t]`)
+    movs = collections.Counter()                # reads into a register (`mov eax,[t]`)
+    lea = set()
+    written = set()
+    filled = set()                               # slots stored since the block began
+    crossed = set()                              # ... with a store to some variable since
+    spans = collections.defaultdict(list)        # slot -> [(store index, read index)]
+    opened = {}
+    for i_, (m, a, s_, ins) in enumerate(insns):
+        if ins is None:
+            continue
+        if a in targets:
+            filled = set()
+        if m == 'mov' and ins.op_str.endswith(', eax') and '[' in ins.op_str.split(',')[0]:
+            # a store to a variable ends the statement for every spill filled before
+            # it - unless it is a store into a higher slot, which can be one more spill
+            # of the same statement. DecodeMissionAndPositionOffsets (PQuestsMulti)
+            # parks nTmpX and nTmpY, assigns two other variables, then reads them back:
+            # one block, operand reads, but three statements, so they are locals.
+            dst = ins.op_str.split(',')[0]
+            mo2 = _SLOT.search(dst)
+            for f_ in filled:
+                if mo2 is None or int(mo2.group(1), 0) < f_:
+                    crossed.add(f_)
+        mo = _SLOT.search(ins.op_str)
+        if mo:
+            off = int(mo.group(1), 0)
+            if m == 'lea':
+                lea.add(off)
+            elif m == 'mov' and ins.op_str.startswith('dword ptr [ebp - ') and ins.op_str.endswith(', eax'):
+                written.add(off)
+                filled.add(off)
+                crossed.discard(off)
+                opened[off] = i_
+            else:
+                form = m + ' ' + _SLOT.sub('[S]', ins.op_str)
+                ok_ = off in filled and off not in crossed
+                prv = insns[i_ - 1][3] if i_ else None
+                if ok_ and form.startswith(_ARITH_READ) and prv is not None and prv.mnemonic == 'mov' \
+                        and _SIMPLE_LOAD.match(prv.op_str):
+                    # The compiler only spills the left operand when evaluating the
+                    # right one needs eax. Right before the read eax got a plain
+                    # variable or constant, so nothing forced a spill: the slot is a
+                    # variable (`nPrice = f(); if (nGold < nPrice)`, PDialogUnits
+                    # CalculateSkillFlags). As `$n` it lifted to `f() > nGold`, which
+                    # compiles without the slot.
+                    ok_ = False
+                reads[off].append(ok_)
+                if off in opened:
+                    spans[off].append((opened.pop(off), i_))
+                nxt = insns[i_ + 1][3] if i_ + 1 < len(insns) else None
+                nxt = f'{nxt.mnemonic} {nxt.op_str}' if nxt is not None else ''
+                if form.startswith(_ARITH_READ):
+                    arith[off] += 1
+                elif form.startswith('mov eax, dword ptr [S]') and nxt in _SPILL_NEXT:
+                    # the shift and division templates load the spilled left operand
+                    # back into eax: `mov eax,[t] ; shl eax,cl` / `mov eax,[t] ; mov
+                    # ecx,edx`. Over all debug builds that pair only ever reads a
+                    # temporary (_spike/p2/slots_next.py), so it counts as a spill read
+                    # (PNames' `nLevelNum / (12 * 5)` kept a needless local otherwise).
+                    arith[off] += 1
+                elif form.startswith(('mov eax, dword ptr [S]', 'mov ecx')):
+                    movs[off] += 1
+        if m.startswith('j') or m in ('ret', 'call'):
+            if m != 'call':
+                filled = set()
+    out = set()
+    for k in range(nslots, 0, -1):
+        off = 4 * k
+        if off in lea or off not in written or not reads.get(off) or not all(reads[off]):
+            break
+        # and the operand form: a local copied around in one block (SWAP's nTmp) is
+        # read with `mov eax,[x]`, a spill as the operand of the operation it feeds
+        # Spills of one statement nest: the one filled first is read last. A slot
+        # filled before a spill and read back before it is not a spill of that
+        # statement (GetMagicTicks: `nMagicRing = f(); … * nMagicRing … + $1`).
+        if any(a0 < b0 < a1 < b1 for t in out for a0, a1 in spans[off] for b0, b1 in spans[t]):
+            break
+        if movs[off]:
+            # a spill is never read with a plain `mov eax,[t]` outside the shift and
+            # division templates (counted as arith above): over all debug builds that
+            # read only ever loads a declared local (_spike/p2/slots_next.py).
+            # GetBowDamage (RPGCompute) reads nDamage that way once and once as an
+            # `imul` operand - a majority vote took it for a spill.
+            break
+        out.add(off)
+    return out
+
+
+_ECX_LOAD = re.compile(r'ecx, dword ptr \[ebp \+ (0x[0-9a-f]+|\d+)\]$')
+
+
+def ref_params(lf, r):
+    """frame offsets of the parameters a release routine takes by reference.
+
+    `int& n` is a pointer: every use goes `mov ecx,[ebp+X] ; mov eax,[ecx]` (read) or
+    `mov ecx,[ebp+X] ; mov [ecx],eax` (write), where a value parameter is used
+    straight from its slot (MissionTeamCollecting sub_30547, 6 bytes per use)."""
+    insns = lf.decode(r)
+    out = set()
+    for i, (m, a, s_, ins) in enumerate(insns[:-1]):
+        if m != 'mov' or ins is None:
+            continue
+        mo = _ECX_LOAD.match(ins.op_str)
+        nxt = insns[i + 1][3]
+        if mo and nxt is not None and '[ecx]' in nxt.op_str:
+            out.add(int(mo.group(1), 0))
+    return out
+
+
+def synth_locals(lf, r):
+    """release-build locals of a routine: `loc<n>`, the spill temporaries as `$<n>`"""
+    n = frame_slots(lf, r)
+    temps = temp_slots(lf, r, n)
+    return [_synth_var(f'${j}' if 4 * (j + 1) in temps else f'loc{j + 1}', 4 * j) for j in range(n)]
+
+
+def synth_globals(f):
+    """one `int g<k>` record per global slot of a release build ($State/$Loop excluded)"""
+    n = max(0, (f['mem_reserve'] - 8) // 4)
+    return [_synth_var(f'g{k}', 8 + 4 * k) for k in range(n)]
+
+
+_KIND_OF = {'int': 1, 'str': 2, 'strW': 3, 'h': 0, 'arr': 6, 'void': 4}
+
+
+def slot_entry(cls, kind, idx):
+    """name and parameters of a command / event slot of script class `cls`.
+
+    The compiler's own table (slot_table, read out of EarthC.exe) knows every slot; the
+    debug builds (entries) only the ones some script uses, but with the real parameter
+    names - so those names are kept where the two agree. A string parameter's `&` is
+    left to the script (typeinfer strref): the slot does not fix it."""
+    import entries, slot_table
+    s = slot_table.lookup(cls, kind, idx)
+    e = entries.lookup(cls, kind, idx)
+    if s is None:
+        return e
+    params = [dict(p) for p in s['params']]
+    if e and e['name'] == s['name'] and len(e['params']) == len(params):
+        for p, q in zip(params, e['params']):
+            p['name'] = q['name']
+    return {'name': s['name'], 'params': params}
+
+
+def release_types(lf, f, nr, synth, states, commands, events, dbg_lf, ret_out, entry_out):
+    """Type a release build in place (typeinfer): globals, synthesised parameters and
+    locals, entry-point locals and the return types of synthesised functions.
+    entry_out gets the final parameter list of every command / event by its start."""
+    import typeinfer
+    recs = {}
+    for grp, kind, kw in ((states, 6, None), (commands, 5, 'command'), (events, 4, 'event')):
+        for idx, rr_ in grp:
+            params = []
+            if kw:
+                slot = slot_entry(nr.get('num', 0), kw, idx)
+                params = slot['params'] if slot else []
+            recs[rr_['start']] = {**rr_, 'kind': kind, 'params': params, 'name': f'{kw or "state"}_{idx}'}
+    for start, d in synth.items():
+        recs[start] = d
+    for r in typeinfer.implicit_commands(lf):
+        recs.setdefault(r['start'], r)
+    types, facts = typeinfer.infer(lf, [recs[k] for k in sorted(recs)])
+    for addr, g in list(lf.globals.items()):
+        t = types.get(('g', addr))
+        if t:
+            lf.globals[addr] = typeinfer.to_record(t, g)
+    refs = release_refs(lf, recs, synth, types, facts)
+    for start, r in recs.items():
+        if r.get('kind') in (4, 5):
+            entry_out[start] = [{**p, 'flags': 1} if p['kind'] in (2, 3) and (start, 'p', k) in refs else p
+                                for k, p in enumerate(r.get('params', ()))]
+    for start, d in synth.items():
+        d['params'] = [typeinfer.to_record(types.get((start, 'p', k)), p) for k, p in enumerate(d['params'])]
+        d['params'] = [{**p, 'flags': p.get('flags', 0) | 1} if (start, 'p', k) in refs and p['kind'] != 6
+                       else p for k, p in enumerate(d['params'])]
+        d['locals'] = [typeinfer.to_record(types.get((start, 'l', k)), v) for k, v in enumerate(d['locals'])]
+        lf.by_start[start] = {**lf.by_start[start], 'params': d['params']}
+        t = types.get((start, 'ret'))
+        if t:
+            ret_out[start] = typeinfer.type_name(t)
+            dbg_lf.ret_kind_at[start] = _KIND_OF[t[0]]
+            if t[0] == 'h':
+                dbg_lf.ret_type_at[start] = t[1]
+            lf.ret_kind[d['name']] = _KIND_OF[t[0]]
+    for grp in (states, commands, events):
+        for k, (idx, rr_) in enumerate(grp):
+            if rr_.get('locals'):
+                grp[k] = (idx, {**rr_, 'locals': [typeinfer.to_record(types.get((rr_['start'], 'l', j)), v)
+                                                  for j, v in enumerate(rr_['locals'])]})
+    release_voids(lf, synth, dbg_lf, ret_out)
+
+
+def release_refs(lf, recs, synth, types, facts):
+    """the by-reference parameters of a release build, as (start, 'p', index) keys.
+
+    Evidence inside a routine: an int or handle parameter used through `mov ecx,[p]`
+    (ref_params), a string parameter read through its conversion or written
+    (typeinfer strref). Between routines: an argument passed by address (`lea`) makes
+    the callee's parameter a reference, and a reference parameter handed on as it is
+    passes the pointer, so caller and callee parameter are references together.
+    PQuests' sub_86601 forwards three `int&` to a routine that never dereferences them
+    itself; typed `int` there, the caller had to dereference (12 bytes).
+    """
+    refs = set()
+    for start in synth:
+        for off in ref_params(lf, lf.by_start[start]):
+            refs.add((start, 'p', (off - 8) // 4))
+    refs |= {k for k, n in facts.strref.items() if n}
+    for start, r in recs.items():
+        if r.get('kind') in (4, 5):
+            for k, p in enumerate(r.get('params', ())):
+                if p.get('flags', 0) & 1:
+                    refs.add((start, 'p', k))
+    arrays = {k for k, t in types.items() if t and t[0] == 'arr'}
+    for tgt, j, how, k in facts.flows:
+        if how == 'ref' and (tgt, 'p', j) not in arrays and (k[0] == 'g' or k[1] in ('l', 'p')):
+            refs.add((tgt, 'p', j))
+    while True:
+        more = set()
+        for tgt, j, how, k in facts.flows:
+            q = (tgt, 'p', j)
+            if how != 'var' or k[0] == 'g' or k[1] != 'p' or q in arrays:
+                continue
+            if k in refs and q not in refs:
+                more.add(q)
+            if q in refs and k not in refs:
+                more.add(k)
+        if not more:
+            break
+        refs |= more
+    return refs
+
+
+_SUB_CALL = re.compile(r'^?(sub_\d+)\(')
+
+
+def _lift_lines(lf, rec):
+    import emit_body
+    ls, _pr = emit_body.body(lf, rec)
+    ls = emit_body.strip_prologue_inits(ls, rec.get('locals', []), emit_body.prologue_zeroes(lf, rec))
+    return emit_body.for_headers(emit_body.inline_temps(emit_body.compound_assign(ls)))
+
+
+def release_voids(lf, synth, dbg_lf, ret_out):
+    """Which synthesised functions are void, decided before any body is written.
+
+    A void routine leaves whatever its last call returned in eax, so its lift ends in
+    `return f(x);` just like an int routine that really returns f(x). What separates
+    them: a void body returns no value of its own anywhere, and `return g();` only
+    counts if g returns something. Deciding this per function while writing it out
+    made a caller `int` and its void callee `void` ("Invalid return type",
+    MissionTeamCollecting). A fixpoint over all of them keeps both sides consistent.
+    """
+    rets = {}
+    for start, d in synth.items():
+        rr = {**lf.by_start[start], **d, 'kind': 7}
+        try:
+            lines = _lift_lines(lf, rr)
+        except Exception:
+            continue
+        rets[d['name']] = [mo.group(1).strip() for mo in (_RET_EXPR.match(l) for l in lines) if mo]
+        if any(l.strip() == 'return;' for l in lines):
+            rets[d['name']] = []          # a bare `return;` only exists in a void routine
+        top = [l for l in lines if l.startswith(('return', 'if', 'while', 'for', 'do', '}')) or not l.startswith(' ')]
+        if lines and not lines[-1].startswith('return'):
+            # control can run off the end, which EarthC only accepts in a void routine
+            # ("Invalid return type" at the closing brace, MissionTeamCollecting)
+            rets[d['name']] = []
+    void = {n for n, es in rets.items() if not es}
+    while True:
+        more = set()
+        for n, es in rets.items():
+            if n in void:
+                continue
+            calls = [_SUB_CALL.match(e) for e in es]
+            if es and all(c and c.group(1) in void for c in calls):
+                more.add(n)
+        if not more:
+            break
+        void |= more
+    by_name = {d['name']: start for start, d in synth.items()}
+    for n in void:
+        start = by_name[n]
+        # this overrides typeinfer: the value it saw was the junk a void routine
+        # leaves in eax (its body returns nothing of its own)
+        ret_out[start] = 'void'
+        dbg_lf.ret_kind_at[start] = 4
+        lf.ret_kind[n] = 4
+
+
 def _cstring(data, off):
     end = data.find(b'\x00', off)
     return data[off:end if end >= 0 else len(data)].decode('latin1')
@@ -320,7 +649,7 @@ def enum_decl(g, captions, multi):
     return out
 
 
-def global_decls(f, b, dbg=None, sizes=None):
+def global_decls(f, b, dbg=None, sizes=None, synth=None):
     """Global declarations.
 
     Slot count comes from Memory Reservation Size ($State and $Loop take the first
@@ -328,7 +657,7 @@ def global_decls(f, b, dbg=None, sizes=None):
     when one is supplied — its debug-only globals sit at the front, because the debug
     includes are processed first, so the trailing n entries are the release set.
     """
-    keep = global_decl_records(f, b, dbg)
+    keep = synth or global_decl_records(f, b, dbg)
     if keep:
         enums = button_enums(f)[1]
         out = []
@@ -427,8 +756,13 @@ def frame_slots(lf, r):
     return 0
 
 
-def emit(path, dbg_path=None):
+def emit(path, dbg_path=None, namerec=None):
+    """EarthC source of the .eco at `path`. `namerec` ({'name', 'num'}) stands in for the
+    header record when the file is a bare body: inside a .wd the script name and class id
+    live in the archive's directory entry, not in the body."""
     f, b = ecodbg.parse_file(path)
+    if namerec:
+        f['namerec'] = {**f.get('namerec', {}), **namerec}
     dbg = ecodbg.parse_file(dbg_path)[1] if dbg_path else None
     code = bytes(f['code'])
     routines = b['routines'] if b else disasm.scan_routines(code)
@@ -466,11 +800,20 @@ def emit(path, dbg_path=None):
     L.append('')
     import lifter
     lf = lifter.Lifter(path)
-    decls = global_decls(f, b, dbg, array_sizes(f, routines, lf))
+    if not dbg_path and not b:
+        # Release build and nothing else: every global gets a synthesised record, so
+        # the declaration and the lifted body agree on its name (`g0`, `g1`, ...).
+        lf.globals = {g['addr']: g for g in synth_globals(f)}
+        lf.release_mode = True
+    asizes = array_sizes(f, routines, lf)
+    decls = global_decls(f, b, dbg, asizes,
+                         synth=None if (dbg_path or b) else list(lf.globals.values()))
+    decl_at = len(L)
     for decl in decls:
         L.append(f'    {decl}')
     if decls:
         L.append('')
+    decl_end = len(L)
     byidx = {i: (r['name'] if b else f'state_{i}') for i, r in states}
 
     # Functions, states and commands are all emitted in ONE pass over the code
@@ -483,10 +826,15 @@ def emit(path, dbg_path=None):
     # sits before the two Message commands), so everything behind the first state
     # was shifted (8 routines out of place, 45 in the file).
     matched = {}
+    import match_routines
+    synth = {}
+    synth_names = set()
+    sigs = {}
+    dbg_lf = _NoDebug()
+    synth_ret_type = {}
+    entry_params = {}
     if dbg_path:
-        import match_routines, emit_body, struct
-        synth = {}
-        synth_names = set()
+        import emit_body, struct
         _f, _rs, matched, _c = match_routines.match(str(path), str(dbg_path))
         sigs = {d['name']: d['params'] for d in matched.values()}
         dbg_lf = lifter.Lifter(dbg_path)
@@ -499,6 +847,7 @@ def emit(path, dbg_path=None):
             if start in lf.by_start:
                 lf.by_start[start] = {**lf.by_start[start], 'name': d['name'],
                                       'params': d['params'], 'kind': d['kind']}
+    if dbg_path or not b:
         # A release routine the matcher could not name is still real code, and
         # skipping it is expensive: every call to it lifted as the undeclared
         # `sub_<addr>()`, which made emit_ec throw away the WHOLE entry point that
@@ -520,11 +869,14 @@ def emit(path, dbg_path=None):
                 'locals': [{'name': f'loc{k + 1}', 'kind': 1, 'sub': 0,
                             'tidx': 0xFFFFFFFF, 'type': 0, 'flags': 0,
                             'addr': 4 * k} for k in range(frame_slots(lf, r))]}
+            if not dbg_path:
+                synth[r['start']]['locals'] = synth_locals(lf, r)
             lf.by_start[r['start']] = {**lf.by_start[r['start']],
                                        'name': synth[r['start']]['name'],
                                        'params': synth[r['start']]['params'],
                                        'kind': 7}
             synth_names.add(synth[r['start']]['name'])
+    if dbg_path:
         # States and commands have locals too. Without the debug record the release
         # routine carries none, so the frame slot printed as an undeclared `loc1`
         # and the compiler rejected the file (TwoWorldsTeleports state_0). Same
@@ -542,6 +894,18 @@ def emit(path, dbg_path=None):
         # return types too: without them every routine looks non-void, and the
         # return-value repair then writes `return a.Add(x);` into a void function
         lf.ret_kind = dict(dbg_lf.ret_kind)
+    elif not b:
+        # release only: entry points get synthesised locals the same way the
+        # functions do, or their frame slots print as undeclared `loc1`
+        for grp in (states, commands, events):
+            for k, (idx, rr_) in enumerate(grp):
+                n = frame_slots(lf, rr_)
+                if n:
+                    grp[k] = (idx, {**rr_, 'locals': synth_locals(lf, rr_)})
+        release_types(lf, f, nr, synth, states, commands, events, dbg_lf, synth_ret_type, entry_params)
+        # the declarations were written before the types were known
+        decls = global_decls(f, b, dbg, asizes, synth=list(lf.globals.values()))
+        L[decl_at:decl_end] = [f'    {d}' for d in decls] + ([''] if decls else [])
 
     def function_lines(r, d, ret=None):
         import emit_body
@@ -587,6 +951,24 @@ def emit(path, dbg_path=None):
                       or ECTYPE.get(getattr(dbg_lf, 'ret_kind_at', {}).get(d['start']))
                       or dbg_lf.ret_type.get(d['name'])
                       or ECTYPE.get(dbg_lf.ret_kind.get(d['name']), 'void'))
+        if not dbg_path and ret not in ('?', None) and not any(_RET_EXPR.match(l) for l in lines):
+            # no value returned anywhere in the lifted body: void, whatever eax held at
+            # the end (a void routine leaves its last call's result there)
+            ret = 'void'
+        if ret == 'void' and not dbg_path:
+            # A void routine leaves its last call's value in eax, so the lift wrote
+            # `return f(x);`. In tail position that is just the call; anywhere else it
+            # is also an early exit: `f(x); return;`
+            tails = _tail_lines(lines)
+            out_ = []
+            for i_, l_ in enumerate(lines):
+                if _RET_EXPR.match(l_):
+                    out_.append(_strip_return(l_))
+                    if i_ not in tails:
+                        out_.append(l_[:len(l_) - len(l_.lstrip())] + 'return;')
+                else:
+                    out_.append(l_)
+            lines = out_
         sig = ', '.join(param_decl(p) for p in rr['params'])
         proto = f'    function {ret} {d["name"]}({sig});'
         out = [f'    function {ret} {d["name"]}({sig})', '    {']
@@ -606,6 +988,12 @@ def emit(path, dbg_path=None):
 
     def command_lines(idx, r, kw='command', dbgkind=5):
         d = debug_routine(dbg, dbgkind, idx) or (r if b else None)
+        if d is None and not dbg_path:
+            # release only: the slot's name and parameters from the class table
+            slot = slot_entry(nr.get('num', 0), kw, idx)
+            if slot:
+                d = {**r, 'name': slot['name'], 'params': entry_params.get(r['start'], slot['params']),
+                     'kind': dbgkind, 'a': idx}
         if d is None:
             return [f'    // {kw} {idx}: no signature available, skipped']
         sig = ', '.join(param_decl(p) for p in d['params'])
@@ -624,7 +1012,8 @@ def emit(path, dbg_path=None):
                 btn += ' hidden'
             gaddr = button_enums(f)[0].get(idx)
             if gaddr is not None:
-                nm = next((g['name'] for g in global_decl_records(f, b, dbg)
+                nm = next((g['name'] for g in (global_decl_records(f, b, dbg)
+                                                or list(lf.globals.values()))
                            if g['addr'] == gaddr), None)
                 if nm:
                     btn += f' button {nm}'
@@ -662,8 +1051,8 @@ def emit(path, dbg_path=None):
             proto, body = function_lines(r, matched[start])
             L.append(proto)
             bodies += body
-        elif dbg_path and start in synth:
-            proto, body = function_lines(r, synth[start], ret='?')
+        elif start in synth:
+            proto, body = function_lines(r, synth[start], ret=synth_ret_type.get(start, '?'))
             L.append(proto)
             bodies += body
     if bodies:

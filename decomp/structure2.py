@@ -272,6 +272,37 @@ def _pred_count(order, info, pos):
     return c
 
 
+def _bare(e):
+    """name of the handle a truth-test leaf tests (`x` / `!x` -> `x`)"""
+    t = str(e)
+    return _drop_not(t) if t.startswith('!') else t
+
+
+def _leaves(c, neg=False):
+    """the leaf texts as printed without a `!` in front (a `not` node negates its leaf)"""
+    if c.op == 'leaf':
+        if not neg:
+            yield c.text
+        return
+    for k in c.kids:
+        yield from _leaves(k, not neg if c.op == 'not' else neg)
+
+
+def _handle_in_chain(cond, handles):
+    """would the `if` written from this jump condition hold a bare handle in a chain?
+
+    EarthC rejects `m && x`, `m || x`, `x && m` ("Invalid type") but accepts `!m || x`,
+    `!m && x` and a lone `if (m)` (measured _spike/p2/probe hb_*/hc_*.ec). The `if`
+    tests the negated jump condition, De Morgan pushes that `!` onto the leaves, so a
+    handle leaf printed there without its own `!` means the source cannot have been a
+    chain: two nested `if`s (TestPMMission CommandDebug), while `if (!u || !u.IsHeroUnit())`
+    stays one condition (MissionTeamCollecting)."""
+    if not handles:
+        return False
+    shown = set(_leaves(c_not(cond)))
+    return any(h in shown for h in handles)
+
+
 def merge_conditions(order, info, protect=(), latches=(), heads=()):
     """Fold `&&` / `||` block chains into one block.
 
@@ -310,6 +341,7 @@ def merge_conditions(order, info, protect=(), latches=(), heads=()):
                     (set(spill_b) & _spill_names(info[a][0])):
                 continue
             fb = order[i + 2] if i + 2 < len(order) else None
+            handles = [_bare(e[1]) for e in (exa, exb) if getattr(e[1], 'handle_truth', False)]
             if exa[2] == exb[2]:                       # both jump to the same place
                 cond, tgt = c_or(leaf(exa[1]), leaf(exb[1])), exa[2]
             elif fb is not None and exa[2] == fb:      # a skips b's own target
@@ -344,6 +376,8 @@ def merge_conditions(order, info, protect=(), latches=(), heads=()):
                 # (PTown.UpdateGuardsNumber, PInc/PGuard.ech:253).
                 cond, tgt = c_and(c_not(leaf(exa[1])), leaf(exb[1])), exb[2]
             else:
+                continue
+            if _handle_in_chain(cond, handles):
                 continue
             info[a] = (info[a][0] + info[b][0], ('jcc', cond, tgt, fb))
             del info[b]

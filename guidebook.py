@@ -36,7 +36,8 @@ def _source(text):
 MEASURED = (
     ('SDK 1.3 Scripts', 30, 'single player: campaign, quests, chests, towns, enemies, weather, hero, RPGCompute, units'),
     ('SDK 1.3 _Scripts_old_1.5_ (= SDK 1.2)', 5, 'HorseRacing, TeamAssault, TeamDeathmatch, TeamMonsterHunt, TeamRustling'),
-    ('-', 7, 'Cities, CityCampaign, MissionTeamCollecting, MissionTeamHunt, TestDialogsMission, TestPMMission, TestPMMission2'),
+    ('rebuilt', 4, 'MissionTeamCollecting, TestDialogsMission, TestPMMission, TestPMMission2'),
+    ('-', 3, 'Cities, CityCampaign, MissionTeamHunt (v1.0 debug builds)'),
 )
 
 
@@ -296,31 +297,87 @@ Scripts without a source anywhere stay as they are; the tool names them.
 
 
 def ch_decompiler():
-    return _l('''# Decompiler-Ansicht
+    return _l('''# Nachbauen und Decompiler-Ansicht
 
-Fuer Skripte ohne passende Quelle zeigt das Tool die Ausgabe des
-Decompilers: Die `.eco` enthaelt x86-Maschinencode, der zurueck in
-EarthC-aehnlichen Text uebersetzt wird. Namen kommen, wo vorhanden, aus den
-Debug-Informationen des Skripts, sonst heissen Funktionen `sub_<Adresse>`
-und Variablen `loc1`, `arg1`.
+Fuer ein Skript ohne passende Quelle baut das Tool beim Einlesen eine
+Quelle nach: Die `.eco` enthaelt x86-Maschinencode, der Decompiler
+uebersetzt ihn zurueck in EarthC und leitet die Typen aus dem Code selbst ab
+(welche Engine-Funktion einen Wert bekommt oder liefert). Dann kompiliert
+das Tool diese Quelle und vergleicht sie mit dem Spiel. Nur wenn **jedes
+Byte** stimmt, heisst das Skript **Nachgebaut**, und der Export schreibt die
+Quelle nach `Scripts\\_TW1_Rebuilt` (mit `compile_all.bat` und erneuter
+Pruefung).
 
-**Ungeprueft:** Diese Ausgabe ist lesbar, aber in dieser Version **nicht**
-darauf geprueft, dass sie kompiliert. Gemessen am 03.10.2026: Die sieben
-Skripte des Spiels ohne Quelle (alle Mehrspieler oder Test) kompilieren so
-noch nicht. Ein Decompiler, der kompilierbare und byte-gleiche Quellen
-liefert, ist der naechste Schritt des Tools.
-''', '''# Decompiler view
+Namen gibt es in einer kompilierten Datei nicht: Funktionen heissen
+`sub_<Adresse>`, globale Variablen `g0`, `g1`, lokale `loc1`, Parameter
+`a1`. Befehle und Events behalten ihre echten Namen (die sind Teil der
+Skriptklasse).
 
-For scripts without a matching source the tool shows the decompiler's
-output: the `.eco` holds x86 machine code, translated back into EarthC-like
-text. Names come from the script's debug information where there is any;
-otherwise functions are called `sub_<address>` and variables `loc1`,
-`arg1`.
+Gemessen am 03.10.2026: Die vier Release-Skripte des Spiels ohne Quelle und
+die Mod-Fassungen von PQuests (QuestLimit600), RPGCompute (EnemyLevels) und
+TwoWorldsCampaign (TW1_Probe) kommen byte-gleich heraus.
 
-**Not tested:** this output is readable but in this version **not** checked
-to compile. Measured on 2026-10-03: the game's seven scripts without a
-source (all multiplayer or test) do not compile like this yet. A decompiler
-that gives compilable, byte-identical sources is the tool's next step.
+Wie allgemein das ist, zeigt die Gegenprobe an den 36 SDK-Skripten (nur die
+`.eco`, ohne Quelle): Mit Typ- und Platztabellen aus allen 36 Debug-Builds
+36/36 (das zaehlt nicht als Beweis, die Tabellen kennen die Skripte schon).
+Ohne den eigenen Debug-Build 36/36, ohne die ganze Skriptfamilie 36/36.
+
+Wo der Nachbau nicht exakt gelingt, zeigt das Tool lesbare
+Decompiler-Ausgabe. Das betrifft die drei v1.0-Debug-Builds (Cities,
+CityCampaign, MissionTeamHunt): Sie stammen von einem aelteren Compiler
+mit anderer Nummerierung der Engine-Funktionen.
+
+Woher das Tool die Typen kennt: die Befehls- und Event-Plaetze aus dem
+SDK-Compiler selbst (EarthC.exe, 614 Plaetze; Klassen- und Array-Typen aus
+seinen eigenen Typ-Objekten), die Engine-Funktionen aus der
+SDK-Dokumentation (jede Signatur einmal kompiliert, 2149 Funktionen) samt
+Klassenbaum und Lebenszyklus-Funktionen jeder Klasse (ebenfalls beim
+Compiler erfragt), dazu was die Debug-Builds der SDK-Skripte zeigen. Bei der
+Gegenprobe werden Typtabellen, Platzlisten und die Typ-Stimmen der
+Platztabelle ohne die zurueckgehaltenen Skripte neu gelernt (die
+Platztabelle kommt dabei in allen 72 Laeufen gleich heraus); die aus
+EcoAnalysis uebernommenen Tabellen der Engine-Funktionen nicht - von den 804
+Engine-Funktionen, die nur eine zurueckgehaltene Familie aufruft, decken die
+gemessenen Signaturen 796 ab.
+''', '''# Rebuilding and the decompiler view
+
+For a script without a matching source the tool rebuilds a source while
+reading: the `.eco` holds x86 machine code, the decompiler translates it
+back into EarthC and works the types out from the code itself (which engine
+function a value is handed to or comes from). Then the tool compiles that
+source and compares it with the game. Only when **every byte** matches is
+the script called **Rebuilt**, and Export writes the source to
+`Scripts\\_TW1_Rebuilt` (with `compile_all.bat` and checked once more).
+
+A compiled file holds no names: functions are called `sub_<address>`,
+globals `g0`, `g1`, locals `loc1`, parameters `a1`. Commands and events keep
+their real names (those belong to the script class).
+
+Measured on 2026-10-03: the game's four release scripts without a source and
+the mod versions of PQuests (QuestLimit600), RPGCompute (EnemyLevels) and
+TwoWorldsCampaign (TW1_Probe) come out byte for byte.
+
+How general that is, from the cross-check on the 36 SDK scripts (the `.eco`
+alone, no source): with type and slot tables from all 36 debug builds 36/36
+(no proof, the tables already know those scripts); without the script's own
+debug build 36/36; without its whole family 36/36.
+
+Where an exact rebuild does not work the tool shows readable decompiler
+output. That applies to the three v1.0 debug builds (Cities, CityCampaign,
+MissionTeamHunt): they come from an older compiler that numbers the engine
+functions differently.
+
+Where the tool gets the types from: the command and event slots from the SDK
+compiler itself (EarthC.exe, 614 slots; class and array types from its own
+type objects), the engine functions from the SDK
+documentation (each signature compiled once, 2149 functions) with the class
+tree and every class's lifecycle functions (asked of the compiler as well),
+plus what the debug builds of the SDK scripts show. In the cross-check the
+type tables, slot lists and the slot table's type votes are learned again
+without the held-out scripts (the slot table comes out the same in all 72
+runs); the engine function tables taken over from
+EcoAnalysis are not - of the 804 engine functions only a held-out family
+calls, the measured signatures cover 796.
 ''')
 
 
@@ -330,6 +387,7 @@ def ch_reference():
                         .replace('enemies', 'Gegner').replace('weather', 'Wetter').replace('hero', 'Held')
                         .replace('units', 'Einheiten'), what) if src != '-' else what)
             for src, n, what in MEASURED]
+    rows[-2] = (_l('vom Decompiler nachgebaut', 'rebuilt by the decompiler'), rows[-2][1], rows[-2][2])
     rows[-1] = (_l('keine Quelle', 'no source'), rows[-1][1], rows[-1][2])
     return _l('''# Referenz: das Spiel 1.7 und die SDKs
 

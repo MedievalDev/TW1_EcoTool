@@ -314,7 +314,17 @@ def load_full():
 
 
 def load():
-    return {k: v[0] for k, v in load_full().items()}
+    """index -> arity: the corpus solution, gaps filled from native_sigs (each documented signature
+    compiled once with the SDK compiler and its pushes counted); the corpus wins where both know one"""
+    out = {k: v[0] for k, v in load_full().items()}
+    try:
+        import native_sigs
+        for idx, s in native_sigs.load().items():
+            if s.get('arity') is not None:
+                out.setdefault(idx, s['arity'])
+    except Exception:
+        pass
+    return out
 
 
 if __name__ == '__main__':

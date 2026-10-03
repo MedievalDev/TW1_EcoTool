@@ -128,7 +128,15 @@ DE = {
     'Scripts': 'Skripte',
     'Every file the script needs to compile. Double-click shows it.':
         'Jede Datei, die das Skript zum Kompilieren braucht. Doppelklick zeigt sie.',
-    '{n} scripts read, {src} with a matching source.': '{n} Skripte eingelesen, {src} mit passender Quelle.',
+    '{n} scripts read, {src} with a matching source, {reb} rebuilt by the decompiler.':
+        '{n} Skripte eingelesen, {src} mit passender Quelle, {reb} vom Decompiler nachgebaut.',
+    'rebuilding {name}': 'baue {name} nach',
+    'Decompiler rebuild: {status}{msg}': 'Nachbau durch den Decompiler: {status}{msg}',
+    '{n} scripts rebuilt by the decompiler (Scripts\\_TW1_Rebuilt\\); {ok} of them checked to compile to exactly the game\'s bytes.':
+        '{n} Skripte vom Decompiler nachgebaut (Scripts\\_TW1_Rebuilt\\); {ok} davon geprueft: ergeben genau die Bytes des Spiels.',
+    '{name}: no SDK source. Rebuilt by the decompiler from the compiled script; compiles to exactly the game\'s bytes (checked). Export writes it to Scripts\\_TW1_Rebuilt.':
+        '{name}: keine SDK-Quelle. Vom Decompiler aus dem kompilierten Skript nachgebaut; ergibt genau die Bytes des Spiels (geprueft). Der Export schreibt es nach Scripts\\_TW1_Rebuilt.',
+    '{name}: rebuilt source, NOT exact yet: {msg}': '{name}: nachgebaute Quelle, noch NICHT exakt: {msg}',
     'Scripts and archives': 'Skripte und Archive',
     'All files': 'Alle Dateien',
     'other: ': 'andere: ',
@@ -227,11 +235,14 @@ DE = {
     'A source of your SDK compiles to exactly the bytes the game uses. Export gives you that source with all its include files; it compiles again to the same file.':
         'Eine Quelle deines SDK ergibt genau die Bytes, die das Spiel nutzt. Der Export gibt dir diese Quelle mit allen Include-Dateien; sie kompiliert wieder zur selben Datei.',
     'Changed': 'Geaendert',
-    'There is a source with the same name, but it compiles to other bytes: the game or a mod uses another version. You see the decompiler output.':
-        'Es gibt eine gleichnamige Quelle, aber sie ergibt andere Bytes: Das Spiel oder eine Mod nutzt eine andere Fassung. Du siehst die Decompiler-Ausgabe.',
+    'Rebuilt': 'Nachgebaut',
+    'No SDK has a source for this script (or only another version), but the decompiler rebuilt one from the compiled script that compiles to exactly the game\'s bytes - checked.':
+        'Kein SDK hat eine Quelle fuer dieses Skript (oder nur eine andere Fassung), aber der Decompiler hat aus dem kompilierten Skript eine gebaut, die genau die Bytes des Spiels ergibt - geprueft.',
+    'There is a source with the same name, but it compiles to other bytes: the game or a mod uses another version, and the decompiler could not rebuild it exactly yet.':
+        'Es gibt eine gleichnamige Quelle, aber sie ergibt andere Bytes: Das Spiel oder eine Mod nutzt eine andere Fassung, und der Decompiler konnte sie noch nicht exakt nachbauen.',
     'No source': 'Keine Quelle',
-    'No SDK has a source for this script. You see the decompiler output - readable, but not yet checked to compile.':
-        'Kein SDK hat eine Quelle fuer dieses Skript. Du siehst die Decompiler-Ausgabe - lesbar, aber noch nicht auf Kompilierbarkeit geprueft.',
+    'No SDK has a source for this script and the decompiler could not rebuild it exactly (the v1.0 debug builds, for example). You see the decompiler output.':
+        'Kein SDK hat eine Quelle fuer dieses Skript und der Decompiler konnte es nicht exakt nachbauen (zum Beispiel die v1.0-Debug-Builds). Du siehst die Decompiler-Ausgabe.',
     'Welcome': 'Willkommen',
     'TW1 EcoTool shows the scripts of Two Worlds as source code. Where a source of your SDK compiles to exactly the game\'s bytes, you get that source; everything else is shown as readable decompiler output.':
         'TW1 EcoTool zeigt die Skripte von Two Worlds als Quelltext. Wo eine Quelle deines SDK genau die Bytes des Spiels ergibt, bekommst du diese Quelle; alles andere erscheint als lesbare Decompiler-Ausgabe.',

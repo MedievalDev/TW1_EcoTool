@@ -31,6 +31,7 @@ def tree_hash(d):
 
 
 GAME = C.find_game_dir()
+REBUILT = ['MissionTeamCollecting.eco', 'TestDialogsMission.eco', 'TestPMMission.eco', 'TestPMMission2.eco']
 
 
 @unittest.skipUnless(GAME and C.Sdk.looks_like(SDK13), 'needs the game and SDK 1.3')
@@ -67,6 +68,8 @@ class GameAndSdk(unittest.TestCase):
             self.assertEqual([r['name'] for r in rep['source'] if not r['verified']], [])
             self.assertEqual(len(rep['source']), 36)
             self.assertEqual(rep['failed'], [])
+            # the four release scripts without any source come back rebuilt, checked by the export
+            self.assertEqual(sorted(r['name'] for r in rep['rebuilt'] if r['verified']), sorted(REBUILT))
             self.assertTrue(os.path.isfile(os.path.join(out, 'compile_all.bat')))
             with open(os.path.join(out, 'report.json'), encoding='utf-8') as f:
                 self.assertEqual(len(json.load(f)['source']), 36)
@@ -107,6 +110,16 @@ class GameAndSdk(unittest.TestCase):
     def test_sdk_update_installed_sdks(self):
         """The order the GUI finds them in (C:\\TwoWorldsSDK first): failed before 03.10. with the 1.2 compiler."""
         self._update_round_trip(C.build_index(C.find_sdks(), CACHE))
+
+    def test_rebuild_without_source(self):
+        """Measured 03.10.2026: every release script without a source decompiles to EarthC that compiles
+        to exactly the game's bytes - no SDK source, no debug build involved."""
+        tools = C.tree_tools(self.scripts.values(), self.index)
+        got = {}
+        for s in self.scripts.values():
+            if not s.match and not s.debug:
+                got[s.name] = C.reconstruct(s, tools)['status']
+        self.assertEqual(got, {n: 'identical' for n in REBUILT})
 
     def test_decompiler_view(self):
         s = next(s for s in self.scripts.values() if s.stem == 'TestPMMission')

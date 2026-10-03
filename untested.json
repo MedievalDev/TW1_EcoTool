@@ -68,6 +68,39 @@
         "de": "Das Skript kompiliert nach dem Aktualisieren; nach Rueckgaengig ist der Ordner wieder wie deine Kopie.",
         "en": "The script compiles after the update; after Undo the folder is the same as your copy again."
       }
+    },
+    {
+      "id": "rebuilt-script-ingame",
+      "since": "0.2.0",
+      "needs_run": true,
+      "title": {
+        "de": "Ein nachgebautes Skript aendern und im Spiel benutzen",
+        "en": "Change a rebuilt script and use it in the game"
+      },
+      "why": {
+        "de": "Gemessen ist: Jede nachgebaute Quelle ergibt genau die Bytes des Spiels. Ob ein geaendertes nachgebautes Skript als Mod im Spiel wirkt, hat noch niemand ausprobiert.",
+        "en": "Measured: every rebuilt source gives exactly the game's bytes. Whether a changed rebuilt script works as a mod in the game has not been tried yet."
+      },
+      "steps": {
+        "de": [
+          "Ein nachgebautes Skript waehlen, das dein Spiel wirklich ausfuehrt: PQuests.eco der Mod QuestLimit600 (Einzelspieler) oder MissionTeamCollecting.eco (Mehrspieler, Modus Team Collecting).",
+          "Exportieren und die Quelle unter Scripts\\_TW1_Rebuilt\\ oeffnen.",
+          "Im ersten state eine sichtbare Zeile ergaenzen, zum Beispiel GetCampaign().GetPlayerInterface(0).SetConsoleText(\"Rebuilt!\", 150);",
+          "compile_all.bat starten.",
+          "Die .eco unter ihrem Originalpfad in eine Mod packen, einschalten und das Spiel bzw. die Mehrspielerpartie starten."
+        ],
+        "en": [
+          "Pick a rebuilt script your game really runs: PQuests.eco of the QuestLimit600 mod (single player) or MissionTeamCollecting.eco (multiplayer, mode Team Collecting).",
+          "Export and open the source under Scripts\\_TW1_Rebuilt\\.",
+          "Add a visible line to the first state, for example GetCampaign().GetPlayerInterface(0).SetConsoleText(\"Rebuilt!\", 150);",
+          "Run compile_all.bat.",
+          "Pack the .eco under its original path into a mod, switch it on and start the game or the multiplayer match."
+        ]
+      },
+      "expect": {
+        "de": "Der Text erscheint, sonst verhaelt sich alles wie vorher.",
+        "en": "The text shows up, otherwise everything behaves as before."
+      }
     }
   ]
 }
